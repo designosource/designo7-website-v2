@@ -1,0 +1,29 @@
+{
+  "name": "designosource",
+  "version": "1.0.0",
+  "description": "Designos7 website v2.0 ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/designosource/"
+  },
+  "keywords": [
+    "designosource",
+    "website"
+  ],
+  "author": "Designosource",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-minify": "^1.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11"
+  }
+}
