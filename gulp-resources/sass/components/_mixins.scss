@@ -1,0 +1,263 @@
+@import "components/_measures.scss";
+
+//Breakpoint mixin ----------------------------------------------
+@mixin breakpoint($size, $type: max, $pixels: $breakpoint-small) {
+    @if $size == 'small' {
+        @media screen and ($type + -width: $breakpoint-small) {
+            @content;
+        }
+    }
+    @else if $size == 'med-small' {
+        @media screen and ($type + -width: $breakpoint-med-small) {
+            @content;
+        }
+    }
+    @else if $size == 'med' {
+        @media screen and ($type + -width: $breakpoint-med) {
+            @content;
+        }
+    }
+    @else if $size == 'large' {
+        @media screen and ($type + -width: $breakpoint-med) {
+            @content;
+        }
+    }
+    @else if $size == 'custom' {
+        @media screen and ($type + -width: $pixels + px) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+/*
+*    .element {
+*        @include breakpoint(small, min, $breakpoint-small){
+*            background-color: red; 
+*        }
+*    }
+*/
+
+//Positioning absolute mixin ------------------------------------
+@mixin center-absolute($position) {
+    position: absolute;
+  
+    @if $position == 'vertical' {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @else if $position == 'horizontal' {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+    }
+    @else if $position == 'both' {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*
+*    .element {
+*        @include center-absolute(both);
+*    }
+*/
+
+//Positioning with flex mixin -----------------------------------
+@mixin center-flex($position) {
+    display: flex;
+
+    @if $position == 'vertical' {
+        align-items: center;
+    }
+    @else if $position == 'horizontal' {
+        justify-content: center;
+    }
+    @else if $position == 'both' {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*
+*    .element {
+*        @include center-flex(both);
+*    }
+*/
+
+//Calculate font-size mixin -------------------------------------
+@function calculateRem($size) {
+    $remSize: $size / 16px; // eventueel te vervangen door een eigen variabele
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+/*
+*    .element {
+*        @include font-size(16);
+*    }
+*/
+
+//Animation setup mixin -----------------------------------------
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+/*
+*    @include keyframes(slide-down) {
+*        0% { opacity: 1; }
+*        90% { opacity: 0; }
+*    }
+*
+*    .element {
+*        @include animation('slide-down 5s 3');
+*    }
+*/
+
+//Padding mixin -------------------------------------------------
+@mixin padding($top, $right, $bottom: $top, $left: $right) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+/*
+*    .element {
+*        @include padding(10, 20);
+*    }
+*/
+
+//Margin mixin --------------------------------------------------
+@mixin margin($top, $right, $bottom: $top, $left: $right) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+/*
+*    .element {
+*        @include margin(10, 20);
+*    }
+*/
+
+//Center a block-element mixin ----------------------------------
+@mixin push--auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+*    .element {
+*        @include push-auto;
+*    }
+*/
+
+//Pseudo element mixin ------------------------------------------
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+/*
+*    .element:before {
+*        @include pseudo;
+*    }
+*/
+
+//Transition mixin ----------------------------------------------
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+    
+    &:hover {
+        -webkit-transition: $args;
+        -moz-transition: $args;
+        -ms-transition: $args;
+        -o-transition: $args;
+        transition: $args;
+    }
+}
+
+/*
+*    .element {
+*        @include transition(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
+
+//Translate mixin -----------------------------------------------
+@mixin translate($x: 0px, $y: 0px) {
+    -moz-transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+    
+/*
+*    .element {
+*        @include translate(50px, 10px);
+*    }
+*/
+
+//Skew mixin ----------------------------------------------------
+@mixin skew($x: 0deg, $y: 0deg) {
+    -moz-transform: skew($x, $y);
+    -webkit-transform: skew($x, $y);
+    transform: skew($x, $y);
+}
+
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+
+@mixin boxshadow($args) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
+
+/*
+*    .element {
+*        @include boxshadow(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
