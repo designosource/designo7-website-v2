@@ -1,3 +1,80 @@
+/*
+*    .element {
+*        @include breakpoint(small, min, $breakpoint-small){
+*            background-color: red; 
+*        }
+*    }
+*/
+/*
+*    .element {
+*        @include center-absolute(both);
+*    }
+*/
+/*
+*    .element {
+*        @include center-flex(both);
+*    }
+*/
+/*
+*    .element {
+*        @include font-size(16);
+*    }
+*/
+/*
+*    @include keyframes(slide-down) {
+*        0% { opacity: 1; }
+*        90% { opacity: 0; }
+*    }
+*
+*    .element {
+*        @include animation('slide-down 5s 3');
+*    }
+*/
+/*
+*    .element {
+*        @include padding(10, 20);
+*    }
+*/
+/*
+*    .element {
+*        @include margin(10, 20);
+*    }
+*/
+/*
+*    .element {
+*        @include push-auto;
+*    }
+*/
+/*
+*    .element:before {
+*        @include pseudo;
+*    }
+*/
+/*
+*    .element {
+*        @include transition(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
+/*
+*    .element {
+*        @include translate(50px, 10px);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include boxshadow(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
+input, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 body {
   /*background-color: red;*/ }
 
@@ -26,6 +103,9 @@ body {
   color: white;
   text-shadow: none; }
 
+img::-moz-selection {
+  background: transparent; }
+
 img::selection {
   background: transparent; }
 
@@ -34,6 +114,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: rgba(18, 52, 86, 0.5); }
+
+a::-moz-selection {
+  color: #123456; }
 
 a::selection {
   color: #123456; }
