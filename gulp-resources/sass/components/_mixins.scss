@@ -158,7 +158,13 @@
 
 /*
 *    .element {
-*        @include padding(10, 20);
+*        @include padding(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include padding(10px, 20px, 30px);
 *    }
 */
 
@@ -172,12 +178,18 @@
 
 /*
 *    .element {
-*        @include margin(10, 20);
+*        @include margin(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include margin(10px, 20px, 30px);
 *    }
 */
 
 //Center a block-element mixin ----------------------------------
-@mixin push--auto {
+@mixin push-auto {
     margin-left: auto;
     margin-right: auto;
 }
@@ -250,7 +262,7 @@
 *    }
 */
 
-@mixin boxshadow($args) {
+@mixin boxshadow($args...) {
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
   box-shadow: $args;
@@ -258,6 +270,6 @@
 
 /*
 *    .element {
-*        @include boxshadow(width 2s linear 1s, height 1s linear 2s);
+*        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
 *    }
 */
