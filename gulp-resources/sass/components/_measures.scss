@@ -1,8 +1,19 @@
 // Font
-$text: 16px;
-$h3: 20px;
-$h2: 24px;
-$h1: 32px;
+$font--10: 10pt;
+$font--13: 13pt;
+$font--14: 14pt;
+$font--16: 16pt;
+$font--20: 20pt;
+$font--22: 22pt;
+$font--24: 24pt;
+$font--28: 28pt;
+$font--32: 32pt;
+$font--36: 36pt;
+$font--105: 105pt;
+$font--118: 118pt;
+$font--130: 130pt;
+$font--144: 144pt;
+
 
 // Margin
 $margin-small: 10px;
@@ -16,6 +27,9 @@ $padding-regular: 20px;
 $padding-big: 40px;
 
 // Define the breakpoints
-$breakpoint-small: 600px;
-$breakpoint-med-small: 960px;
-$breakpoint-med: 1175px;
+$breakpoint-x-small: 320px;
+$breakpoint-small: 480px;
+$breakpoint-medium: 769px;
+$breakpoint-large: 1024px;
+$breakpoint-x-large: 1224px;
+$breakpoint-xx-large: 1824px;
