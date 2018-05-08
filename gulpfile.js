@@ -60,12 +60,20 @@ gulp.task('css-prefix', function () {
 });
 
 /* IMAGE COMPRESS */
-gulp.task('images', ['imagesDefault'], function(){
+gulp.task('images', ['imagesDefault', 'imagesMembers'], function(){
     gutil.log(gutil.colors.red('Compressing images'));
 });
 
 gulp.task('imagesDefault', () =>
     gulp.src('gulp-resources/img/*')
+        .pipe(plumber())
+        .pipe(imagemin())
+        .pipe(plumber.stop())
+        .pipe(gulp.dest('img/'))
+);
+
+gulp.task('imagesMembers', () =>
+    gulp.src('gulp-resources/img/members/*')
         .pipe(plumber())
         .pipe(imagemin())
         .pipe(plumber.stop())
