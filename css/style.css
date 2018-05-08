@@ -32,12 +32,24 @@
 */
 /*
 *    .element {
-*        @include padding(10, 20);
+*        @include padding(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include padding(10px, 20px, 30px);
 *    }
 */
 /*
 *    .element {
-*        @include margin(10, 20);
+*        @include margin(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include margin(10px, 20px, 30px);
 *    }
 */
 /*
@@ -67,7 +79,7 @@
 */
 /*
 *    .element {
-*        @include boxshadow(width 2s linear 1s, height 1s linear 2s);
+*        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
 *    }
 */
 input, button {
@@ -79,32 +91,29 @@ body {
   /*background-color: red;*/ }
 
 ::-webkit-selection {
-  background: rgba(18, 52, 86, 0.5);
-  color: white;
+  background: rgba(33, 32, 58, 0.5);
+  color: #ffffff;
   text-shadow: none; }
 
 ::-moz-selection {
-  background: rgba(18, 52, 86, 0.5);
-  color: white;
+  background: rgba(33, 32, 58, 0.5);
+  color: #ffffff;
   text-shadow: none; }
 
 ::-o-selection {
-  background: rgba(18, 52, 86, 0.5);
-  color: white;
+  background: rgba(33, 32, 58, 0.5);
+  color: #ffffff;
   text-shadow: none; }
 
 ::-ms-selection {
-  background: rgba(18, 52, 86, 0.5);
-  color: white;
+  background: rgba(33, 32, 58, 0.5);
+  color: #ffffff;
   text-shadow: none; }
 
 ::selection {
-  background: rgba(18, 52, 86, 0.5);
-  color: white;
+  background: rgba(33, 32, 58, 0.5);
+  color: #ffffff;
   text-shadow: none; }
-
-img::-moz-selection {
-  background: transparent; }
 
 img::selection {
   background: transparent; }
@@ -113,10 +122,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(18, 52, 86, 0.5); }
-
-a::-moz-selection {
-  color: #123456; }
+  -webkit-tap-highlight-color: rgba(33, 32, 58, 0.5); }
 
 a::selection {
-  color: #123456; }
+  color: #ffffff; }
