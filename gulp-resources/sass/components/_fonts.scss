@@ -1,2 +1,6 @@
-$font--cooper: "CooperHewitt";
-$font--sans: "SourceSansPro";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fontlibrary.org/face/cooper-hewitt');
+
+$font--cooper--book: 'CooperHewittBook', sans-serif;
+$font--cooper--bold: 'CooperHewittBold', sans-serif;
+$font--sans: 'Source Sans Pro', sans-serif;

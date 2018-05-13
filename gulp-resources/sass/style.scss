@@ -6,8 +6,108 @@
 
 // IMPLEMENT SASS
 
-body{
-    /*background-color: red;*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color--palegrey;
+  font-family: $font--cooper--book;
+  color: $color--darkpurple;
+}
+
+a {
+  text-decoration: none;
+  color: $color--darkpurple;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(24, 50pt);
+  grid-gap: 10pt;
+  height: calc(100vh - 60px);
+  background: $color--palegrey;
+  
+  .content-image {
+    background: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 15;
+  }
+}
+
+.content-rightblock {
+  width: 100%;
+  grid-column-start: 16;
+  grid-column-end: 24;
+  padding-top: 175px;
+  display: flex;
+  flex-direction: column;
+  
+  span {
+    color: $color--purplered;
+    font-size: $font--36;
+    font-family: $font--cooper--bold;
+  }
+
+  h2 {
+    font-family: $font--cooper--bold;
+    font-size: $font--144;
+    margin-bottom: 70px;
+  }
+
+  a {
+    font-size: $font--32;
+    margin-bottom: 30px;
+  }
+}
+
+#home {
+  background: $color--darkpurple;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(24, 50pt);
+  grid-gap: 10pt;
+  height: 60px;
+  font-size: $font--16;
+  font-family: $font--cooper--bold;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: $color--white;
+
+  a:hover {
+    color: $color--purplered;
+  }
+
+  a:active {
+    color: $color--purplered;
+  }
+
+  #footer-left {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer-right {
+    display: flex;
+    grid-column-start: 19;
+    grid-column-end: 24;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 // END IMPLEMENTING SASS
