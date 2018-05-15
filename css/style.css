@@ -105,7 +105,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(24, 50pt);
+  grid-template-columns: repeat(24, 1fr);
   grid-gap: 10pt;
   height: calc(100vh - 60px);
   background: #fafafd; }
@@ -131,8 +131,9 @@ a {
     font-size: 36pt;
     font-family: "CooperHewittBold", sans-serif; }
   .content-rightblock h2 {
-    font-family: "CooperHewittBold", sans-serif;
     font-size: 144pt;
+    font-size: 12rem;
+    font-family: "CooperHewittBold", sans-serif;
     margin-bottom: 70px; }
   .content-rightblock a {
     font-size: 32pt;
@@ -141,10 +142,8 @@ a {
 #home {
   background: #21203a; }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(24, 50pt);
-  grid-gap: 10pt;
+header {
+  display: flex;
   height: 60px;
   font-size: 16pt;
   font-family: "CooperHewittBold", sans-serif;
@@ -152,23 +151,23 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  background: #ffffff; }
-  footer a:hover {
+  padding: 0 70px;
+  background: #ffffff;
+  justify-content: space-between; }
+  header a:hover, header a:active {
     color: #c10c43; }
-  footer a:active {
-    color: #c10c43; }
-  footer #footer-left {
+  header #header-left {
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 7;
     justify-content: space-between;
     align-items: center; }
-  footer #footer-right {
+    header #header-left a:not(:last-child) {
+      margin-right: 45px; }
+  header #header-right {
     display: flex;
-    grid-column-start: 19;
-    grid-column-end: 24;
     justify-content: space-between;
     align-items: center; }
+    header #header-right a:not(:first-child) {
+      margin-left: 45px; }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.5);

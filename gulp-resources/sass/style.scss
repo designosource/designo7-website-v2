@@ -25,7 +25,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(24, 50pt);
+  grid-template-columns: repeat(24, 1fr);
   grid-gap: 10pt;
   height: calc(100vh - 60px);
   background: $color--palegrey;
@@ -57,8 +57,8 @@ a {
   }
 
   h2 {
+    @include font-size($font--144);
     font-family: $font--cooper--bold;
-    font-size: $font--144;
     margin-bottom: 70px;
   }
 
@@ -72,10 +72,8 @@ a {
   background: $color--darkpurple;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(24, 50pt);
-  grid-gap: 10pt;
+header {
+  display: flex;
   height: 60px;
   font-size: $font--16;
   font-family: $font--cooper--bold;
@@ -83,30 +81,45 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
+  padding: 0 70px;
   background: $color--white;
+  justify-content: space-between;
 
-  a:hover {
-    color: $color--purplered;
+  a {
+
+    &:hover, &:active {
+      color: $color--purplered;
+    }
+
   }
 
-  a:active {
-    color: $color--purplered;
-  }
-
-  #footer-left {
+  #header-left {
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 7;
     justify-content: space-between;
     align-items: center;
+
+    a {
+
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+
+    }
   }
 
-  #footer-right {
+  #header-right {
     display: flex;
-    grid-column-start: 19;
-    grid-column-end: 24;
     justify-content: space-between;
     align-items: center;
+
+    a {
+
+      &:not(:first-child) {
+        margin-left: 45px;
+      }
+
+    }
+
   }
 }
 
