@@ -262,6 +262,19 @@
 *    }
 */
 
+//Skew mixin ----------------------------------------------------
+@mixin rotate($deg: 0deg) {
+    -moz-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+
 @mixin boxshadow($args...) {
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;

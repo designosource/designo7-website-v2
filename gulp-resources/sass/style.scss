@@ -16,6 +16,134 @@ body {
   background-color: $color--palegrey;
   font-family: $font--cooper--book;
   color: $color--darkpurple;
+	overflow-x: hidden;
+}
+
+footer {
+  display: flex;
+  height: 60px;
+  font-size: $font--16;
+  font-family: $font--cooper--bold;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 70px;
+  background: $color--white;
+  justify-content: space-between;
+
+  a {
+
+    &:hover, &:active {
+      color: $color--purplered;
+    }
+
+  }
+
+  #footer-left {
+    display: flex;
+    align-items: center;
+
+    a {
+
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+
+    }
+  }
+
+  #footer-right {
+    display: flex;
+    align-items: center;
+
+    a {
+
+      &:not(:first-child) {
+        margin-left: 45px;
+      }
+
+    }
+
+  }
+}
+
+header {
+	position: fixed;
+	top: 50%;
+	right: 17.5pt;
+	transform: translateY(-50%);
+	font-size: $font--24;
+		
+	nav {
+		display: flex;
+    flex-direction: column;
+		counter-reset: headernav;
+		font-family: $font--cooper--book;
+			
+		a {
+			color: rgba($color--white, 0);
+			text-align: right;
+    	padding-right: 2em;
+			line-height: 29.7pt;
+			position: relative;
+			@include transition(0.2s);
+			counter-increment: headernav;
+			
+			&:not(:last-child) {
+				margin-bottom: 42px;
+			}
+				
+			&:before {
+				@include pseudo;
+    		content: "0" counter(headernav) "";
+				right: 0;
+				top: -1px;
+				@include rotate(90deg);
+				line-height: 29.7pt;
+				color: $color--white;
+			}
+				
+			&:hover {
+				color: rgba($color--white, 1);
+			}
+		}
+			
+		.active {
+			color: $color--purplered;
+			font-family: $font--cooper--bold;
+				
+			&:before {
+				color: $color--purplered;
+			}
+				
+			&:after {
+				@include pseudo;
+				width: 3pt;
+				height: calc(100% - 2pt);
+    		right: calc(1em + 1pt);
+    		top: 0;
+				background-color: $color--purplered;
+			}
+				
+			&:hover {
+				color: $color--purplered;	
+			}
+				
+		}
+			
+	}
+		
+	span.active-number {
+  	position: absolute;
+    top: 35pt;
+		text-align: right;
+    width: 100%;
+    height: 150px;
+    font-size: 120px;
+    color: rgba(16,16,28,0.45);
+		font-family: $font--cooper--bold;
+	}
 }
 
 a {
@@ -72,56 +200,7 @@ a {
   background: $color--darkpurple;
 }
 
-header {
-  display: flex;
-  height: 60px;
-  font-size: $font--16;
-  font-family: $font--cooper--bold;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 0 70px;
-  background: $color--white;
-  justify-content: space-between;
 
-  a {
-
-    &:hover, &:active {
-      color: $color--purplered;
-    }
-
-  }
-
-  #header-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    a {
-
-      &:not(:last-child) {
-        margin-right: 45px;
-      }
-
-    }
-  }
-
-  #header-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    a {
-
-      &:not(:first-child) {
-        margin-left: 45px;
-      }
-
-    }
-
-  }
-}
 
 // END IMPLEMENTING SASS
 
