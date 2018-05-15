@@ -36,29 +36,15 @@
 <?php include 'inc/header/header.php'; ?>
 
 <main>
-    <section class="container" id="home">
+    
+    <?php include 'inc/index/home.php'; ?>
 
-    </section>
+    <?php include 'inc/index/team.php'; ?>
 
-    <section class="container" id="team">
-        <div class="content-image"></div>
-        <div class="content-rightblock">
-            <span>02/</span>
-            <h2>Team</h2>
-            <a href="#">Wat</a>
-            <a href="#">Wat doen wij?</a>
-            <a href="#">Werkwijze</a>
-            <a href="#">Meet the team</a>
-        </div>
-    </section>
+    <?php include 'inc/index/cases.php'; ?>
 
-    <section class="container" id="cases">
-
-    </section>
-
-    <section class="container" id="contact">
-
-    </section>
+    <?php include 'inc/index/contact.php'; ?>
+    
 </main>
 
 <?php include 'inc/footer/footer.php'; ?>
