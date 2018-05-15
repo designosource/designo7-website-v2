@@ -74,6 +74,22 @@ header {
 	right: 17.5pt;
 	transform: translateY(-50%);
 	font-size: $font--24;
+	z-index: 2;
+	
+	span.active-number {
+		position: fixed;
+		right: 0px;
+		top: 50%;
+    -webkit-transform: translateY(calc(-50% - 15px));
+    -ms-transform: translateY(calc(-50% - 15px));
+		transform: translateY(calc(-50% - 15px));
+		text-align: right;
+    width: 150px;
+    height: 150px;
+    font-size: 120px;
+    color: rgba(16,16,28,0.45);
+		font-family: $font--cooper--bold;
+	}
 		
 	nav {
 		display: flex;
@@ -133,22 +149,28 @@ header {
 		}
 			
 	}
-		
-	span.active-number {
-  	position: absolute;
-    top: 35pt;
-		text-align: right;
-    width: 100%;
-    height: 150px;
-    font-size: 120px;
-    color: rgba(16,16,28,0.45);
-		font-family: $font--cooper--bold;
-	}
 }
 
 a {
   text-decoration: none;
   color: $color--darkpurple;
+}
+
+main {
+	counter-reset: section;
+
+	section.container {
+		counter-increment: section;
+			
+		.active-number:before {
+			@include pseudo;
+			right: -10px;
+			content: "0" counter(headernavfixed);
+		}
+	}
+		
+	
+		
 }
 
 .container {
@@ -157,6 +179,12 @@ a {
   grid-gap: 10pt;
   height: calc(100vh - 60px);
   background: $color--palegrey;
+	position: relative;
+		
+	&:not(#home) {
+		height: calc(100vh - 120px);
+		margin-top: 60px;
+	}
   
   .content-image {
     background: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
@@ -182,6 +210,14 @@ a {
     color: $color--purplered;
     font-size: $font--36;
     font-family: $font--cooper--bold;
+		position: relative;
+		height: 1.5em;
+			
+		&:before {
+			@include pseudo;
+			content: "0" counter(section) "/";
+		}
+		
   }
 
   h2 {

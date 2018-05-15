@@ -1,7 +1,7 @@
 <section class="container" id="team">
 		<div class="content-image"></div>
 		<div class="content-rightblock">
-				<span>02/</span>
+				<span> </span>
 				<h2>Team</h2>
 				<a href="#">Wat</a>
 				<a href="#">Wat doen wij?</a>

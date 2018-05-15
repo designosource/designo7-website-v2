@@ -4,10 +4,10 @@
   
 	<nav>
 		
-		<a class="active" href="#">Home</a>
-		<a href="#">Team</a>
-		<a href="#">Cases</a>
-		<a href="#">Contact</a>
+		<a class="active" href="#home">Home</a>
+		<a href="#team">Team</a>
+		<a href="#cases">Cases</a>
+		<a href="#contact">Contact</a>
 		
 	</nav>
    
