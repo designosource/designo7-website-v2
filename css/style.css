@@ -87,8 +87,33 @@
 *        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
 *    }
 */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
 @import url("https://fontlibrary.org/face/cooper-hewitt");
+/* customize scrollbar css */
+.scrollbar {
+  overflow-y: auto; }
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  background-color: #e5e5e5; }
+
+.scrollbar::-webkit-scrollbar:horizontal {
+  height: 4px; }
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0 6px #ffffff inset; }
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 2px; }
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #666666; }
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: #666666; }
+
 input, button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,7 +143,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 0 70px;
-  background: #ffffff;
+  background-color: #ffffff;
   justify-content: space-between; }
   footer a:hover, footer a:active {
     color: #c10c43; }
@@ -230,7 +255,7 @@ main {
   grid-template-rows: 60px auto;
   grid-column-gap: 10pt;
   height: calc(100vh - 60px);
-  background: #fafafd;
+  background-color: #fafafd;
   position: relative; }
   .container .content-image {
     width: 100%;
@@ -284,16 +309,16 @@ main {
   font-weight: bold; }
 
 #home {
-  background: #21203a; }
+  background-color: #21203a; }
 
 #team .content-image {
-  background: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
+  background-image: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center; }
 
 #cases .content-image {
-  background: url("https://media.giphy.com/media/9xghLCFnacsIWCasU7/giphy.gif");
+  background-image: url("https://media.giphy.com/media/9xghLCFnacsIWCasU7/giphy.gif");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center; }
@@ -301,10 +326,70 @@ main {
 #contact {
   margin-bottom: 60px; }
   #contact .content-image {
-    background: url("https://media.giphy.com/media/pSpmpxFxFwDpC/giphy.gif");
+    background-image: url("https://media.giphy.com/media/pSpmpxFxFwDpC/giphy.gif");
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center; }
+
+.big-grid {
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 60px 1fr 100px calc(50% - 100px) 1fr;
+  grid-column-gap: 10pt;
+  height: calc(100vh - 60px); }
+  .big-grid .content-image {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center; }
+  .big-grid .overlay {
+    position: relative;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 11; }
+    .big-grid .overlay:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .big-grid .pop-up-image {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 8;
+    grid-column-end: 16;
+    z-index: 2; }
+  .big-grid .previous-page {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 12;
+    grid-column-end: 16;
+    display: flex;
+    align-items: center; }
+  .big-grid h1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 12;
+    grid-column-end: 21;
+    z-index: 3;
+    font-size: 6.2vw;
+    font-family: "CooperHewittBold", sans-serif;
+    /*padding-top: 22px;*/ }
+  .big-grid .content-rightblock {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 17;
+    grid-column-end: 23;
+    overflow-y: auto;
+    font-size: 1.51vw;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    line-height: 2.1875vw; }
+
+#wat .content-image {
+  background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif"); }
+
+#wat .overlay:before {
+  background-color: rgba(193, 12, 67, 0.9); }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.5);
