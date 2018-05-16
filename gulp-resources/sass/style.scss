@@ -19,7 +19,9 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar { display: none; }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 footer {
   display: flex;
@@ -182,55 +184,110 @@ main {
   background: $color--palegrey;
   position: relative;
 
-  //&:not(#home) {
-  //	height: calc(100vh - 120px);
-  //	//margin-top: 60px;
-  //}
-
   .content-image {
-    background: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
     grid-column-start: 1;
     grid-column-end: 15;
     grid-row-start: 2;
   }
+
+  .content-rightblock {
+    width: 100%;
+    grid-column-start: 16;
+    grid-column-end: 23;
+    grid-row-start: 2;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+
+    .page-number {
+      color: $color--purplered;
+      font-size: $font--36;
+      font-family: $font--cooper--bold;
+      position: relative;
+      height: 1.5em;
+    }
+
+    h2 {
+      font-size: $font--144;
+      font-family: $font--cooper--bold;
+      margin-bottom: 5%;
+    }
+
+    a {
+      font-size: $font--32;
+      margin-bottom: 5%;
+    }
+
+    p {
+      font-family: $font--sans;
+      font-weight: lighter;
+      font-size: $font--22;
+      line-height: 32pt;
+      margin-bottom: 10%;
+    }
+
+    #contact-intro {
+      margin-bottom: 3%;
+      font-weight: bold;
+    }
+
+    #tm-logo {
+      width: 110px;
+    }
+
+    #email {
+      font-size: $font--22;
+      margin-bottom: 50px;
+    }
+
+    #partner{
+      margin-bottom: 20px;
+    }
+
+    .label {
+      color: $color--purplered;
+      font-family: $font--cooper--bold;
+      text-transform: uppercase;
+    }
+  }
 }
 
-.content-rightblock {
-  width: 100%;
-  grid-column-start: 16;
-  grid-column-end: 24;
-  grid-row-start: 2;
-  margin-top: 20%;
-  display: flex;
-  flex-direction: column;
-
-  span {
-    color: $color--purplered;
-    font-size: $font--36;
-    font-family: $font--cooper--bold;
-    position: relative;
-    height: 1.5em;
-  }
-
-  h2 {
-    font-size: $font--144;
-    font-family: $font--cooper--bold;
-    margin-bottom: 5%;
-  }
-
-  a {
-    font-size:$font--32;
-    margin-bottom: 5%;
-  }
+.bold {
+  font-weight: bold;
 }
 
 #home {
   background: $color--darkpurple;
+}
+
+#team {
+  .content-image {
+    background: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#cases {
+  .content-image {
+    background: url("https://media.giphy.com/media/9xghLCFnacsIWCasU7/giphy.gif");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#contact {
+  margin-bottom: 60px;
+  .content-image {
+    background: url("https://media.giphy.com/media/pSpmpxFxFwDpC/giphy.gif");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 // END IMPLEMENTING SASS
