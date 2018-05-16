@@ -16,8 +16,10 @@ body {
   background-color: $color--palegrey;
   font-family: $font--cooper--book;
   color: $color--darkpurple;
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar { display: none; }
 
 footer {
   display: flex;
@@ -69,86 +71,86 @@ footer {
 }
 
 header {
-	position: fixed;
-	top: 50%;
-	right: 17.5pt;
-	transform: translateY(-50%);
-	font-size: $font--24;
-	z-index: 2;
-	
-	span.active-number {
-		position: fixed;
-		right: 0px;
-		top: 50%;
+  position: fixed;
+  top: 50%;
+  right: 17.5pt;
+  transform: translateY(-50%);
+  font-size: $font--24;
+  z-index: 2;
+
+  span.active-number {
+    position: fixed;
+    right: 0;
+    top: 50%;
     -webkit-transform: translateY(calc(-50% - 15px));
     -ms-transform: translateY(calc(-50% - 15px));
-		transform: translateY(calc(-50% - 15px));
-		text-align: right;
+    transform: translateY(calc(-50% - 15px));
+    text-align: right;
     width: 150px;
     height: 150px;
-    font-size: 120px;
-    color: rgba(16,16,28,0.45);
-		font-family: $font--cooper--bold;
-	}
-		
-	nav {
-		display: flex;
+    font-size: 6.25vw;
+    color: rgba(16, 16, 28, 0.45);
+    font-family: $font--cooper--bold;
+  }
+
+  nav {
+    display: flex;
     flex-direction: column;
-		counter-reset: headernav;
-		font-family: $font--cooper--book;
-			
-		a {
-			color: rgba($color--white, 0);
-			text-align: right;
-    	padding-right: 2em;
-			line-height: 29.7pt;
-			position: relative;
-			@include transition(0.2s);
-			counter-increment: headernav;
-			
-			&:not(:last-child) {
-				margin-bottom: 42px;
-			}
-				
-			&:before {
-				@include pseudo;
-    		content: "0" counter(headernav) "";
-				right: 0;
-				top: -1px;
-				@include rotate(90deg);
-				line-height: 29.7pt;
-				color: $color--white;
-			}
-				
-			&:hover {
-				color: rgba($color--white, 1);
-			}
-		}
-			
-		.active {
-			color: $color--purplered;
-			font-family: $font--cooper--bold;
-				
-			&:before {
-				color: $color--purplered;
-			}
-				
-			&:after {
-				@include pseudo;
-				width: 3pt;
-				height: calc(100% - 2pt);
-    		right: calc(1em + 1pt);
-    		top: 0;
-				background-color: $color--purplered;
-			}
-				
-			&:hover {
-				color: $color--purplered;	
-			}
-				
-		}
-			
-	}
+    counter-reset: headernav;
+    font-family: $font--cooper--book;
+
+    a {
+      color: rgba($color--white, 0);
+      text-align: right;
+      padding-right: 2em;
+      line-height: 29.7pt;
+      position: relative;
+      @include transition(0.2s);
+      counter-increment: headernav;
+
+      &:not(:last-child) {
+        margin-bottom: 42px;
+      }
+
+      &:before {
+        @include pseudo;
+        content: "0" counter(headernav) "";
+        right: 0;
+        top: -1px;
+        @include rotate(90deg);
+        line-height: 29.7pt;
+        color: $color--white;
+      }
+
+      &:hover {
+        color: rgba($color--white, 1);
+      }
+    }
+
+    .active {
+      color: $color--purplered;
+      font-family: $font--cooper--bold;
+
+      &:before {
+        color: $color--purplered;
+      }
+
+      &:after {
+        @include pseudo;
+        width: 3pt;
+        height: calc(100% - 2pt);
+        right: calc(1em + 1pt);
+        top: 0;
+        background-color: $color--purplered;
+      }
+
+      &:hover {
+        color: $color--purplered;
+      }
+
+    }
+
+  }
 }
 
 a {
@@ -157,35 +159,34 @@ a {
 }
 
 main {
-	counter-reset: section;
+  counter-reset: section;
 
-	section.container {
-		counter-increment: section;
-			
-		.active-number:before {
-			@include pseudo;
-			right: -10px;
-			content: "0" counter(headernavfixed);
-		}
-	}
-		
-	
-		
+  section.container {
+    counter-increment: section;
+
+    .active-number:before {
+      @include pseudo;
+      right: -10px;
+      content: "0" counter(headernavfixed);
+    }
+  }
+
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
-  grid-gap: 10pt;
+  grid-template-rows: 60px auto;
+  grid-column-gap: 10pt;
   height: calc(100vh - 60px);
   background: $color--palegrey;
-	position: relative;
-		
-	&:not(#home) {
-		height: calc(100vh - 120px);
-		margin-top: 60px;
-	}
-  
+  position: relative;
+
+  //&:not(#home) {
+  //	height: calc(100vh - 120px);
+  //	//margin-top: 60px;
+  //}
+
   .content-image {
     background: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
     -webkit-background-size: cover;
@@ -195,6 +196,7 @@ main {
     height: 100%;
     grid-column-start: 1;
     grid-column-end: 15;
+    grid-row-start: 2;
   }
 }
 
@@ -202,41 +204,34 @@ main {
   width: 100%;
   grid-column-start: 16;
   grid-column-end: 24;
-  padding-top: 175px;
+  grid-row-start: 2;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
-  
+
   span {
     color: $color--purplered;
     font-size: $font--36;
     font-family: $font--cooper--bold;
-		position: relative;
-		height: 1.5em;
-			
-		&:before {
-			@include pseudo;
-			content: "0" counter(section) "/";
-		}
-		
+    position: relative;
+    height: 1.5em;
   }
 
   h2 {
-    @include font-size($font--144);
+    font-size: $font--144;
     font-family: $font--cooper--bold;
-    margin-bottom: 70px;
+    margin-bottom: 5%;
   }
 
   a {
-    font-size: $font--32;
-    margin-bottom: 30px;
+    font-size:$font--32;
+    margin-bottom: 5%;
   }
 }
 
 #home {
   background: $color--darkpurple;
 }
-
-
 
 // END IMPLEMENTING SASS
 
