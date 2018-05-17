@@ -382,31 +382,36 @@ main {
 }
 
 #wat {
-
   .content-image {
     background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif");
-  }
-	
+	}
 	.overlay {
 		&:before {
 			background-color: rgba($color--purplered, 0.9);
 		}
 	}
-		
 }
 
 #werkwijze {
-
   .content-image {
     background-image: url("https://media.giphy.com/media/l0Iy67eveh48xHQFa/giphy.gif");
   }
-	
 	.overlay {
 		&:before {
 			background-color: rgba($color--darkpurple, 0.9);
 		}
+	}	
+}
+
+#services {
+  .content-image {
+    background-image: url("https://media.giphy.com/media/eeG3v5EaLewZLdRxah/giphy.gif");
+  }
+	.overlay {
+		&:before {
+			background-color: rgba($color--goldenrod, 0.9);
+		}
 	}
-		
 }
 
 // END IMPLEMENTING SASS
