@@ -286,3 +286,9 @@
 *        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
 *    }
 */
+
+@mixin bg-cover-center {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
