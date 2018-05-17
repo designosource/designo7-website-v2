@@ -36,8 +36,10 @@
 <main>
     <section class="page-container">
         <div class="previous-page">
-            <a href="#">vorige pagina</a>
-        </div>
+    	
+    			<a href="#"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+    	
+    		</div>
 
         <h1>Meet the team</h1>
 
