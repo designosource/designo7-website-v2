@@ -4,7 +4,7 @@
   
 	<nav>
 		
-		<a class="active" href="#home">Home</a>
+		<a href="#home">Home</a>
 		<a href="#team">Team</a>
 		<a href="#cases">Cases</a>
 		<a href="#contact">Contact</a>
