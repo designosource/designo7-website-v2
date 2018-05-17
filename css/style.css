@@ -87,10 +87,99 @@
 *        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
 *    }
 */
+/*
+*    .element {
+*        @include breakpoint(small, min, $breakpoint-small){
+*            background-color: red; 
+*        }
+*    }
+*/
+/*
+*    .element {
+*        @include center-absolute(both);
+*    }
+*/
+/*
+*    .element {
+*        @include center-flex(both);
+*    }
+*/
+/*
+*    .element {
+*        @include font-size(16);
+*    }
+*/
+/*
+*    @include keyframes(slide-down) {
+*        0% { opacity: 1; }
+*        90% { opacity: 0; }
+*    }
+*
+*    .element {
+*        @include animation('slide-down 5s 3');
+*    }
+*/
+/*
+*    .element {
+*        @include padding(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include padding(10px, 20px, 30px);
+*    }
+*/
+/*
+*    .element {
+*        @include margin(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include margin(10px, 20px, 30px);
+*    }
+*/
+/*
+*    .element {
+*        @include push-auto;
+*    }
+*/
+/*
+*    .element:before {
+*        @include pseudo;
+*    }
+*/
+/*
+*    .element {
+*        @include transition(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
+/*
+*    .element {
+*        @include translate(50px, 10px);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
+*    }
+*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
 @import url("https://fontlibrary.org/face/cooper-hewitt");
 .btn {
-  font-size: 1.51vw !important;
+  font-size: 22pt !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
   padding: 13pt 60pt 9pt 14pt;
@@ -170,7 +259,7 @@ body::-webkit-scrollbar {
 footer {
   display: flex;
   height: 60px;
-  font-size: 1.09375vw;
+  font-size: 16pt;
   font-family: "CooperHewittBold", sans-serif;
   position: fixed;
   width: 100%;
@@ -197,7 +286,7 @@ header {
   top: 50%;
   right: 17.5pt;
   transform: translateY(-50%);
-  font-size: 1.667vw;
+  font-size: 24pt;
   z-index: 2; }
   header span.active-number {
     position: fixed;
@@ -307,21 +396,21 @@ main {
     flex-direction: column; }
     .container .content-rightblock .page-number {
       color: #c10c43;
-      font-size: 2.5vw;
+      font-size: 36pt;
       font-family: "CooperHewittBold", sans-serif;
       position: relative;
       height: 1.5em; }
     .container .content-rightblock h2 {
-      font-size: 8vw;
+      font-size: 144pt;
       font-family: "CooperHewittBold", sans-serif;
       margin-bottom: 5%; }
     .container .content-rightblock a {
-      font-size: 2.1875vw;
+      font-size: 32pt;
       margin-bottom: 5%; }
     .container .content-rightblock p {
       font-family: "Source Sans Pro", sans-serif;
       font-weight: lighter;
-      font-size: 1.51vw;
+      font-size: 22pt;
       line-height: 32pt;
       /* beter 26pt */
       margin-bottom: 10%; }
@@ -331,7 +420,7 @@ main {
     .container .content-rightblock #tm-logo {
       width: 110px; }
     .container .content-rightblock #email {
-      font-size: 1.51vw;
+      font-size: 22pt;
       margin-bottom: 50px; }
     .container .content-rightblock #partner {
       margin-bottom: 20px; }
@@ -404,7 +493,7 @@ main {
       padding-left: 34px;
       position: relative;
       font-family: "CooperHewittBold", sans-serif;
-      font-size: 1.354vw;
+      font-size: 20pt;
       color: #21203a;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
@@ -435,7 +524,7 @@ main {
     grid-column-start: 12;
     grid-column-end: 21;
     z-index: 3;
-    font-size: 6.2vw;
+    font-size: 83pt;
     font-family: "CooperHewittBold", sans-serif;
     /*padding-top: 22px;*/ }
   .big-grid .content-rightblock {
@@ -444,10 +533,10 @@ main {
     grid-column-start: 17;
     grid-column-end: 23;
     overflow-y: auto;
-    font-size: 1.51vw;
+    font-size: 22pt;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
-    line-height: 2.1875vw;
+    line-height: 32pt;
     padding-right: 1em; }
     .big-grid .content-rightblock p {
       margin-bottom: 22pt; }
@@ -463,6 +552,12 @@ main {
 
 #werkwijze .overlay:before {
   background-color: rgba(33, 32, 58, 0.9); }
+
+#services .content-image {
+  background-image: url("https://media.giphy.com/media/eeG3v5EaLewZLdRxah/giphy.gif"); }
+
+#services .overlay:before {
+  background-color: rgba(248, 174, 13, 0.9); }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.5);
