@@ -84,6 +84,16 @@ header {
 				font-weight: 500;
         color: $color--darkpurple;
       }
+			
+			&:after {
+        @include pseudo;
+        width: 3pt;
+        height: 0;
+        right: calc(1em + 1pt);
+        top: 0;
+        background-color: $color--purplered;
+				@include transition(0.3s);
+      }
 
       &:hover {
         color: rgba($color--darkpurple, 1);
@@ -111,11 +121,8 @@ header {
       }
 
       &:after {
-        @include pseudo;
-        width: 3pt;
         height: calc(100% - 2pt);
-        right: calc(1em + 1pt);
-        top: 0;
+        /*top: 0;*/
         background-color: $color--purplered;
       }
 

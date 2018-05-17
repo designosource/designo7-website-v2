@@ -329,6 +329,26 @@ header {
         font-size: 24pt;
         font-weight: 500;
         color: #21203a; }
+      header nav a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 3pt;
+        height: 0;
+        right: calc(1em + 1pt);
+        top: 0;
+        background-color: #c10c43;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        header nav a:after:hover {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
       header nav a:hover {
         color: #21203a; }
     header nav a.white-nav {
@@ -343,13 +363,8 @@ header {
       header nav a.active:before {
         color: #c10c43; }
       header nav a.active:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 3pt;
         height: calc(100% - 2pt);
-        right: calc(1em + 1pt);
-        top: 0;
+        /*top: 0;*/
         background-color: #c10c43; }
       header nav a.active:hover {
         color: #c10c43; }
