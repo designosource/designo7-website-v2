@@ -1,0 +1,26 @@
+.btn {
+	font-size: $font--22 !important;
+	font-family: $font--cooper--book;
+	font-weight: bolder;
+	padding: 13pt 60pt 9pt 14pt;
+	color: $color--darkpurple;
+	border: 1px solid $color--darkpurple;
+	margin-bottom: 0 !important;
+	position: relative;
+	@include transition(0.3s);
+	
+	&:before {
+		@include pseudo;
+		right: 19pt;
+		top: 11pt;
+		background-image: url('../img/tm_logo.png');
+		background-size: cover;
+		width: 23pt;
+    height: 22pt;
+	}
+	
+	&:hover {
+		color: $color--purplered;
+		border: 1px solid $color--purplered;
+	}
+}

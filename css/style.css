@@ -89,6 +89,40 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
 @import url("https://fontlibrary.org/face/cooper-hewitt");
+.btn {
+  font-size: 1.51vw !important;
+  font-family: "CooperHewittBook", sans-serif;
+  font-weight: bolder;
+  padding: 13pt 60pt 9pt 14pt;
+  color: #21203a;
+  border: 1px solid #21203a;
+  margin-bottom: 0 !important;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .btn:hover {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 19pt;
+    top: 11pt;
+    background-image: url("../img/tm_logo.png");
+    background-size: cover;
+    width: 23pt;
+    height: 22pt; }
+  .btn:hover {
+    color: #c10c43;
+    border: 1px solid #c10c43; }
+
 /* customize scrollbar css */
 .scrollbar {
   overflow-y: auto; }
@@ -289,6 +323,7 @@ main {
       font-weight: lighter;
       font-size: 1.51vw;
       line-height: 32pt;
+      /* beter 26pt */
       margin-bottom: 10%; }
     .container .content-rightblock #contact-intro {
       margin-bottom: 3%;
@@ -365,6 +400,35 @@ main {
     grid-column-end: 16;
     display: flex;
     align-items: center; }
+    .big-grid .previous-page a {
+      padding-left: 34px;
+      position: relative;
+      font-family: "CooperHewittBold", sans-serif;
+      font-size: 1.354vw;
+      color: #21203a;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .big-grid .previous-page a:hover {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .big-grid .previous-page a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        left: 0;
+        top: -3px;
+        background-image: url("../img/tm_logo.png");
+        background-size: cover; }
+      .big-grid .previous-page a:hover {
+        color: #e10a42; }
   .big-grid h1 {
     grid-row-start: 3;
     grid-row-end: 4;
@@ -383,7 +447,10 @@ main {
     font-size: 1.51vw;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
-    line-height: 2.1875vw; }
+    line-height: 2.1875vw;
+    padding-right: 1em; }
+    .big-grid .content-rightblock p {
+      margin-bottom: 22pt; }
 
 #wat .content-image {
   background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif"); }

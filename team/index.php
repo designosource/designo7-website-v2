@@ -12,7 +12,7 @@
 
     <?php include 'inc/head/meta_tags.php'; ?>
 
-    <title>Team | wat</title>
+    <title>Team | Wat</title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -48,7 +48,9 @@
     <h1>We are Designosource.</h1>
     
     <article class="content-rightblock scrollbar">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero illo placeat eius similique dignissimos eos aut, repellat consequuntur a corporis hic suscipit maxime nihil itaque illum eum voluptate repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel molestias saepe eaque pariatur, est maxime quos eius velit. Eveniet sint molestias nam? Voluptatem debitis, obcaecati non aperiam eos, reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta animi molestiae laborum, tempore autem repudiandae quae! Quos consectetur illo animi at, ipsam neque inventore, quod nihil minima maxime eveniet maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla obcaecati quis quae repellendus consectetur impedit eius aspernatur sunt tenetur culpa, adipisci, non facere optio vero explicabo nostrum blanditiis, quas inventore.
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+        <a href="#" class="btn">Ontdek onze cases</a>
     </article>
     
 	</section>
