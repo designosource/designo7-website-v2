@@ -28,6 +28,7 @@ body {
 a {
   text-decoration: none;
   color: $color--darkpurple;
+	@include transition(0.3s);
 }
 
 header {
@@ -60,7 +61,7 @@ header {
     font-family: $font--cooper--book;
 
     a {
-      color: rgba($color--white, 0);
+      color: rgba($color--darkpurple, 0);
       text-align: right;
       padding-right: 2em;
       line-height: 29.7pt;
@@ -79,15 +80,29 @@ header {
         top: -1px;
         @include rotate(90deg);
         line-height: 29.7pt;
-        color: $color--white;
+				font-size: 24pt;
+				font-weight: 500;
+        color: $color--darkpurple;
       }
 
       &:hover {
-        color: rgba($color--white, 1);
+        color: rgba($color--darkpurple, 1);
       }
     }
+		
+		a.white-nav {
+			color: rgba($color--white, 0);
+			
+			&:before {
+        color: $color--white;
+      }
+			
+			&:hover {
+				color: rgba($color--white, 1);
+			}
+		}
 
-    .active {
+    a.active {
       color: $color--purplered;
       font-family: $font--cooper--bold;
 
@@ -425,6 +440,17 @@ main {
 		grid-row-end: 6;
 		grid-column-start: 1;
 		grid-column-end: 11;
+	}
+	
+	#single-case {
+		.content-image {
+			background-image: url("https://media.giphy.com/media/YhyAJUCpno53y/giphy.gif");
+		}
+		.overlay {
+			&:before {
+				background-color: rgba($color--darkpurple, 0.9);
+			}
+		}
 	}
 	
 }

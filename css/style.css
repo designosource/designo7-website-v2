@@ -182,7 +182,7 @@
   font-size: 22pt !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
-  padding: 13pt 60pt 9pt 14pt;
+  padding: 13pt 14pt 9pt 14pt;
   color: #21203a;
   border: 1px solid #21203a;
   margin-bottom: 0 !important;
@@ -198,19 +198,19 @@
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-  .btn:before {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 19pt;
-    top: 11pt;
-    background-image: url("../img/arrow-right-dark.svg");
-    background-size: cover;
+  .btn .arrow-right {
+    display: inline-block;
     width: 23pt;
-    height: 22pt; }
+    height: 15pt;
+    margin-left: 12pt;
+    background-image: url("../img/arrow-right-dark.svg");
+    background-repeat: no-repeat;
+    background-position: center center; }
   .btn:hover {
     color: #c10c43;
     border: 1px solid #c10c43; }
+    .btn:hover .arrow-right {
+      background-image: url("../img/arrow-right-red.svg"); }
 
 /* customize scrollbar css */
 .scrollbar {
@@ -257,7 +257,18 @@ body {
 
 a {
   text-decoration: none;
-  color: #21203a; }
+  color: #21203a;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  a:hover {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 header {
   position: fixed;
@@ -285,7 +296,7 @@ header {
     counter-reset: headernav;
     font-family: "CooperHewittBook", sans-serif; }
     header nav a {
-      color: rgba(255, 255, 255, 0);
+      color: rgba(33, 32, 58, 0);
       text-align: right;
       padding-right: 2em;
       line-height: 29.7pt;
@@ -315,15 +326,23 @@ header {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         line-height: 29.7pt;
-        color: #ffffff; }
+        font-size: 24pt;
+        font-weight: 500;
+        color: #21203a; }
       header nav a:hover {
+        color: #21203a; }
+    header nav a.white-nav {
+      color: rgba(255, 255, 255, 0); }
+      header nav a.white-nav:before {
+        color: #ffffff; }
+      header nav a.white-nav:hover {
         color: white; }
-    header nav .active {
+    header nav a.active {
       color: #c10c43;
       font-family: "CooperHewittBold", sans-serif; }
-      header nav .active:before {
+      header nav a.active:before {
         color: #c10c43; }
-      header nav .active:after {
+      header nav a.active:after {
         content: "";
         display: block;
         position: absolute;
@@ -332,7 +351,7 @@ header {
         right: calc(1em + 1pt);
         top: 0;
         background-color: #c10c43; }
-      header nav .active:hover {
+      header nav a.active:hover {
         color: #c10c43; }
 
 main {
@@ -548,6 +567,10 @@ main {
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 11; }
+  main #single-case .content-image {
+    background-image: url("https://media.giphy.com/media/YhyAJUCpno53y/giphy.gif"); }
+  main #single-case .overlay:before {
+    background-color: rgba(33, 32, 58, 0.9); }
 
 footer {
   display: flex;
@@ -590,27 +613,27 @@ footer {
     width: 100%; }
 
 ::-webkit-selection {
-  background: rgba(33, 32, 58, 0.5);
+  background: rgba(33, 32, 58, 0.8);
   color: #ffffff;
   text-shadow: none; }
 
 ::-moz-selection {
-  background: rgba(33, 32, 58, 0.5);
+  background: rgba(33, 32, 58, 0.8);
   color: #ffffff;
   text-shadow: none; }
 
 ::-o-selection {
-  background: rgba(33, 32, 58, 0.5);
+  background: rgba(33, 32, 58, 0.8);
   color: #ffffff;
   text-shadow: none; }
 
 ::-ms-selection {
-  background: rgba(33, 32, 58, 0.5);
+  background: rgba(33, 32, 58, 0.8);
   color: #ffffff;
   text-shadow: none; }
 
 ::selection {
-  background: rgba(33, 32, 58, 0.5);
+  background: rgba(33, 32, 58, 0.8);
   color: #ffffff;
   text-shadow: none; }
 
@@ -621,7 +644,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(33, 32, 58, 0.5); }
+  -webkit-tap-highlight-color: rgba(33, 32, 58, 0.8); }
 
 a::selection {
   color: #ffffff; }
