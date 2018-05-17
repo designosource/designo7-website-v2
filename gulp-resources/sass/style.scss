@@ -177,6 +177,11 @@ main {
 
 }
 
+h1 {
+  font-size: $font--83;
+  font-family: $font--cooper--bold;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
@@ -244,7 +249,7 @@ main {
       margin-bottom: 50px;
     }
 
-    #partner{
+    #partner {
       margin-bottom: 20px;
     }
 
@@ -262,6 +267,32 @@ main {
 
 #home {
   background-color: $color--darkpurple;
+}
+
+.previous-page {
+  a {
+    padding-left: 34px;
+    position: relative;
+    font-family: $font--cooper--bold;
+    font-size: $font--20;
+    color: $color--darkpurple;
+    @include transition(0.3s);
+
+    &:before {
+      @include pseudo;
+      width: 21px;
+      height: 21px;
+      left: 0;
+      top: -3px;
+      background-image: url('../img/tm_logo.png');
+      background-size: cover;
+    }
+
+    &:hover {
+      color: $color--pinkred
+    }
+
+  }
 }
 
 #team {
@@ -287,131 +318,131 @@ main {
 }
 
 .big-grid {
-	grid-template-columns: repeat(24, 1fr);
-	grid-template-rows: 60px 1fr 100px calc(50% - 100px) 1fr;
-	grid-column-gap: 10pt;
-	height: calc(100vh - 60px);
-	
-	.content-image {
-		@include bg-cover-center;
-	}
-	
-	.overlay {
-		position: relative;
-		grid-row-start: 2;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 60px 1fr 100px calc(50% - 100px) 1fr;
+  grid-column-gap: 10pt;
+  height: calc(100vh - 60px);
+
+  .content-image {
+    @include bg-cover-center;
+  }
+
+  .overlay {
+    position: relative;
+    grid-row-start: 2;
     grid-row-end: 6;
-		grid-column-start: 1;
+    grid-column-start: 1;
     grid-column-end: 11;
-		&:before {
-			@include pseudo;
-			width: 100%;
-			height: 100%;
-		}
-	}
-	
-	.pop-up-image {
-		grid-row-start: 3;
+    &:before {
+      @include pseudo;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .pop-up-image {
+    grid-row-start: 3;
     grid-row-end: 5;
-		grid-column-start: 8;
+    grid-column-start: 8;
     grid-column-end: 16;
-		z-index: 2;
-	}
-	
-	.previous-page {
-		grid-row-start: 2;
+    z-index: 2;
+  }
+
+  .previous-page {
+    grid-row-start: 2;
     grid-row-end: 3;
-		grid-column-start: 12;
+    grid-column-start: 12;
     grid-column-end: 16;
-		@include center-flex(vertical);
-		
-		a {
-			padding-left: 34px;
-			position: relative;
-			font-family: $font--cooper--bold;
-			font-size: $font--20;
-			color: $color--darkpurple;
-			@include transition(0.3s);
-			
-			&:before {
-				@include pseudo;
-				width: 21px;
-				height: 21px;
-				left: 0;
-				top: -3px;
-				background-image: url('../img/tm_logo.png');
-				background-size: cover;
-			}
-			
-			&:hover {
-				color: $color--pinkred
-			}
-			
-		}
-	}
-		
-	h1 {
-		grid-row-start: 3;
-		grid-row-end: 4;
-		grid-column-start: 12;
-		grid-column-end: 21;
-		z-index: 3;
-		font-size: $font--83;
-		font-family: $font--cooper--bold;
-		/*padding-top: 22px;*/
-	}
-	
-	.content-rightblock {
-		grid-row-start: 4;
-		grid-row-end: 5;
-		grid-column-start: 17;
-		grid-column-end: 23;
-		overflow-y: auto;
-		
-		font-size: $font--22;
-		font-family: $font--sans;
-		font-weight: 300;
-		line-height: $font--32;
-		padding-right: 1em;
-		
-		p {
-			margin-bottom: 22pt;
-		}
-		
-	}
-	
+    @include center-flex(vertical);
+  }
+
+  h1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 12;
+    grid-column-end: 21;
+    z-index: 3;
+    /*padding-top: 22px;*/
+  }
+
+  .content-rightblock {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 17;
+    grid-column-end: 23;
+    overflow-y: auto;
+
+    font-size: $font--22;
+    font-family: $font--sans;
+    font-weight: 300;
+    line-height: $font--32;
+    padding-right: 1em;
+
+    p {
+      margin-bottom: 22pt;
+    }
+
+  }
+
 }
 
 #wat {
   .content-image {
     background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif");
-	}
-	.overlay {
-		&:before {
-			background-color: rgba($color--purplered, 0.9);
-		}
-	}
+  }
+  .overlay {
+    &:before {
+      background-color: rgba($color--purplered, 0.9);
+    }
+  }
 }
 
 #werkwijze {
   .content-image {
     background-image: url("https://media.giphy.com/media/l0Iy67eveh48xHQFa/giphy.gif");
   }
-	.overlay {
-		&:before {
-			background-color: rgba($color--darkpurple, 0.9);
-		}
-	}	
+  .overlay {
+    &:before {
+      background-color: rgba($color--darkpurple, 0.9);
+    }
+  }
 }
 
 #services {
   .content-image {
     background-image: url("https://media.giphy.com/media/eeG3v5EaLewZLdRxah/giphy.gif");
   }
-	.overlay {
-		&:before {
-			background-color: rgba($color--goldenrod, 0.9);
-		}
-	}
+  .overlay {
+    &:before {
+      background-color: rgba($color--goldenrod, 0.9);
+    }
+  }
+}
+
+.page-container {
+  padding: 55px 70px;
+
+  .previous-page {
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    margin-bottom: 55px;
+  }
+
+  .overview {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 50px;
+  }
+
+  #members-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 // END IMPLEMENTING SASS
