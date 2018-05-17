@@ -41,16 +41,15 @@
     
     <div class="previous-page">
     	
-    	<a href="#"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+    	<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
     	
     </div>
     
     <h1>We are Designosource.</h1>
     
     <article class="content-rightblock scrollbar">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <a href="#" class="btn">Ontdek onze cases</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
     </article>
     
 	</section>

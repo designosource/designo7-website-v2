@@ -37,7 +37,7 @@
     <section class="page-container">
         <div class="previous-page">
     	
-    			<a href="#"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+    			<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
     	
     		</div>
 
