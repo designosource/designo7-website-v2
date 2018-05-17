@@ -41,11 +41,11 @@
     
     <div class="previous-next-page">
     	
-    	<a href="#"><img src="../img/arrow-right-dark.svg" alt="icon previous page"></a>
+    	<a href="#"><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
     	
     	<a href="#"><img src="../img/overview.svg" alt="icon overview"></a>
     	
-    	<a href="#"><img src="../img/arrow-right-dark.svg" alt="icon next page"></a>
+    	<a href="#"><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
     	
     </div>
     
@@ -54,7 +54,7 @@
     <article class="content-rightblock scrollbar">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <a href="#" class="btn">Ontdek onze cases</a>
+        <a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
     </article>
     
 	</section>
