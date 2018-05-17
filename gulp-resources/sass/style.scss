@@ -395,6 +395,20 @@ main {
 		
 }
 
+#werkwijze {
+
+  .content-image {
+    background-image: url("https://media.giphy.com/media/l0Iy67eveh48xHQFa/giphy.gif");
+  }
+	
+	.overlay {
+		&:before {
+			background-color: rgba($color--darkpurple, 0.9);
+		}
+	}
+		
+}
+
 // END IMPLEMENTING SASS
 
 @import "components/_selection.scss";

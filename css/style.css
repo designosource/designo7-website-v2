@@ -458,6 +458,12 @@ main {
 #wat .overlay:before {
   background-color: rgba(193, 12, 67, 0.9); }
 
+#werkwijze .content-image {
+  background-image: url("https://media.giphy.com/media/l0Iy67eveh48xHQFa/giphy.gif"); }
+
+#werkwijze .overlay:before {
+  background-color: rgba(33, 32, 58, 0.9); }
+
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.5);
   color: #ffffff;
