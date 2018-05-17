@@ -12,7 +12,7 @@
 
     <?php include 'inc/head/meta_tags.php'; ?>
 
-    <title>Team | Services</title>
+    <title>Team | Werkwijze</title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
 
 <main>
 
-	<section class="container big-grid" id="services">
+	<section class="container big-grid" id="werkwijze">
     <figure class="content-image overlay"></figure>
     <figure class="content-image pop-up-image"></figure>
     
@@ -45,7 +45,7 @@
     	
     </div>
     
-    <h1>Services</h1>
+    <h1>Werkwijze</h1>
     
     <article class="content-rightblock scrollbar">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
