@@ -1,5 +1,3 @@
-@import "components/_measures.scss";
-
 //Breakpoint mixin ----------------------------------------------
 @mixin breakpoint($size, $type: max, $pixels: $breakpoint-small) {
     @if $size == 'small' {
@@ -95,7 +93,7 @@
 
 //Calculate font-size mixin -------------------------------------
 @function calculateRem($size) {
-    $remSize: $size / 16px; // eventueel te vervangen door een eigen variabele
+    $remSize: $size / 16px;
     @return $remSize * 1rem;
 }
 
