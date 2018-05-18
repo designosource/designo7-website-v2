@@ -42,57 +42,59 @@
         </div>
 
         <h1>Meet the team</h1>
-
         <article class="overview" id="members-grid">
             <!--TODO: loop all members in grid-->
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Chris Oortman">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif" alt="Sander Van Hullebusch">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/jzaZ23z45UxK8/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/110F1JFzWKtiA8/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/wqb5K5564JSlW/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/Pjs1kqtH1KTaU/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/XOXdQszYm4I3m/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/wAxlCmeX1ri1y/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/PuKn7JfalRGnu/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/l0HlFZ3c4NENSLQRi/giphy.gif" alt="Hanna Walgrave">
-            </a>
-            <a href="#" class="grid-item">
-                <img src="https://media.giphy.com/media/xT9IgzUuC5Ss6ZnTEs/giphy.gif" alt="Hanna Walgrave">
-            </a>
-
+            <div class="grid-item">
+                <a href="#">
+                    <img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Chris Oortman">
+                </a>
+                <div class="member-details">
+                    <p class="job-title">Branding badass</p>
+                    <p class="name">Chris Oortman</p>
+                    <a href="#" class="info">Meer info +</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif" alt="Hanna Walgrave">
+                </a>
+                <div class="member-details">
+                    <p class="job-title">Branding badass</p>
+                    <p class="name">Chris Oortman</p>
+                    <a href="#" class="info">Meer info +</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif" alt="Sander Van Hullebusch">
+                </a>
+                <div class="member-details">
+                    <p class="job-title">Branding badass</p>
+                    <p class="name">Chris Oortman</p>
+                    <a href="#" class="info">Meer info +</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif" alt="Hanna Walgrave">
+                </a>
+                <div class="member-details">
+                    <p class="job-title">Branding badass</p>
+                    <p class="name">Chris Oortman</p>
+                    <a href="#" class="info">Meer info +</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif" alt="Hanna Walgrave">
+                </a>
+                <div class="member-details">
+                    <p class="job-title">Branding badass</p>
+                    <p class="name">Chris Oortman</p>
+                    <a href="#" class="info">Meer info +</a>
+                </div>
+            </div>
         </article>
-
     </section>
 </main>
 

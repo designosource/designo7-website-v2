@@ -430,10 +430,65 @@ main {
       justify-content: space-between;
       grid-gap: 50px;
 
-      img {
+      .grid-item {
+        width: 100%;
         height: 250px;
-        object-fit: cover;
+        position: relative;
+
+        img {
+          height: 250px;
+          object-fit: cover;
+        }
+
+        &:hover {
+          .member-details {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+
+        .member-details {
+          position: absolute;
+          z-index: 1;
+          bottom: 0;
+          right: 0;
+          // TODO: check if every name fits in container
+          width: 60%;
+          height: 35%;
+          background: $color--white;
+          padding: 10px 20px;
+          transform: scale(0);
+          transform-origin: right bottom;
+          -webkit-transition: transform 0.5s;
+          -moz-transition: transform 0.5s;
+          -ms-transition: transform 0.5s;
+          -o-transition: transform 0.5s;
+          transition: transform 0.5s;
+
+          .job-title {
+            font-size: $font--13;
+            margin-bottom: 8px;
+          }
+          .name {
+            font-family: $font--cooper--bold;
+            font-size: $font--16;
+            margin-bottom: 6px;
+          }
+          .info{
+            color: $color--purplered;
+            font-family: $font--cooper--bold;
+            font-size: $font--10;
+
+            &:hover {
+              color: $color--goldenrod;
+            }
+          }
+        }
       }
+
     }
 
     #members-grid {

@@ -573,9 +573,48 @@ main {
       display: grid;
       justify-content: space-between;
       grid-gap: 50px; }
-      main .page-container .overview img {
+      main .page-container .overview .grid-item {
+        width: 100%;
         height: 250px;
-        object-fit: cover; }
+        position: relative; }
+        main .page-container .overview .grid-item img {
+          height: 250px;
+          object-fit: cover; }
+        main .page-container .overview .grid-item:hover .member-details {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1); }
+        main .page-container .overview .grid-item .member-details {
+          position: absolute;
+          z-index: 1;
+          bottom: 0;
+          right: 0;
+          width: 60%;
+          height: 35%;
+          background: #ffffff;
+          padding: 10px 20px;
+          transform: scale(0);
+          transform-origin: right bottom;
+          -webkit-transition: transform 0.5s;
+          -moz-transition: transform 0.5s;
+          -ms-transition: transform 0.5s;
+          -o-transition: transform 0.5s;
+          transition: transform 0.5s; }
+          main .page-container .overview .grid-item .member-details .job-title {
+            font-size: 13pt;
+            margin-bottom: 8px; }
+          main .page-container .overview .grid-item .member-details .name {
+            font-family: "CooperHewittBold", sans-serif;
+            font-size: 16pt;
+            margin-bottom: 6px; }
+          main .page-container .overview .grid-item .member-details .info {
+            color: #c10c43;
+            font-family: "CooperHewittBold", sans-serif;
+            font-size: 10pt; }
+            main .page-container .overview .grid-item .member-details .info:hover {
+              color: #f8ae0d; }
     main .page-container #members-grid {
       grid-template-columns: repeat(4, 1fr); }
     main .page-container img {
