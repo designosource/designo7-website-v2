@@ -573,6 +573,9 @@ main {
       display: grid;
       justify-content: space-between;
       grid-gap: 50px; }
+      main .page-container .overview img {
+        height: 250px;
+        object-fit: cover; }
     main .page-container #members-grid {
       grid-template-columns: repeat(4, 1fr); }
     main .page-container img {
@@ -611,21 +614,6 @@ footer {
     align-items: center; }
     footer #footer-right a:not(:first-child) {
       margin-left: 45px; }
-
-.page-container {
-  padding: 55px 70px; }
-  .page-container .previous-page {
-    margin-bottom: 60px; }
-  .page-container h1 {
-    margin-bottom: 55px; }
-  .page-container .overview {
-    display: grid;
-    justify-content: space-between;
-    grid-gap: 50px; }
-  .page-container #members-grid {
-    grid-template-columns: repeat(4, 1fr); }
-  .page-container img {
-    width: 100%; }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.8);
