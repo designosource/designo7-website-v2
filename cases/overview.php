@@ -12,7 +12,7 @@
 
     <?php include '../inc/head/meta_tags.php'; ?>
 
-    <title>Team | Overview</title>
+    <title>Cases | Overview</title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -37,20 +37,20 @@
     <section class="page-container">
         <div class="previous-page">
 
-            <a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+            <a href="../index.php#cases"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
         </div>
 
-        <h1>Meet the team</h1>
-        <article class="overview" id="members-grid">
-            <!--TODO: loop all members in grid-->
+        <h1>All our cases</h1>
+        <article class="overview" id="cases-grid">
+            <!--TODO: loop all cases in grid-->
             <div class="grid-item">
                 <a href="#">
-                    <img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Chris Oortman">
+                    <img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Climate without borders">
                 </a>
                 <div class="grid-details">
-                    <p class="first-detail">Branding badass</p>
-                    <p class="second-detail">Chris Oortman</p>
+                    <p class="first-detail">UI Design | Drupal</p>
+                    <p class="second-detail">Climate without borders</p>
                     <a href="#" class="third-detail">Meer info +</a>
                 </div>
             </div>
@@ -59,8 +59,8 @@
                     <img src="https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif" alt="Hanna Walgrave">
                 </a>
                 <div class="grid-details">
-                    <p class="first-detail">Branding badass</p>
-                    <p class="second-detail">Chris Oortman</p>
+                    <p class="first-detail">UI Design | Drupal</p>
+                    <p class="second-detail">Climate without borders</p>
                     <a href="#" class="third-detail">Meer info +</a>
                 </div>
             </div>
@@ -69,8 +69,8 @@
                     <img src="https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif" alt="Sander Van Hullebusch">
                 </a>
                 <div class="grid-details">
-                    <p class="first-detail">Branding badass</p>
-                    <p class="second-detail">Chris Oortman</p>
+                    <p class="first-detail">UI Design | Drupal</p>
+                    <p class="second-detail">Climate without borders</p>
                     <a href="#" class="third-detail">Meer info +</a>
                 </div>
             </div>
@@ -79,8 +79,8 @@
                     <img src="https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif" alt="Hanna Walgrave">
                 </a>
                 <div class="grid-details">
-                    <p class="first-detail">Branding badass</p>
-                    <p class="second-detail">Chris Oortman</p>
+                    <p class="first-detail">UI Design | Drupal</p>
+                    <p class="second-detail">Climate without borders</p>
                     <a href="#" class="third-detail">Meer info +</a>
                 </div>
             </div>
@@ -89,8 +89,8 @@
                     <img src="https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif" alt="Hanna Walgrave">
                 </a>
                 <div class="grid-details">
-                    <p class="first-detail">Branding badass</p>
-                    <p class="second-detail">Chris Oortman</p>
+                    <p class="first-detail">UI Design | Drupal</p>
+                    <p class="second-detail">Climate without borders</p>
                     <a href="#" class="third-detail">Meer info +</a>
                 </div>
             </div>

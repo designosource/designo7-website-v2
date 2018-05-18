@@ -441,7 +441,7 @@ main {
         }
 
         &:hover {
-          .member-details {
+          .grid-details {
             -webkit-transform: scale(1);
             -moz-transform: scale(1);
             -ms-transform: scale(1);
@@ -450,7 +450,7 @@ main {
           }
         }
 
-        .member-details {
+        .grid-details {
           position: absolute;
           z-index: 1;
           bottom: 0;
@@ -468,16 +468,16 @@ main {
           -o-transition: transform 0.5s;
           transition: transform 0.5s;
 
-          .job-title {
+          .first-detail {
             font-size: $font--13;
             margin-bottom: 8px;
           }
-          .name {
+          .second-detail {
             font-family: $font--cooper--bold;
             font-size: $font--16;
             margin-bottom: 6px;
           }
-          .info{
+          .third-detail{
             color: $color--purplered;
             font-family: $font--cooper--bold;
             font-size: $font--10;
@@ -493,6 +493,10 @@ main {
 
     #members-grid {
       grid-template-columns: repeat(4, 1fr);
+    }
+
+    #cases-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
 
     img {
