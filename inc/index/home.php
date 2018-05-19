@@ -1,3 +1,4 @@
-<section class="container" id="home">
-
+<section id="home">
+	<div class="container maxwidth">
+	</div> <!-- /maxwidth -->
 </section>

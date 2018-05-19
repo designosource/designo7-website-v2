@@ -35,24 +35,25 @@
 
 <main>
 
-	<section class="container big-grid" id="services">
-    <figure class="content-image overlay"></figure>
-    <figure class="content-image pop-up-image"></figure>
-    
-    <div class="previous-page">
-    	
-    	<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
-    	
-    </div>
-    
-    <h1>Services</h1>
-    
-    <article class="content-rightblock scrollbar">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
-    </article>
-    
+	<section id="services">
+  	<div class="container big-grid maxwidth">
+			<figure class="content-image overlay"></figure>
+			<figure class="content-image pop-up-image"></figure>
+
+			<div class="previous-page">
+
+				<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+
+			</div>
+
+			<h1>Services</h1>
+
+			<article class="content-rightblock scrollbar">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+					<a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+			</article>
+		</div> <!-- /maxwidth -->
 	</section>
 
 </main>

@@ -35,23 +35,25 @@
 
 <main>
 
-	<section class="container big-grid" id="wat">
-    <figure class="content-image overlay"></figure>
-    <figure class="content-image pop-up-image"></figure>
-    
-    <div class="previous-page">
-    	
-    	<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
-    	
-    </div>
-    
-    <h1>We are Designosource.</h1>
-    
-    <article class="content-rightblock scrollbar">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
-    </article>
-    
+	<section id="wat">
+   
+   	<div class="container big-grid maxwidth">
+			<figure class="content-image overlay"></figure>
+			<figure class="content-image pop-up-image"></figure>
+
+			<div class="previous-page">
+
+				<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+
+			</div>
+
+			<h1>We are Designosource.</h1>
+
+			<article class="content-rightblock scrollbar">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+			</article>
+    </div> <!-- /maxwidth -->
 	</section>
 
 </main>

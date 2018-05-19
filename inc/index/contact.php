@@ -1,4 +1,5 @@
-<section class="container" id="contact">
+<section id="contact">
+	<div class="container maxwidth">
     <figure class="content-image"></figure>
     <article class="content-rightblock">
         <span class="page-number text-red">04/</span>
@@ -9,4 +10,5 @@
         <p id="partner"><span class="label">Partner</span></p>
         <img src="img/tm_logo.png" alt="Logo Thomas More" id="tm-logo">
     </article>
+	</div> <!-- /maxwidth -->
 </section>

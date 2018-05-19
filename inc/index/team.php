@@ -1,4 +1,5 @@
-<section class="container" id="team">
+<section id="team">
+  <div class="container maxwidth">
     <figure class="content-image" id="team-image"></figure>
     <article class="content-rightblock">
         <span class="page-number">02/</span>
@@ -8,4 +9,5 @@
         <a href="#">Werkwijze</a>
         <a href="#">Meet the team</a>
     </article>
+	</div> <!-- /maxwidth -->
 </section>

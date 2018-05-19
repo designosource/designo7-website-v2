@@ -35,6 +35,7 @@
 
 <main>
     <section class="page-container">
+    	<div class="maxwidth">
         <div class="previous-page">
 
             <a href="../index.php#cases"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
@@ -95,6 +96,7 @@
                 </div>
             </div>
         </article>
+			</div> <!-- /maxwidth -->
     </section>
 </main>
 

@@ -301,18 +301,18 @@ header {
       padding-right: 2em;
       line-height: 29.7pt;
       position: relative;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       counter-increment: headernav; }
       header nav a:hover {
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s; }
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
       header nav a:not(:last-child) {
         margin-bottom: 42px; }
       header nav a:before {
@@ -352,14 +352,36 @@ header {
       header nav a:hover {
         color: #21203a; }
     header nav a.white-nav {
-      color: rgba(255, 255, 255, 0); }
+      color: rgba(255, 255, 255, 0);
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      header nav a.white-nav:hover {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
       header nav a.white-nav:before {
         color: #ffffff; }
       header nav a.white-nav:hover {
         color: white; }
     header nav a.active {
       color: #c10c43;
-      font-family: "CooperHewittBold", sans-serif; }
+      font-family: "CooperHewittBold", sans-serif;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      header nav a.active:hover {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
       header nav a.active:before {
         color: #c10c43; }
       header nav a.active:after {
@@ -379,13 +401,17 @@ main {
       position: absolute;
       right: -10px;
       content: "0" counter(headernavfixed); }
+  main .maxwidth {
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto; }
   main .container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: 60px auto;
     grid-column-gap: 10pt;
-    height: calc(100vh - 60px);
-    background-color: #fafafd;
+    min-height: calc(100vh - 60px);
+    /*background-color: $color--palegrey;*/
     position: relative; }
     main .container .content-image {
       width: 100%;

@@ -35,28 +35,29 @@
 
 <main>
 
-	<section class="container big-grid" id="single-case">
-    <figure class="content-image overlay"></figure>
-    <figure class="content-image pop-up-image"></figure>
-    
-    <div class="previous-next-page">
-    	
-    	<a href="#"><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
-    	
-    	<a href="#"><img src="../img/overview.svg" alt="icon overview"></a>
-    	
-    	<a href="#"><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
-    	
-    </div>
-    
-    <h1>We are Designosource.</h1>
-    
-    <article class="content-rightblock scrollbar">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-        <a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
-    </article>
-    
+	<section id="single-case">
+  	<div class="container big-grid maxwidth">
+			<figure class="content-image overlay"></figure>
+			<figure class="content-image pop-up-image"></figure>
+
+			<div class="previous-next-page">
+
+				<a href="#"><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
+
+				<a href="#"><img src="../img/overview.svg" alt="icon overview"></a>
+
+				<a href="#"><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
+
+			</div>
+
+			<h1>We are Designosource.</h1>
+
+			<article class="content-rightblock scrollbar">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+					<a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+			</article>
+		</div> <!-- /maxwidth -->
 	</section>
 
 </main>

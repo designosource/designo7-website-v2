@@ -66,7 +66,7 @@ header {
       padding-right: 2em;
       line-height: 29.7pt;
       position: relative;
-      @include transition(0.2s);
+      @include transition(0.3s);
       counter-increment: headernav;
 
       &:not(:last-child) {
@@ -102,6 +102,7 @@ header {
 
     a.white-nav {
       color: rgba($color--white, 0);
+			@include transition(0.3s);
 
       &:before {
         color: $color--white;
@@ -115,6 +116,7 @@ header {
     a.active {
       color: $color--purplered;
       font-family: $font--cooper--bold;
+			@include transition(0.3s);
 
       &:before {
         color: $color--purplered;
@@ -147,14 +149,20 @@ main {
       content: "0" counter(headernavfixed);
     }
   }
+	
+	.maxwidth {
+		max-width: 1224px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
   .container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: 60px auto;
     grid-column-gap: 10pt;
-    height: calc(100vh - 60px);
-    background-color: $color--palegrey;
+		min-height: calc(100vh - #{$footer--height});
+    /*background-color: $color--palegrey;*/
     position: relative;
 
     .content-image {
@@ -526,7 +534,7 @@ main {
 
 footer {
   display: flex;
-  height: 60px;
+  height: $footer--height;
   font-size: $font--16;
   font-family: $font--cooper--bold;
   position: fixed;

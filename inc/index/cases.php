@@ -1,4 +1,5 @@
-<section class="container" id="cases">
+<section id="cases">
+	<div class="container maxwidth">
     <figure class="content-image"></figure>
     <article class="content-rightblock">
         <span class="page-number">03/</span>
@@ -8,4 +9,5 @@
         <a href="#">Tedx Mechelen</a>
         <a href="#">360°</a>
     </article>
+	</div> <!-- /maxwidth -->
 </section>
