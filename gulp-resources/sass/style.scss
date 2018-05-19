@@ -199,6 +199,40 @@ main {
       a {
         font-size: $font--32;
         margin-bottom: 5%;
+				font-family: $font--cooper--book;
+				@include transition(0.3s);
+				
+				span:not(.label) {
+					position: relative;
+					margin-right: 15pt;
+					
+					&:before {
+						@include pseudo;
+						top: calc(0.4em + 1px);
+						left: -10px;
+						right: calc(100% + 10px);
+						height: 2px;
+						background-color: $color--purplered;
+						@include transition(0.3s);
+					}
+				}
+				
+				img {
+					height: 0.6em;
+				}
+				
+				&:hover {
+					font-family: $font--cooper--bold;
+					
+					span {
+					
+						&:before {
+							right: -10px;
+						}
+						
+					}
+				}
+				
       }
 
       p {
@@ -216,6 +250,7 @@ main {
 
       #tm-logo {
         width: 110px;
+				height: auto;
       }
 
       #email {

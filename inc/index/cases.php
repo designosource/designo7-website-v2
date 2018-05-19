@@ -5,9 +5,9 @@
         <span class="page-number">03/</span>
         <h2>Cases</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, consequuntur cupiditate debitis</p>
-        <a href="#">Climate without borders</a>
-        <a href="#">Tedx Mechelen</a>
-        <a href="#">360°</a>
+        <a href="#"><span>Climate without borders</span></a>
+        <a href="#"><span>Tedx Mechelen</span></a>
+        <a href="#"><span>360°</span></a>
     </article>
 	</div> <!-- /maxwidth -->
 </section>

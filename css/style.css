@@ -439,7 +439,48 @@ main {
         margin-bottom: 5%; }
       main .container .content-rightblock a {
         font-size: 32pt;
-        margin-bottom: 5%; }
+        margin-bottom: 5%;
+        font-family: "CooperHewittBook", sans-serif;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        main .container .content-rightblock a:hover {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        main .container .content-rightblock a span:not(.label) {
+          position: relative;
+          margin-right: 15pt; }
+          main .container .content-rightblock a span:not(.label):before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: calc(0.4em + 1px);
+            left: -10px;
+            right: calc(100% + 10px);
+            height: 2px;
+            background-color: #c10c43;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            main .container .content-rightblock a span:not(.label):before:hover {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              -ms-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+        main .container .content-rightblock a img {
+          height: 0.6em; }
+        main .container .content-rightblock a:hover {
+          font-family: "CooperHewittBold", sans-serif; }
+          main .container .content-rightblock a:hover span:before {
+            right: -10px; }
       main .container .content-rightblock p {
         font-family: "Source Sans Pro", sans-serif;
         font-weight: lighter;
@@ -451,7 +492,8 @@ main {
         margin-bottom: 3%;
         font-weight: bold; }
       main .container .content-rightblock #tm-logo {
-        width: 110px; }
+        width: 110px;
+        height: auto; }
       main .container .content-rightblock #email {
         font-size: 22pt;
         margin-bottom: 50px; }

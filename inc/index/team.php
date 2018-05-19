@@ -4,10 +4,10 @@
     <article class="content-rightblock">
         <span class="page-number">02/</span>
         <h2>Team</h2>
-        <a href="#">Wat</a>
-        <a href="#">Wat doen wij?</a>
-        <a href="#">Werkwijze</a>
-        <a href="#">Meet the team</a>
+        <a href="/team/wat.php"><span>Wat</span><img src="img/arrow-right-red.svg" alt="icon previous page"></a>
+				<a href="/team/services.php"><span>Wat doen wij?</span><img src="img/arrow-right-red.svg" alt="icon previous page"></a>
+				<a href="/team/werkwijze.php"><span>Werkwijze</span><img src="img/arrow-right-red.svg" alt="icon previous page"></a>
+				<a href="/team/"><span>Meet the team</span><img src="img/arrow-right-red.svg" alt="icon previous page"></a>
     </article>
 	</div> <!-- /maxwidth -->
 </section>
