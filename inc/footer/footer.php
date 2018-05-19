@@ -1,4 +1,4 @@
-<footer>
+<footer class="maxwidth">
 
 		<nav id="footer-left">
 				<a href="/">Home</a>

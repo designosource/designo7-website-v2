@@ -179,7 +179,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
 @import url("https://fontlibrary.org/face/cooper-hewitt");
 .btn {
-  font-size: 22pt !important;
+  font-size: 1.833rem !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
   padding: 13pt 14pt 9pt 14pt;
@@ -242,6 +242,95 @@ input, button {
   -moz-appearance: none;
   appearance: none; }
 
+/*
+*    .element {
+*        @include breakpoint(small, min, $breakpoint-small){
+*            background-color: red; 
+*        }
+*    }
+*/
+/*
+*    .element {
+*        @include center-absolute(both);
+*    }
+*/
+/*
+*    .element {
+*        @include center-flex(both);
+*    }
+*/
+/*
+*    .element {
+*        @include font-size(16);
+*    }
+*/
+/*
+*    @include keyframes(slide-down) {
+*        0% { opacity: 1; }
+*        90% { opacity: 0; }
+*    }
+*
+*    .element {
+*        @include animation('slide-down 5s 3');
+*    }
+*/
+/*
+*    .element {
+*        @include padding(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include padding(10px, 20px, 30px);
+*    }
+*/
+/*
+*    .element {
+*        @include margin(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include margin(10px, 20px, 30px);
+*    }
+*/
+/*
+*    .element {
+*        @include push-auto;
+*    }
+*/
+/*
+*    .element:before {
+*        @include pseudo;
+*    }
+*/
+/*
+*    .element {
+*        @include transition(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
+/*
+*    .element {
+*        @include translate(50px, 10px);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
+*    }
+*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -251,7 +340,8 @@ body {
   background-color: #fafafd;
   font-family: "CooperHewittBook", sans-serif;
   color: #21203a;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 16px; }
   body::-webkit-scrollbar {
     display: none; }
 
@@ -275,7 +365,7 @@ header {
   top: 50%;
   right: 17.5pt;
   transform: translateY(-50%);
-  font-size: 24pt;
+  font-size: 2rem;
   z-index: 2; }
   header span.active-number {
     position: fixed;
@@ -402,7 +492,7 @@ main {
       right: -10px;
       content: "0" counter(headernavfixed); }
   main .maxwidth {
-    max-width: 1224px;
+    max-width: 1920px;
     margin-left: auto;
     margin-right: auto; }
   main .container {
@@ -429,16 +519,16 @@ main {
       flex-direction: column; }
       main .container .content-rightblock .page-number {
         color: #c10c43;
-        font-size: 36pt;
+        font-size: 3rem;
         font-family: "CooperHewittBold", sans-serif;
         position: relative;
         height: 1.5em; }
       main .container .content-rightblock h2 {
-        font-size: 144pt;
+        font-size: 12rem;
         font-family: "CooperHewittBold", sans-serif;
         margin-bottom: 5%; }
       main .container .content-rightblock a {
-        font-size: 32pt;
+        font-size: 2.666rem;
         margin-bottom: 5%;
         font-family: "CooperHewittBook", sans-serif;
         -webkit-transition: 0.3s;
@@ -484,7 +574,7 @@ main {
       main .container .content-rightblock p {
         font-family: "Source Sans Pro", sans-serif;
         font-weight: lighter;
-        font-size: 22pt;
+        font-size: 1.833rem;
         line-height: 32pt;
         /* beter 26pt */
         margin-bottom: 10%; }
@@ -495,7 +585,7 @@ main {
         width: 110px;
         height: auto; }
       main .container .content-rightblock #email {
-        font-size: 22pt;
+        font-size: 1.833rem;
         margin-bottom: 50px; }
       main .container .content-rightblock #partner {
         margin-bottom: 20px; }
@@ -507,7 +597,7 @@ main {
       font-weight: bold; }
   main .previous-page a {
     font-family: "CooperHewittBold", sans-serif;
-    font-size: 20pt;
+    font-size: 1.666rem;
     color: #21203a;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -532,7 +622,7 @@ main {
     main .previous-page a:hover {
       color: #e10a42; }
   main h1 {
-    font-size: 83pt;
+    font-size: 6.916rem;
     font-family: "CooperHewittBold", sans-serif; }
   main #home {
     background-color: #21203a; }
@@ -612,10 +702,10 @@ main {
       grid-column-start: 17;
       grid-column-end: 23;
       overflow-y: auto;
-      font-size: 22pt;
+      font-size: 1.833rem;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 300;
-      line-height: 32pt;
+      line-height: 2.666rem;
       padding-right: 1em; }
       main .big-grid .content-rightblock p {
         margin-bottom: 22pt; }
@@ -671,16 +761,16 @@ main {
           -o-transition: transform 0.5s;
           transition: transform 0.5s; }
           main .page-container .overview .grid-item .grid-details .first-detail {
-            font-size: 13pt;
+            font-size: 1.083rem;
             margin-bottom: 8px; }
           main .page-container .overview .grid-item .grid-details .second-detail {
             font-family: "CooperHewittBold", sans-serif;
-            font-size: 16pt;
+            font-size: 1.333rem;
             margin-bottom: 6px; }
           main .page-container .overview .grid-item .grid-details .third-detail {
             color: #c10c43;
             font-family: "CooperHewittBold", sans-serif;
-            font-size: 10pt; }
+            font-size: 0.833rem; }
             main .page-container .overview .grid-item .grid-details .third-detail:hover {
               color: #f8ae0d; }
     main .page-container #members-grid {
@@ -702,7 +792,7 @@ main {
 footer {
   display: flex;
   height: 60px;
-  font-size: 16pt;
+  font-size: 1.333rem;
   font-family: "CooperHewittBold", sans-serif;
   position: fixed;
   width: 100%;
@@ -723,6 +813,30 @@ footer {
     align-items: center; }
     footer #footer-right a:not(:first-child) {
       margin-left: 45px; }
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 16px; } }
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  html {
+    font-size: 14px; } }
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+  html {
+    font-size: 12px; } }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  html {
+    font-size: 10px; } }
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  html {
+    font-size: 8px; } }
+
+@media (min-width: 480px) and (max-width: 720px) {
+  html {
+    font-size: 6px; } }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.8);

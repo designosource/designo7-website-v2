@@ -1,28 +1,53 @@
 @import "mixins.scss";
 
 // Font
-$font--10: 10pt;
-$font--13: 13pt;
-$font--14: 14pt;
-$font--16: 16pt;
-$font--20: 20pt;
-$font--22: 22pt;
-$font--24: 24pt;
-$font--28: 28pt;
-$font--32: 32pt;
-$font--36: 36pt;
-$font--83: 83pt;
-$font--105: 105pt;
-$font--118: 118pt;
-$font--130: 130pt;
-$font--144: 144pt;
+$font--10: 0.833rem;
+$font--13: 1.083rem;
+$font--14: 1.166rem;
+$font--16: 1.333rem;
+$font--20: 1.666rem;
+$font--22: 1.833rem;
+$font--24: 2rem;
+$font--28: 2.333rem;
+$font--32: 2.666rem;
+$font--36: 3rem;
+$font--83: 6.916rem;
+$font--105: 8.75rem;
+$font--118: 9.833rem;
+$font--130: 10.833rem;
+$font--144: 12rem;
+
+//old font-sizes
+//$font--10: 10pt;
+//$font--13: 13pt;
+//$font--14: 14pt;
+//$font--16: 16pt;
+//$font--20: 20pt;
+//$font--22: 22pt;
+//$font--24: 24pt;
+//$font--28: 28pt;
+//$font--32: 32pt;
+//$font--36: 36pt;
+//$font--83: 83pt;
+//$font--105: 105pt;
+//$font--118: 118pt;
+//$font--130: 130pt;
+//$font--144: 144pt;
 
 // Define the breakpoints
-$breakpoint-x-small: 320px;
-$breakpoint-small: 480px;
-$breakpoint-medium: 769px;
-$breakpoint-large: 1024px;
-$breakpoint-x-large: 1224px;
-$breakpoint-xx-large: 1824px;
+$breakpoint-x-small: 480px;
+$breakpoint-small: 720px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1440px;
+$breakpoint-x-large: 1600px;
+$breakpoint-xx-large: 1920px;
+
+//old breakpoints
+//$breakpoint-x-small: 320px;
+//$breakpoint-small: 480px;
+//$breakpoint-medium: 769px;
+//$breakpoint-large: 1024px;
+//$breakpoint-x-large: 1224px;
+//$breakpoint-xx-large: 1824px;
 
 $footer--height: 60px;

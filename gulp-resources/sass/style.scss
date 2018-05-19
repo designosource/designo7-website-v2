@@ -5,6 +5,7 @@
 @import "components/_buttons.scss";
 @import "components/_scrollbar.scss";
 @import "components/_appearance.scss";
+@import "media.scss";
 
 // IMPLEMENT SASS
 
@@ -19,6 +20,7 @@ body {
   font-family: $font--cooper--book;
   color: $color--darkpurple;
   overflow-x: hidden;
+  font-size: 16px;
 
   &::-webkit-scrollbar {
     display: none;
@@ -102,7 +104,7 @@ header {
 
     a.white-nav {
       color: rgba($color--white, 0);
-			@include transition(0.3s);
+      @include transition(0.3s);
 
       &:before {
         color: $color--white;
@@ -116,7 +118,7 @@ header {
     a.active {
       color: $color--purplered;
       font-family: $font--cooper--bold;
-			@include transition(0.3s);
+      @include transition(0.3s);
 
       &:before {
         color: $color--purplered;
@@ -149,19 +151,19 @@ main {
       content: "0" counter(headernavfixed);
     }
   }
-	
-	.maxwidth {
-		max-width: 1224px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+
+  .maxwidth {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: 60px auto;
     grid-column-gap: 10pt;
-		min-height: calc(100vh - #{$footer--height});
+    min-height: calc(100vh - #{$footer--height});
     /*background-color: $color--palegrey;*/
     position: relative;
 
@@ -199,40 +201,40 @@ main {
       a {
         font-size: $font--32;
         margin-bottom: 5%;
-				font-family: $font--cooper--book;
-				@include transition(0.3s);
-				
-				span:not(.label) {
-					position: relative;
-					margin-right: 15pt;
-					
-					&:before {
-						@include pseudo;
-						top: calc(0.4em + 1px);
-						left: -10px;
-						right: calc(100% + 10px);
-						height: 2px;
-						background-color: $color--purplered;
-						@include transition(0.3s);
-					}
-				}
-				
-				img {
-					height: 0.6em;
-				}
-				
-				&:hover {
-					font-family: $font--cooper--bold;
-					
-					span {
-					
-						&:before {
-							right: -10px;
-						}
-						
-					}
-				}
-				
+        font-family: $font--cooper--book;
+        @include transition(0.3s);
+
+        span:not(.label) {
+          position: relative;
+          margin-right: 15pt;
+
+          &:before {
+            @include pseudo;
+            top: calc(0.4em + 1px);
+            left: -10px;
+            right: calc(100% + 10px);
+            height: 2px;
+            background-color: $color--purplered;
+            @include transition(0.3s);
+          }
+        }
+
+        img {
+          height: 0.6em;
+        }
+
+        &:hover {
+          font-family: $font--cooper--bold;
+
+          span {
+
+            &:before {
+              right: -10px;
+            }
+
+          }
+        }
+
       }
 
       p {
@@ -250,7 +252,7 @@ main {
 
       #tm-logo {
         width: 110px;
-				height: auto;
+        height: auto;
       }
 
       #email {
@@ -520,7 +522,7 @@ main {
             font-size: $font--16;
             margin-bottom: 6px;
           }
-          .third-detail{
+          .third-detail {
             color: $color--purplered;
             font-family: $font--cooper--bold;
             font-size: $font--10;
@@ -615,6 +617,8 @@ footer {
 
   }
 }
+
+@include media;
 
 // END IMPLEMENTING SASS
 

@@ -1,0 +1,39 @@
+@import "components/_measures.scss";
+
+@mixin media() {
+  @media (min-width: $breakpoint-xx-large) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $breakpoint-x-large) and (max-width: $breakpoint-xx-large) {
+   html {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) and (max-width: $breakpoint-x-large) {
+    html {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  @media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    html {
+      font-size: 8px;
+    }
+  }
+
+  @media (min-width: $breakpoint-x-small) and (max-width: $breakpoint-small) {
+    html {
+      font-size: 6px;
+    }
+  }
+}

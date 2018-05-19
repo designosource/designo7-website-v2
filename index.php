@@ -36,7 +36,7 @@
 <?php include 'inc/header/header.php'; ?>
 
 <main>
-    
+
     <?php include 'inc/index/home.php'; ?>
 
     <?php include 'inc/index/team.php'; ?>
@@ -44,7 +44,7 @@
     <?php include 'inc/index/cases.php'; ?>
 
     <?php include 'inc/index/contact.php'; ?>
-    
+
 </main>
 
 <?php include 'inc/footer/footer.php'; ?>

@@ -1,0 +1,89 @@
+/*
+*    .element {
+*        @include breakpoint(small, min, $breakpoint-small){
+*            background-color: red; 
+*        }
+*    }
+*/
+/*
+*    .element {
+*        @include center-absolute(both);
+*    }
+*/
+/*
+*    .element {
+*        @include center-flex(both);
+*    }
+*/
+/*
+*    .element {
+*        @include font-size(16);
+*    }
+*/
+/*
+*    @include keyframes(slide-down) {
+*        0% { opacity: 1; }
+*        90% { opacity: 0; }
+*    }
+*
+*    .element {
+*        @include animation('slide-down 5s 3');
+*    }
+*/
+/*
+*    .element {
+*        @include padding(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include padding(10px, 20px, 30px);
+*    }
+*/
+/*
+*    .element {
+*        @include margin(10px, 20px);
+*    }
+*
+*    of
+*
+*    .element {
+*        @include margin(10px, 20px, 30px);
+*    }
+*/
+/*
+*    .element {
+*        @include push-auto;
+*    }
+*/
+/*
+*    .element:before {
+*        @include pseudo;
+*    }
+*/
+/*
+*    .element {
+*        @include transition(width 2s linear 1s, height 1s linear 2s);
+*    }
+*/
+/*
+*    .element {
+*        @include translate(50px, 10px);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include skew(30deg, 10deg);
+*    }
+*/
+/*
+*    .element {
+*        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
+*    }
+*/
