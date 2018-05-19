@@ -1,10 +1,10 @@
 <footer>
     <div class="footer maxwidth">
         <nav id="footer-left">
-            <a href="/">Home</a>
-            <a href="#">Team</a>
-            <a href="#">Cases</a>
-            <a href="#">Contact</a>
+            <a href="/designo7v2/#home">Home</a>
+            <a href="/designo7v2/#team">Team</a>
+            <a href="/designo7v2/#cases">Cases</a>
+            <a href="/designo7v2/#contact">Contact</a>
         </nav>
         <nav id="footer-right">
             <a target="_blank" href="https://www.facebook.com/Designosource/">Facebook</a>
