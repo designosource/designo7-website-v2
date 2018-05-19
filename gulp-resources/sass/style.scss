@@ -571,17 +571,27 @@ main {
 }
 
 footer {
-  display: flex;
-  height: $footer--height;
+
   font-size: $font--16;
   font-family: $font--cooper--bold;
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 0 70px;
   background-color: $color--white;
-  justify-content: space-between;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $footer--height;
+    padding: 0 70px;
+  }
+
+  .maxwidth {
+    max-width: $breakpoint-xx-large;
+    margin: 0 auto;
+  }
 
   a {
 
