@@ -36,10 +36,30 @@ a {
 header {
   position: fixed;
   top: 50%;
-  right: 17.5pt;
+  right: $font--14;
   transform: translateY(-50%);
   font-size: $font--24;
   z-index: 2;
+	
+	&.white-nav {
+		
+		span.active-number {
+			color: rgba(16, 16, 28, 0.45);
+			@include transition(0.3s);
+		}
+		
+		a {
+			color: rgba($color--white, 0);
+			
+			&:before {
+				color: $color--white;
+			}
+
+			&:hover {
+				color: rgba($color--white, 1);
+			}
+		}
+	}
 
   span.active-number {
     position: fixed;
@@ -49,11 +69,12 @@ header {
     -ms-transform: translateY(calc(-50% - 15px));
     transform: translateY(calc(-50% - 15px));
     text-align: right;
-    width: 150px;
-    height: 150px;
-    font-size: 6.25vw;
-    color: rgba(16, 16, 28, 0.45);
+    width: $font--130;
+    height: $font--130;
+    font-size: $font--130;
+    color: rgba(229, 229, 229, 1);
     font-family: $font--cooper--bold;
+		@include transition(0.3s);
   }
 
   nav {
@@ -65,14 +86,14 @@ header {
     a {
       color: rgba($color--darkpurple, 0);
       text-align: right;
-      padding-right: 2em;
+			padding-right: calc(#{$font--32} + #{$font--28} );
       line-height: 29.7pt;
       position: relative;
-      @include transition(0.3s);
+      @include transition(0.3s 0.15s);
       counter-increment: headernav;
 
       &:not(:last-child) {
-        margin-bottom: 42px;
+				margin-bottom: calc(3 * #{$font--16});
       }
 
       &:before {
@@ -82,20 +103,21 @@ header {
         top: -1px;
         @include rotate(90deg);
         line-height: 29.7pt;
-        font-size: 24pt;
+        font-size: $font--24;
         font-weight: 500;
         color: $color--darkpurple;
+				@include transition(0.3s 0.15s);
       }
 
       &:after {
         //TODO: check on certain breakpoints if line is ok
         @include pseudo;
-        width: 3pt;
+				width: calc(#{$font--16} / 4);
         height: 0;
-        right: calc(1em + 10pt);
+				right: calc(#{$font--16} + #{$font--20});
         top: 0;
         background-color: $color--purplered;
-        @include transition(0.3s);
+        @include transition(0.3s 0.15s);
       }
 
       &:hover {
@@ -105,7 +127,7 @@ header {
 
     a.white-nav {
       color: rgba($color--white, 0);
-      @include transition(0.3s);
+      @include transition(0.3s 0.15s);
 
       &:before {
         color: $color--white;
@@ -119,16 +141,17 @@ header {
     a.active {
       color: $color--purplered;
       font-family: $font--cooper--bold;
-      @include transition(0.3s);
+      @include transition(0.3s 0.15s);
 
       &:before {
         color: $color--purplered;
       }
 
       &:after {
-        height: calc(100% - 2pt);
-        /*top: 0;*/
+				height: calc( 100% - calc(1.6 * #{$font--10}));
+        top: calc(calc(1.6 * #{$font--10}) / 2);
         background-color: $color--purplered;
+				@include transition(0.3s 0.15s);
       }
 
       &:hover {

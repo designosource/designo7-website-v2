@@ -363,10 +363,29 @@ a {
 header {
   position: fixed;
   top: 50%;
-  right: 17.5pt;
+  right: 1.166rem;
   transform: translateY(-50%);
   font-size: 2rem;
   z-index: 2; }
+  header.white-nav span.active-number {
+    color: rgba(16, 16, 28, 0.45);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    header.white-nav span.active-number:hover {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+  header.white-nav a {
+    color: rgba(255, 255, 255, 0); }
+    header.white-nav a:before {
+      color: #ffffff; }
+    header.white-nav a:hover {
+      color: white; }
   header span.active-number {
     position: fixed;
     right: 0;
@@ -375,11 +394,22 @@ header {
     -ms-transform: translateY(calc(-50% - 15px));
     transform: translateY(calc(-50% - 15px));
     text-align: right;
-    width: 150px;
-    height: 150px;
-    font-size: 6.25vw;
-    color: rgba(16, 16, 28, 0.45);
-    font-family: "CooperHewittBold", sans-serif; }
+    width: 10.833rem;
+    height: 10.833rem;
+    font-size: 10.833rem;
+    color: #e5e5e5;
+    font-family: "CooperHewittBold", sans-serif;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    header span.active-number:hover {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
   header nav {
     display: flex;
     flex-direction: column;
@@ -388,23 +418,23 @@ header {
     header nav a {
       color: rgba(33, 32, 58, 0);
       text-align: right;
-      padding-right: 2em;
+      padding-right: calc(2.666rem + 2.333rem);
       line-height: 29.7pt;
       position: relative;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
+      -webkit-transition: 0.3s 0.15s;
+      -moz-transition: 0.3s 0.15s;
+      -ms-transition: 0.3s 0.15s;
+      -o-transition: 0.3s 0.15s;
+      transition: 0.3s 0.15s;
       counter-increment: headernav; }
       header nav a:hover {
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
       header nav a:not(:last-child) {
-        margin-bottom: 42px; }
+        margin-bottom: calc(3 * 1.333rem); }
       header nav a:before {
         content: "";
         display: block;
@@ -416,44 +446,55 @@ header {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         line-height: 29.7pt;
-        font-size: 24pt;
+        font-size: 2rem;
         font-weight: 500;
-        color: #21203a; }
+        color: #21203a;
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
+        header nav a:before:hover {
+          -webkit-transition: 0.3s 0.15s;
+          -moz-transition: 0.3s 0.15s;
+          -ms-transition: 0.3s 0.15s;
+          -o-transition: 0.3s 0.15s;
+          transition: 0.3s 0.15s; }
       header nav a:after {
         content: "";
         display: block;
         position: absolute;
-        width: 3pt;
+        width: calc(1.333rem / 4);
         height: 0;
-        right: calc(1em + 10pt);
+        right: calc(1.333rem + 1.666rem);
         top: 0;
         background-color: #c10c43;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
         header nav a:after:hover {
-          -webkit-transition: 0.3s;
-          -moz-transition: 0.3s;
-          -ms-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s; }
+          -webkit-transition: 0.3s 0.15s;
+          -moz-transition: 0.3s 0.15s;
+          -ms-transition: 0.3s 0.15s;
+          -o-transition: 0.3s 0.15s;
+          transition: 0.3s 0.15s; }
       header nav a:hover {
         color: #21203a; }
     header nav a.white-nav {
       color: rgba(255, 255, 255, 0);
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
+      -webkit-transition: 0.3s 0.15s;
+      -moz-transition: 0.3s 0.15s;
+      -ms-transition: 0.3s 0.15s;
+      -o-transition: 0.3s 0.15s;
+      transition: 0.3s 0.15s; }
       header nav a.white-nav:hover {
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
       header nav a.white-nav:before {
         color: #ffffff; }
       header nav a.white-nav:hover {
@@ -461,23 +502,34 @@ header {
     header nav a.active {
       color: #c10c43;
       font-family: "CooperHewittBold", sans-serif;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
+      -webkit-transition: 0.3s 0.15s;
+      -moz-transition: 0.3s 0.15s;
+      -ms-transition: 0.3s 0.15s;
+      -o-transition: 0.3s 0.15s;
+      transition: 0.3s 0.15s; }
       header nav a.active:hover {
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
       header nav a.active:before {
         color: #c10c43; }
       header nav a.active:after {
-        height: calc(100% - 2pt);
-        /*top: 0;*/
-        background-color: #c10c43; }
+        height: calc( 100% - calc(1.6 * 0.833rem));
+        top: calc(calc(1.6 * 0.833rem) / 2);
+        background-color: #c10c43;
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
+        header nav a.active:after:hover {
+          -webkit-transition: 0.3s 0.15s;
+          -moz-transition: 0.3s 0.15s;
+          -ms-transition: 0.3s 0.15s;
+          -o-transition: 0.3s 0.15s;
+          transition: 0.3s 0.15s; }
       header nav a.active:hover {
         color: #c10c43; }
 

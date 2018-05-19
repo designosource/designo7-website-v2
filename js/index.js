@@ -28,22 +28,22 @@ $(document).ready(function(){
 			$activenumber.text("01");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(1)").addClass("active");
-			$("header nav a").addClass("white-nav");
+			$("header").addClass("white-nav");
 		} else if( $distancewindow >= $team && $distancewindow < $cases ) {
 			$activenumber.text("02");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(2)").addClass("active");
-			$("header nav a").removeClass("white-nav");
+			$("header").removeClass("white-nav");
 		} else if( $distancewindow >= $cases && $distancewindow < $contact ) {
 			$activenumber.text("03");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(3)").addClass("active");
-			$("header nav a").removeClass("white-nav");
+			$("header").removeClass("white-nav");
 		} else {
 			$activenumber.text("04");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(4)").addClass("active");
-			$("header nav a").removeClass("white-nav");
+			$("header").removeClass("white-nav");
 		}
 		
 	}
