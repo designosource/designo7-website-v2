@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include 'inc/head/meta_tags.php'; ?>
+    <?php include '../inc/head/meta_tags.php'; ?>
 
-    <title>Team | Wat</title>
+    <title>Team | Overview</title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -34,28 +34,72 @@
 <body>
 
 <main>
+    <section class="page-container">
+    		<div class="maxwidth">   
+     
+						<div class="previous-page">
 
-	<section id="wat">
-   
-   	<div class="container big-grid maxwidth">
-			<figure class="content-image overlay"></figure>
-			<figure class="content-image pop-up-image"></figure>
+								<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
-			<div class="previous-page">
+						</div>
 
-				<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
-
-			</div>
-
-			<h1>We are Designosource.</h1>
-
-			<article class="content-rightblock scrollbar">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
-			</article>
-    </div> <!-- /maxwidth -->
-	</section>
-
+						<h1>Meet the team</h1>
+						<article class="overview" id="members-grid">
+								<!--TODO: loop all members in grid-->
+								<div class="grid-item">
+										<a href="#">
+												<img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Chris Oortman">
+										</a>
+										<div class="grid-details">
+												<p class="first-detail">Branding badass</p>
+												<p class="second-detail">Chris Oortman</p>
+												<a href="#" class="third-detail">Meer info +</a>
+										</div>
+								</div>
+								<div class="grid-item">
+										<a href="#">
+												<img src="https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif" alt="Hanna Walgrave">
+										</a>
+										<div class="grid-details">
+												<p class="first-detail">Branding badass</p>
+												<p class="second-detail">Chris Oortman</p>
+												<a href="#" class="third-detail">Meer info +</a>
+										</div>
+								</div>
+								<div class="grid-item">
+										<a href="#">
+												<img src="https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif" alt="Sander Van Hullebusch">
+										</a>
+										<div class="grid-details">
+												<p class="first-detail">Branding badass</p>
+												<p class="second-detail">Chris Oortman</p>
+												<a href="#" class="third-detail">Meer info +</a>
+										</div>
+								</div>
+								<div class="grid-item">
+										<a href="#">
+												<img src="https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif" alt="Hanna Walgrave">
+										</a>
+										<div class="grid-details">
+												<p class="first-detail">Branding badass</p>
+												<p class="second-detail">Chris Oortman</p>
+												<a href="#" class="third-detail">Meer info +</a>
+										</div>
+								</div>
+								<div class="grid-item">
+										<a href="#">
+												<img src="https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif" alt="Hanna Walgrave">
+										</a>
+										<div class="grid-details">
+												<p class="first-detail">Branding badass</p>
+												<p class="second-detail">Chris Oortman</p>
+												<a href="#" class="third-detail">Meer info +</a>
+										</div>
+								</div>
+						</article>
+						
+				</div> <!-- /maxwidth -->
+    </section>
 </main>
 
 <?php include '../inc/footer/footer.php'; ?>
