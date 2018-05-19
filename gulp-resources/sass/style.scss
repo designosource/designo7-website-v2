@@ -88,10 +88,11 @@ header {
       }
 
       &:after {
+        //TODO: check on certain breakpoints if line is ok
         @include pseudo;
         width: 3pt;
         height: 0;
-        right: calc(1em + 1pt);
+        right: calc(1em + 10pt);
         top: 0;
         background-color: $color--purplered;
         @include transition(0.3s);
@@ -193,7 +194,7 @@ main {
       }
 
       h2 {
-        font-size: $font--144;
+        font-size: $font--105;
         font-family: $font--cooper--bold;
         margin-bottom: 5%;
       }
