@@ -6,9 +6,9 @@
         <h2>Contact</h2>
         <p id="contact-intro">Wij helpen u graag verder!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque delectus</p>
-        <a href="mailto:info@designosource.be" id="email"><span class="label">Email: </span>info@designosource.be</a>
+        <a title="Email designosource" href="mailto:info@designosource.be" id="email"><span class="label">Email: </span>info@designosource.be</a>
         <p id="partner"><span class="label">Partner</span></p>
-        <a href="#"><img src="img/tm_logo.png" alt="Logo Thomas More" id="tm-logo"></a>
+        <a title="Thomas More" href="#"><img src="img/tm_logo.png" alt="Logo Thomas More" id="tm-logo"></a>
     </article>
 	</div> <!-- /maxwidth -->
 </section>

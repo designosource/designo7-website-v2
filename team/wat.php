@@ -43,7 +43,7 @@
 
 			<div class="previous-page">
 
-				<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+				<a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
 			</div>
 
@@ -51,7 +51,7 @@
 
 			<article class="content-rightblock scrollbar">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<a href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
     </div> <!-- /maxwidth -->
 	</section>

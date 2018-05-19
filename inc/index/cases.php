@@ -5,9 +5,9 @@
         <span class="page-number">03/</span>
         <h2>Cases</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, consequuntur cupiditate debitis</p>
-        <a href="#"><span>Climate without borders</span></a>
-        <a href="#"><span>Tedx Mechelen</span></a>
-        <a href="#"><span>360°</span></a>
+        <a title="Climate without borders" href="#"><span>Climate without borders</span></a>
+        <a title="TEDx Mechelen" href="#"><span>TEDx Mechelen</span></a>
+        <a title="360°" href="#"><span>360°</span></a>
     </article>
 	</div> <!-- /maxwidth -->
 </section>

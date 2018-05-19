@@ -39,7 +39,7 @@
      
 						<div class="previous-page">
 
-								<a href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+								<a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
 						</div>
 
@@ -47,53 +47,53 @@
 						<article class="overview" id="members-grid">
 								<!--TODO: loop all members in grid-->
 								<div class="grid-item">
-										<a href="#">
+										<a title="Title" href="#">
 												<img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Chris Oortman">
 										</a>
 										<div class="grid-details">
 												<p class="first-detail">Branding badass</p>
 												<p class="second-detail">Chris Oortman</p>
-												<a href="#" class="third-detail">Meer info +</a>
+												<a title="Title" href="#" class="third-detail">Meer info +</a>
 										</div>
 								</div>
 								<div class="grid-item">
-										<a href="#">
+										<a title="Title" href="#">
 												<img src="https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif" alt="Hanna Walgrave">
 										</a>
 										<div class="grid-details">
 												<p class="first-detail">Branding badass</p>
 												<p class="second-detail">Chris Oortman</p>
-												<a href="#" class="third-detail">Meer info +</a>
+												<a title="Title" href="#" class="third-detail">Meer info +</a>
 										</div>
 								</div>
 								<div class="grid-item">
-										<a href="#">
+										<a title="Title" href="#">
 												<img src="https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif" alt="Sander Van Hullebusch">
 										</a>
 										<div class="grid-details">
 												<p class="first-detail">Branding badass</p>
 												<p class="second-detail">Chris Oortman</p>
-												<a href="#" class="third-detail">Meer info +</a>
+												<a title="Title" href="#" class="third-detail">Meer info +</a>
 										</div>
 								</div>
 								<div class="grid-item">
-										<a href="#">
+										<a title="Title" href="#">
 												<img src="https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif" alt="Hanna Walgrave">
 										</a>
 										<div class="grid-details">
 												<p class="first-detail">Branding badass</p>
 												<p class="second-detail">Chris Oortman</p>
-												<a href="#" class="third-detail">Meer info +</a>
+												<a title="Title" href="#" class="third-detail">Meer info +</a>
 										</div>
 								</div>
 								<div class="grid-item">
-										<a href="#">
+										<a title="Title" href="#">
 												<img src="https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif" alt="Hanna Walgrave">
 										</a>
 										<div class="grid-details">
 												<p class="first-detail">Branding badass</p>
 												<p class="second-detail">Chris Oortman</p>
-												<a href="#" class="third-detail">Meer info +</a>
+												<a title="Title" href="#" class="third-detail">Meer info +</a>
 										</div>
 								</div>
 						</article>
