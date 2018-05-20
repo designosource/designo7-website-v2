@@ -20,9 +20,6 @@
           type="text/css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
 
-    <!-- Reset css file -->
-    <link href="css/reset.css" rel="stylesheet">
-
     <!-- Animate.css -->
     <link href="css/animate.css" rel="stylesheet">
 
