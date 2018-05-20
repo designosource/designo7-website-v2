@@ -8,7 +8,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque delectus</p>
         <a title="Email designosource" href="mailto:info@designosource.be" id="email"><span class="label">Email: </span>info@designosource.be</a>
         <p id="partner"><span class="label">Partner</span></p>
-        <a title="Thomas More" href="#"><img src="img/tm_logo.png" alt="Logo Thomas More" id="tm-logo"></a>
+        <a title="Thomas More" target="_blank" href="http://www.thomasmore.be/"><img src="img/tm_logo.png" alt="Logo Thomas More" id="tm-logo"></a>
     </article>
 	</div> <!-- /maxwidth -->
 </section>
