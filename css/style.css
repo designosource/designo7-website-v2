@@ -364,22 +364,11 @@ header {
   position: fixed;
   top: 50%;
   right: 1.166rem;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - ((1/2) * 60px)));
   font-size: 2rem;
   z-index: 2; }
   header.white-nav span.active-number {
-    color: rgba(16, 16, 28, 0.45);
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    header.white-nav span.active-number:hover {
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
+    color: rgba(16, 16, 28, 0.45); }
   header.white-nav a {
     color: rgba(255, 255, 255, 0); }
     header.white-nav a:before {
@@ -398,18 +387,7 @@ header {
     height: 10.833rem;
     font-size: 10.833rem;
     color: #e5e5e5;
-    font-family: "CooperHewittBold", sans-serif;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    header span.active-number:hover {
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
+    font-family: "CooperHewittBold", sans-serif; }
   header nav {
     display: flex;
     flex-direction: column;

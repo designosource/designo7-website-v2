@@ -37,7 +37,7 @@ header {
   position: fixed;
   top: 50%;
   right: $font--14;
-  transform: translateY(-50%);
+	transform: translateY(calc(-50% - ((1/2) * #{$footer--height})));
   font-size: $font--24;
   z-index: 2;
 	
@@ -45,7 +45,7 @@ header {
 		
 		span.active-number {
 			color: rgba(16, 16, 28, 0.45);
-			@include transition(0.3s);
+			
 		}
 		
 		a {
@@ -74,7 +74,7 @@ header {
     font-size: $font--130;
     color: rgba(229, 229, 229, 1);
     font-family: $font--cooper--bold;
-		@include transition(0.3s);
+		
   }
 
   nav {
