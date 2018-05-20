@@ -205,7 +205,18 @@
     margin-left: 12pt;
     background-image: url("../img/arrow-right-dark.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    -webkit-transition: 0s 0.3s;
+    -moz-transition: 0s 0.3s;
+    -ms-transition: 0s 0.3s;
+    -o-transition: 0s 0.3s;
+    transition: 0s 0.3s; }
+    .btn .arrow-right:hover {
+      -webkit-transition: 0s 0.3s;
+      -moz-transition: 0s 0.3s;
+      -ms-transition: 0s 0.3s;
+      -o-transition: 0s 0.3s;
+      transition: 0s 0.3s; }
   .btn:hover {
     color: #c10c43;
     border: 1px solid #c10c43; }

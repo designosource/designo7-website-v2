@@ -17,6 +17,7 @@
 		background-image: url('../img/arrow-right-dark.svg');
 		background-repeat: no-repeat;
 		background-position: center center;
+		@include transition(0s 0.3s);
 	}
 	
 	&:hover {
