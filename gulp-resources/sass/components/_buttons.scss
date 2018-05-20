@@ -7,7 +7,7 @@
 	border: 1px solid $color--darkpurple;
 	margin-bottom: 0 !important;
 	position: relative;
-	@include transition(0.3s);
+	@include transition(0.15s);
 	
 	.arrow-right {
 		display: inline-block;
@@ -17,7 +17,7 @@
 		background-image: url('../img/arrow-right-dark.svg');
 		background-repeat: no-repeat;
 		background-position: center center;
-		@include transition(0s 0.3s);
+		@include transition(0s 0.15s);
 	}
 	
 	&:hover {
