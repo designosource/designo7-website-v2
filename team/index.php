@@ -30,6 +30,8 @@
 
 <body>
 
+<?php include '../inc/logo/logo.php'; ?>
+
 <main>
     <section class="page-container">
     		<div class="maxwidth">   

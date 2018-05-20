@@ -32,6 +32,8 @@
 
 <?php include 'inc/header/header.php'; ?>
 
+<?php include 'inc/logo/logo.php'; ?>
+
 <main>
 
     <?php include 'inc/index/home.php'; ?>

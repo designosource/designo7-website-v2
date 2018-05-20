@@ -30,6 +30,8 @@
 
 <body>
 
+<?php include '../inc/logo/logo.php'; ?>
+
 <main>
 
 	<section id="member">
@@ -51,14 +53,14 @@
 
 			<div class="previous-page">
 
-				<a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
+				<a title="Vorige pagina" href="../team/"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
 			</div>
 			
 			<h1>Sander<br>Van Hullebusch</h1>
 			
 			<article class="content-rightblock scrollbar">
-					<p class="member-nickname">Animation astronaut</p>
+					<h2 class="member-nickname">Animation astronaut</h2>
 					
 					<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique.</p>
 					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
