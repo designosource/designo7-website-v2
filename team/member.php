@@ -12,7 +12,7 @@
 
     <?php include 'inc/head/meta_tags.php'; ?>
 
-    <title>Team | Services</title>
+    <title>Team | Member</title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">

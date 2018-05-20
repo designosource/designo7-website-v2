@@ -38,7 +38,7 @@ header {
   position: fixed;
   top: 50%;
   right: $font--14;
-	transform: translateY(calc(-50% - ((1/2) * #{$footer--height})));
+	@include translate(0, calc(-50% - ((1/2) * #{$footer--height})));
   font-size: $font--24;
   z-index: 2;
 	
@@ -60,18 +60,33 @@ header {
 				color: rgba($color--white, 1);
 			}
 		}
+		
+		.scroll {
+			
+			.inner-scroll {
+				p {
+					color: $color--white;
+					@include transition(0.3s 0.15s);
+				}
+				
+				span {
+					background-color: $color--white;
+					@include transition(0.3s 0.15s);
+				}
+			
+			}
+		}
+		
 	}
 
   span.active-number {
     position: fixed;
     right: 0;
-    top: 50%;
-    -webkit-transform: translateY(calc(-50% - 15px));
-    -ms-transform: translateY(calc(-50% - 15px));
-    transform: translateY(calc(-50% - 15px));
+		top: calc(50% - calc(1/2 * #{$footer--height}) );
+		@include translate(0, calc(-50% + calc( 1/4 * #{$font--130} )));
     text-align: right;
-    width: $font--130;
-    height: $font--130;
+    /*width: $font--130;
+    height: $font--130;*/
     font-size: $font--130;
     color: rgba(229, 229, 229, 1);
     font-family: $font--cooper--bold;
@@ -149,8 +164,7 @@ header {
       }
 
       &:after {
-				height: calc( 100% - calc(1.6 * #{$font--10}));
-        top: calc(calc(1.6 * #{$font--10}) / 2);
+				height: calc(2 * #{$font--14});
         background-color: $color--purplered;
 				@include transition(0.3s 0.15s);
       }
@@ -162,6 +176,39 @@ header {
     }
 
   }
+
+	.scroll {
+		position: fixed;
+		bottom: -100px;
+		right: -40px;
+		@include translate(0, 50%);
+		
+		.inner-scroll {
+			display: flex;
+			flex-direction: row;
+			@include rotate(90deg);
+			
+			p {
+				font-size: $font--14;
+				font-family: $font--cooper--bold;
+				margin-right: 11pt;
+				color: $color--darkpurple;
+				display: inline-block;
+				float: left;
+				@include transition(0.3s 0.15s);
+			}
+			
+			span {
+				display: block;
+				width: 45pt;
+				height: 2pt;
+				background-color: $color--darkpurple;
+				@include translate(0, 50%);
+				@include transition(0.3s 0.15s);
+			}
+		}
+	}
+
 }
 
 main {
@@ -169,12 +216,6 @@ main {
 
   section.container {
     counter-increment: section;
-
-    .active-number:before {
-      @include pseudo;
-      right: -10px;
-      content: "0" counter(headernavfixed);
-    }
   }
 
   .maxwidth {
@@ -229,7 +270,7 @@ main {
         font-family: $font--cooper--book;
         @include transition(0.3s);
 
-        span:not(.label) {
+        span:not(.label):not(.arrow-right) {
           position: relative;
           margin-right: 15pt;
 
@@ -248,7 +289,7 @@ main {
           height: 0.6em;
         }
 
-        &:hover {
+        &:hover:not(.btn) {
           font-family: $font--cooper--bold;
 
           span {
@@ -479,6 +520,7 @@ main {
       grid-column-end: 15;
 			z-index: 2;
 			padding: calc(2 * #{$font--20});
+			padding-top: calc(4 * #{$font--20});
 			padding-bottom: $font--20;
 			/*@include center-flex(vertical);*/
 			display: flex;
@@ -526,6 +568,23 @@ main {
 					font-family: $font--cooper--bold;
 					color: $color--darkpurple;
 					font-size: $font--16;
+					position: relative;
+					
+					&:before {
+						@include pseudo;
+						width: 0;
+						height: 1px;
+						background-color: $color--white;
+						left: -2px;
+    				top: 50%;
+						@include transition(0.3s);
+					}
+					
+					&:hover {
+						&:before {
+							width: calc(100% + 4px);
+						}
+					}
 				}
 			}
 			

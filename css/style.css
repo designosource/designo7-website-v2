@@ -407,7 +407,9 @@ header {
   position: fixed;
   top: 50%;
   right: 1.166rem;
-  transform: translateY(calc(-50% - ((1/2) * 60px)));
+  -moz-transform: translate(0, calc(-50% - ((1/2) * 60px)));
+  -webkit-transform: translate(0, calc(-50% - ((1/2) * 60px)));
+  transform: translate(0, calc(-50% - ((1/2) * 60px)));
   font-size: 2rem;
   z-index: 2; }
   header.white-nav span.active-number {
@@ -418,16 +420,42 @@ header {
       color: #ffffff; }
     header.white-nav a:hover {
       color: white; }
+  header.white-nav .scroll .inner-scroll p {
+    color: #ffffff;
+    -webkit-transition: 0.3s 0.15s;
+    -moz-transition: 0.3s 0.15s;
+    -ms-transition: 0.3s 0.15s;
+    -o-transition: 0.3s 0.15s;
+    transition: 0.3s 0.15s; }
+    header.white-nav .scroll .inner-scroll p:hover {
+      -webkit-transition: 0.3s 0.15s;
+      -moz-transition: 0.3s 0.15s;
+      -ms-transition: 0.3s 0.15s;
+      -o-transition: 0.3s 0.15s;
+      transition: 0.3s 0.15s; }
+  header.white-nav .scroll .inner-scroll span {
+    background-color: #ffffff;
+    -webkit-transition: 0.3s 0.15s;
+    -moz-transition: 0.3s 0.15s;
+    -ms-transition: 0.3s 0.15s;
+    -o-transition: 0.3s 0.15s;
+    transition: 0.3s 0.15s; }
+    header.white-nav .scroll .inner-scroll span:hover {
+      -webkit-transition: 0.3s 0.15s;
+      -moz-transition: 0.3s 0.15s;
+      -ms-transition: 0.3s 0.15s;
+      -o-transition: 0.3s 0.15s;
+      transition: 0.3s 0.15s; }
   header span.active-number {
     position: fixed;
     right: 0;
-    top: 50%;
-    -webkit-transform: translateY(calc(-50% - 15px));
-    -ms-transform: translateY(calc(-50% - 15px));
-    transform: translateY(calc(-50% - 15px));
+    top: calc(50% - calc(1/2 * 60px));
+    -moz-transform: translate(0, calc(-50% + calc( 1/4 * 10.833rem )));
+    -webkit-transform: translate(0, calc(-50% + calc( 1/4 * 10.833rem )));
+    transform: translate(0, calc(-50% + calc( 1/4 * 10.833rem )));
     text-align: right;
-    width: 10.833rem;
-    height: 10.833rem;
+    /*width: $font--130;
+    height: $font--130;*/
     font-size: 10.833rem;
     color: #e5e5e5;
     font-family: "CooperHewittBold", sans-serif; }
@@ -537,8 +565,7 @@ header {
       header nav a.active:before {
         color: #c10c43; }
       header nav a.active:after {
-        height: calc( 100% - calc(1.6 * 0.833rem));
-        top: calc(calc(1.6 * 0.833rem) / 2);
+        height: calc(2 * 1.166rem);
         background-color: #c10c43;
         -webkit-transition: 0.3s 0.15s;
         -moz-transition: 0.3s 0.15s;
@@ -553,17 +580,61 @@ header {
           transition: 0.3s 0.15s; }
       header nav a.active:hover {
         color: #c10c43; }
+  header .scroll {
+    position: fixed;
+    bottom: -100px;
+    right: -40px;
+    -moz-transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%); }
+    header .scroll .inner-scroll {
+      display: flex;
+      flex-direction: row;
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+      header .scroll .inner-scroll p {
+        font-size: 1.166rem;
+        font-family: "CooperHewittBold", sans-serif;
+        margin-right: 11pt;
+        color: #21203a;
+        display: inline-block;
+        float: left;
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
+        header .scroll .inner-scroll p:hover {
+          -webkit-transition: 0.3s 0.15s;
+          -moz-transition: 0.3s 0.15s;
+          -ms-transition: 0.3s 0.15s;
+          -o-transition: 0.3s 0.15s;
+          transition: 0.3s 0.15s; }
+      header .scroll .inner-scroll span {
+        display: block;
+        width: 45pt;
+        height: 2pt;
+        background-color: #21203a;
+        -moz-transform: translate(0, 50%);
+        -webkit-transform: translate(0, 50%);
+        transform: translate(0, 50%);
+        -webkit-transition: 0.3s 0.15s;
+        -moz-transition: 0.3s 0.15s;
+        -ms-transition: 0.3s 0.15s;
+        -o-transition: 0.3s 0.15s;
+        transition: 0.3s 0.15s; }
+        header .scroll .inner-scroll span:hover {
+          -webkit-transition: 0.3s 0.15s;
+          -moz-transition: 0.3s 0.15s;
+          -ms-transition: 0.3s 0.15s;
+          -o-transition: 0.3s 0.15s;
+          transition: 0.3s 0.15s; }
 
 main {
   counter-reset: section; }
   main section.container {
     counter-increment: section; }
-    main section.container .active-number:before {
-      content: "";
-      display: block;
-      position: absolute;
-      right: -10px;
-      content: "0" counter(headernavfixed); }
   main .maxwidth {
     max-width: 1920px;
     margin-left: auto;
@@ -615,10 +686,10 @@ main {
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        main .container .content-rightblock a span:not(.label) {
+        main .container .content-rightblock a span:not(.label):not(.arrow-right) {
           position: relative;
           margin-right: 15pt; }
-          main .container .content-rightblock a span:not(.label):before {
+          main .container .content-rightblock a span:not(.label):not(.arrow-right):before {
             content: "";
             display: block;
             position: absolute;
@@ -632,7 +703,7 @@ main {
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-            main .container .content-rightblock a span:not(.label):before:hover {
+            main .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover {
               -webkit-transition: 0.3s;
               -moz-transition: 0.3s;
               -ms-transition: 0.3s;
@@ -640,9 +711,9 @@ main {
               transition: 0.3s; }
         main .container .content-rightblock a img {
           height: 0.6em; }
-        main .container .content-rightblock a:hover {
+        main .container .content-rightblock a:hover:not(.btn) {
           font-family: "CooperHewittBold", sans-serif; }
-          main .container .content-rightblock a:hover span:before {
+          main .container .content-rightblock a:hover:not(.btn) span:before {
             right: -10px; }
       main .container .content-rightblock p {
         font-family: "Source Sans Pro", sans-serif;
@@ -806,6 +877,7 @@ main {
       grid-column-end: 15;
       z-index: 2;
       padding: calc(2 * 1.666rem);
+      padding-top: calc(4 * 1.666rem);
       padding-bottom: 1.666rem;
       /*@include center-flex(vertical);*/
       display: flex;
@@ -844,7 +916,30 @@ main {
         main .big-grid-2 .member-information .member-socialmedia a {
           font-family: "CooperHewittBold", sans-serif;
           color: #21203a;
-          font-size: 1.333rem; }
+          font-size: 1.333rem;
+          position: relative; }
+          main .big-grid-2 .member-information .member-socialmedia a:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: #ffffff;
+            left: -2px;
+            top: 50%;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            main .big-grid-2 .member-information .member-socialmedia a:before:hover {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              -ms-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+          main .big-grid-2 .member-information .member-socialmedia a:hover:before {
+            width: calc(100% + 4px); }
     main .big-grid-2 .previous-page {
       grid-row-start: 3;
       grid-row-end: 4;
