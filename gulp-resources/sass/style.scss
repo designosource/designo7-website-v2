@@ -34,6 +34,25 @@ a {
   @include transition(0.3s);
 }
 
+#logo {
+	width: 80px;
+	height: 80px;
+	background-color: $color--darkpurple;
+	@include center-flex(both);
+	
+	&.fixed {
+		position: fixed;
+		top: 0;
+		right: 0;
+	}
+	
+	img {
+		width: 30px;
+		height: auto;
+	}
+	
+}
+
 header {
   position: fixed;
   top: 50%;
@@ -620,6 +639,7 @@ main {
 				color: $color--purplered;
 				margin-bottom: $font--16;
 				font-family: $font--sans;
+				font-size: $font--22;
 				font-weight: 500;
 				text-transform: uppercase;
 			}
