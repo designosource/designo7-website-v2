@@ -1,42 +1,74 @@
 .btn {
-	font-size: $font--22 !important;
-	font-family: $font--cooper--book;
-	font-weight: bolder;
-	padding: 13pt 14pt 9pt 14pt;
-	color: $color--darkpurple;
-	border: 1px solid $color--darkpurple;
-	margin-bottom: 0 !important;
-	position: relative;
-	@include transition(0.15s);
-	
-	.arrow-right {
-		display: inline-block;
-		width: 23pt;
-    height: 15pt;
-		margin-left: 12pt;
-		background-image: url('../img/arrow-right-dark.svg');
-		background-repeat: no-repeat;
-		background-position: center center;
-		@include transition(0s 0.15s);
-	}
-	
-	&:hover {
-		color: $color--purplered;
-		border: 1px solid $color--purplered;
-		
-		.arrow-right {
-			background-image: url('../img/arrow-right-red.svg');
-		}
-	}
+  font-size: $font--22 !important;
+  font-family: $font--cooper--book;
+  font-weight: bolder;
+  padding: 13pt 14pt 9pt 14pt;
+  color: $color--darkpurple;
+  border: 1px solid $color--darkpurple;
+  margin-bottom: 0 !important;
+  position: relative;
+  @include transition(0.15s);
 
-	.arrow-right-white {
-		display: inline-block;
-		width: 23pt;
-		height: 15pt;
-		margin-left: 12pt;
-		background-image: url('../img/arrow-right-white.svg');
-		background-repeat: no-repeat;
-		background-position: center center;
-		@include transition(0s 0.15s);
-	}
+  .arrow-right {
+    display: inline-block;
+    width: 23pt;
+    height: 15pt;
+    margin-left: 12pt;
+    background-image: url('../img/arrow-right-dark.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include transition(0s 0.15s);
+  }
+
+  &:hover {
+    color: $color--purplered;
+    border: 1px solid $color--purplered;
+
+    .arrow-right {
+      background-image: url('../img/arrow-right-red.svg');
+    }
+  }
+
+  .arrow-right-white {
+    display: inline-block;
+    width: 23pt;
+    height: 15pt;
+    margin-left: 12pt;
+    background-image: url('../img/arrow-right-white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include transition(0s 0.15s);
+  }
+}
+
+.btn-white {
+  font-size: $font--22 !important;
+  font-family: $font--cooper--book;
+  font-weight: bolder;
+  padding: 13pt 14pt 9pt 14pt;
+  color: $color--white;
+  border: 1px solid $color--white;
+  margin-bottom: 0 !important;
+  position: relative;
+  //@include transition(0.15s);
+
+  .arrow-right-white {
+    display: inline-block;
+    width: 23pt;
+    height: 15pt;
+    margin-left: 12pt;
+    background-image: url('../img/arrow-right-white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    //@include transition(0s 0.15s);
+  }
+
+  &:hover {
+    color: $color--purplered;
+    border: 1px solid $color--purplered;
+
+    .arrow-right-white {
+      background-image: url('../img/arrow-right-red.svg');
+    }
+  }
 }
