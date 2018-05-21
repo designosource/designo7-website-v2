@@ -687,7 +687,8 @@ main {
       grid-row-start: 2;
       margin-top: 15%;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: flex-start; }
       main .container .content-rightblock .page-number {
         color: #c10c43;
         font-size: 3rem;

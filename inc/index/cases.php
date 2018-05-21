@@ -8,6 +8,7 @@
         <a title="Climate without borders" href="#"><span>Climate without borders</span></a>
         <a title="TEDx Mechelen" href="#"><span>TEDx Mechelen</span></a>
         <a title="360°" href="#"><span>360°</span></a>
+        <a title="Bekijk alles" href="cases/" class="btn">Bekijk alles<span class="arrow-right"></span></a>
     </article>
 	</div> <!-- /maxwidth -->
 </section>
