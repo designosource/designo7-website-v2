@@ -11,6 +11,6 @@
 		}
 	?>
 	
-	<img src="<?php echo $prefix; ?>img/tm_logo.png" alt="Logo Designosource">
+	<img src="<?php echo $prefix; ?>img/designologo.svg" alt="Logo Designosource">
 	
 </div>
