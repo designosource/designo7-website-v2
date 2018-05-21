@@ -37,7 +37,12 @@
 	<section id="single-case">
   	<div class="container big-grid maxwidth">
 			<figure class="content-image overlay"></figure>
-			<figure class="content-image pop-up-image"></figure>
+			<div class="slick-container pop-up-image">
+				<figure class="content-image"></figure>
+				<figure class="content-image"></figure>
+				<figure class="content-image"></figure>
+			</div>
+			
 
 			<div class="previous-next-page">
 
