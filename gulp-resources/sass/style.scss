@@ -38,6 +38,7 @@ a {
 	width: 80px;
 	height: 80px;
 	background-color: $color--darkpurple;
+  z-index: 2;
 	@include center-flex(both);
 	
 	&.fixed {
