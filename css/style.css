@@ -704,6 +704,20 @@ main {
   counter-reset: section; }
   main section.container {
     counter-increment: section; }
+  main #intro {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #21203a;
+    z-index: 100;
+    align-items: flex-start; }
+    main #intro img {
+      height: 50%;
+      margin: 5% auto; }
+    main #intro .btn-white {
+      margin: 0 auto; }
   main .maxwidth {
     max-width: 1920px;
     margin-left: auto;

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	$('#close').click(function (e) {
+		e.preventDefault();
+		$('#intro').fadeToggle('1s', 'linear');
+    });
+
 	$(function() { 
 		$('body a').click(function()
 		{ 

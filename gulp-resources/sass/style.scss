@@ -238,6 +238,26 @@ main {
     counter-increment: section;
   }
 
+  #intro {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: $color--darkpurple;
+    z-index: 100;
+    align-items: flex-start;
+
+    img {
+      height: 50%;
+      margin: 5% auto;
+    }
+
+    .btn-white {
+      margin: 0 auto;
+    }
+  }
+
   .maxwidth {
     max-width: 1920px;
     margin-left: auto;

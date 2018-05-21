@@ -36,6 +36,8 @@
 
 <main>
 
+    <?php include 'inc/index/intro.php'; ?>
+
     <?php include 'inc/index/home.php'; ?>
 
     <?php include 'inc/index/team.php'; ?>
