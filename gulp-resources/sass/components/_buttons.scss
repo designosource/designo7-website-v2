@@ -28,4 +28,15 @@
 			background-image: url('../img/arrow-right-red.svg');
 		}
 	}
+
+	.arrow-right-white {
+		display: inline-block;
+		width: 23pt;
+		height: 15pt;
+		margin-left: 12pt;
+		background-image: url('../img/arrow-right-white.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		@include transition(0s 0.15s);
+	}
 }
