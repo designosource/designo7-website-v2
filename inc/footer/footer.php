@@ -11,6 +11,14 @@
 		}
 	
 		?>
+		
+		<div class="hamburger-menu">
+			<div class="inner-hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
    
     <div class="footer maxwidth">
         <nav id="footer-left">

@@ -58,5 +58,16 @@ $(document).ready(function(){
 		activenumber();
 	});
 	
+	$(".hamburger-menu").on("click", function(){
+		$(this).find(".inner-hamburger-menu").toggleClass("open");
+		
+		if( $(".inner-hamburger-menu").hasClass("open") ) {
+			console.log("Hamburger menu is opened");
+		} else {
+			console.log("Hamburger menu is closed");
+		}
+		
+	});
+	
 	
 });
