@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+
+	session_start();
+	
+	//unset( $_SESSION['intro'] );
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 

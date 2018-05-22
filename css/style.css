@@ -251,9 +251,7 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   margin-bottom: 0 !important;
-  position: relative;
-  display: flex;
-  align-items: center; }
+  position: relative; }
   .btn-white .arrow-right-white {
     display: inline-block;
     width: 23pt;
