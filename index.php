@@ -52,6 +52,7 @@
 
 <!-- SCRIPTS -->
 <?php include 'inc/footer/scripts.php'; ?>
+<script type="text/javascript" src="js/activenumber.js"></script>
 <!-- END SCRIPTS -->
 
 </body>
