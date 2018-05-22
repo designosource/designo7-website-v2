@@ -31,8 +31,10 @@ $(document).ready(function(){
 		
 		if( $(".inner-hamburger-menu").hasClass("open") ) {
 			console.log("Hamburger menu is opened");
+			$(".footer").css('display', 'flex');
 		} else {
 			console.log("Hamburger menu is closed");
+			$(".footer").css('display', 'none');
 		}
 		
 	});

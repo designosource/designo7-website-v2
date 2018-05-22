@@ -244,6 +244,7 @@ main {
 	
 	section {
 		position: relative;
+		min-height: 100vh;
 	}
 
   section.container {
@@ -927,7 +928,7 @@ footer {
 	
 	.hamburger-menu {
 		position: fixed;
-    display: block;
+    display: none;
     width: 32pt;
     height: 32pt;
 		right: 75pt; /* moet 25pt zijn, dit is om te testen */
@@ -1044,6 +1045,99 @@ footer {
     }
 
   }
+	
+}
+
+@media screen and (max-width: 800px) {
+	footer {
+	
+		.hamburger-menu {
+			display: block;
+		}
+
+		.footer {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			@include center-flex(both);
+			flex-direction: column;
+			background-color: $color--darkpurple;
+			display: none;
+
+			#footer-left {
+				display: flex;
+				flex-direction: column;
+				counter-reset: footerleft;
+
+				a {
+					flex-basis: 100%;
+					text-align: center;
+					position: relative;
+					counter-increment: footerleft;
+					color: $color--white;
+					font-size: $font--36;
+					padding-left: 2em;
+					@include transition(0.3s);
+
+					&:hover {
+						color: $color--purplered;
+					}
+
+					&:before {
+						@include pseudo;
+						position: absolute;
+						left: 0;
+						content: "0" counter(footerleft) "/ ";
+					}
+					&:after {
+						@include pseudo;
+						position: absolute;
+						left: -2pt;
+						width: 0;
+						height: 2px;
+						background-color: $color--purplered;
+						@include transition(0.3s);
+						top: calc(1/3 * #{$font--36});
+					}
+
+					&:not(:last-child) {
+						margin-bottom: $font--36;
+						margin-right: 0;
+					}
+
+					&:hover {
+						&:after {
+							width: calc(100% + 4pt);
+						}
+					}
+				}
+			}
+
+			#footer-right {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-top: calc(4 * #{$font--24});
+
+				a {
+					color: $color--white;
+					text-decoration: underline;
+					font-size: $font--13;
+					@include transition(0.3s);
+					
+					&:hover {
+						color: $color--purplered;
+					}
+				}
+
+			}
+
+		}
+
+	}
+	
 }
 
 @include media;
