@@ -1,9 +1,13 @@
 $(document).ready(function(){
 
+	/*----- Intro animation -----*/
+	
 	$('#close').click(function (e) {
 		e.preventDefault();
 		$('#intro').fadeToggle('1s', 'linear');
   });
+	
+	/*----- Smooth scroll -----*/
 	
 	$(function() { 
 		$('body a').click(function()
@@ -20,6 +24,8 @@ $(document).ready(function(){
 		}); 
   });
 	
+	/*----- Hamburger menu -----*/
+	
 	$(".hamburger-menu").on("click", function(){
 		$(".inner-hamburger-menu").toggleClass("open");
 		
@@ -30,6 +36,8 @@ $(document).ready(function(){
 		}
 		
 	});
+	
+	/*----- Slick carousel -----*/
 	
   $('.pop-up-image.slick-container').slick({
     slidesToShow: 1,
