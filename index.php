@@ -32,8 +32,6 @@
 
 <?php include 'inc/header/header.php'; ?>
 
-<?php include 'inc/logo/logo.php'; ?>
-
 <main>
 
     <?php include 'inc/index/intro.php'; ?>
@@ -52,7 +50,7 @@
 
 <!-- SCRIPTS -->
 <?php include 'inc/footer/scripts.php'; ?>
-<script type="text/javascript" src="js/activenumber.js"></script>
+<script type="text/javascript" src="js/homepage.js"></script>
 <!-- END SCRIPTS -->
 
 </body>

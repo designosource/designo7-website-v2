@@ -33,9 +33,25 @@ function activenumber() {
 		
 	}
 	
+function fixedlogo() {
+	$team = $("#team").offset().top;
+	$distancewindow = $(window).scrollTop();
+	console.log($team);
+	console.log($distancewindow);
+	
+	if( $distancewindow >= $team ) {
+		$("#logo").addClass("fixed");
+	} else {
+		$("#logo").removeClass("fixed");
+	}
+	
+}
+	
 	activenumber();
+	fixedlogo();
 	$(window).scroll(function() {
 		activenumber();
+		fixedlogo();
 	});
 	
 });

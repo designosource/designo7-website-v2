@@ -1,4 +1,7 @@
 <section id="team">
+ 
+	<?php include 'inc/logo/logo.php'; ?>
+ 
   <div class="container maxwidth">
     <figure class="content-image" id="team-image"></figure>
     <article class="content-rightblock">
