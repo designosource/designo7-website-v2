@@ -8,3 +8,5 @@ sr.reveal('#home-content', { duration: 500, origin: 'bottom', distance: '100px',
 sr.reveal('section .content-image', { duration: 1000, origin: 'bottom', distance: '200px', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
 sr.reveal('section .content-rightblock', { duration: 1000, origin: 'top', distance: '200px', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
 */
+
+sr.reveal('.overview .grid-item', { duration: 500, origin: 'bottom', distance: '100px', delay: 1500, viewFactor: 0.3 }, 100);
