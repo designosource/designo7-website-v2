@@ -1172,7 +1172,21 @@ main {
       grid-row-end: 5;
       grid-column-start: 8;
       grid-column-end: 16;
-      z-index: 2; }
+      z-index: 2;
+      position: relative; }
+      main .big-grid .pop-up-image .slick-list {
+        height: 100%; }
+        main .big-grid .pop-up-image .slick-list .slick-track {
+          height: 100%; }
+      main .big-grid .pop-up-image .slick-arrow {
+        top: calc(100% - 20pt);
+        z-index: 2; }
+      main .big-grid .pop-up-image .slick-prev {
+        left: auto;
+        right: calc(50% + 15pt); }
+      main .big-grid .pop-up-image .slick-next {
+        right: auto;
+        left: calc(50% + 15pt); }
     main .big-grid .previous-page, main .big-grid .previous-next-page {
       grid-row-start: 2;
       grid-row-end: 3;

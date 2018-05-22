@@ -519,6 +519,32 @@ main {
       grid-column-start: 8;
       grid-column-end: 16;
       z-index: 2;
+			position: relative;
+			
+			.slick-list {
+				height: 100%;
+				
+				.slick-track {
+					height: 100%;
+				}
+				
+			}
+			
+			.slick-arrow {
+				top: calc(100% - 20pt);
+				z-index: 2;
+			}
+			
+			.slick-prev {
+				left: auto;
+				right: calc(50% + 15pt);
+			}
+			
+			.slick-next {
+				right: auto;
+				left: calc(50% + 15pt);
+			}
+			
     }
 
     .previous-page, .previous-next-page {
