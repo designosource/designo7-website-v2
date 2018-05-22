@@ -522,6 +522,15 @@ main {
         height: 100%;
       }
     }
+		
+		.slick-list {
+			height: 100%;
+
+			.slick-track {
+				height: 100%;
+			}
+
+		}
 
     .pop-up-image {
       grid-row-start: 3;
@@ -530,15 +539,6 @@ main {
       grid-column-end: 16;
       z-index: 2;
 			position: relative;
-			
-			.slick-list {
-				height: 100%;
-				
-				.slick-track {
-					height: 100%;
-				}
-				
-			}
 			
 			.slick-arrow {
 				top: calc(100% - 20pt);
@@ -895,13 +895,20 @@ main {
   }
 
   #single-case {
-    .content-image {
-      background-image: url("https://media.giphy.com/media/YhyAJUCpno53y/giphy.gif");
-    }
     .overlay {
       &:before {
         background-color: rgba($color--darkpurple, 0.9);
+				z-index: 2;
       }
+    }
+		.content-image-1 {
+      background-image: url("https://media.giphy.com/media/YhyAJUCpno53y/giphy.gif");
+    }
+		.content-image-2 {
+      background-image: url("https://media.giphy.com/media/wqb5K5564JSlW/giphy.gif");
+    }
+		.content-image-3 {
+      background-image: url("https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif");
     }
   }
 

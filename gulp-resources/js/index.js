@@ -31,11 +31,17 @@ $(document).ready(function(){
 		
 	});
 	
-  $('.slick-container').slick({
+  $('.pop-up-image.slick-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
+		draggable: false,
+    arrows: true
+  });
+	
+	$('.overlay.slick-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
     arrows: true
   });
 	

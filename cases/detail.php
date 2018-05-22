@@ -36,11 +36,16 @@
 
 	<section id="single-case">
   	<div class="container big-grid maxwidth">
-			<figure class="content-image overlay"></figure>
+			<!--<figure class="content-image overlay"></figure>-->
+			<div class="slick-container overlay">
+				<figure class="content-image content-image-1"></figure>
+				<figure class="content-image content-image-2"></figure>
+				<figure class="content-image content-image-3"></figure>
+			</div>
 			<div class="slick-container pop-up-image">
-				<figure class="content-image"></figure>
-				<figure class="content-image"></figure>
-				<figure class="content-image"></figure>
+				<figure class="content-image content-image-1"></figure>
+				<figure class="content-image content-image-2"></figure>
+				<figure class="content-image content-image-3"></figure>
 			</div>
 			
 
@@ -70,6 +75,7 @@
 
 <!-- SCRIPTS -->
 <?php include '../inc/footer/scripts.php'; ?>
+<script type="text/javascript" src="../js/case-detail.js"></script>
 <!-- END SCRIPTS -->
 
 </body>
