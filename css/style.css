@@ -251,7 +251,9 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   margin-bottom: 0 !important;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: center; }
   .btn-white .arrow-right-white {
     display: inline-block;
     width: 23pt;
@@ -957,7 +959,8 @@ main {
     width: 100vw;
     background: #21203a;
     z-index: 100;
-    align-items: flex-start; }
+    align-items: flex-start;
+    justify-content: center; }
     main #intro img {
       height: 50%;
       margin: 5% auto; }
