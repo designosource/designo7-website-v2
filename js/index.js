@@ -79,4 +79,38 @@ $(document).ready(function(){
 	
 	$( ".member-information" ).clone().appendTo( "#member .content-rightblock" );
 	
+	var kkeys = [],
+  konami = "38,38,40,40,37,39,37,39,66,65"; /* up up, down down, left right, left right, b, a */
+	
+	var dskeys = [],
+  konami = "68,69,83,73,71,78,79,83,79,85,82,67,69"; /* designosource */
+
+	$(document).keydown(function (e) {
+
+		kkeys.push(e.keyCode);
+
+		if (kkeys.toString().indexOf(konami) >= 0) {
+
+			$(document).unbind('keydown', arguments.callee);
+
+			$code = '<iframe style="width: 100vw; height: 100vh; pointer-events: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+			
+			$('body').html($code);
+
+		}
+		
+		dskeys.push(e.keyCode);
+
+		if (dskeys.toString().indexOf(konami) >= 0) {
+
+			$(document).unbind('keydown', arguments.callee);
+
+			$code = '<iframe style="width: 100vw; height: 100vh; pointer-events: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+			
+			$('body').html("");
+
+		}
+
+	});
+	
 });
