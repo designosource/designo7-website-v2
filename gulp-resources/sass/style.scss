@@ -627,6 +627,10 @@ main {
     grid-template-rows: 60px 60px 100px 2fr 33% 1fr;
     height: calc(100vh - 60px);
 
+		.coloured-background {
+			display: none;
+		}
+		
     .content-image {
       @include bg-cover-center;
       grid-row-start: 2;
@@ -931,8 +935,8 @@ footer {
     display: none;
     width: 32pt;
     height: 32pt;
-		right: 75pt; /* moet 25pt zijn, dit is om te testen */
-		top: 75pt; /* moet 25pt zijn, dit is om te testen */
+		right: 20pt; /* moet 25pt zijn, dit is om te testen */
+		top: 20pt; /* moet 25pt zijn, dit is om te testen */
     cursor: pointer;
     z-index: 10;
 		
@@ -1049,7 +1053,32 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+	#logo {
+		display: none;
+	}
+	
+	main {
+		
+		section {
+			
+			.big-grid-2 {
+				grid-template-rows: 75px 85px 200px 108pt auto 40pt 190pt 40pt auto 40pt;
+				
+				.coloured-background {
+					display: block;
+					grid-row-start: 1;
+					grid-row-end: 3;
+					grid-column-start: 1;
+					grid-column-end: 25;
+					background-color: rgba($color--purplered, 0.85);
+				}
+				
+			}
+		}
+	}
+	
 	footer {
+		z-index: 10;
 	
 		.hamburger-menu {
 			display: block;
@@ -1124,11 +1153,11 @@ footer {
 				a {
 					color: $color--white;
 					text-decoration: underline;
-					font-size: $font--13;
+					font-size: $font--20;
 					@include transition(0.3s);
 					
 					&:hover {
-						color: $color--purplered;
+						color: $color--darkpurple;
 					}
 				}
 

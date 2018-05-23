@@ -38,7 +38,7 @@
 
 <?php include 'inc/header/header.php'; ?>
 
-<main>
+<main id="fullpage">
 
     <?php include 'inc/index/intro.php'; ?>
 
@@ -57,6 +57,7 @@
 <!-- SCRIPTS -->
 <?php include 'inc/footer/scripts.php'; ?>
 <script type="text/javascript" src="js/homepage.js"></script>
+<!--<script type="text/javascript" src="js/fullpage.js"></script>-->
 <!-- END SCRIPTS -->
 
 </body>

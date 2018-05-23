@@ -36,8 +36,6 @@ function activenumber() {
 function fixedlogo() {
 	$team = $("#team").offset().top;
 	$distancewindow = $(window).scrollTop();
-	console.log($team);
-	console.log($distancewindow);
 	
 	if( $distancewindow >= $team ) {
 		$("#logo").addClass("fixed");

@@ -36,6 +36,7 @@
 
 	<section id="member">
   	<div class="container big-grid-2 maxwidth">
+  		<div class="coloured-background"></div>
 			<figure class="content-image overlay"></figure>
 			
 			<article class="member-information">
