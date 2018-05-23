@@ -45,10 +45,12 @@ $(document).ready(function(){
 		$(".inner-hamburger-menu").removeClass("open");
 		
 		/* check window width */
-		if( $windowwidth >= 800 + 1 ) {
+		if( $windowwidth >= 750 + 1 ) {
 			$(".footer").css("display", "flex");
+			$( "#member .content-rightblock" ).addClass("scrollbar");
 		} else {
 			$(".footer").css("display", "none");
+			$( "#member .content-rightblock" ).removeClass("scrollbar");
 		}
 	}
 	
@@ -71,5 +73,9 @@ $(document).ready(function(){
     autoplay: false,
     arrows: true
   });
+	
+	/*----- Clone quote section of member page -----*/
+	
+	$( ".member-information" ).clone().appendTo( "#member .content-rightblock" );
 	
 });

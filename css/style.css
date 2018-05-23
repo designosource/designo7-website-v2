@@ -1354,6 +1354,8 @@ main {
         font-size: 1.833rem;
         font-weight: 500;
         text-transform: uppercase; }
+      main .big-grid-2 .content-rightblock .member-information {
+        display: none; }
   main #wat .content-image {
     background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif"); }
   main #wat .overlay:before {
@@ -1537,11 +1539,12 @@ footer {
     footer #footer-right a:not(:first-child) {
       margin-left: calc(2.5 * 1.833rem); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   #logo {
     display: none; }
   main section .big-grid-2 {
-    grid-template-rows: 75px 85px 200px 108pt auto 40pt 190pt 40pt auto 40pt; }
+    grid-template-rows: 75px 85px 200px auto;
+    height: 100vh; }
     main section .big-grid-2 .coloured-background {
       display: block;
       grid-row-start: 1;
@@ -1549,6 +1552,61 @@ footer {
       grid-column-start: 1;
       grid-column-end: 25;
       background-color: rgba(193, 12, 67, 0.85); }
+    main section .big-grid-2 .content-image {
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 3;
+      grid-column-end: 22;
+      background-position: top center; }
+    main section .big-grid-2 .previous-page {
+      display: none; }
+    main section .big-grid-2 h1 {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 3;
+      grid-column-end: 22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.666rem;
+      text-align: center;
+      line-height: 3rem;
+      z-index: 2;
+      color: #ffffff; }
+    main section .big-grid-2 .member-information {
+      display: none; }
+    main section .big-grid-2 .content-rightblock {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 22;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 70px;
+      text-align: center;
+      padding-right: 0;
+      /*padding: 0 12.5%;*/ }
+      main section .big-grid-2 .content-rightblock p {
+        margin-bottom: 2em; }
+      main section .big-grid-2 .content-rightblock .member-nickname {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 2em 0; }
+      main section .big-grid-2 .content-rightblock .member-information {
+        flex-basis: 100%;
+        width: 100%;
+        display: block;
+        margin-bottom: 2em; }
+        main section .big-grid-2 .content-rightblock .member-information .member-socialmedia {
+          justify-content: space-between;
+          padding-left: 1.5em;
+          padding-right: 1.5em; }
+          main section .big-grid-2 .content-rightblock .member-information .member-socialmedia a {
+            margin: 0; }
+      main section .big-grid-2 .content-rightblock a {
+        order: 2;
+        margin-left: auto;
+        margin-right: auto; }
   footer {
     z-index: 10; }
     footer .hamburger-menu {
