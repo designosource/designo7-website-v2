@@ -687,7 +687,7 @@ main {
           color: rgba($color--white, 0.7);
           font-size: $font--144;
           left: -20pt;
-          /*top: -30pt;*/
+					@include transition(0.3s);
         }
 
       }
@@ -740,7 +740,7 @@ main {
       grid-row-start: 4;
       grid-row-end: 5;
       grid-column-start: 12;
-      grid-column-end: 23;
+      grid-column-end: 24;
 
       @include center-flex(vertical);
     }
@@ -1135,8 +1135,16 @@ footer {
 						display: block;
 						margin-bottom: 2em;
 						
+						.member-quote {
+							text-align: left;
+							
+							&:before {
+								left: -10pt;
+							}
+						}
+						
 						.member-socialmedia {
-							justify-content: space-between;
+							justify-content: space-around;
 							padding-left: 1.5em;
 							padding-right: 1.5em;
 							

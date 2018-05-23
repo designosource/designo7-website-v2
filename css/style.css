@@ -1292,7 +1292,17 @@ main {
           color: rgba(255, 255, 255, 0.7);
           font-size: 12rem;
           left: -20pt;
-          /*top: -30pt;*/ }
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          main .big-grid-2 .member-information .member-quote:before:hover {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
       main .big-grid-2 .member-information .member-socialmedia {
         display: flex;
         flex-direction: row;
@@ -1337,7 +1347,7 @@ main {
       grid-row-start: 4;
       grid-row-end: 5;
       grid-column-start: 12;
-      grid-column-end: 23;
+      grid-column-end: 24;
       display: flex;
       align-items: center; }
     main .big-grid-2 .content-rightblock {
@@ -1597,8 +1607,12 @@ footer {
         width: 100%;
         display: block;
         margin-bottom: 2em; }
+        main section .big-grid-2 .content-rightblock .member-information .member-quote {
+          text-align: left; }
+          main section .big-grid-2 .content-rightblock .member-information .member-quote:before {
+            left: -10pt; }
         main section .big-grid-2 .content-rightblock .member-information .member-socialmedia {
-          justify-content: space-between;
+          justify-content: space-around;
           padding-left: 1.5em;
           padding-right: 1.5em; }
           main section .big-grid-2 .content-rightblock .member-information .member-socialmedia a {
