@@ -1647,13 +1647,13 @@ footer {
   html {
     font-size: 10px; } }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 1024px) {
   html {
     font-size: 8px; } }
 
-@media (min-width: 480px) and (max-width: 720px) {
+@media (max-width: 480px) {
   html {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.8);
