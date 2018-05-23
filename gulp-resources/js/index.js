@@ -9,11 +9,11 @@ $(document).ready(function(){
 	
 	/*----- Smooth scroll -----*/
 	
-	$(function() { 
+	/*$(function() { 
 		$('body a').click(function()
 		{ 
 			/* smooth scroll navigation */
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+			/*if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
 			{
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']'); 
@@ -22,7 +22,7 @@ $(document).ready(function(){
 				}
 			} 
 		}); 
-  });
+  });*/
 	
 	/*----- Hamburger menu -----*/
 	
@@ -37,6 +37,23 @@ $(document).ready(function(){
 			$(".footer").css('display', 'none');
 		}
 		
+	});
+	
+	function resizewindow() {
+		$windowwidth = $(window).width();
+		
+		$(".inner-hamburger-menu").removeClass("open");
+		
+		/* check window width */
+		if( $windowwidth >= 800 + 1 ) {
+			$(".footer").css("display", "flex");
+		} else {
+			$(".footer").css("display", "none");
+		}
+	}
+	
+	$(window).resize(function() {
+		resizewindow();
 	});
 	
 	/*----- Slick carousel -----*/

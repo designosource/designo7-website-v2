@@ -1237,6 +1237,8 @@ main {
   main .big-grid-2 {
     grid-template-rows: 60px 60px 100px 2fr 33% 1fr;
     height: calc(100vh - 60px); }
+    main .big-grid-2 .coloured-background {
+      display: none; }
     main .big-grid-2 .content-image {
       -webkit-background-size: cover;
       background-size: cover;
@@ -1461,9 +1463,9 @@ footer {
     display: none;
     width: 32pt;
     height: 32pt;
-    right: 75pt;
+    right: 20pt;
     /* moet 25pt zijn, dit is om te testen */
-    top: 75pt;
+    top: 20pt;
     /* moet 25pt zijn, dit is om te testen */
     cursor: pointer;
     z-index: 10; }
@@ -1536,100 +1538,113 @@ footer {
       margin-left: calc(2.5 * 1.833rem); }
 
 @media screen and (max-width: 800px) {
-  footer .hamburger-menu {
-    display: block; }
-  footer .footer {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #c10c43;
+  #logo {
     display: none; }
-    footer .footer #footer-left {
+  main section .big-grid-2 {
+    grid-template-rows: 75px 85px 200px 108pt auto 40pt 190pt 40pt auto 40pt; }
+    main section .big-grid-2 .coloured-background {
+      display: block;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 25;
+      background-color: rgba(193, 12, 67, 0.85); }
+  footer {
+    z-index: 10; }
+    footer .hamburger-menu {
+      display: block; }
+    footer .footer {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
-      counter-reset: footerleft; }
-      footer .footer #footer-left a {
-        flex-basis: 100%;
-        text-align: center;
-        position: relative;
-        counter-increment: footerleft;
-        color: #ffffff;
-        font-size: 3rem;
-        padding-left: 2em;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        footer .footer #footer-left a:hover {
+      background-color: #c10c43;
+      display: none; }
+      footer .footer #footer-left {
+        display: flex;
+        flex-direction: column;
+        counter-reset: footerleft; }
+        footer .footer #footer-left a {
+          flex-basis: 100%;
+          text-align: center;
+          position: relative;
+          counter-increment: footerleft;
+          color: #ffffff;
+          font-size: 3rem;
+          padding-left: 2em;
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        footer .footer #footer-left a:hover {
-          color: #21203a; }
-        footer .footer #footer-left a:before {
-          content: "";
-          display: block;
-          position: absolute;
-          position: absolute;
-          left: 0;
-          content: "0" counter(footerleft) "/ "; }
-        footer .footer #footer-left a:after {
-          content: "";
-          display: block;
-          position: absolute;
-          position: absolute;
-          left: -2pt;
-          width: 0;
-          height: 2px;
-          background-color: #21203a;
-          -webkit-transition: 0.3s;
-          -moz-transition: 0.3s;
-          -ms-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s;
-          top: calc(1/3 * 3rem); }
-          footer .footer #footer-left a:after:hover {
+          footer .footer #footer-left a:hover {
             -webkit-transition: 0.3s;
             -moz-transition: 0.3s;
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-        footer .footer #footer-left a:not(:last-child) {
-          margin-bottom: 3rem;
-          margin-right: 0; }
-        footer .footer #footer-left a:hover:after {
-          width: calc(100% + 4pt); }
-    footer .footer #footer-right {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: calc(4 * 2rem); }
-      footer .footer #footer-right a {
-        color: #ffffff;
-        text-decoration: underline;
-        font-size: 1.083rem;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        footer .footer #footer-right a:hover {
+          footer .footer #footer-left a:hover {
+            color: #21203a; }
+          footer .footer #footer-left a:before {
+            content: "";
+            display: block;
+            position: absolute;
+            position: absolute;
+            left: 0;
+            content: "0" counter(footerleft) "/ "; }
+          footer .footer #footer-left a:after {
+            content: "";
+            display: block;
+            position: absolute;
+            position: absolute;
+            left: -2pt;
+            width: 0;
+            height: 2px;
+            background-color: #21203a;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            top: calc(1/3 * 3rem); }
+            footer .footer #footer-left a:after:hover {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              -ms-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+          footer .footer #footer-left a:not(:last-child) {
+            margin-bottom: 3rem;
+            margin-right: 0; }
+          footer .footer #footer-left a:hover:after {
+            width: calc(100% + 4pt); }
+      footer .footer #footer-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: calc(4 * 2rem); }
+        footer .footer #footer-right a {
+          color: #ffffff;
+          text-decoration: underline;
+          font-size: 1.666rem;
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        footer .footer #footer-right a:hover {
-          color: #c10c43; } }
+          footer .footer #footer-right a:hover {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+          footer .footer #footer-right a:hover {
+            color: #21203a; } }
 
 @media (min-width: 1920px) {
   html {
