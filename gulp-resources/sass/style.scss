@@ -1063,7 +1063,7 @@ footer {
 			top: 0;
 			@include center-flex(both);
 			flex-direction: column;
-			background-color: $color--darkpurple;
+			background-color: $color--purplered;
 			display: none;
 
 			#footer-left {
@@ -1082,7 +1082,7 @@ footer {
 					@include transition(0.3s);
 
 					&:hover {
-						color: $color--purplered;
+						color: $color--darkpurple;
 					}
 
 					&:before {
@@ -1097,7 +1097,7 @@ footer {
 						left: -2pt;
 						width: 0;
 						height: 2px;
-						background-color: $color--purplered;
+						background-color: $color--darkpurple;
 						@include transition(0.3s);
 						top: calc(1/3 * #{$font--36});
 					}

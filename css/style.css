@@ -1548,7 +1548,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #21203a;
+    background-color: #c10c43;
     display: none; }
     footer .footer #footer-left {
       display: flex;
@@ -1574,7 +1574,7 @@ footer {
           -o-transition: 0.3s;
           transition: 0.3s; }
         footer .footer #footer-left a:hover {
-          color: #c10c43; }
+          color: #21203a; }
         footer .footer #footer-left a:before {
           content: "";
           display: block;
@@ -1590,7 +1590,7 @@ footer {
           left: -2pt;
           width: 0;
           height: 2px;
-          background-color: #c10c43;
+          background-color: #21203a;
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
