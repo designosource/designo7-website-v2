@@ -18,13 +18,16 @@
     background-repeat: no-repeat;
     background-position: center center;
     @include transition(0s 0.15s);
+    @include transition(transform 0.3s);
   }
 
   &:hover {
     color: $color--purplered;
     border: 1px solid $color--purplered;
 
+
     .arrow-right {
+      @include translate(10px);
       background-image: url('../img/arrow-right-red.svg');
     }
   }
@@ -60,7 +63,7 @@
     background-image: url('../img/arrow-right-white.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    //@include transition(0s 0.15s);
+    @include transition(transform 0.3s);
   }
 
   &:hover {
@@ -68,6 +71,7 @@
     border: 1px solid $color--purplered;
 
     .arrow-right-white {
+      @include translate(10px);
       background-image: url('../img/arrow-right-red.svg');
     }
   }
