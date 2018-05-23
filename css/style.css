@@ -211,17 +211,31 @@
     -moz-transition: 0s 0.15s;
     -ms-transition: 0s 0.15s;
     -o-transition: 0s 0.15s;
-    transition: 0s 0.15s; }
+    transition: 0s 0.15s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s; }
     .btn .arrow-right:hover {
       -webkit-transition: 0s 0.15s;
       -moz-transition: 0s 0.15s;
       -ms-transition: 0s 0.15s;
       -o-transition: 0s 0.15s;
       transition: 0s 0.15s; }
+    .btn .arrow-right:hover {
+      -webkit-transition: transform 0.3s;
+      -moz-transition: transform 0.3s;
+      -ms-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s; }
   .btn:hover {
     color: #c10c43;
     border: 1px solid #c10c43; }
     .btn:hover .arrow-right {
+      -moz-transform: translate(10px, 0px);
+      -webkit-transform: translate(10px, 0px);
+      transform: translate(10px, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
   .btn .arrow-right-white {
     display: inline-block;
@@ -259,11 +273,25 @@
     margin-left: 12pt;
     background-image: url("../img/arrow-right-white.svg");
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center center;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s; }
+    .btn-white .arrow-right-white:hover {
+      -webkit-transition: transform 0.3s;
+      -moz-transition: transform 0.3s;
+      -ms-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s; }
   .btn-white:hover {
     color: #c10c43;
     border: 1px solid #c10c43; }
     .btn-white:hover .arrow-right-white {
+      -moz-transform: translate(10px, 0px);
+      -webkit-transform: translate(10px, 0px);
+      transform: translate(10px, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
 
 /* customize scrollbar css */
