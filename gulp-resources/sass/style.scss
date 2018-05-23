@@ -1065,9 +1065,60 @@ footer {
 		
 		section {
 			
+			.big-grid {
+				grid-template-rows: 75px 85px 200px 80pt auto;
+				min-height: 100vh;
+				margin-bottom: 130pt;
+				
+				.overlay {
+					grid-row-start: 1;
+					grid-row-end: 3;
+					grid-column-start: 1;
+					grid-column-end: 25;
+				}
+				
+				.pop-up-image {
+					grid-row-start: 2;
+					grid-row-end: 4;
+					grid-column-start: 3;
+					grid-column-end: 23;
+					background-position: top center;
+				}
+				
+				.previous-page {
+					display: none;
+				}
+				
+				h1 {
+					grid-row-start: 4;
+					grid-row-end: 5;
+					grid-column-start: 3;
+					grid-column-end: 23;
+					@include center-flex(both);
+					padding-top: 0.25em;
+				}
+				
+				.content-rightblock {
+					grid-row-start: 5;
+					grid-row-end: 6;
+					grid-column-start: 3;
+					grid-column-end: 23;
+					margin-top: 0;
+					padding: 0;
+					text-align: center;
+					
+					a {
+						@include push-auto;
+					}
+					
+				}
+				
+			}
+			
 			.big-grid-2 {
-				grid-template-rows: 75px 85px 200px auto;
-				height: 100vh;
+				grid-template-rows: 75px 85px 200px 80pt auto;
+				min-height: 100vh;
+				margin-bottom: 90pt;
 				
 				.coloured-background {
 					display: block;
@@ -1082,7 +1133,7 @@ footer {
 					grid-row-start: 2;
 					grid-row-end: 4;
 					grid-column-start: 3;
-					grid-column-end: 22;
+					grid-column-end: 23;
 					background-position: top center;
 				}
 				
@@ -1094,7 +1145,7 @@ footer {
 					grid-row-start: 3;
 					grid-row-end: 4;
 					grid-column-start: 3;
-					grid-column-end: 22;
+					grid-column-end: 23;
 					@include center-flex(both);
 					font-size: $font--32;
 					text-align: center;
@@ -1111,7 +1162,7 @@ footer {
 					grid-row-start: 4;
 					grid-row-end: 5;
 					grid-column-start: 3;
-					grid-column-end: 22;
+					grid-column-end: 23;
 					display: flex;
 					flex-direction: column;
 					margin-bottom: 70px;
@@ -1261,6 +1312,59 @@ footer {
 }
 
 @include media;
+
+/* hiddengame */
+
+#hiddengame {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+	display: none;
+	
+	#inner-container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		#escape {
+			text-align: right;
+			color: $color--white;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			font-size: $font--36;
+			cursor: pointer;
+		}
+		
+		#hiddenscore {
+			position: fixed;
+			width: 100vw;
+			height: 30px;
+			@include center-flex(both);
+			color: $color--white;
+			font-size: 15px;
+		}
+
+		#hiddenblock {
+			width: 3px;
+			height: 3px;
+			background-color: red;
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			opacity: 1;
+			cursor: pointer;
+			z-index: 20;
+		}
+	}
+	
+}
+
+/* end hiddengame */
 
 // END IMPLEMENTING SASS
 

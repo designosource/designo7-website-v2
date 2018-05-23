@@ -79,4 +79,74 @@ $(document).ready(function(){
 	
 	$( ".member-information" ).clone().appendTo( "#member .content-rightblock" );
 	
+	/*----- Keypress functions / minigame -----*/
+	
+	var kkeys = [],
+  konami = "38,38,40,40,37,39,37,39,66,65"; /* up up, down down, left right, left right, b, a */
+	
+	var dskeys = [],
+  designo = "68,69,83,73,71,78,79,83,79,85,82,67,69"; /* designosource */
+
+	$(document).keydown(function (e) {
+
+		kkeys.push(e.keyCode);
+
+		if (kkeys.toString().indexOf(konami) >= 0) {
+
+			$(document).unbind('keydown', arguments.callee);
+
+			$code = '<iframe style="width: 100vw; height: 100vh; pointer-events: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+			
+			$('body').html($code);
+
+		}
+		
+		dskeys.push(e.keyCode);
+
+		if (dskeys.toString().indexOf(designo) >= 0) {
+
+			$(document).unbind('keydown', arguments.callee);
+
+			$('#hiddengame').css("display", "block");
+
+		}
+
+	});
+	
+	$count = 0;
+	$opacity = 1;
+	
+	$("#hiddenblock").on("click", function(){
+	
+		$count++;
+		$("#hiddenscore").html($count);
+		
+		$posleft = (Math.random() * 100) + 2;
+		$postop = (Math.random() * 100) + 5;
+		$opacity = $opacity - 0.02;
+		
+		if( $postop <= 5 ) {
+			$postop = 10;
+		} else if( $postop >= 98 ) {
+			$postop = 95;
+		}
+		
+		if( $posleft <= 98 ) {
+			$postop = 95;
+		}
+		
+		if( $opacity <= 0.1 ) {
+			$opacity = 0.1;
+		}
+		
+		$("#hiddenblock").css("top", $postop + "%").css("left", $posleft + "%").css("opacity", $opacity);
+	
+	});
+	
+	$("#escape").on("click", function(){
+		$("#hiddengame").css("display", "none");
+	});
+	
+	
+	
 });

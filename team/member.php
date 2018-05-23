@@ -31,6 +31,7 @@
 <body>
 
 <?php include '../inc/logo/logo.php'; ?>
+<?php include '../inc/hiddengame/hiddengame.php'; ?>
 
 <main>
 
