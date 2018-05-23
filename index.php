@@ -37,6 +37,7 @@
 <body>
 
 <?php include 'inc/header/header.php'; ?>
+<?php include 'inc/hiddengame/hiddengame.php'; ?>
 
 <main id="fullpage">
 
