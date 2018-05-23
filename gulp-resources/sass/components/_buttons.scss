@@ -53,7 +53,7 @@
   border: 1px solid $color--white;
   margin-bottom: 0 !important;
   position: relative;
-  //@include transition(0.15s);
+  @include transition(0.15s);
 
   .arrow-right-white {
     display: inline-block;
