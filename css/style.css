@@ -1647,11 +1647,7 @@ footer {
   html {
     font-size: 10px; } }
 
-@media (min-width: 480px) and (max-width: 1024px) {
-  html {
-    font-size: 8px; } }
-
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   html {
     font-size: 8px; } }
 

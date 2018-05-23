@@ -25,13 +25,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-x-small) and (max-width: $breakpoint-medium) {
-    html {
-      font-size: 8px;
-    }
-  }
-
-  @media (max-width: $breakpoint-x-small) {
+  @media (max-width: $breakpoint-medium) {
     html {
       font-size: 8px;
     }
