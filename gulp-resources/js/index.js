@@ -54,6 +54,7 @@ $(document).ready(function(){
 		}
 	}
 	
+	resizewindow();
 	$(window).resize(function() {
 		resizewindow();
 	});
