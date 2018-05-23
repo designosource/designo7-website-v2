@@ -1024,7 +1024,7 @@ main {
             content: "";
             display: block;
             position: absolute;
-            top: calc(0.4em + 1px);
+            top: 50%;
             left: -10px;
             right: calc(100% + 10px);
             height: 2px;
