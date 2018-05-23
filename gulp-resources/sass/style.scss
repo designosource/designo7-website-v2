@@ -244,7 +244,6 @@ main {
 	
 	section {
 		position: relative;
-		min-height: 100vh;
 	}
 
   section.container {
@@ -304,6 +303,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      z-index: 5;
 
       .page-number {
         color: $color--purplered;
