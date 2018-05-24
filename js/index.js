@@ -108,35 +108,68 @@ $(document).ready(function(){
 			$(document).unbind('keydown', arguments.callee);
 
 			$('#hiddengame').css("display", "block");
+			$cookiescript = "<script type='text/javascript' src='js/cookie.js'></script><script type='text/javascript' src='../js/cookie.js'></script>";
+			$($cookiescript).appendTo("footer");
+	
+			if( $.cookie("hiddenscore") != null ) {
+				$count = $.cookie("hiddenscore");
+				$opacity = 1 - ( $count * 0.02 );
+			} else {
+				$count = 0;
+				$opacity = 1;
+			}
+			
+			$("#hiddenscore").html($count);
+			
+			$posleft = (Math.random() * 100);
+			$postop = (Math.random() * 100);
 
+			if( $postop <= 10 ) {
+				$postop = 10;
+			} else if( $postop >= 90 ) {
+				$postop = 90;
+			}
+
+			if( $posleft <= 10 ) {
+				$posleft = 10;
+			} else if( $posleft >= 90 ) {
+				$posleft = 90;
+			}
+			
+			if( $opacity <= 0.24 ) {
+				$opacity = 0.24;
+			}
+			
+			$("#hiddenblock").css("top", $postop + "%").css("left", $posleft + "%").css("opacity", $opacity);
+			
 		}
 
 	});
-	
-	$count = 0;
-	$opacity = 1;
 	
 	$("#hiddenblock").on("click", function(){
 	
 		$count++;
 		$("#hiddenscore").html($count);
+		$.cookie("hiddenscore", $count);
 		
-		$posleft = (Math.random() * 100) + 2;
-		$postop = (Math.random() * 100) + 5;
+		$posleft = (Math.random() * 100);
+		$postop = (Math.random() * 100);
 		$opacity = $opacity - 0.02;
 		
-		if( $postop <= 5 ) {
+		if( $postop <= 10 ) {
 			$postop = 10;
-		} else if( $postop >= 98 ) {
-			$postop = 95;
+		} else if( $postop >= 90 ) {
+			$postop = 90;
 		}
 		
-		if( $posleft <= 98 ) {
-			$postop = 95;
+		if( $posleft <= 10 ) {
+			$posleft = 10;
+		} else if( $posleft >= 90 ) {
+			$posleft = 90;
 		}
 		
-		if( $opacity <= 0.1 ) {
-			$opacity = 0.1;
+		if( $opacity <= 0.24 ) {
+			$opacity = 0.24;
 		}
 		
 		$("#hiddenblock").css("top", $postop + "%").css("left", $posleft + "%").css("opacity", $opacity);
