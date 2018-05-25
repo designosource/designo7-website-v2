@@ -305,6 +305,16 @@
       transform: translate(10px, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
 
+@media screen and (max-width: 480px) {
+  .btn-white {
+    font-size: 1.333rem !important;
+    padding: 5pt 5pt 5pt 5pt; }
+    .btn-white .arrow-right-white {
+      display: inline-block;
+      width: 15pt;
+      height: 8pt;
+      margin-left: 8pt; } }
+
 /* customize scrollbar css */
 .scrollbar {
   overflow-y: auto; }
@@ -1808,6 +1818,8 @@ footer {
       grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 480px) {
+  header {
+    display: none; }
   main .page-container {
     padding: 40px 25px; }
     main .page-container h1 {
@@ -1816,7 +1828,138 @@ footer {
     main .page-container .overview {
       grid-gap: 25px; }
     main .page-container #members-grid, main .page-container #cases-grid {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr; }
+  main .container {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 30% 1fr 1fr;
+    grid-column-gap: 15pt;
+    min-height: 100vh; }
+    main .container .content-image {
+      width: 100%;
+      height: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    main .container .content-rightblock {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      margin-top: 0;
+      align-items: flex-start;
+      justify-content: center;
+      z-index: 5; }
+      main .container .content-rightblock .page-number {
+        color: #c10c43;
+        font-size: 3rem;
+        font-family: "CooperHewittBold", sans-serif;
+        position: relative;
+        height: 1.5em; }
+      main .container .content-rightblock h2 {
+        font-size: 8.75rem;
+        font-family: "CooperHewittBold", sans-serif;
+        margin-bottom: 5%; }
+      main .container .content-rightblock a {
+        font-size: 2.666rem;
+        margin-bottom: 5%;
+        font-family: "CooperHewittBook", sans-serif;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        main .container .content-rightblock a:hover {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        main .container .content-rightblock a span:not(.label):not(.arrow-right) {
+          position: relative;
+          margin-right: 15pt; }
+          main .container .content-rightblock a span:not(.label):not(.arrow-right):before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            right: calc(100% + 10px);
+            height: 2px;
+            background-color: #c10c43;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            main .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              -ms-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+        main .container .content-rightblock a img {
+          height: 0.6em; }
+        main .container .content-rightblock a:hover:not(.btn) {
+          font-family: "CooperHewittBold", sans-serif; }
+          main .container .content-rightblock a:hover:not(.btn) span:before {
+            right: -10px; }
+      main .container .content-rightblock p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: lighter;
+        font-size: 1.833rem;
+        line-height: 2.333rem;
+        margin-bottom: 10%; }
+      main .container .content-rightblock #contact-intro {
+        margin-bottom: 3%;
+        font-weight: bold; }
+      main .container .content-rightblock #tm-logo {
+        width: 110px;
+        height: auto; }
+      main .container .content-rightblock #email {
+        font-size: 1.833rem;
+        margin-bottom: 50px; }
+      main .container .content-rightblock #partner {
+        margin-bottom: 20px; }
+      main .container .content-rightblock .label {
+        color: #c10c43;
+        font-family: "CooperHewittBold", sans-serif;
+        text-transform: uppercase; }
+  main #home-grid {
+    grid-template-columns: 10% 1fr 5%;
+    grid-template-rows: 1fr 100% 1fr;
+    align-items: flex-start; }
+    main #home-grid #home-logo {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      height: 40%;
+      align-self: flex-end;
+      margin-bottom: 10%; }
+    main #home-grid #home-content {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      color: #ffffff; }
+      main #home-grid #home-content h3 {
+        font-size: 1.666rem;
+        margin-bottom: 1%; }
+      main #home-grid #home-content h1 {
+        font-size: 2.666rem;
+        margin-bottom: 5%; }
+      main #home-grid #home-content p {
+        font-size: 1.333rem;
+        width: 100%;
+        margin-bottom: 8%;
+        line-height: 15pt; }
+    main #home-grid #home-line {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      background: #f8ae0d;
+      height: 5px;
+      padding-top: 5%; } }
 
 @media (min-width: 1920px) {
   html {

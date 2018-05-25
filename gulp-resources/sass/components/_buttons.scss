@@ -25,7 +25,6 @@
     color: $color--purplered;
     border: 1px solid $color--purplered;
 
-
     .arrow-right {
       @include translate(10px);
       background-image: url('../img/arrow-right-red.svg');
@@ -73,6 +72,20 @@
     .arrow-right-white {
       @include translate(10px);
       background-image: url('../img/arrow-right-red.svg');
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-x-small) {
+  .btn-white {
+    font-size: $font--16 !important;
+    padding: 5pt 5pt 5pt 5pt;
+
+    .arrow-right-white {
+      display: inline-block;
+      width: 15pt;
+      height: 8pt;
+      margin-left: 8pt;
     }
   }
 }

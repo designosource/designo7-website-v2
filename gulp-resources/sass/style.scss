@@ -1056,6 +1056,7 @@ footer {
 
 }
 
+// Detail pages
 @media screen and (max-width: 750px) {
   #logo {
     display: none;
@@ -1310,6 +1311,7 @@ footer {
 
 }
 
+// TABLET
 @media (min-width: $breakpoint-x-small) and (max-width: $breakpoint-medium) {
   main {
     .page-container {
@@ -1334,7 +1336,12 @@ footer {
   }
 }
 
+// MOBILE
 @media screen and (max-width: $breakpoint-x-small) {
+  header {
+    display: none;
+  }
+
   main {
     .page-container {
       padding: 40px 25px;
@@ -1350,6 +1357,168 @@ footer {
 
       #members-grid, #cases-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 10% 1fr 10%;
+      grid-template-rows: 30% 1fr 1fr;
+      grid-column-gap: 15pt;
+      min-height: 100vh;
+
+      .content-image {
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .content-rightblock {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        margin-top: 0;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 5;
+
+        .page-number {
+          color: $color--purplered;
+          font-size: $font--36;
+          font-family: $font--cooper--bold;
+          position: relative;
+          height: 1.5em;
+        }
+
+        h2 {
+          font-size: $font--105;
+          font-family: $font--cooper--bold;
+          margin-bottom: 5%;
+        }
+
+        a {
+          font-size: $font--32;
+          margin-bottom: 5%;
+          font-family: $font--cooper--book;
+          @include transition(0.3s);
+
+          span:not(.label):not(.arrow-right) {
+            position: relative;
+            margin-right: 15pt;
+
+            &:before {
+              @include pseudo;
+              top: 50%;
+              left: -10px;
+              right: calc(100% + 10px);
+              height: 2px;
+              background-color: $color--purplered;
+              @include transition(0.3s);
+            }
+          }
+
+          img {
+            height: 0.6em;
+          }
+
+          &:hover:not(.btn) {
+            font-family: $font--cooper--bold;
+
+            span {
+
+              &:before {
+                right: -10px;
+              }
+
+            }
+          }
+
+        }
+
+        p {
+          font-family: $font--sans;
+          font-weight: lighter;
+          font-size: $font--22;
+          line-height: $font--28;
+          margin-bottom: 10%;
+        }
+
+        #contact-intro {
+          margin-bottom: 3%;
+          font-weight: bold;
+        }
+
+        #tm-logo {
+          width: 110px;
+          height: auto;
+        }
+
+        #email {
+          font-size: $font--22;
+          margin-bottom: 50px;
+        }
+
+        #partner {
+          margin-bottom: 20px;
+        }
+
+        .label {
+          color: $color--purplered;
+          font-family: $font--cooper--bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    #home-grid {
+      grid-template-columns: 10% 1fr 5%;
+      grid-template-rows: 1fr 100% 1fr;
+      align-items: flex-start;
+
+      #home-logo {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 40%;
+        align-self: flex-end;
+        margin-bottom: 10%;
+      }
+
+      #home-content {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color: $color--white;
+
+        h3 {
+          font-size: $font--20;
+          margin-bottom: 1%;
+        }
+
+        h1 {
+          font-size: $font--32;
+          margin-bottom: 5%;
+        }
+
+        p {
+          font-size: $font--16;
+          width: 100%;
+          margin-bottom: 8%;
+          line-height: 15pt;
+        }
+      }
+
+      #home-line {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background: $color--goldenrod;
+        height: 5px;
+        padding-top: 5%;
       }
     }
   }
