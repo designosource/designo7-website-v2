@@ -53,6 +53,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
 					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
+			
+			<div class="fixed-bottom-mobile-navigation"></div>
+			
 		</div> <!-- /maxwidth -->
 	</section>
 

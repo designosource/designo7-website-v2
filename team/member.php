@@ -62,11 +62,41 @@
 			<h1>Sander<br>Van Hullebusch</h1>
 			
 			<article class="content-rightblock scrollbar">
+				
+					<div class="member-pop-up-button"></div>
+				
 					<h2 class="member-nickname">Animation astronaut</h2>
 					
 					<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique.</p>
 					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
+			
+			<div class="fixed-bottom-mobile-navigation"></div>
+			
+			<div class="member-pop-up">
+			
+				<div class="inner-member-pop-up">
+				
+					<p class="member-pop-up-close" >Sluit</p>
+					
+					<div class="member-carousel">
+
+						<a href="">
+							<img src="../img/designologo.svg" alt="Photo member">
+						</a>
+						
+						<a href="">
+							<img src="../img/tm_logo.png" alt="Photo member">
+						</a>
+
+					</div>
+				
+					<div class="member-pop-up-drag"><span>drag</span></div>
+				
+				</div>
+				
+			</div>
+			
 		</div> <!-- /maxwidth -->
 	</section>
 

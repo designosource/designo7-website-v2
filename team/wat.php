@@ -53,6 +53,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
+			
+			<div class="fixed-bottom-mobile-navigation"></div>
+			
     </div> <!-- /maxwidth -->
 	</section>
 
