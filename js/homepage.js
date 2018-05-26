@@ -45,11 +45,28 @@ function fixedlogo() {
 	
 }
 	
+function hamburgerwhitenav() {
+	$home = $("#home").offset().top;
+	$team = $("#team").offset().top;
+	$cases = $("#cases").offset().top;
+	$contact = $("#contact").offset().top;
+	$distancewindow = $(window).scrollTop();
+	$activenumber = $(".active-number");
+
+	if( $distancewindow < $team ) {
+		$(".inner-hamburger-menu").addClass("white-nav");
+	} else {
+		$(".inner-hamburger-menu").removeClass("white-nav");
+	}
+}
+	
 	activenumber();
 	fixedlogo();
+	hamburgerwhitenav();
 	$(window).scroll(function() {
 		activenumber();
 		fixedlogo();
+		hamburgerwhitenav();
 	});
 	
 });
