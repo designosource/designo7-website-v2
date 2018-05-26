@@ -505,7 +505,9 @@ main {
   }
 
   .big-grid {
+		grid-template-columns: repeat(24, 1fr) !important;
     grid-template-rows: 60px 1fr 100px calc(50% - 100px) 1fr;
+		grid-column-gap: 10pt;
     height: calc(100vh - 60px);
 
     .content-image {
@@ -624,7 +626,9 @@ main {
   }
 
   .big-grid-2 {
+		grid-template-columns: repeat(24, 1fr) !important;
     grid-template-rows: 60px 60px 100px 2fr 33% 1fr;
+		grid-column-gap: 10pt !important;
     height: calc(100vh - 60px);
 
     .coloured-background {
@@ -951,7 +955,7 @@ footer {
 
       span {
         height: 2pt;
-        background-color: $color--white;
+        background-color: $color--darkpurple;
         position: absolute;
         right: 0;
         @include transition(0.3s);
@@ -1001,6 +1005,12 @@ footer {
           }
         }
       }
+			
+			&.white-nav {
+				span {
+					background-color: $color--white;
+				}
+			}
 
     }
 
@@ -1068,8 +1078,10 @@ footer {
 
       .big-grid {
         grid-template-rows: 75px 85px 200px 80pt auto;
+				grid-column-gap: 10pt;
         min-height: 100vh;
-        margin-bottom: 130pt;
+				height: auto;
+        margin-bottom: 70pt;
 
         .overlay {
           grid-row-start: 1;
@@ -1097,6 +1109,7 @@ footer {
           grid-column-end: 23;
           @include center-flex(both);
           padding-top: 0.25em;
+					text-align: center;
         }
 
         .content-rightblock {
@@ -1117,9 +1130,11 @@ footer {
       }
 
       .big-grid-2 {
-        grid-template-rows: 75px 85px 200px 80pt auto;
+        grid-template-rows: 75px 85px 200px auto;
+				grid-column-gap: 10pt;
         min-height: 100vh;
-        margin-bottom: 90pt;
+				height: auto;
+        margin-bottom: 30pt;
 
         .coloured-background {
           display: block;
@@ -1170,6 +1185,25 @@ footer {
           text-align: center;
           padding-right: 0;
           /*padding: 0 12.5%;*/
+					position: relative;
+					
+					.member-pop-up-button {
+						@include center-absolute(both);
+						z-index: 3;
+						width: 47pt;
+						height: 47pt;
+						cursor: pointer;
+						opacity: 0.8;
+						background-image: url('../img/member-pop-up-icon.svg');
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-size: contain;
+						@include animation(fadeinout 1s infinite alternate);
+						
+						&:hover {
+							@include animation(none);
+						}
+					}
 
           p {
             margin-bottom: 2em;
@@ -1213,8 +1247,98 @@ footer {
           }
 
         }
+				
+				.member-pop-up {
+					position: fixed;
+					width: 100vw;
+					height: 100vh;
+					left: 0;
+					top: 0;
+					background-color: $color--darkpurple;
+					z-index: 11;
+					display: none;
+					
+					.inner-member-pop-up {
+						padding: 0 40pt;
+					
+						.member-pop-up-close {
+							font-family: $font--cooper--bold;
+							color: $color--white;
+							font-size: $font--24;
+							display: block;
+							@include push-auto;
+							text-decoration: underline;
+							margin-top: 55pt;
+							margin-bottom: 40pt;
+							text-align: center;
+							cursor: pointer;
+						}
+
+						.member-carousel {
+							height: 100%;
+							
+							.slick-track {
+								height: 100%;
+								@include center-flex(vertical);
+								width: 100%;
+								
+								a.slick-slide {
+									height: 100%;
+									width: 100%;
+									outline: 0;
+									
+									img {
+										width: 100%;
+										max-width: 100%;
+										height: auto;
+									}
+								}
+							}
+						}
+						
+						.member-pop-up-drag {
+							position: relative;
+							width: 100%;
+							height: 2em;
+							font-family: $font--cooper--book;
+							font-size: $font--16;
+							@include center-flex(vertical);
+							margin-top: 30pt;
+							
+							span {
+								padding: 5pt 20pt;
+								background-color: $color--darkpurple;
+								color: $color--white;
+								z-index: 2;
+								@include push-auto;
+							}
+							
+							&:before {
+								@include pseudo;
+								width: 100%;
+								top: 1em;
+								height: 2pt;
+								background-color: $color--white;
+							}
+							
+						}
+						
+					}
+					
+				}
 
       }
+			
+			.fixed-bottom-mobile-navigation {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 42pt;
+				background-color: $color--darkpurple;
+				color: white;
+				z-index: 5;
+			}
     }
 
   }
@@ -1525,6 +1649,19 @@ footer {
 }
 
 @include media;
+
+@-webkit-keyframes fadeinout {
+	from { opacity: 0.5; }
+}
+@-moz-keyframes fadeinout {
+	from { opacity: 0.5; }
+}
+@-o-keyframes fadeinout {
+	from { opacity: 0.5; }
+}
+@keyframes fadeinout {
+	from { opacity: 0.5; }
+}
 
 /* hiddengame */
 

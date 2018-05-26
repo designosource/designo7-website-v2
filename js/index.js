@@ -55,6 +55,7 @@ $(document).ready(function(){
 	}
 	
 	resizewindow();
+	
 	$(window).resize(function() {
 		resizewindow();
 	});
@@ -75,9 +76,28 @@ $(document).ready(function(){
     arrows: true
   });
 	
+	$('.member-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+		arrows: false
+  });
+	
 	/*----- Clone quote section of member page -----*/
 	
 	$( ".member-information" ).clone().appendTo( "#member .content-rightblock" );
+	
+	/*----- Member pop-up -----*/
+	
+	$(".member-pop-up-button").on("click", function(){
+		$(".member-pop-up").fadeIn(300);
+		console.log("Member pop up active");
+	});
+	
+	$(".member-pop-up-close").on("click", function(){
+		$(".member-pop-up").fadeOut(300);
+		console.log("Member pop up inactive");
+	});
 	
 	/*----- Keypress functions / minigame -----*/
 	
@@ -94,6 +114,8 @@ $(document).ready(function(){
 		if (kkeys.toString().indexOf(konami) >= 0) {
 
 			$(document).unbind('keydown', arguments.callee);
+			
+			console.log("Konami code activated!");
 
 			$code = '<iframe style="width: 100vw; height: 100vh; pointer-events: none;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 			
@@ -107,6 +129,8 @@ $(document).ready(function(){
 
 			$(document).unbind('keydown', arguments.callee);
 
+			console.log("Easter egg activated!");
+			
 			$('#hiddengame').css("display", "block");
 			$cookiescript = "<script type='text/javascript' src='js/cookie.js'></script><script type='text/javascript' src='../js/cookie.js'></script>";
 			$($cookiescript).appendTo("footer");
