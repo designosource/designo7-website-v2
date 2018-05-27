@@ -1786,7 +1786,15 @@ footer {
               height: 50vh;
               -webkit-background-size: cover;
               background-size: cover;
-              background-position: center; }
+              background-position: center;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide div h3 {
+                color: #ffffff;
+                font-family: "CooperHewittBold", sans-serif;
+                font-size: 2.666rem;
+                text-align: center; }
             main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide #test1 {
               background-image: url("../img/designologo.svg"); }
             main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide #test2 {
