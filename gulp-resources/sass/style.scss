@@ -1290,13 +1290,14 @@ footer {
 										width: 100%;
 										height: 50vh;
 										@include bg-cover-center;
-										background-color: red;
 									}
 									
-									&:nth-child(even) {
-										div {
-											background-color: green;
-										}
+									#test1 {
+										background-image: url("../img/designologo.svg");
+									}
+									
+									#test2 {
+										background-image: url("../img/arrow-right-red.svg");
 									}
 									
                 }
@@ -1318,6 +1319,7 @@ footer {
                 color: $color--white;
                 z-index: 2;
                 @include push-auto;
+								@include animation(leftright 1.5s infinite ease alternate);
               }
 
               &:before {
@@ -1340,11 +1342,17 @@ footer {
         position: fixed;
         left: 0;
         bottom: 0;
+				@include translate(0, 100%);
+				@include transition(0.3s);
         width: 100%;
         height: 42pt;
         background-color: $color--darkpurple;
         color: white;
         z-index: 5;
+				
+				&.show {
+					@include translate(0, 0%);
+				}
       }
     }
 
@@ -1619,34 +1627,7 @@ footer {
   }
 }
 
-@include media;
-
-@-webkit-keyframes fadeinout {
-  from {
-    opacity: 0.5;
-  }
-}
-
-@-moz-keyframes fadeinout {
-  from {
-    opacity: 0.5;
-  }
-}
-
-@-o-keyframes fadeinout {
-  from {
-    opacity: 0.5;
-  }
-}
-
-@keyframes fadeinout {
-  from {
-    opacity: 0.5;
-  }
-}
-
 /* hiddengame */
-
 #hiddengame {
   position: fixed;
   width: 100vw;
@@ -1695,8 +1676,11 @@ footer {
   }
 
 }
-
 /* end hiddengame */
+
+@import 'components/_animations.scss';
+@import 'components/_members.scss';
+@include media;
 
 // END IMPLEMENTING SASS
 

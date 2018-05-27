@@ -60,6 +60,10 @@ $(document).ready(function(){
 		resizewindow();
 	});
 	
+	$(window).scroll(function(){
+		showFixedBottomMobileNavigation();
+	});
+	
 	/*----- Slick carousel -----*/
 	
   $('.pop-up-image.slick-container').slick({
@@ -100,6 +104,27 @@ $(document).ready(function(){
 		$(".member-pop-up").fadeOut(300);
 		console.log("Member pop up inactive");
 	});
+	
+	/*----- Fixed bottom mobile navigation -----*/
+	
+	showFixedBottomMobileNavigation();
+	
+	function showFixedBottomMobileNavigation() {
+	
+		$biggrid = $(".big-grid").height();
+		$biggrid2 = $(".big-grid-2").height();
+		$distancewindow = $(window).scrollTop();
+		$windowheight = $(window).height();
+		
+		if( ($distancewindow + $windowheight) > ($biggrid2 - 80) || ($distancewindow + $windowheight) > ($biggrid - 80) ) {
+			$(".fixed-bottom-mobile-navigation").addClass("show");
+		}
+
+		/*if( $distancewindow < $team ) {
+			$(".fixed-bottom-mobile-navigation").addClass("show");
+		}*/
+		
+	}
 	
 	/*----- Keypress functions / minigame -----*/
 	
