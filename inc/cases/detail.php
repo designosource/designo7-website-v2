@@ -15,11 +15,11 @@
 
 			<div class="previous-next-page">
 
-				<a title="Vorige pagina" href="#"><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
+				<a title="Vorige pagina" href="<?php echo $caseinfo["previousproject"] ?>.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
 
 				<a title="Overview" href="../cases/"><img src="../img/overview.svg" alt="icon overview"></a>
 
-				<a title="Volgende pagina" href="#"><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
+				<a title="Volgende pagina" href="<?php echo $caseinfo["nextproject"] ?>.php"><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
 
 			</div>
 
