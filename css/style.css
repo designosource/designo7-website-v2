@@ -1931,20 +1931,20 @@ footer {
       grid-gap: 25px; }
     main .page-container #members-grid, main .page-container #cases-grid {
       grid-template-columns: 1fr; }
-  main .container {
+  main #team .container, main #cases .container, main #contact .container {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 30% 1fr 1fr;
     grid-column-gap: 15pt;
     min-height: 100vh; }
-    main .container .content-image {
+    main #team .container .content-image, main #cases .container .content-image, main #contact .container .content-image {
       width: 100%;
       height: 100%;
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3; }
-    main .container .content-rightblock {
+    main #team .container .content-rightblock, main #cases .container .content-rightblock, main #contact .container .content-rightblock {
       grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 3;
@@ -1952,17 +1952,17 @@ footer {
       align-items: flex-start;
       justify-content: center;
       z-index: 5; }
-      main .container .content-rightblock .page-number {
+      main #team .container .content-rightblock .page-number, main #cases .container .content-rightblock .page-number, main #contact .container .content-rightblock .page-number {
         color: #c10c43;
         font-size: 3rem;
         font-family: "CooperHewittBold", sans-serif;
         position: relative;
         height: 1.5em; }
-      main .container .content-rightblock h2 {
+      main #team .container .content-rightblock h2, main #cases .container .content-rightblock h2, main #contact .container .content-rightblock h2 {
         font-size: 8.75rem;
         font-family: "CooperHewittBold", sans-serif;
         margin-bottom: 5%; }
-      main .container .content-rightblock a {
+      main #team .container .content-rightblock a, main #cases .container .content-rightblock a, main #contact .container .content-rightblock a {
         font-size: 2.666rem;
         margin-bottom: 5%;
         font-family: "CooperHewittBook", sans-serif;
@@ -1971,16 +1971,16 @@ footer {
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-        main .container .content-rightblock a:hover {
+        main #team .container .content-rightblock a:hover, main #cases .container .content-rightblock a:hover, main #contact .container .content-rightblock a:hover {
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        main .container .content-rightblock a span:not(.label):not(.arrow-right) {
+        main #team .container .content-rightblock a span:not(.label):not(.arrow-right), main #cases .container .content-rightblock a span:not(.label):not(.arrow-right), main #contact .container .content-rightblock a span:not(.label):not(.arrow-right) {
           position: relative;
           margin-right: 15pt; }
-          main .container .content-rightblock a span:not(.label):not(.arrow-right):before {
+          main #team .container .content-rightblock a span:not(.label):not(.arrow-right):before, main #cases .container .content-rightblock a span:not(.label):not(.arrow-right):before, main #contact .container .content-rightblock a span:not(.label):not(.arrow-right):before {
             content: "";
             display: block;
             position: absolute;
@@ -1994,43 +1994,44 @@ footer {
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-            main .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover {
+            main #team .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover, main #cases .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover, main #contact .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover {
               -webkit-transition: 0.3s;
               -moz-transition: 0.3s;
               -ms-transition: 0.3s;
               -o-transition: 0.3s;
               transition: 0.3s; }
-        main .container .content-rightblock a img {
+        main #team .container .content-rightblock a img, main #cases .container .content-rightblock a img, main #contact .container .content-rightblock a img {
           height: 0.6em; }
-        main .container .content-rightblock a:hover:not(.btn) {
+        main #team .container .content-rightblock a:hover:not(.btn), main #cases .container .content-rightblock a:hover:not(.btn), main #contact .container .content-rightblock a:hover:not(.btn) {
           font-family: "CooperHewittBold", sans-serif; }
-          main .container .content-rightblock a:hover:not(.btn) span:before {
+          main #team .container .content-rightblock a:hover:not(.btn) span:before, main #cases .container .content-rightblock a:hover:not(.btn) span:before, main #contact .container .content-rightblock a:hover:not(.btn) span:before {
             right: -10px; }
-      main .container .content-rightblock p {
+      main #team .container .content-rightblock p, main #cases .container .content-rightblock p, main #contact .container .content-rightblock p {
         font-family: "Source Sans Pro", sans-serif;
         font-weight: lighter;
         font-size: 1.833rem;
         line-height: 2.333rem;
         margin-bottom: 10%; }
-      main .container .content-rightblock #contact-intro {
+      main #team .container .content-rightblock #contact-intro, main #cases .container .content-rightblock #contact-intro, main #contact .container .content-rightblock #contact-intro {
         margin-bottom: 3%;
         font-weight: bold; }
-      main .container .content-rightblock #tm-logo {
+      main #team .container .content-rightblock #tm-logo, main #cases .container .content-rightblock #tm-logo, main #contact .container .content-rightblock #tm-logo {
         width: 110px;
         height: auto; }
-      main .container .content-rightblock #email {
+      main #team .container .content-rightblock #email, main #cases .container .content-rightblock #email, main #contact .container .content-rightblock #email {
         font-size: 1.833rem;
         margin-bottom: 50px; }
-      main .container .content-rightblock #partner {
+      main #team .container .content-rightblock #partner, main #cases .container .content-rightblock #partner, main #contact .container .content-rightblock #partner {
         margin-bottom: 20px; }
-      main .container .content-rightblock .label {
+      main #team .container .content-rightblock .label, main #cases .container .content-rightblock .label, main #contact .container .content-rightblock .label {
         color: #c10c43;
         font-family: "CooperHewittBold", sans-serif;
         text-transform: uppercase; }
   main #home-grid {
     grid-template-columns: 10% 1fr 5%;
     grid-template-rows: 1fr 100% 1fr;
-    align-items: flex-start; }
+    align-items: flex-start;
+    min-height: 100vh; }
     main #home-grid #home-logo {
       grid-column-start: 1;
       grid-column-end: 4;
