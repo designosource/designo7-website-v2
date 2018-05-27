@@ -313,6 +313,14 @@
       display: inline-block;
       width: 15pt;
       height: 8pt;
+      margin-left: 8pt; }
+  .btn {
+    font-size: 1.333rem !important;
+    padding: 5pt 5pt 5pt 5pt; }
+    .btn .arrow-right {
+      display: inline-block;
+      width: 15pt;
+      height: 8pt;
       margin-left: 8pt; } }
 
 /* customize scrollbar css */
@@ -1934,9 +1942,10 @@ footer {
   main #team .container, main #cases .container, main #contact .container {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 30% 1fr 1fr;
+    grid-template-rows: 20vh 25vh 1fr;
     grid-column-gap: 15pt;
-    min-height: 100vh; }
+    min-height: 100vh;
+    font-size: 6pt; }
     main #team .container .content-image, main #cases .container .content-image, main #contact .container .content-image {
       width: 100%;
       height: 100%;
@@ -1945,73 +1954,24 @@ footer {
       grid-row-start: 2;
       grid-row-end: 3; }
     main #team .container .content-rightblock, main #cases .container .content-rightblock, main #contact .container .content-rightblock {
-      grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 3;
       grid-row-start: 3;
       margin-top: 0;
-      align-items: flex-start;
-      justify-content: center;
-      z-index: 5; }
-      main #team .container .content-rightblock .page-number, main #cases .container .content-rightblock .page-number, main #contact .container .content-rightblock .page-number {
-        color: #c10c43;
-        font-size: 3rem;
-        font-family: "CooperHewittBold", sans-serif;
-        position: relative;
-        height: 1.5em; }
+      align-items: center;
+      justify-content: center; }
+      main #team .container .content-rightblock .title-group, main #cases .container .content-rightblock .title-group, main #contact .container .content-rightblock .title-group {
+        position: absolute;
+        top: -32.5vh;
+        right: -8vw; }
       main #team .container .content-rightblock h2, main #cases .container .content-rightblock h2, main #contact .container .content-rightblock h2 {
-        font-size: 8.75rem;
-        font-family: "CooperHewittBold", sans-serif;
-        margin-bottom: 5%; }
+        font-size: 6.916rem; }
       main #team .container .content-rightblock a, main #cases .container .content-rightblock a, main #contact .container .content-rightblock a {
-        font-size: 2.666rem;
-        margin-bottom: 5%;
-        font-family: "CooperHewittBook", sans-serif;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        main #team .container .content-rightblock a:hover, main #cases .container .content-rightblock a:hover, main #contact .container .content-rightblock a:hover {
-          -webkit-transition: 0.3s;
-          -moz-transition: 0.3s;
-          -ms-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s; }
-        main #team .container .content-rightblock a span:not(.label):not(.arrow-right), main #cases .container .content-rightblock a span:not(.label):not(.arrow-right), main #contact .container .content-rightblock a span:not(.label):not(.arrow-right) {
-          position: relative;
-          margin-right: 15pt; }
-          main #team .container .content-rightblock a span:not(.label):not(.arrow-right):before, main #cases .container .content-rightblock a span:not(.label):not(.arrow-right):before, main #contact .container .content-rightblock a span:not(.label):not(.arrow-right):before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: -10px;
-            right: calc(100% + 10px);
-            height: 2px;
-            background-color: #c10c43;
-            -webkit-transition: 0.3s;
-            -moz-transition: 0.3s;
-            -ms-transition: 0.3s;
-            -o-transition: 0.3s;
-            transition: 0.3s; }
-            main #team .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover, main #cases .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover, main #contact .container .content-rightblock a span:not(.label):not(.arrow-right):before:hover {
-              -webkit-transition: 0.3s;
-              -moz-transition: 0.3s;
-              -ms-transition: 0.3s;
-              -o-transition: 0.3s;
-              transition: 0.3s; }
-        main #team .container .content-rightblock a img, main #cases .container .content-rightblock a img, main #contact .container .content-rightblock a img {
-          height: 0.6em; }
-        main #team .container .content-rightblock a:hover:not(.btn), main #cases .container .content-rightblock a:hover:not(.btn), main #contact .container .content-rightblock a:hover:not(.btn) {
-          font-family: "CooperHewittBold", sans-serif; }
-          main #team .container .content-rightblock a:hover:not(.btn) span:before, main #cases .container .content-rightblock a:hover:not(.btn) span:before, main #contact .container .content-rightblock a:hover:not(.btn) span:before {
-            right: -10px; }
-      main #team .container .content-rightblock p, main #cases .container .content-rightblock p, main #contact .container .content-rightblock p {
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: lighter;
-        font-size: 1.833rem;
-        line-height: 2.333rem;
         margin-bottom: 10%; }
+        main #team .container .content-rightblock a span:not(.label):not(.arrow-right), main #cases .container .content-rightblock a span:not(.label):not(.arrow-right), main #contact .container .content-rightblock a span:not(.label):not(.arrow-right) {
+          margin-right: 0; }
+      main #team .container .content-rightblock .arrow, main #cases .container .content-rightblock .arrow, main #contact .container .content-rightblock .arrow {
+        display: none; }
       main #team .container .content-rightblock #contact-intro, main #cases .container .content-rightblock #contact-intro, main #contact .container .content-rightblock #contact-intro {
         margin-bottom: 3%;
         font-weight: bold; }

@@ -88,4 +88,16 @@
       margin-left: 8pt;
     }
   }
+
+  .btn {
+    font-size: $font--16 !important;
+    padding: 5pt 5pt 5pt 5pt;
+
+    .arrow-right {
+      display: inline-block;
+      width: 15pt;
+      height: 8pt;
+      margin-left: 8pt;
+    }
+  }
 }

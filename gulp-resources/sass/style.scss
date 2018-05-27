@@ -1488,9 +1488,10 @@ footer {
       .container {
         display: grid;
         grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 30% 1fr 1fr;
+        grid-template-rows: 20vh 25vh 1fr;
         grid-column-gap: 15pt;
         min-height: 100vh;
+        font-size: 6pt;
 
         .content-image {
           width: 100%;
@@ -1502,73 +1503,33 @@ footer {
         }
 
         .content-rightblock {
-          grid-column-start: 1;
-          grid-column-end: 4;
+          grid-column-start: 2;
+          grid-column-end: 3;
           grid-row-start: 3;
           margin-top: 0;
-          align-items: flex-start;
+          align-items: center;
           justify-content: center;
-          z-index: 5;
 
-          .page-number {
-            color: $color--purplered;
-            font-size: $font--36;
-            font-family: $font--cooper--bold;
-            position: relative;
-            height: 1.5em;
+          .title-group {
+            position: absolute;
+            top: -32.5vh;
+            right: -8vw;
           }
 
           h2 {
-            font-size: $font--105;
-            font-family: $font--cooper--bold;
-            margin-bottom: 5%;
+            font-size: $font--83;
           }
 
           a {
-            font-size: $font--32;
-            margin-bottom: 5%;
-            font-family: $font--cooper--book;
-            @include transition(0.3s);
+            margin-bottom: 10%;
 
             span:not(.label):not(.arrow-right) {
-              position: relative;
-              margin-right: 15pt;
-
-              &:before {
-                @include pseudo;
-                top: 50%;
-                left: -10px;
-                right: calc(100% + 10px);
-                height: 2px;
-                background-color: $color--purplered;
-                @include transition(0.3s);
-              }
+              margin-right: 0;
             }
-
-            img {
-              height: 0.6em;
-            }
-
-            &:hover:not(.btn) {
-              font-family: $font--cooper--bold;
-
-              span {
-
-                &:before {
-                  right: -10px;
-                }
-
-              }
-            }
-
           }
-
-          p {
-            font-family: $font--sans;
-            font-weight: lighter;
-            font-size: $font--22;
-            line-height: $font--28;
-            margin-bottom: 10%;
+          
+          .arrow {
+            display: none;
           }
 
           #contact-intro {
