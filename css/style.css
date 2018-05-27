@@ -1629,8 +1629,8 @@ footer {
     main section .big-grid h1 {
       grid-row-start: 4;
       grid-row-end: 5;
-      grid-column-start: 3;
-      grid-column-end: 23;
+      grid-column-start: 1;
+      grid-column-end: 25;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1672,8 +1672,8 @@ footer {
     main section .big-grid-2 h1 {
       grid-row-start: 3;
       grid-row-end: 4;
-      grid-column-start: 3;
-      grid-column-end: 23;
+      grid-column-start: 1;
+      grid-column-end: 25;
       display: flex;
       align-items: center;
       justify-content: center;
