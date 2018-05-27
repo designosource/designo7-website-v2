@@ -1624,7 +1624,7 @@ footer {
       grid-column-start: 3;
       grid-column-end: 23;
       background-position: top center; }
-    main section .big-grid .previous-page {
+    main section .big-grid .previous-page, main section .big-grid .previous-next-page {
       display: none; }
     main section .big-grid h1 {
       grid-row-start: 4;
