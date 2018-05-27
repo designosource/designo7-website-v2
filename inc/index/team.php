@@ -1,4 +1,4 @@
-<section id="team">
+<section id="team" class="page">
 
 	<?php include 'inc/logo/logo.php'; ?>
 

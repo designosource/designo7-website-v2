@@ -1,4 +1,4 @@
-<section id="home">
+<section id="home" class="page">
     <div class="container maxwidth" id="home-grid">
         <img src="img/designologo.svg" alt="Logo Designosource" id="home-logo">
         <article id="home-content">

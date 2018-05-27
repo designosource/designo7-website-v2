@@ -58,7 +58,7 @@
 <!-- SCRIPTS -->
 <?php include 'inc/footer/scripts.php'; ?>
 <script type="text/javascript" src="js/homepage.js"></script>
-<!--<script type="text/javascript" src="js/fullpage.js"></script>-->
+<script type="text/javascript" src="js/fullpage.js"></script>
 <!-- END SCRIPTS -->
 
 </body>

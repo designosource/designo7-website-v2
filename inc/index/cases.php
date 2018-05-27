@@ -1,4 +1,4 @@
-<section id="cases">
+<section id="cases" class="page">
     <div class="container maxwidth">
         <figure class="content-image"></figure>
         <article class="content-rightblock">

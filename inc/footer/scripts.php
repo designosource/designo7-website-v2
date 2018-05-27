@@ -3,5 +3,4 @@
 <script type="text/javascript" src="<?php echo $prefix; ?>js/slick.js"></script>
 <script type="text/javascript" src="<?php echo $prefix; ?>js/scroll-reveal.js"></script>
 <script type="text/javascript" src="<?php echo $prefix; ?>js/javascript.js"></script>
-<!--<script type="text/javascript" src="--><?php //echo $prefix; ?><!--js/scrolloverflow.js"></script>-->
-<!--<script type="text/javascript" src="--><?php //echo $prefix; ?><!--js/jquery.fullpage.js"></script>-->
+<script type="text/javascript" src="<?php echo $prefix; ?>js/jquery.scrollify-min.js"></script>

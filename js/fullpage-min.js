@@ -1,0 +1,1 @@
+$(document).ready(function(){$.scrollify({section:".page",sectionName:"page",interstitialSection:"",easing:"easeOutExpo",scrollSpeed:1100,offset:0,scrollbars:!0,standardScrollElements:"",setHeights:!0,overflowScroll:!0,updateHash:!0,touchScroll:!0,before:function(){},after:function(){},afterResize:function(){},afterRender:function(){}})});

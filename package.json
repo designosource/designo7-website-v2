@@ -27,6 +27,7 @@
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {
-    "fullpage.js": "^2.9.7"
+    "fullpage.js": "^2.9.7",
+    "jquery-scrollify": "^1.0.19"
   }
 }
