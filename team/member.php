@@ -81,12 +81,12 @@
 					
 					<div class="member-carousel">
 
-						<a href="">
-							<img src="../img/designologo.svg" alt="Photo member">
+						<a href="#">
+							<div id="test1"></div>
 						</a>
 						
-						<a href="">
-							<img src="../img/tm_logo.png" alt="Photo member">
+						<a href="#">
+							<div id="test2"></div>
 						</a>
 
 					</div>

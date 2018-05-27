@@ -1280,18 +1280,25 @@ footer {
               .slick-track {
                 height: 100%;
                 @include center-flex(vertical);
-                width: 100%;
 
                 a.slick-slide {
                   height: 100%;
-                  width: 100%;
+                  width: 100% !important;
                   outline: 0;
 
-                  img {
-                    width: 100%;
-                    max-width: 100%;
-                    height: auto;
-                  }
+									div {
+										width: 100%;
+										height: 50vh;
+										@include bg-cover-center;
+										background-color: red;
+									}
+									
+									&:nth-child(even) {
+										div {
+											background-color: green;
+										}
+									}
+									
                 }
               }
             }

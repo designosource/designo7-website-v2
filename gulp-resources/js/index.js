@@ -76,10 +76,12 @@ $(document).ready(function(){
     arrows: true
   });
 	
-	$('.member-carousel').slick({
+	$('.member-pop-up .member-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		arrows: false
   });
 	
