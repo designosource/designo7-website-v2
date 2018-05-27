@@ -1637,6 +1637,7 @@ footer {
       padding-top: 0.25em;
       text-align: center; }
     main section .big-grid .content-rightblock {
+      position: relative;
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 3;
@@ -1695,33 +1696,6 @@ footer {
       padding-right: 0;
       /*padding: 0 12.5%;*/
       position: relative; }
-      main section .big-grid-2 .content-rightblock .member-pop-up-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        z-index: 3;
-        width: 47pt;
-        height: 47pt;
-        cursor: pointer;
-        opacity: 0.8;
-        background-image: url("../img/member-pop-up-icon.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        -webkit-animation: fadeinout 1s infinite alternate;
-        -moz-animation: fadeinout 1s infinite alternate;
-        -ms-animation: fadeinout 1s infinite alternate;
-        -o-animation: fadeinout 1s infinite alternate;
-        animation: fadeinout 1s infinite alternate; }
-        main section .big-grid-2 .content-rightblock .member-pop-up-button:hover {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          -o-animation: none;
-          animation: none; }
       main section .big-grid-2 .content-rightblock p {
         margin-bottom: 2em; }
       main section .big-grid-2 .content-rightblock .member-nickname {
@@ -1747,78 +1721,105 @@ footer {
         order: 2;
         margin-left: auto;
         margin-right: auto; }
-    main section .big-grid-2 .member-pop-up {
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      left: 0;
-      top: 0;
-      background-color: #21203a;
-      z-index: 11;
-      display: none; }
-      main section .big-grid-2 .member-pop-up .inner-member-pop-up {
-        padding: 0 40pt; }
-        main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-pop-up-close {
-          font-family: "CooperHewittBold", sans-serif;
+  main section .carousel-pop-up-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 47pt;
+    height: 47pt;
+    cursor: pointer;
+    opacity: 0.8;
+    background-image: url("../img/member-pop-up-icon.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-animation: fadeinout 1s infinite alternate;
+    -moz-animation: fadeinout 1s infinite alternate;
+    -ms-animation: fadeinout 1s infinite alternate;
+    -o-animation: fadeinout 1s infinite alternate;
+    animation: fadeinout 1s infinite alternate; }
+    main section .carousel-pop-up-button:hover {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      -o-animation: none;
+      animation: none; }
+  main section .carousel-pop-up {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #21203a;
+    z-index: 11;
+    display: none; }
+    main section .carousel-pop-up .inner-carousel-pop-up {
+      padding: 0 40pt; }
+      main section .carousel-pop-up .inner-carousel-pop-up .carousel-pop-up-close {
+        font-family: "CooperHewittBold", sans-serif;
+        color: #ffffff;
+        font-size: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: underline;
+        margin-top: 55pt;
+        margin-bottom: 40pt;
+        text-align: center;
+        cursor: pointer; }
+      main section .carousel-pop-up .inner-carousel-pop-up .carousel {
+        height: 100%; }
+        main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track {
+          height: 100%;
+          display: flex;
+          align-items: center; }
+          main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide {
+            height: 100%;
+            width: 100% !important;
+            outline: 0; }
+            main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide div {
+              width: 100%;
+              height: 50vh;
+              -webkit-background-size: cover;
+              background-size: cover;
+              background-position: center; }
+            main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide #test1 {
+              background-image: url("../img/designologo.svg"); }
+            main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide #test2 {
+              background-image: url("../img/arrow-right-red.svg"); }
+      main section .carousel-pop-up .inner-carousel-pop-up .carousel-pop-up-drag {
+        position: relative;
+        width: 100%;
+        height: 2em;
+        font-family: "CooperHewittBook", sans-serif;
+        font-size: 1.333rem;
+        display: flex;
+        align-items: center;
+        margin-top: 30pt; }
+        main section .carousel-pop-up .inner-carousel-pop-up .carousel-pop-up-drag span {
+          padding: 5pt 20pt;
+          background-color: #21203a;
           color: #ffffff;
-          font-size: 2rem;
-          display: block;
+          z-index: 2;
           margin-left: auto;
           margin-right: auto;
-          text-decoration: underline;
-          margin-top: 55pt;
-          margin-bottom: 40pt;
-          text-align: center;
-          cursor: pointer; }
-        main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-carousel {
-          height: 100%; }
-          main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-carousel .slick-track {
-            height: 100%;
-            display: flex;
-            align-items: center; }
-            main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-carousel .slick-track a.slick-slide {
-              height: 100%;
-              width: 100% !important;
-              outline: 0; }
-              main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-carousel .slick-track a.slick-slide div {
-                width: 100%;
-                height: 50vh;
-                -webkit-background-size: cover;
-                background-size: cover;
-                background-position: center; }
-              main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-carousel .slick-track a.slick-slide #test1 {
-                background-image: url("../img/designologo.svg"); }
-              main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-carousel .slick-track a.slick-slide #test2 {
-                background-image: url("../img/arrow-right-red.svg"); }
-        main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-pop-up-drag {
-          position: relative;
+          -webkit-animation: leftright 1.5s infinite ease alternate;
+          -moz-animation: leftright 1.5s infinite ease alternate;
+          -ms-animation: leftright 1.5s infinite ease alternate;
+          -o-animation: leftright 1.5s infinite ease alternate;
+          animation: leftright 1.5s infinite ease alternate; }
+        main section .carousel-pop-up .inner-carousel-pop-up .carousel-pop-up-drag:before {
+          content: "";
+          display: block;
+          position: absolute;
           width: 100%;
-          height: 2em;
-          font-family: "CooperHewittBook", sans-serif;
-          font-size: 1.333rem;
-          display: flex;
-          align-items: center;
-          margin-top: 30pt; }
-          main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-pop-up-drag span {
-            padding: 5pt 20pt;
-            background-color: #21203a;
-            color: #ffffff;
-            z-index: 2;
-            margin-left: auto;
-            margin-right: auto;
-            -webkit-animation: leftright 1.5s infinite ease alternate;
-            -moz-animation: leftright 1.5s infinite ease alternate;
-            -ms-animation: leftright 1.5s infinite ease alternate;
-            -o-animation: leftright 1.5s infinite ease alternate;
-            animation: leftright 1.5s infinite ease alternate; }
-          main section .big-grid-2 .member-pop-up .inner-member-pop-up .member-pop-up-drag:before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            top: 1em;
-            height: 2pt;
-            background-color: #ffffff; }
+          top: 1em;
+          height: 2pt;
+          background-color: #ffffff; }
   main section .fixed-bottom-mobile-navigation {
     position: fixed;
     left: 0;

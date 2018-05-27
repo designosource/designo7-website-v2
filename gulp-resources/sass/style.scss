@@ -1113,6 +1113,7 @@ footer {
         }
 
         .content-rightblock {
+					position: relative;
           grid-row-start: 5;
           grid-row-end: 6;
           grid-column-start: 3;
@@ -1187,24 +1188,6 @@ footer {
           /*padding: 0 12.5%;*/
           position: relative;
 
-          .member-pop-up-button {
-            @include center-absolute(both);
-            z-index: 3;
-            width: 47pt;
-            height: 47pt;
-            cursor: pointer;
-            opacity: 0.8;
-            background-image: url('../img/member-pop-up-icon.svg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            @include animation(fadeinout 1s infinite alternate);
-
-            &:hover {
-              @include animation(none);
-            }
-          }
-
           p {
             margin-bottom: 2em;
           }
@@ -1248,95 +1231,113 @@ footer {
 
         }
 
-        .member-pop-up {
-          position: fixed;
-          width: 100vw;
-          height: 100vh;
-          left: 0;
-          top: 0;
-          background-color: $color--darkpurple;
-          z-index: 11;
-          display: none;
-
-          .inner-member-pop-up {
-            padding: 0 40pt;
-
-            .member-pop-up-close {
-              font-family: $font--cooper--bold;
-              color: $color--white;
-              font-size: $font--24;
-              display: block;
-              @include push-auto;
-              text-decoration: underline;
-              margin-top: 55pt;
-              margin-bottom: 40pt;
-              text-align: center;
-              cursor: pointer;
-            }
-
-            .member-carousel {
-              height: 100%;
-
-              .slick-track {
-                height: 100%;
-                @include center-flex(vertical);
-
-                a.slick-slide {
-                  height: 100%;
-                  width: 100% !important;
-                  outline: 0;
-
-									div {
-										width: 100%;
-										height: 50vh;
-										@include bg-cover-center;
-									}
-									
-									#test1 {
-										background-image: url("../img/designologo.svg");
-									}
-									
-									#test2 {
-										background-image: url("../img/arrow-right-red.svg");
-									}
-									
-                }
-              }
-            }
-
-            .member-pop-up-drag {
-              position: relative;
-              width: 100%;
-              height: 2em;
-              font-family: $font--cooper--book;
-              font-size: $font--16;
-              @include center-flex(vertical);
-              margin-top: 30pt;
-
-              span {
-                padding: 5pt 20pt;
-                background-color: $color--darkpurple;
-                color: $color--white;
-                z-index: 2;
-                @include push-auto;
-								@include animation(leftright 1.5s infinite ease alternate);
-              }
-
-              &:before {
-                @include pseudo;
-                width: 100%;
-                top: 1em;
-                height: 2pt;
-                background-color: $color--white;
-              }
-
-            }
-
-          }
-
-        }
-
       }
+			
+			.carousel-pop-up-button {
+				@include center-absolute(both);
+				z-index: 3;
+				width: 47pt;
+				height: 47pt;
+				cursor: pointer;
+				opacity: 0.8;
+				background-image: url('../img/member-pop-up-icon.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				@include animation(fadeinout 1s infinite alternate);
+
+				&:hover {
+					@include animation(none);
+				}
+			}
+			
+			.carousel-pop-up {
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+				left: 0;
+				top: 0;
+				background-color: $color--darkpurple;
+				z-index: 11;
+				display: none;
+
+				.inner-carousel-pop-up {
+					padding: 0 40pt;
+
+					.carousel-pop-up-close {
+						font-family: $font--cooper--bold;
+						color: $color--white;
+						font-size: $font--24;
+						display: block;
+						@include push-auto;
+						text-decoration: underline;
+						margin-top: 55pt;
+						margin-bottom: 40pt;
+						text-align: center;
+						cursor: pointer;
+					}
+
+					.carousel {
+						height: 100%;
+
+						.slick-track {
+							height: 100%;
+							@include center-flex(vertical);
+
+							a.slick-slide {
+								height: 100%;
+								width: 100% !important;
+								outline: 0;
+
+								div {
+									width: 100%;
+									height: 50vh;
+									@include bg-cover-center;
+								}
+
+								#test1 {
+									background-image: url("../img/designologo.svg");
+								}
+
+								#test2 {
+									background-image: url("../img/arrow-right-red.svg");
+								}
+
+							}
+						}
+					}
+
+					.carousel-pop-up-drag {
+						position: relative;
+						width: 100%;
+						height: 2em;
+						font-family: $font--cooper--book;
+						font-size: $font--16;
+						@include center-flex(vertical);
+						margin-top: 30pt;
+
+						span {
+							padding: 5pt 20pt;
+							background-color: $color--darkpurple;
+							color: $color--white;
+							z-index: 2;
+							@include push-auto;
+							@include animation(leftright 1.5s infinite ease alternate);
+						}
+
+						&:before {
+							@include pseudo;
+							width: 100%;
+							top: 1em;
+							height: 2pt;
+							background-color: $color--white;
+						}
+
+					}
+
+				}
+
+			}
 
       .fixed-bottom-mobile-navigation {
         position: fixed;

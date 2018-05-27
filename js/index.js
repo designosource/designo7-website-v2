@@ -80,7 +80,7 @@ $(document).ready(function(){
     arrows: true
   });
 	
-	$('.member-pop-up .member-carousel').slick({
+	$('.carousel-pop-up .carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
@@ -93,15 +93,15 @@ $(document).ready(function(){
 	
 	$( ".member-information" ).clone().appendTo( "#member .content-rightblock" );
 	
-	/*----- Member pop-up -----*/
+	/*----- Carousel pop-up -----*/
 	
-	$(".member-pop-up-button").on("click", function(){
-		$(".member-pop-up").fadeIn(300);
+	$(".carousel-pop-up-button").on("click", function(){
+		$(".carousel-pop-up").fadeIn(300);
 		console.log("Member pop up active");
 	});
 	
-	$(".member-pop-up-close").on("click", function(){
-		$(".member-pop-up").fadeOut(300);
+	$(".carousel-pop-up-close").on("click", function(){
+		$(".carousel-pop-up").fadeOut(300);
 		console.log("Member pop up inactive");
 	});
 	

@@ -26,6 +26,9 @@
 			<h1><?php echo $caseinfo["name"]; ?></h1>
 
 			<article class="content-rightblock scrollbar">
+				
+					<div class="carousel-pop-up-button"></div>
+				
 					<?php echo $caseinfo["description"]; ?>
 					
 					<?php if( !empty( $caseinfo["Website"] ) ): ?>
@@ -34,6 +37,30 @@
 			</article>
 			
 			<div class="fixed-bottom-mobile-navigation"></div>
+			
+			<div class="carousel-pop-up">
+			
+				<div class="inner-carousel-pop-up">
+				
+					<p class="carousel-pop-up-close" >Sluit</p>
+					
+					<div class="carousel">
+
+						<?php foreach($cases as $case): ?>
+						
+						<a  title="<?php echo $case["name"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
+							<div class="<?php echo $case["shortname"]; ?>"></div>
+						</a>
+						
+						<?php endforeach; ?>
+
+					</div>
+				
+					<div class="carousel-pop-up-drag"><span>drag</span></div>
+				
+				</div>
+				
+			</div>
 			
 		</div> <!-- /maxwidth -->
 	</section>

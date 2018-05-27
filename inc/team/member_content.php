@@ -31,7 +31,7 @@
 			
 			<article class="content-rightblock scrollbar">
 				
-					<div class="member-pop-up-button"></div>
+					<div class="carousel-pop-up-button"></div>
 				
 					<h2 class="member-nickname"><?php echo $memberinfo["Title"]; ?></h2>
 					
@@ -47,13 +47,13 @@
 			
 			<div class="fixed-bottom-mobile-navigation"></div>
 			
-			<div class="member-pop-up">
+			<div class="carousel-pop-up">
 			
-				<div class="inner-member-pop-up">
+				<div class="inner-carousel-pop-up">
 				
-					<p class="member-pop-up-close" >Sluit</p>
+					<p class="carousel-pop-up-close" >Sluit</p>
 					
-					<div class="member-carousel">
+					<div class="carousel">
 
 						<?php foreach($members as $member): ?>
 						
@@ -65,7 +65,7 @@
 
 					</div>
 				
-					<div class="member-pop-up-drag"><span>drag</span></div>
+					<div class="carousel-pop-up-drag"><span>drag</span></div>
 				
 				</div>
 				
