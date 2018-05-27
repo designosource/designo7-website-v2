@@ -1927,7 +1927,7 @@ footer {
     main .page-container #members-grid, main .page-container #cases-grid {
       grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   header {
     display: none; }
   main .page-container {

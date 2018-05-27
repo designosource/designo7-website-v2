@@ -1461,7 +1461,7 @@ footer {
 }
 
 // MOBILE
-@media screen and (max-width: $breakpoint-x-small) {
+@media screen and (max-width: $breakpoint-small) {
   header {
     display: none;
   }
