@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+
+	include '../inc/arrays/cases.php';
+
+	// Get page name
+	$pagename = basename(__FILE__, '.php');
+
+	// Fetch corresponding member info
+	$caseinfo = $cases[$pagename];
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -12,7 +22,7 @@
 
     <?php include '../inc/head/meta_tags.php'; ?>
 
-    <title>Cases | Case</title>
+    <title>Cases | <?php echo ucfirst($pagename); ?></title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -35,40 +45,7 @@
 
 <main>
 
-	<section id="single-case">
-  	<div class="container big-grid maxwidth">
-			<!--<figure class="content-image overlay"></figure>-->
-			<div class="slick-container overlay">
-				<figure class="content-image content-image-1"></figure>
-				<figure class="content-image content-image-2"></figure>
-				<figure class="content-image content-image-3"></figure>
-			</div>
-			<div class="slick-container pop-up-image">
-				<figure class="content-image content-image-1"></figure>
-				<figure class="content-image content-image-2"></figure>
-				<figure class="content-image content-image-3"></figure>
-			</div>
-			
-
-			<div class="previous-next-page">
-
-				<a title="Vorige pagina" href="#"><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
-
-				<a title="Overview" href="#"><img src="../img/overview.svg" alt="icon overview"></a>
-
-				<a title="Volgende pagina" href="#"><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
-
-			</div>
-
-			<h1>We are Designosource.</h1>
-
-			<article class="content-rightblock scrollbar">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
-			</article>
-		</div> <!-- /maxwidth -->
-	</section>
+	<?php include '../inc/cases/detail.php'; ?>
 
 </main>
 
