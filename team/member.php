@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+
+	include '../inc/arrays/members.php';
+
+	// Get page name
+	$pagename = basename(__FILE__, '.php');
+
+	// Fetch corresponding member info
+	$memberinfo = $members[$pagename];
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -12,7 +23,7 @@
 
     <?php include 'inc/head/meta_tags.php'; ?>
 
-    <title>Team | Member</title>
+    <title>Team | <?php echo ucfirst($pagename); ?></title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
@@ -35,70 +46,7 @@
 
 <main>
 
-	<section id="member">
-  	<div class="container big-grid-2 maxwidth">
-  		<div class="coloured-background"></div>
-			<figure class="content-image overlay"></figure>
-			
-			<article class="member-information">
-				
-				<p class="member-quote">Here is some place to put an inspirational quote</p>
-				
-				<div class="member-socialmedia">
-					
-					<a href="#">Linkedin</a>
-					<a href="#">Email</a>
-					
-				</div>
-				
-			</article>
-
-			<div class="previous-page">
-
-				<a title="Vorige pagina" href="../team/"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
-
-			</div>
-			
-			<h1>Sander<br>Van Hullebusch</h1>
-			
-			<article class="content-rightblock scrollbar">
-				
-					<div class="member-pop-up-button"></div>
-				
-					<h2 class="member-nickname">Animation astronaut</h2>
-					
-					<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique.</p>
-					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
-			</article>
-			
-			<div class="fixed-bottom-mobile-navigation"></div>
-			
-			<div class="member-pop-up">
-			
-				<div class="inner-member-pop-up">
-				
-					<p class="member-pop-up-close" >Sluit</p>
-					
-					<div class="member-carousel">
-
-						<a href="#">
-							<div id="test1"></div>
-						</a>
-						
-						<a href="#">
-							<div id="test2"></div>
-						</a>
-
-					</div>
-				
-					<div class="member-pop-up-drag"><span>drag</span></div>
-				
-				</div>
-				
-			</div>
-			
-		</div> <!-- /maxwidth -->
-	</section>
+	<?php include '../inc/team/member_content.php'; ?>
 
 </main>
 

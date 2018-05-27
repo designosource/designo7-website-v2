@@ -2,8 +2,9 @@
 
 
 $members =  array(
-    "Member 1" => array(
+    "member" => array(
         "Name" => "Name Of The Member",
+				"Shortname" => "member",
         "Title" => "Title Of The Member",
         "Image" => "/img/members/member1.jpg",
         "Quote" => "Quote Of The Member",
@@ -13,8 +14,9 @@ $members =  array(
         "Website" => "www.member1.be"   
     ),
 
-    "Member 2" => array(
+    "chris" => array(
         "Name" => "Name Of The Member",
+				"Shortname" => "chris",
         "Title" => "Title Of The Member",
         "Image" => "/img/members/member1.jpg",
         "Quote" => "Quote Of The Member",
