@@ -4,7 +4,7 @@ sr.reveal('#home-line', { duration: 500, origin: 'left', distance: '100px', dela
 sr.reveal('#home-logo', { duration: 500, origin: 'top', distance: '100%', delay: 1000, viewFactor: 0.3 });
 sr.reveal('#home-content', { duration: 500, origin: 'bottom', distance: '20vh', delay: 1500, viewFactor: 0.3 });
 
-sr.reveal('.overview .grid-item', { duration: 500, origin: 'bottom', distance: '100px', delay: 1500, viewFactor: 0.3 }, 100);
+sr.reveal('.overview .grid-item', { duration: 500, origin: 'bottom', distance: '100px', delay: 500, viewFactor: 0.3 }, 100);
 
 if (window.matchMedia('(max-width: 720px)').matches) {
 
