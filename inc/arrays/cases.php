@@ -2,9 +2,9 @@
 
 
 $cases = array(
-    "cwb" => array(
+    "detail" => array(
         "name" => "Climate without borders",
-        "shortname" => "cwb",
+        "shortname" => "detail", /* te veranderen naar cwb */
         "technology" => "UX/UI | Drupal",
         "image" => "https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif",
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
