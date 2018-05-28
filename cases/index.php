@@ -1,3 +1,5 @@
+<?php include '../inc/arrays/cases.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,68 +37,33 @@
 
 <main>
     <section class="page-container">
-    	<div class="maxwidth">
-        <div class="previous-page">
+        <div class="maxwidth">
+            <div class="previous-page">
 
-            <a href="../index.php#cases"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+                <a href="../index.php#cases"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
-        </div>
+            </div>
 
-        <h1>All our cases</h1>
-        <article class="overview" id="cases-grid">
-            <!--TODO: loop all cases in grid-->
-            <div class="grid-item">
-                <a title="Title" href="#">
-                    <img src="https://media.giphy.com/media/WNTBnCx9YcqdCmGZY8/giphy.gif" alt="Climate without borders">
-                </a>
-                <div class="grid-details">
-                    <p class="first-detail">UI Design | Drupal</p>
-                    <p class="second-detail">Climate without borders</p>
-                    <a title="Title" href="#" class="third-detail">Meer info +</a>
+            <h1>All our cases</h1>
+            <article class="overview" id="cases-grid">
+                <?php foreach ($cases as $case): ?>
+                    <div class="grid-item">
+                        <a title="Title" href="#">
+                            <img src="<?php echo $case['Image']; ?>" alt="<?php echo $case['name']; ?>">
+                        </a>
+                        <div class="grid-details">
+                            <p class="first-detail"><?php echo $case['technology']; ?></p>
+                            <p class="second-detail"><?php echo $case['name']; ?></p>
+                            <a title="Title" href="#" class="third-detail">Meer info +</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+                <div class="grid-item">
+                    <p>Meer projecten volgen nog door de volgende generatie…</p>
                 </div>
-            </div>
-            <div class="grid-item">
-                <a title="Title" href="#">
-                    <img src="https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif" alt="Hanna Walgrave">
-                </a>
-                <div class="grid-details">
-                    <p class="first-detail">UI Design | Drupal</p>
-                    <p class="second-detail">Climate without borders</p>
-                    <a title="Title" href="#" class="third-detail">Meer info +</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a title="Title" href="#">
-                    <img src="https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif" alt="Sander Van Hullebusch">
-                </a>
-                <div class="grid-details">
-                    <p class="first-detail">UI Design | Drupal</p>
-                    <p class="second-detail">Climate without borders</p>
-                    <a title="Title" href="#" class="third-detail">Meer info +</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a title="Title" href="#">
-                    <img src="https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif" alt="Hanna Walgrave">
-                </a>
-                <div class="grid-details">
-                    <p class="first-detail">UI Design | Drupal</p>
-                    <p class="second-detail">Climate without borders</p>
-                    <a title="Title" href="#" class="third-detail">Meer info +</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <a title="Title" href="#">
-                    <img src="https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif" alt="Hanna Walgrave">
-                </a>
-                <div class="grid-details">
-                    <p class="first-detail">UI Design | Drupal</p>
-                    <p class="second-detail">Climate without borders</p>
-                    <a title="Title" href="#" class="third-detail">Meer info +</a>
-                </div>
-            </div>
-        </article>
-			</div> <!-- /maxwidth -->
+            </article>
+        </div> <!-- /maxwidth -->
     </section>
 </main>
 

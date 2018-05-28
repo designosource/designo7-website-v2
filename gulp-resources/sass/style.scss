@@ -891,6 +891,23 @@ main {
             }
           }
         }
+
+        &:last-child {
+          background: $color--purplered;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            width: 60%;
+            font-family: $font--cooper--bold;
+            color: $color--white;
+            font-size: $font--24;
+            line-height: 32pt;
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
       }
 
     }

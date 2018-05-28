@@ -1,6 +1,4 @@
-<?php
-include '../inc/arrays/members.php';
-?>
+<?php include '../inc/arrays/members.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,15 +46,14 @@ include '../inc/arrays/members.php';
 
             <h1>Meet the team</h1>
             <article class="overview" id="members-grid">
-                <!--TODO: loop all members in grid-->
                 <?php foreach($members as $member): ?>
                     <div class="grid-item">
                         <a title="Title" href="#">
-                            <img src="<?php echo $member['Image']; ?>" alt="Chris Oortman">
+                            <img src="<?php echo $member['Image']; ?>" alt="<?php echo $member['Name'] ; ?>">
                         </a>
                         <div class="grid-details">
                             <p class="first-detail"><?php echo $member['Title']; ?></p>
-                            <p class="second-detail"><?php echo $member['Shortname'] . ' '. $member['Name'] ; ?></p>
+                            <p class="second-detail"><?php echo $member['Name'] ; ?></p>
                             <a title="Title" href="#" class="third-detail">Meer info +</a>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 
 $members = array(
     "member" => array(
-        "Name" => "Van Hullebusch",
+        "Name" => "Sander Van Hullebusch",
         "Shortname" => "Sander",
         "Title" => "Gulp guardian",
         "Image" => "https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif",
@@ -15,7 +15,7 @@ $members = array(
     ),
 
     "chris" => array(
-        "Name" => "Oortman",
+        "Name" => "Chris Oortman",
         "Shortname" => "Chris",
         "Title" => "Branding badass",
         "Image" => "https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif",
