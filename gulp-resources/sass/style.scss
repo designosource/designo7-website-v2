@@ -308,6 +308,7 @@ main {
       .content-group {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
       }
 
       .page-number {
