@@ -1423,6 +1423,8 @@ main {
         text-transform: uppercase; }
       main .big-grid-2 .content-rightblock .member-information {
         display: none; }
+  main .carousel-pop-up {
+    display: none; }
   main #wat .content-image {
     background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif"); }
   main #wat .overlay:before {
