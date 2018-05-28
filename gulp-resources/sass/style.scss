@@ -305,6 +305,11 @@ main {
       align-items: flex-start;
       z-index: 5;
 
+      .content-group {
+        display: flex;
+        flex-direction: column;
+      }
+
       .page-number {
         color: $color--purplered;
         font-size: $font--36;
@@ -1537,8 +1542,13 @@ footer {
 
           .title-group {
             position: absolute;
-            top: -32.5vh;
-            right: -8vw;
+            top: 13.5vh;
+            right: 7vw;
+          }
+
+          .content-group {
+            align-items: center;
+            justify-content: center;
           }
 
           h2 {

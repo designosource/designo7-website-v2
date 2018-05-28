@@ -1041,6 +1041,9 @@ main {
       flex-direction: column;
       align-items: flex-start;
       z-index: 5; }
+      main .container .content-rightblock .content-group {
+        display: flex;
+        flex-direction: column; }
       main .container .content-rightblock .page-number {
         color: #c10c43;
         font-size: 3rem;
@@ -1999,8 +2002,11 @@ footer {
       justify-content: center; }
       main #team .container .content-rightblock .title-group, main #cases .container .content-rightblock .title-group, main #contact .container .content-rightblock .title-group {
         position: absolute;
-        top: -32.5vh;
-        right: -8vw; }
+        top: 13.5vh;
+        right: 7vw; }
+      main #team .container .content-rightblock .content-group, main #cases .container .content-rightblock .content-group, main #contact .container .content-rightblock .content-group {
+        align-items: center;
+        justify-content: center; }
       main #team .container .content-rightblock h2, main #cases .container .content-rightblock h2, main #contact .container .content-rightblock h2 {
         font-size: 6.916rem; }
       main #team .container .content-rightblock a, main #cases .container .content-rightblock a, main #contact .container .content-rightblock a {
