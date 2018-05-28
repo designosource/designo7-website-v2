@@ -40,21 +40,20 @@
         <div class="maxwidth">
 
             <div class="previous-page">
-                <a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-dark.svg"
-                                                                       alt="icon previous page"><span>vorige pagina</span></a>
+                <a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
             </div>
 
             <h1>Meet the team</h1>
             <article class="overview" id="members-grid">
                 <?php foreach($members as $member): ?>
                     <div class="grid-item">
-                        <a title="Title" href="#">
-                            <img src="<?php echo $member['Image']; ?>" alt="<?php echo $member['Name'] ; ?>">
+                        <a title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
+                            <img src="<?php echo $member['image']; ?>" alt="<?php echo $member['name'] ; ?>">
                         </a>
                         <div class="grid-details">
-                            <p class="first-detail"><?php echo $member['Title']; ?></p>
-                            <p class="second-detail"><?php echo $member['Name'] ; ?></p>
-                            <a title="Title" href="#" class="third-detail">Meer info +</a>
+                            <p class="first-detail"><?php echo $member['title']; ?></p>
+                            <p class="second-detail"><?php echo $member['name'] ; ?></p>
+                            <a title="Meer info | <?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php" class="third-detail">Meer info +</a>
                         </div>
                     </div>
                 <?php endforeach; ?>

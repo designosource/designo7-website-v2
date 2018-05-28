@@ -5,16 +5,16 @@
 			
 			<article class="member-information">
 				
-				<p class="member-quote"><?php echo $memberinfo["Quote"]; ?></p>
+				<p class="member-quote"><?php echo $memberinfo["quote"]; ?></p>
 				
 				<div class="member-socialmedia">
 					
-					<?php if( !empty($memberinfo["Linkedin"]) ): ?>
-					<a target="_blank" href="<?php echo $memberinfo["Linkedin"]; ?>">Linkedin</a>
+					<?php if( !empty($memberinfo["linkedin"]) ): ?>
+					<a target="_blank" href="<?php echo $memberinfo["linkedin"]; ?>">Linkedin</a>
 					<?php endif; ?>
 					
-					<?php if( !empty($memberinfo["Email"]) ): ?>
-					<a href="mailto:<?php echo $memberinfo["Email"]; ?>">Email</a>
+					<?php if( !empty($memberinfo["email"]) ): ?>
+					<a href="mailto:<?php echo $memberinfo["email"]; ?>">Email</a>
 					<?php endif; ?>
 					
 				</div>
@@ -27,17 +27,17 @@
 
 			</div>
 			
-			<h1><?php echo $memberinfo["Name"]; ?></h1>
+			<h1><?php echo $memberinfo["name"]; ?></h1>
 			
 			<article class="content-rightblock scrollbar">
 				
 					<div class="carousel-pop-up-button"></div>
 				
-					<h2 class="member-nickname"><?php echo $memberinfo["Title"]; ?></h2>
+					<h2 class="member-nickname"><?php echo $memberinfo["title"]; ?></h2>
 					
-					<p><?php echo $memberinfo["Description"]; ?></p>
+					<p><?php echo $memberinfo["description"]; ?></p>
 					
-					<?php if( !empty($memberinfo["Website"]) ): ?>
+					<?php if( !empty($memberinfo["website"]) ): ?>
 					
 					<a title="Website <?php echo ucfirst($pagename); ?>" href="#" class="btn">Bekijk website<span class="arrow-right"></span></a>
 					
@@ -57,8 +57,8 @@
 
 						<?php foreach($members as $member): ?>
 						
-						<a  title="<?php echo $member["Name"]; ?>" href="<?php echo $member["Shortname"]; ?>.php">
-							<div class="<?php echo $member["Shortname"]; ?>"></div>
+						<a  title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
+							<div class="<?php echo $member["shortname"]; ?>"></div>
 						</a>
 						
 						<?php endforeach; ?>
