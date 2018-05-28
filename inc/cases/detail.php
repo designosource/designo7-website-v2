@@ -31,8 +31,8 @@
 				
 					<?php echo $caseinfo["description"]; ?>
 					
-					<?php if( !empty( $caseinfo["Website"] ) ): ?>
-					<a title="Website" href="<?php echo $caseinfo["Website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
+					<?php if( !empty( $caseinfo["website"] ) ): ?>
+					<a title="Website" href="<?php echo $caseinfo["website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
 					<?php endif; ?>
 			</article>
 			
