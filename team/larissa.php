@@ -21,17 +21,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include '../inc/head/meta_tags.php'; ?>
-
-    <title>Team | <?php echo ucfirst($pagename); ?></title>
-    
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
-
-    <!-- Animate.css -->
-    <link href="../css/animate.css" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link href="../css/style.css" rel="stylesheet">
+    <?php include '../inc/head/meta_tags_member.php'; ?>
 
 </head>
 

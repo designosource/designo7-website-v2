@@ -1,13 +1,12 @@
 <?php
 
-	include '../inc/arrays/members.php';
+	include '../inc/arrays/cases.php';
 
 	// Get page name
 	$pagename = basename(__FILE__, '.php');
 
 	// Fetch corresponding member info
-	$memberinfo = $members[$pagename];
-
+	$caseinfo = $cases[$pagename];
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -21,17 +20,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include '../inc/head/meta_tags.php'; ?>
-
-    <title>Team | <?php echo ucfirst($pagename); ?></title>
-    
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
-
-    <!-- Animate.css -->
-    <link href="../css/animate.css" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link href="../css/style.css" rel="stylesheet">
+    <?php include '../inc/head/meta_tags_case.php'; ?>
 
 </head>
 
@@ -42,7 +31,7 @@
 
 <main>
 
-	<?php include '../inc/team/member_content.php'; ?>
+	<?php include '../inc/cases/detail.php'; ?>
 
 </main>
 
@@ -50,6 +39,7 @@
 
 <!-- SCRIPTS -->
 <?php include '../inc/footer/scripts.php'; ?>
+<script type="text/javascript" src="../js/case-detail.js"></script>
 <!-- END SCRIPTS -->
 
 </body>

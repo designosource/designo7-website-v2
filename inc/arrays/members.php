@@ -2,7 +2,7 @@
 
 
 $members = array(
-    "member" => array(
+    "sander" => array(
         "name" => "Sander Van Hullebusch",
         "shortname" => "sander",
         "title" => "Gulp guardian",

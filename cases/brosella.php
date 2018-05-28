@@ -20,21 +20,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include '../inc/head/meta_tags.php'; ?>
-
-    <title>Cases | <?php echo ucfirst($pagename); ?></title>
-
-    <!-- Font(s) for this template (Google font / font-awesome) -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          type="text/css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
-
-    <!-- Animate.css -->
-    <link href="../css/animate.css" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link href="../css/style.css" rel="stylesheet">
+    <?php include '../inc/head/meta_tags_case.php'; ?>
 
 </head>
 
