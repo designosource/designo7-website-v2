@@ -39,6 +39,13 @@ $(document).ready(function(){
 		
 	});
 	
+	$(".footer nav a").on("click", function(){
+		if( $(window).width() < 750 + 1 ) {
+			$(".inner-hamburger-menu").removeClass("open");
+			$(".footer").fadeOut();
+		}
+	});
+	
 	function resizewindow() {
 		$windowwidth = $(window).width();
 		
