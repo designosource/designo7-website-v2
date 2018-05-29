@@ -1,4 +1,4 @@
-<section id="<?php echo $pagename; ?>">
+<section class="memberpage" id="<?php echo $pagename; ?>">
   	<div class="container big-grid-2 maxwidth">
   		<div class="coloured-background"></div>
 			<figure class="content-image overlay" style="background-image: url('<?php echo /* $prefix . */ $memberinfo["image"]; ?>');"></figure>

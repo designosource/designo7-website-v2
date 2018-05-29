@@ -936,21 +936,12 @@ main {
     grid-column-end: 11;
   }
 
-  #single-case {
+  .casepage {
     .overlay {
       &:before {
         background-color: rgba($color--darkpurple, 0.9);
         z-index: 2;
       }
-    }
-    .content-image-1 {
-      background-image: url("https://media.giphy.com/media/YhyAJUCpno53y/giphy.gif");
-    }
-    .content-image-2 {
-      background-image: url("https://media.giphy.com/media/wqb5K5564JSlW/giphy.gif");
-    }
-    .content-image-3 {
-      background-image: url("https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif");
     }
   }
 
