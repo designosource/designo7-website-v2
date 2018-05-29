@@ -15,9 +15,6 @@
     <title>Team | Wat</title>
 
     <!-- Font(s) for this template (Google font / font-awesome) -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          type="text/css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
 
     <!-- Animate.css -->
@@ -43,7 +40,7 @@
 
 			<div class="previous-page">
 
-				<a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+				<a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
 			</div>
 
