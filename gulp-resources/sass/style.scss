@@ -94,6 +94,7 @@ header {
       .inner-scroll {
         p {
           color: $color--white;
+          letter-spacing: 1px;
           @include transition(0.3s 0.15s);
         }
 
@@ -277,6 +278,16 @@ main {
     margin-right: auto;
   }
 
+  #team {
+    .content-group {
+      margin-top: 13%;
+    }
+
+    .links {
+      margin-bottom: 20%;
+    }
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
@@ -322,6 +333,7 @@ main {
       h2 {
         font-size: $font--105;
         font-family: $font--cooper--bold;
+        margin-top: 3%;
         margin-bottom: 5%;
       }
 
@@ -419,11 +431,15 @@ main {
     }
 
     #home-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       grid-row-start: 2;
       grid-row-end: 3;
       grid-column-start: 5;
       grid-column-end: 24;
       color: $color--white;
+      @include translate(0, 0);
 
       h3 {
         font-family: $font--cooper--bold;
@@ -439,9 +455,9 @@ main {
       p {
         font-family: $font--sans;
         font-size: $font--22;
-        width: 50%;
+        width: 40rem;
         margin-bottom: 5%;
-        line-height: 32pt;
+        line-height: 27pt;
         font-weight: 300;
       }
     }
@@ -453,6 +469,8 @@ main {
       grid-column-end: 4;
       background: $color--goldenrod;
       height: 5px;
+      align-self: flex-start;
+      margin-top: 7rem;
     }
 
     #scroll {
@@ -479,17 +497,17 @@ main {
         width: 21pt;
         height: 21pt;
         @include rotate(180deg);
-				@include transition("0.3s");
+        @include transition("0.3s");
       }
 
       &:hover {
         color: $color--pinkred;
-				
-				img {
-					@include rotate(180deg);
-					@include translate(10pt, 0);
-				}
-				
+
+        img {
+          @include rotate(180deg);
+          @include translate(10pt, 0);
+        }
+
       }
 
     }
@@ -709,18 +727,18 @@ main {
           /*content: '"';
           font-family: $font--sans;
           font-weight: 500;*/
-					background-image: url('../img/quote.svg');
-					background-size: contain;
-					background-repeat: no-repeat;
-					background-position: center center;
+          background-image: url('../img/quote.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
           z-index: 1;
           color: rgba($color--white, 0.7);
           font-size: $font--144;
-					width: 40px;
-					height: 40px;
-					top: 0pt;
+          width: 40px;
+          height: 40px;
+          top: 0pt;
           left: 0pt;
-					@include translate(-25%, -75%);
+          @include translate(-25%, -75%);
           @include transition(0.3s);
         }
 
@@ -803,10 +821,10 @@ main {
     }
 
   }
-	
-	.carousel-pop-up {
-		display: none;
-	}
+
+  .carousel-pop-up {
+    display: none;
+  }
 
   #wat {
     .content-image {
@@ -1156,7 +1174,7 @@ footer {
         }
 
         .content-rightblock {
-					position: relative;
+          position: relative;
           grid-row-start: 5;
           grid-row-end: 6;
           grid-column-start: 3;
@@ -1275,137 +1293,137 @@ footer {
         }
 
       }
-			
-			.carousel-pop-up-button {
-				@include center-absolute(both);
-				z-index: 3;
-				width: 47pt;
-				height: 47pt;
-				cursor: pointer;
-				opacity: 0.8;
-				background-image: url('../img/member-pop-up-icon.svg');
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				@include animation(fadeinout 1s infinite alternate);
 
-				&:hover {
-					@include animation(none);
-				}
-			}
-			
-			.carousel-pop-up {
-				position: fixed;
-				width: 100vw;
-				height: 100vh;
-				left: 0;
-				top: 0;
-				background-color: $color--darkpurple;
-				z-index: 11;
-				display: none;
+      .carousel-pop-up-button {
+        @include center-absolute(both);
+        z-index: 3;
+        width: 47pt;
+        height: 47pt;
+        cursor: pointer;
+        opacity: 0.8;
+        background-image: url('../img/member-pop-up-icon.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include animation(fadeinout 1s infinite alternate);
 
-				.inner-carousel-pop-up {
-					padding: 0 40pt;
+        &:hover {
+          @include animation(none);
+        }
+      }
 
-					.carousel-pop-up-close {
-						font-family: $font--cooper--bold;
-						color: $color--white;
-						font-size: $font--24;
-						display: block;
-						@include push-auto;
-						text-decoration: underline;
-						margin-top: 55pt;
-						margin-bottom: 40pt;
-						text-align: center;
-						cursor: pointer;
-					}
+      .carousel-pop-up {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: $color--darkpurple;
+        z-index: 11;
+        display: none;
 
-					.carousel {
-						height: 100%;
+        .inner-carousel-pop-up {
+          padding: 0 40pt;
 
-						.slick-track {
-							height: 100%;
-							@include center-flex(vertical);
+          .carousel-pop-up-close {
+            font-family: $font--cooper--bold;
+            color: $color--white;
+            font-size: $font--24;
+            display: block;
+            @include push-auto;
+            text-decoration: underline;
+            margin-top: 55pt;
+            margin-bottom: 40pt;
+            text-align: center;
+            cursor: pointer;
+          }
 
-							a.slick-slide {
-								height: 100%;
-								width: 100% !important;
-								outline: 0;
+          .carousel {
+            height: 100%;
 
-								div {
-									width: 100%;
-									height: 50vh;
-									@include bg-cover-center;
-									@include center-flex(both);
-									
-									h3 {
-										color: $color--white;
-										font-family: $font--cooper--bold;
-										font-size: $font--32;
-										text-align: center;
-									}
-									
-								}
+            .slick-track {
+              height: 100%;
+              @include center-flex(vertical);
 
-								#test1 {
-									background-image: url("../img/designologo.svg");
-								}
+              a.slick-slide {
+                height: 100%;
+                width: 100% !important;
+                outline: 0;
 
-								#test2 {
-									background-image: url("../img/arrow-right-red.svg");
-								}
+                div {
+                  width: 100%;
+                  height: 50vh;
+                  @include bg-cover-center;
+                  @include center-flex(both);
 
-							}
-						}
-					}
+                  h3 {
+                    color: $color--white;
+                    font-family: $font--cooper--bold;
+                    font-size: $font--32;
+                    text-align: center;
+                  }
 
-					.carousel-pop-up-drag {
-						position: relative;
-						width: 100%;
-						height: 2em;
-						font-family: $font--cooper--book;
-						font-size: $font--16;
-						@include center-flex(vertical);
-						margin-top: 30pt;
+                }
 
-						span {
-							padding: 5pt 20pt;
-							background-color: $color--darkpurple;
-							color: $color--white;
-							z-index: 2;
-							@include push-auto;
-							@include animation(leftright 1.5s infinite ease alternate);
-						}
+                #test1 {
+                  background-image: url("../img/designologo.svg");
+                }
 
-						&:before {
-							@include pseudo;
-							width: 100%;
-							top: 1em;
-							height: 2pt;
-							background-color: $color--white;
-						}
+                #test2 {
+                  background-image: url("../img/arrow-right-red.svg");
+                }
 
-					}
+              }
+            }
+          }
 
-				}
+          .carousel-pop-up-drag {
+            position: relative;
+            width: 100%;
+            height: 2em;
+            font-family: $font--cooper--book;
+            font-size: $font--16;
+            @include center-flex(vertical);
+            margin-top: 30pt;
 
-			}
+            span {
+              padding: 5pt 20pt;
+              background-color: $color--darkpurple;
+              color: $color--white;
+              z-index: 2;
+              @include push-auto;
+              @include animation(leftright 1.5s infinite ease alternate);
+            }
+
+            &:before {
+              @include pseudo;
+              width: 100%;
+              top: 1em;
+              height: 2pt;
+              background-color: $color--white;
+            }
+
+          }
+
+        }
+
+      }
 
       .fixed-bottom-mobile-navigation {
         position: fixed;
         left: 0;
         bottom: 0;
-				@include translate(0, 100%);
-				@include transition(0.3s);
+        @include translate(0, 100%);
+        @include transition(0.3s);
         width: 100%;
         height: 42pt;
         background-color: $color--darkpurple;
         color: white;
         z-index: 5;
-				
-				&.show {
-					@include translate(0, 0%);
-				}
+
+        &.show {
+          @include translate(0, 0%);
+        }
       }
     }
 
@@ -1602,11 +1620,11 @@ footer {
               margin-right: 0;
             }
           }
-          
+
           p {
             text-align: center;
           }
-          
+
           .arrow {
             display: none;
           }
@@ -1636,6 +1654,16 @@ footer {
             text-transform: uppercase;
           }
         }
+      }
+    }
+
+    #team {
+      .content-group {
+        margin-top: 0;
+      }
+
+      .links {
+        margin-bottom: 15%;
       }
     }
 
@@ -1685,7 +1713,8 @@ footer {
         grid-column-end: 2;
         background: $color--goldenrod;
         height: 5px;
-        padding-top: 5%;
+        align-self: flex-start;
+        margin-top: 2.5rem;
       }
 
       #scroll {
@@ -1748,6 +1777,7 @@ footer {
   }
 
 }
+
 /* end hiddengame */
 
 @import 'components/_animations.scss';

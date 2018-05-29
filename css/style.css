@@ -180,6 +180,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
 @import url("https://fontlibrary.org/face/cooper-hewitt");
 .btn {
+  display: flex;
+  align-items: center;
   font-size: 1.833rem !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
@@ -258,6 +260,8 @@
       transition: 0s 0.15s; }
 
 .btn-white {
+  display: flex;
+  align-items: center;
   font-size: 1.833rem !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
@@ -783,6 +787,7 @@ header {
       color: white; }
   header.white-nav .scroll .inner-scroll p {
     color: #ffffff;
+    letter-spacing: 1px;
     -webkit-transition: 0.3s 0.15s;
     -moz-transition: 0.3s 0.15s;
     -ms-transition: 0.3s 0.15s;
@@ -1017,6 +1022,10 @@ main {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto; }
+  main #team .content-group {
+    margin-top: 13%; }
+  main #team .links {
+    margin-bottom: 20%; }
   main .container {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
@@ -1054,6 +1063,7 @@ main {
       main .container .content-rightblock h2 {
         font-size: 8.75rem;
         font-family: "CooperHewittBold", sans-serif;
+        margin-top: 3%;
         margin-bottom: 5%; }
       main .container .content-rightblock a {
         font-size: 2.666rem;
@@ -1135,11 +1145,17 @@ main {
       height: 60%;
       margin: 0 auto; }
     main #home-grid #home-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       grid-row-start: 2;
       grid-row-end: 3;
       grid-column-start: 5;
       grid-column-end: 24;
-      color: #ffffff; }
+      color: #ffffff;
+      -moz-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); }
       main #home-grid #home-content h3 {
         font-family: "CooperHewittBold", sans-serif;
         font-size: 3rem;
@@ -1150,9 +1166,9 @@ main {
       main #home-grid #home-content p {
         font-family: "Source Sans Pro", sans-serif;
         font-size: 1.833rem;
-        width: 50%;
+        width: 40rem;
         margin-bottom: 5%;
-        line-height: 32pt;
+        line-height: 27pt;
         font-weight: 300; }
     main #home-grid #home-line {
       grid-row-start: 2;
@@ -1160,7 +1176,9 @@ main {
       grid-column-start: 1;
       grid-column-end: 4;
       background: #f8ae0d;
-      height: 5px; }
+      height: 5px;
+      align-self: flex-start;
+      margin-top: 7rem; }
     main #home-grid #scroll {
       grid-row-start: 3;
       grid-row-end: 4;
@@ -2075,6 +2093,10 @@ footer {
         color: #c10c43;
         font-family: "CooperHewittBold", sans-serif;
         text-transform: uppercase; }
+  main #team .content-group {
+    margin-top: 0; }
+  main #team .links {
+    margin-bottom: 15%; }
   main #home-grid {
     grid-template-columns: 10% 1fr 5%;
     grid-template-rows: 1fr 100% 1fr;
@@ -2110,7 +2132,8 @@ footer {
       grid-column-end: 2;
       background: #f8ae0d;
       height: 5px;
-      padding-top: 5%; }
+      align-self: flex-start;
+      margin-top: 2.5rem; }
     main #home-grid #scroll {
       grid-row-start: 3;
       grid-row-end: 4;
