@@ -2022,8 +2022,8 @@ footer {
       grid-template-columns: 1fr; }
   main #team .container, main #cases .container, main #contact .container {
     display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 72pt 25vh 1fr;
+    grid-template-columns: 7% 1fr 7%;
+    grid-template-rows: 80pt 130pt 1fr;
     grid-column-gap: 15pt;
     min-height: 100%;
     font-size: 6pt; }
@@ -2040,20 +2040,24 @@ footer {
       grid-row-start: 3;
       margin-top: 0;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      padding-top: 2%; }
       main #team .container .content-rightblock .title-group, main #cases .container .content-rightblock .title-group, main #contact .container .content-rightblock .title-group {
         position: absolute;
-        top: 13.5vh;
-        right: 7vw; }
+        top: 38pt;
+        right: 20pt; }
       main #team .container .content-rightblock .content-group, main #cases .container .content-rightblock .content-group, main #contact .container .content-rightblock .content-group {
         align-items: center;
         justify-content: center; }
       main #team .container .content-rightblock h2, main #cases .container .content-rightblock h2, main #contact .container .content-rightblock h2 {
         font-size: 6.916rem; }
       main #team .container .content-rightblock a, main #cases .container .content-rightblock a, main #contact .container .content-rightblock a {
-        margin-bottom: 10%; }
+        margin-bottom: 10%;
+        text-align: center; }
         main #team .container .content-rightblock a span:not(.label):not(.arrow-right), main #cases .container .content-rightblock a span:not(.label):not(.arrow-right), main #contact .container .content-rightblock a span:not(.label):not(.arrow-right) {
           margin-right: 0; }
+      main #team .container .content-rightblock p, main #cases .container .content-rightblock p, main #contact .container .content-rightblock p {
+        text-align: center; }
       main #team .container .content-rightblock .arrow, main #cases .container .content-rightblock .arrow, main #contact .container .content-rightblock .arrow {
         display: none; }
       main #team .container .content-rightblock #contact-intro, main #cases .container .content-rightblock #contact-intro, main #contact .container .content-rightblock #contact-intro {

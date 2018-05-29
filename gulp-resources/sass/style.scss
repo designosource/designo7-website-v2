@@ -1555,8 +1555,8 @@ footer {
     #team, #cases, #contact {
       .container {
         display: grid;
-        grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 72pt 25vh 1fr;
+        grid-template-columns: 7% 1fr 7%;
+        grid-template-rows: 80pt 130pt 1fr;
         grid-column-gap: 15pt;
         min-height: 100%;
         font-size: 6pt;
@@ -1577,11 +1577,12 @@ footer {
           margin-top: 0;
           align-items: center;
           justify-content: center;
+          padding-top: 2%;
 
           .title-group {
             position: absolute;
-            top: 13.5vh;
-            right: 7vw;
+            top: 38pt;
+            right: 20pt;
           }
 
           .content-group {
@@ -1595,10 +1596,15 @@ footer {
 
           a {
             margin-bottom: 10%;
+            text-align: center;
 
             span:not(.label):not(.arrow-right) {
               margin-right: 0;
             }
+          }
+          
+          p {
+            text-align: center;
           }
           
           .arrow {
