@@ -39,7 +39,7 @@
 					
 					<?php if( !empty($memberinfo["website"]) ): ?>
 					
-					<a title="Website <?php echo ucfirst($pagename); ?>" href="#" class="btn">Bekijk website<span class="arrow-right"></span></a>
+					<a title="Website <?php echo ucfirst($pagename); ?>" href="<?php echo $memberinfo["website"]; ?>" class="btn">Bekijk website<span class="arrow-right"></span></a>
 					
 					<?php endif; ?>
 					
