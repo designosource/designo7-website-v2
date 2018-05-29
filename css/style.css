@@ -1184,9 +1184,27 @@ main {
       height: 21pt;
       -moz-transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      -webkit-transition: "0.3s";
+      -moz-transition: "0.3s";
+      -ms-transition: "0.3s";
+      -o-transition: "0.3s";
+      transition: "0.3s"; }
+      main .previous-page a img:hover {
+        -webkit-transition: "0.3s";
+        -moz-transition: "0.3s";
+        -ms-transition: "0.3s";
+        -o-transition: "0.3s";
+        transition: "0.3s"; }
     main .previous-page a:hover {
       color: #e10a42; }
+      main .previous-page a:hover img {
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -moz-transform: translate(10pt, 0);
+        -webkit-transform: translate(10pt, 0);
+        transform: translate(10pt, 0); }
   main h1 {
     font-size: 6.916rem;
     font-family: "CooperHewittBold", sans-serif; }
@@ -1342,13 +1360,23 @@ main {
           content: "";
           display: block;
           position: absolute;
-          content: '"';
-          font-family: "Source Sans Pro", sans-serif;
-          font-weight: 500;
+          /*content: '"';
+          font-family: $font--sans;
+          font-weight: 500;*/
+          background-image: url("../img/quote.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
           z-index: 1;
           color: rgba(255, 255, 255, 0.7);
           font-size: 12rem;
-          left: -20pt;
+          width: 40px;
+          height: 40px;
+          top: 0pt;
+          left: 0pt;
+          -moz-transform: translate(-25%, -75%);
+          -webkit-transform: translate(-25%, -75%);
+          transform: translate(-25%, -75%);
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;

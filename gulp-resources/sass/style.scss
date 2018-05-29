@@ -470,10 +470,17 @@ main {
         width: 21pt;
         height: 21pt;
         @include rotate(180deg);
+				@include transition("0.3s");
       }
 
       &:hover {
-        color: $color--pinkred
+        color: $color--pinkred;
+				
+				img {
+					@include rotate(180deg);
+					@include translate(10pt, 0);
+				}
+				
       }
 
     }
@@ -690,13 +697,21 @@ main {
 
         &:before {
           @include pseudo;
-          content: '"';
+          /*content: '"';
           font-family: $font--sans;
-          font-weight: 500;
+          font-weight: 500;*/
+					background-image: url('../img/quote.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center center;
           z-index: 1;
           color: rgba($color--white, 0.7);
           font-size: $font--144;
-          left: -20pt;
+					width: 40px;
+					height: 40px;
+					top: 0pt;
+          left: 0pt;
+					@include translate(-25%, -75%);
           @include transition(0.3s);
         }
 
