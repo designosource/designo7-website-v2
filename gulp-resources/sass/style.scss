@@ -478,8 +478,22 @@ main {
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 25;
-      width: 45pt;
+			width: 16px;
+			height: 36px;
+			border-radius: 10px;
+			border: 1px solid white;
       margin: 0 auto;
+			
+			.scroll-line {
+				width: 2px;
+				height: 6px;
+				border-radius: 1px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 6px;
+				background-color: white;
+				@include animation(scrollfadeout 1.75s infinite ease-in-out);
+			}
     }
   }
 
@@ -938,7 +952,7 @@ main {
           }
         }
 
-        &:last-child {
+        &.last-item {
           background: $color--purplered;
           display: flex;
           justify-content: center;
