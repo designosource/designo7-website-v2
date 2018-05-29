@@ -77,7 +77,7 @@ gulp.task('imagesMembers', () =>
         .pipe(plumber())
         .pipe(imagemin())
         .pipe(plumber.stop())
-        .pipe(gulp.dest('img/'))
+        .pipe(gulp.dest('img/members/'))
 );
 /* Als er afbeeldingen in mappen komen, moeten we ervoor zorgen dat deze ook worden verkleind! */
 
