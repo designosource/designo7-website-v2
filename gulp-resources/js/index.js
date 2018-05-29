@@ -77,6 +77,7 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
 		draggable: false,
+		swipe: false,
     arrows: true
   });
 	
