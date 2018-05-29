@@ -47,8 +47,10 @@
 			<h1>We are Designosource.</h1>
 
 			<article class="content-rightblock scrollbar">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+					<p>Gedreven, jong en gepassioneerd! Een lijstje mooie woorden? Ja dat ook, maar vooral de stempel die wij drukken op de 7e generatie Designosource.</p>
+					<p>Wij zijn een creative agency bestaande uit 12 studenten Interactive Multimedia Design. Gaande van development nerds tot interface queens en van design hipsters tot sushi lovers, vormen wij een uniek en vooral enthousiast team.</p>
+					<p>Benieuwd naar wat wij al gerealiseerd hebben?</p>
+					<a title="Ontdek onze cases" href="../cases/" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
 			
 			<div class="fixed-bottom-mobile-navigation"></div>

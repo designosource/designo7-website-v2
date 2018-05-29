@@ -46,8 +46,13 @@
 			<h1>Werkwijze</h1>
 
 			<article class="content-rightblock scrollbar">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
+					<p>Een uniek agency als dat van Designosource vraagt ook om een unieke aanpak. Elk project wordt door een kleiner maar gespecialiseerder team met evenveel Dino-care behandeld.</p>
+					<ol>
+						<li>Opstart meeting</li>
+						<li>Projectmanagement</li>
+						<li>Uitwerking</li>
+						<li>Opvolging</li>
+					</ol>
 					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
 			

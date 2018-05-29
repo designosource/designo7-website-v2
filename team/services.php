@@ -46,9 +46,10 @@
 			<h1>Services</h1>
 
 			<article class="content-rightblock scrollbar">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis placeat maiores voluptate repudiandae sint magnam voluptas, consequuntur. Hic officiis vitae autem, odit saepe officia illo architecto natus ut delectus.</p>
-					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+					<p>Wij ademen digitaal, en daarom is geen enkele creatieve uitdaging ons teveel. Met een “out-of-the-box” aanpak leveren wij (digitale) oplossingen die perfect beantwoorden aan de vraag van onze klant.</p>
+					<p>Heeft jouw project net dat ietsje meer royalty gehalte of sashimi flavour nodig? Dan ben je bij ons aan het juiste adres, let’s make magic!
+</p>
+					<a title="Contact" href="../index.php#contact" class="btn">Contacteer ons<span class="arrow-right"></span></a>
 			</article>
 			
 			<div class="fixed-bottom-mobile-navigation"></div>

@@ -1183,25 +1183,26 @@ main {
       grid-row-start: 3;
       grid-row-end: 4;
       grid-column-start: 1;
-      grid-column-end: 25;
-      width: 16px;
-      height: 36px;
-      border-radius: 10px;
-      border: 1px solid white;
-      margin: 0 auto; }
-      main #home-grid #scroll .scroll-line {
-        width: 2px;
-        height: 6px;
-        border-radius: 1px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 6px;
-        background-color: white;
-        -webkit-animation: scrollfadeout 1.75s infinite ease-in-out;
-        -moz-animation: scrollfadeout 1.75s infinite ease-in-out;
-        -ms-animation: scrollfadeout 1.75s infinite ease-in-out;
-        -o-animation: scrollfadeout 1.75s infinite ease-in-out;
-        animation: scrollfadeout 1.75s infinite ease-in-out; }
+      grid-column-end: 25; }
+      main #home-grid #scroll div {
+        width: 16px;
+        height: 36px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 0 auto; }
+        main #home-grid #scroll div .scroll-line {
+          width: 2px;
+          height: 6px;
+          border-radius: 1px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 6px;
+          background-color: white;
+          -webkit-animation: scrollfadeout 1.75s infinite ease-in-out;
+          -moz-animation: scrollfadeout 1.75s infinite ease-in-out;
+          -ms-animation: scrollfadeout 1.75s infinite ease-in-out;
+          -o-animation: scrollfadeout 1.75s infinite ease-in-out;
+          animation: scrollfadeout 1.75s infinite ease-in-out; }
   main .previous-page a {
     font-family: "CooperHewittBold", sans-serif;
     font-size: 1.666rem;
@@ -1344,7 +1345,7 @@ main {
       font-weight: 300;
       line-height: 2.666rem;
       padding-right: 1em; }
-      main .big-grid .content-rightblock p {
+      main .big-grid .content-rightblock p, main .big-grid .content-rightblock ol {
         margin-bottom: 1.833rem; }
   main .big-grid-2 {
     grid-template-columns: repeat(24, 1fr) !important;
