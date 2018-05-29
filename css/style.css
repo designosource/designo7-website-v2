@@ -1227,9 +1227,7 @@ main {
         -moz-transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
-        -moz-transform: translate(10pt, 0);
-        -webkit-transform: translate(10pt, 0);
-        transform: translate(10pt, 0); }
+        /*@include translate(10pt, 0);*/ }
   main h1 {
     font-size: 6.916rem;
     font-family: "CooperHewittBold", sans-serif; }
@@ -1346,16 +1344,17 @@ main {
       grid-row-start: 2;
       grid-row-end: 7;
       grid-column-start: 1;
-      grid-column-end: 11; }
-      main .big-grid-2 .content-image.overlay {
-        position: relative; }
-        main .big-grid-2 .content-image.overlay:before {
-          content: "";
-          display: block;
-          position: absolute;
+      grid-column-end: 11;
+      /*&.overlay {
+        position: relative;
+
+        &:before {
+          @include pseudo;
           width: 100%;
           height: 100%;
-          background-color: rgba(33, 32, 58, 0.7); }
+          background-color: rgba($color--darkpurple, 0.7);
+        }
+      }*/ }
     main .big-grid-2 .member-information {
       grid-row-start: 5;
       grid-row-end: 6;
@@ -1464,7 +1463,7 @@ main {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 16;
-      grid-column-end: 21;
+      grid-column-end: 23;
       margin-top: 0;
       padding-right: 1em; }
       main .big-grid-2 .content-rightblock .member-nickname {
@@ -1685,7 +1684,7 @@ footer {
       grid-row-end: 4;
       grid-column-start: 3;
       grid-column-end: 23;
-      background-position: top center; }
+      background-position: center 35%; }
     main section .big-grid .previous-page, main section .big-grid .previous-next-page {
       display: none; }
     main section .big-grid h1 {
@@ -1728,7 +1727,7 @@ footer {
       grid-row-end: 4;
       grid-column-start: 3;
       grid-column-end: 23;
-      background-position: top center; }
+      background-position: center 35%; }
     main section .big-grid-2 .previous-page {
       display: none; }
     main section .big-grid-2 h1 {
@@ -1739,6 +1738,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-top: 25%;
       font-size: 2.666rem;
       text-align: center;
       line-height: 3rem;
@@ -1857,10 +1857,6 @@ footer {
                 font-family: "CooperHewittBold", sans-serif;
                 font-size: 2.666rem;
                 text-align: center; }
-            main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide #test1 {
-              background-image: url("../img/designologo.svg"); }
-            main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide #test2 {
-              background-image: url("../img/arrow-right-red.svg"); }
       main section .carousel-pop-up .inner-carousel-pop-up .carousel-pop-up-drag {
         position: relative;
         width: 100%;

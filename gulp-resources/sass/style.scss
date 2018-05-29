@@ -505,7 +505,7 @@ main {
 
         img {
           @include rotate(180deg);
-          @include translate(10pt, 0);
+          /*@include translate(10pt, 0);*/
         }
 
       }
@@ -682,7 +682,7 @@ main {
       grid-column-start: 1;
       grid-column-end: 11;
 
-      &.overlay {
+      /*&.overlay {
         position: relative;
 
         &:before {
@@ -691,7 +691,7 @@ main {
           height: 100%;
           background-color: rgba($color--darkpurple, 0.7);
         }
-      }
+      }*/
     }
 
     .member-information {
@@ -801,7 +801,7 @@ main {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 16;
-      grid-column-end: 21;
+      grid-column-end: 23;
       margin-top: 0;
       padding-right: 1em;
 
@@ -1156,7 +1156,7 @@ footer {
           grid-row-end: 4;
           grid-column-start: 3;
           grid-column-end: 23;
-          background-position: top center;
+          background-position: center 35%;
         }
 
         .previous-page, .previous-next-page {
@@ -1212,7 +1212,7 @@ footer {
           grid-row-end: 4;
           grid-column-start: 3;
           grid-column-end: 23;
-          background-position: top center;
+          background-position: center 35%;
         }
 
         .previous-page {
@@ -1225,6 +1225,7 @@ footer {
           grid-column-start: 1;
           grid-column-end: 25;
           @include center-flex(both);
+					padding-top: 25%;
           font-size: $font--32;
           text-align: center;
           line-height: $font--36;
@@ -1362,17 +1363,7 @@ footer {
                     font-size: $font--32;
                     text-align: center;
                   }
-
                 }
-
-                #test1 {
-                  background-image: url("../img/designologo.svg");
-                }
-
-                #test2 {
-                  background-image: url("../img/arrow-right-red.svg");
-                }
-
               }
             }
           }
