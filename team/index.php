@@ -43,9 +43,9 @@
             <h1>Meet the team</h1>
             <article class="overview" id="members-grid">
                 <?php foreach($members as $member): ?>
-                    <div class="grid-item">
+                    <div class="grid-item" onmouseover="$(this).find('img').attr('src','<?php echo $prefix . $member["imagehover"]; ?>').css('transition', '0.4s');" onmouseleave="$(this).find('img').attr('src','<?php echo $prefix . $member["image"]; ?>').css('transition', '0.4s');">
                         <a title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
-                            <img src="<?php echo $member['image']; ?>" alt="<?php echo $member['name'] ; ?>">
+                            <img src="<?php echo $prefix . $member['image']; ?>" alt="<?php echo $member['name'] ; ?>">
                         </a>
                         <div class="grid-details">
                             <p class="first-detail"><?php echo $member['title']; ?></p>
