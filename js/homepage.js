@@ -8,18 +8,19 @@ function activenumber() {
 		$contact = $("#contact").offset().top;
 		$distancewindow = $(window).scrollTop();
 		$activenumber = $(".active-number");
+		$variable = 50;
 
-		if( $distancewindow < $team ) {
+		if( $distancewindow + $variable < $team ) {
 			$activenumber.text("01");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(1)").addClass("active");
 			$("header").addClass("white-nav");
-		} else if( $distancewindow >= $team && $distancewindow < $cases ) {
+		} else if( $distancewindow + $variable >= $team && $distancewindow + $variable < $cases ) {
 			$activenumber.text("02");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(2)").addClass("active");
 			$("header").removeClass("white-nav");
-		} else if( $distancewindow >= $cases && $distancewindow < $contact ) {
+		} else if( $distancewindow + $variable >= $cases && $distancewindow + $variable < $contact ) {
 			$activenumber.text("03");
 			$("header nav a").removeClass("active");
 			$("header nav a:nth-child(3)").addClass("active");
