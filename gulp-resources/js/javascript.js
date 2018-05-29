@@ -19,6 +19,13 @@ if (window.matchMedia('(max-width: 720px)').matches) {
     sr.reveal('#contact .title-group', { duration: 1000, origin: 'top', distance: '20vh', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
     sr.reveal('#contact .content-image', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
     sr.reveal('#contact .content-group', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 750, viewFactor: 0.5 });
+	
+	sr.reveal('.memberpage .content-image.overlay', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 1, viewFactor: 0.5 });
+	sr.reveal('.memberpage article.content-rightblock', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	
+	sr.reveal('.casepage .slick-container.pop-up-image', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, viewFactor: 0.5 });
+	sr.reveal('.casepage h1', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	sr.reveal('.casepage article.content-rightblock', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
 
 } else {
     sr.reveal('#team .content-image', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
@@ -29,4 +36,16 @@ if (window.matchMedia('(max-width: 720px)').matches) {
 
     sr.reveal('#contact .content-image', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
     sr.reveal('#contact .content-rightblock', { duration: 1000, origin: 'top', distance: '20vh', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
+	
+	sr.reveal('.memberpage .content-image.overlay', { duration: 1000, origin: 'left', distance: '20vw', scale: 1, opacity: 0, viewFactor: 0.5 });
+	sr.reveal('.memberpage h1', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	sr.reveal('.memberpage article.member-information', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	sr.reveal('.memberpage article.content-rightblock', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	sr.reveal('.memberpage .previous-page', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
+	
+	sr.reveal('.casepage .slick-container.overlay', { duration: 1000, origin: 'left', distance: '20vw', scale: 1, opacity: 0, viewFactor: 0.5 });
+	sr.reveal('.casepage .slick-container.pop-up-image', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	sr.reveal('.casepage h1', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+	sr.reveal('.casepage article.content-rightblock', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
+	sr.reveal('.casepage .previous-next-page', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
 }
