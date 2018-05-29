@@ -1549,7 +1549,7 @@ footer {
         grid-template-columns: 10% 1fr 10%;
         grid-template-rows: 20vh 25vh 1fr;
         grid-column-gap: 15pt;
-        min-height: 100vh;
+        min-height: 100%;
         font-size: 6pt;
 
         .content-image {
