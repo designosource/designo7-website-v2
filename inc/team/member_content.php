@@ -35,7 +35,7 @@
 				
 					<h2 class="member-nickname"><?php echo $memberinfo["title"]; ?></h2>
 					
-					<p><?php echo $memberinfo["description"]; ?></p>
+					<?php echo $memberinfo["description"]; ?>
 					
 					<?php if( !empty($memberinfo["website"]) ): ?>
 					
