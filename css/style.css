@@ -1161,6 +1161,13 @@ main {
       grid-column-end: 4;
       background: #f8ae0d;
       height: 5px; }
+    main #home-grid #scroll {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 25;
+      width: 45pt;
+      margin: 0 auto; }
   main .previous-page a {
     font-family: "CooperHewittBold", sans-serif;
     font-size: 1.666rem;
@@ -2016,7 +2023,7 @@ footer {
   main #team .container, main #cases .container, main #contact .container {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 20vh 25vh 1fr;
+    grid-template-rows: 72pt 25vh 1fr;
     grid-column-gap: 15pt;
     min-height: 100%;
     font-size: 6pt; }
@@ -2068,7 +2075,7 @@ footer {
     grid-template-columns: 10% 1fr 5%;
     grid-template-rows: 1fr 100% 1fr;
     align-items: flex-start;
-    min-height: 100vh; }
+    min-height: 100%; }
     main #home-grid #home-logo {
       grid-column-start: 1;
       grid-column-end: 4;
@@ -2099,7 +2106,13 @@ footer {
       grid-column-end: 2;
       background: #f8ae0d;
       height: 5px;
-      padding-top: 5%; } }
+      padding-top: 5%; }
+    main #home-grid #scroll {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      align-self: center; } }
 
 /* hiddengame */
 #hiddengame {

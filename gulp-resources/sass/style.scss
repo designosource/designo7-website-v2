@@ -454,6 +454,15 @@ main {
       background: $color--goldenrod;
       height: 5px;
     }
+
+    #scroll {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 25;
+      width: 45pt;
+      margin: 0 auto;
+    }
   }
 
   .previous-page {
@@ -1547,7 +1556,7 @@ footer {
       .container {
         display: grid;
         grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 20vh 25vh 1fr;
+        grid-template-rows: 72pt 25vh 1fr;
         grid-column-gap: 15pt;
         min-height: 100%;
         font-size: 6pt;
@@ -1628,7 +1637,7 @@ footer {
       grid-template-columns: 10% 1fr 5%;
       grid-template-rows: 1fr 100% 1fr;
       align-items: flex-start;
-      min-height: 100vh;
+      min-height: 100%;
 
       #home-logo {
         grid-column-start: 1;
@@ -1671,6 +1680,14 @@ footer {
         background: $color--goldenrod;
         height: 5px;
         padding-top: 5%;
+      }
+
+      #scroll {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        align-self: center;
       }
     }
   }

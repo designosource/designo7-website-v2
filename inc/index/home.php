@@ -9,5 +9,6 @@
             <a href="cases/" title="Ga naar cases" class="btn-white">Ga naar cases<span class="arrow-right-white"></span></a>
         </article>
         <div id="home-line"></div>
+        <img src="img/mouse.svg" alt="Scroll" id="scroll">
     </div> <!-- /maxwidth -->
 </section>
