@@ -28,7 +28,7 @@
     border: 1px solid $color--purplered;
 
     .arrow-right {
-      @include translate(10px);
+      @include translate(0.5em);
       background-image: url('../img/arrow-right-red.svg');
     }
   }

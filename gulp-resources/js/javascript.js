@@ -21,6 +21,7 @@ if (window.matchMedia('(max-width: 720px)').matches) {
     sr.reveal('#contact .content-group', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 750, viewFactor: 0.5 });
 	
 	sr.reveal('.memberpage .content-image.overlay', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 1, viewFactor: 0.5 });
+	sr.reveal('.memberpage h1', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 1, viewFactor: 0.5 });
 	sr.reveal('.memberpage article.content-rightblock', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
 	
 	sr.reveal('.casepage .slick-container.pop-up-image', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, viewFactor: 0.5 });
