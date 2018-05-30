@@ -1,7 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
-@import url('https://fontlibrary.org/face/cooper-hewitt');
+@font-face {
+  font-family: "CooperHewittBook";
+  src:url("../fonts/CooperHewitt-Book.otf");
+}
+
+@font-face {
+  font-family: "CooperHewittBold";
+  src:url("../fonts/CooperHewitt-Bold.otf");
+}
+
+@font-face {
+  font-family: "CooperHewittLight";
+  src:url("../fonts/CooperHewitt-Light.otf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro Light";
+  src:url("../fonts/SourceSansPro-Light.ttf");
+}
 
 $font--cooper--book: 'CooperHewittBook', sans-serif;
 $font--cooper--bold: 'CooperHewittBold', sans-serif;
 $font--cooper--light: 'CooperHewittLight', sans-serif;
-$font--sans: 'Source Sans Pro', sans-serif;
+$font--sans: 'Source Sans Pro Light', sans-serif;
