@@ -1886,7 +1886,9 @@ footer {
               background-position: center;
               display: flex;
               align-items: center;
-              justify-content: center; }
+              justify-content: center;
+              padding-left: 40pt;
+              padding-right: 40pt; }
               main section .carousel-pop-up .inner-carousel-pop-up .carousel .slick-track a.slick-slide div h3 {
                 color: #ffffff;
                 font-family: "CooperHewittBold", sans-serif;

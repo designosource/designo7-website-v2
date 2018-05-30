@@ -1378,6 +1378,8 @@ footer {
                   height: 50vh;
                   @include bg-cover-center;
                   @include center-flex(both);
+									padding-left: 40pt;
+									padding-right: 40pt;
 
                   h3 {
                     color: $color--white;
