@@ -39,9 +39,6 @@
 
 <title>Team | <?php echo ucfirst($pagename); ?></title>
 
-
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
-
 <!-- Animate.css -->
 <link href="../css/animate.css" rel="stylesheet">
 
