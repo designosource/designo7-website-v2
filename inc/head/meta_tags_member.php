@@ -1,4 +1,4 @@
-<meta name="description" content="<?php echo $memberinfo["description"]; ?>">
+<meta name="description" content="<?php echo $memberinfo["descriptionmeta"]; ?>">
 <meta name="author" content="Designosource">
 <meta name="subject" content="Designosource | <?php echo $memberinfo["name"]; ?>">
 <meta name="copyright" content="Designosource">
@@ -17,14 +17,14 @@
 <meta property="og:image:alt" content="Photo of <?php echo $memberinfo["name"]; ?>">
 <meta property="og:image:width" content="627">
 <meta property="og:image:height" content="1200">
-<meta property="og:description" content="<?php echo $memberinfo["description"]; ?>">
+<meta property="og:description" content="<?php echo $memberinfo["descriptionmeta"]; ?>">
 <meta property="og:locale" content="nl_BE">
 <meta property="og:site_name" content="Designosource | <?php echo $memberinfo["name"]; ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@designosource">
 <meta name="twitter:creator" content="@designosource">
 <meta name="twitter:title" content="Designosource | <?php echo $memberinfo["name"]; ?>">
-<meta name="twitter:description" content="<?php echo $memberinfo["description"]; ?>">
+<meta name="twitter:description" content="<?php echo $memberinfo["descriptionmeta"]; ?>">
 <meta name="twitter:image" content="Url Image png">
 <link rel="icon" type="image/png" href="OG Image png">
 <link rel="apple-touch-icon" href="Url link image 500x500 png">
