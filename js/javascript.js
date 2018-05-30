@@ -1,5 +1,8 @@
 /*----- Scroll reveal -----*/
 window.sr = ScrollReveal();
+
+sr.reveal('#logo', { duration: 500, origin: 'right', distance: '100%', delay: 1000, opacity: 1, scale: '1', viewFactor: 0 });
+
 sr.reveal('#home-line', { duration: 500, origin: 'left', distance: '100px', delay: 500, viewFactor: 0.3 });
 sr.reveal('#home-logo', { duration: 500, origin: 'top', distance: '100%', delay: 1000, viewFactor: 0.3 });
 sr.reveal('#home-content', { duration: 500, origin: 'bottom', distance: '20vh', scale: '1', delay: 1500, viewFactor: 0.3 });
