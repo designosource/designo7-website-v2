@@ -45,7 +45,12 @@
 					
 			</article>
 			
-			<div class="fixed-bottom-mobile-navigation"></div>
+			<div class="fixed-bottom-mobile-navigation">
+				<div class="inner-bottom-mobile-navigation">
+					<a class="previous" href="<?php echo $memberinfo["previous"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($memberinfo["previous"]); ?></span></a>
+					<a class="next" href="<?php echo $memberinfo["next"]; ?>.php"><span><?php echo ucfirst($memberinfo["next"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+				</div>
+			</div>
 			
 			<div class="carousel-pop-up">
 			
