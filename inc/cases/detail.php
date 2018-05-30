@@ -38,7 +38,12 @@
 					<?php endif; ?>
 			</article>
 			
-			<div class="fixed-bottom-mobile-navigation"></div>
+			<div class="fixed-bottom-mobile-navigation">
+				<div class="inner-bottom-mobile-navigation">
+					<a class="previous" href="<?php echo $caseinfo["previousproject"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($caseinfo["previousproject"]); ?></span></a>
+					<a class="next" href="<?php echo $caseinfo["nextproject"]; ?>.php"><span><?php echo ucfirst($caseinfo["nextproject"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+				</div>
+			</div>
 			
 			<div class="carousel-pop-up">
 			
