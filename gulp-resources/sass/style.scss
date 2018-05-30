@@ -114,12 +114,10 @@ header {
     top: calc(50% - calc(1 / 2 * #{$footer--height}));
     @include translate(0, calc(-50% + calc(1 / 4 * #{$font--130})));
     text-align: right;
-    /*width: $font--130;
-    height: $font--130;*/
     font-size: $font--130;
     color: rgba(229, 229, 229, 1);
     font-family: $font--cooper--bold;
-
+		padding-top: 0.5em;
   }
 
   nav {
@@ -327,7 +325,7 @@ main {
         font-size: $font--36;
         font-family: $font--cooper--bold;
         position: relative;
-        height: 1.5em;
+				padding-top: 0.5em;
       }
 
       h2 {
@@ -541,14 +539,14 @@ main {
 
   #team {
     .content-image {
-      background-image: url("https://media.giphy.com/media/X2FDYSjwvJyWA/giphy.gif");
+      background-image: url("../img/team.jpg");
       @include bg-cover-center;
     }
   }
 
   #cases {
     .content-image {
-      background-image: url("https://media.giphy.com/media/9xghLCFnacsIWCasU7/giphy.gif");
+      background-image: url("../img/cases-1.jpg");
       @include bg-cover-center;
     }
   }
@@ -847,7 +845,12 @@ main {
 
   #wat {
     .content-image {
-      background-image: url("https://media.giphy.com/media/12UlfHpF05ielO/giphy.gif");
+      background-image: url("../img/wie-1.jpg");
+			@include transition(0.6s);
+			
+			&:hover {
+				background-image: url("../img/wie-2.jpg");
+			}
     }
     .overlay {
       &:before {
@@ -858,7 +861,7 @@ main {
 
   #werkwijze {
     .content-image {
-      background-image: url("https://media.giphy.com/media/l0Iy67eveh48xHQFa/giphy.gif");
+      background-image: url("../img/werkwijze-1.jpg");
     }
     .overlay {
       &:before {
