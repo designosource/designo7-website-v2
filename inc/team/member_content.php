@@ -17,6 +17,10 @@
 					<a href="mailto:<?php echo $memberinfo["email"]; ?>">Email</a>
 					<?php endif; ?>
 					
+					<?php if( !empty($memberinfo["twitter"]) ): ?>
+					<a href="<?php echo $memberinfo["twitter"]; ?>">Twitter</a>
+					<?php endif; ?>
+					
 				</div>
 				
 			</article>
