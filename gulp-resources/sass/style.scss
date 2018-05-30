@@ -1279,6 +1279,8 @@ footer {
             width: 100%;
             display: block;
             margin-bottom: 2em;
+						max-width: 400px;
+						@include push-auto;
 
             .member-quote {
               text-align: left;
@@ -1451,6 +1453,7 @@ footer {
 							font-size: $font--16;
 							margin-left: 10pt;
 							margin-right: 10pt;
+							@include transition(0.3s);
 						}
 						
 						img {
@@ -1462,6 +1465,13 @@ footer {
 							
 							img {
 								@include rotate(180deg);
+							}
+						}
+						
+						&:hover {
+							span {
+								margin-left: 20pt;
+								margin-right: 20pt;
 							}
 						}
 						

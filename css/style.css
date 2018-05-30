@@ -1782,7 +1782,10 @@ footer {
         flex-basis: 100%;
         width: 100%;
         display: block;
-        margin-bottom: 2em; }
+        margin-bottom: 2em;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto; }
         main section .big-grid-2 .content-rightblock .member-information .member-quote {
           text-align: left; }
           main section .big-grid-2 .content-rightblock .member-information .member-quote:before {
@@ -1948,7 +1951,18 @@ footer {
           font-family: "CooperHewittBold", sans-serif;
           font-size: 1.333rem;
           margin-left: 10pt;
-          margin-right: 10pt; }
+          margin-right: 10pt;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          main section .fixed-bottom-mobile-navigation .inner-bottom-mobile-navigation a span:hover {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
         main section .fixed-bottom-mobile-navigation .inner-bottom-mobile-navigation a img {
           width: 15pt;
           height: 24pt; }
@@ -1956,6 +1970,9 @@ footer {
           -moz-transform: rotate(180deg);
           -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
+        main section .fixed-bottom-mobile-navigation .inner-bottom-mobile-navigation a:hover span {
+          margin-left: 20pt;
+          margin-right: 20pt; }
   footer {
     z-index: 10; }
     footer .hamburger-menu {
