@@ -30,14 +30,6 @@
     }
 }
 
-/*
-*    .element {
-*        @include breakpoint(small, min, $breakpoint-small){
-*            background-color: red; 
-*        }
-*    }
-*/
-
 //Positioning absolute mixin ------------------------------------
 @mixin center-absolute($position) {
     position: absolute;
@@ -63,12 +55,6 @@
     }
 }
 
-/*
-*    .element {
-*        @include center-absolute(both);
-*    }
-*/
-
 //Positioning with flex mixin -----------------------------------
 @mixin center-flex($position) {
     display: flex;
@@ -85,12 +71,6 @@
     }
 }
 
-/*
-*    .element {
-*        @include center-flex(both);
-*    }
-*/
-
 //Calculate font-size mixin -------------------------------------
 @function calculateRem($size) {
     $remSize: $size / 16px;
@@ -101,12 +81,6 @@
     font-size: $size;
     font-size: calculateRem($size);
 }
-
-/*
-*    .element {
-*        @include font-size(16);
-*    }
-*/
 
 //Animation setup mixin -----------------------------------------
 @mixin keyframes($animation-name) {
@@ -135,17 +109,6 @@
     animation: #{$str};      
 }
 
-/*
-*    @include keyframes(slide-down) {
-*        0% { opacity: 1; }
-*        90% { opacity: 0; }
-*    }
-*
-*    .element {
-*        @include animation('slide-down 5s 3');
-*    }
-*/
-
 //Padding mixin -------------------------------------------------
 @mixin padding($top, $right, $bottom: $top, $left: $right) {
     padding-top: $top;
@@ -153,18 +116,6 @@
     padding-bottom: $bottom;
     padding-left: $left;
 }
-
-/*
-*    .element {
-*        @include padding(10px, 20px);
-*    }
-*
-*    of
-*
-*    .element {
-*        @include padding(10px, 20px, 30px);
-*    }
-*/
 
 //Margin mixin --------------------------------------------------
 @mixin margin($top, $right, $bottom: $top, $left: $right) {
@@ -174,29 +125,11 @@
     margin-left: $left;
 }
 
-/*
-*    .element {
-*        @include margin(10px, 20px);
-*    }
-*
-*    of
-*
-*    .element {
-*        @include margin(10px, 20px, 30px);
-*    }
-*/
-
 //Center a block-element mixin ----------------------------------
 @mixin push-auto {
     margin-left: auto;
     margin-right: auto;
 }
-
-/*
-*    .element {
-*        @include push-auto;
-*    }
-*/
 
 //Pseudo element mixin ------------------------------------------
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
@@ -204,12 +137,6 @@
     display: $display;
     position: $pos;
 }
-
-/*
-*    .element:before {
-*        @include pseudo;
-*    }
-*/
 
 //Transition mixin ----------------------------------------------
 @mixin transition($args...) {
@@ -228,24 +155,12 @@
     }
 }
 
-/*
-*    .element {
-*        @include transition(width 2s linear 1s, height 1s linear 2s);
-*    }
-*/
-
 //Translate mixin -----------------------------------------------
 @mixin translate($x: 0px, $y: 0px) {
     -moz-transform: translate($x, $y);
     -webkit-transform: translate($x, $y);
     transform: translate($x, $y);
 }
-    
-/*
-*    .element {
-*        @include translate(50px, 10px);
-*    }
-*/
 
 //Skew mixin ----------------------------------------------------
 @mixin skew($x: 0deg, $y: 0deg) {
@@ -254,12 +169,6 @@
     transform: skew($x, $y);
 }
 
-/*
-*    .element {
-*        @include skew(30deg, 10deg);
-*    }
-*/
-
 //Skew mixin ----------------------------------------------------
 @mixin rotate($deg: 0deg) {
     -moz-transform: rotate($deg);
@@ -267,23 +176,11 @@
     transform: rotate($deg);
 }
 
-/*
-*    .element {
-*        @include skew(30deg, 10deg);
-*    }
-*/
-
 @mixin boxshadow($args...) {
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
   box-shadow: $args;
 }
-
-/*
-*    .element {
-*        @include boxshadow(2px 2px 2px black, -2px -2px 2px white);
-*    }
-*/
 
 @mixin bg-cover-center {
   -webkit-background-size: cover;
