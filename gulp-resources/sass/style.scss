@@ -665,7 +665,7 @@ main {
       grid-column-start: 17;
       grid-column-end: 23;
       overflow-y: auto;
-
+			margin-top: 0;
       font-size: $font--22;
       font-family: $font--sans;
       font-weight: 300;
@@ -846,11 +846,11 @@ main {
   #wat {
     .content-image {
       background-image: url("../img/wie-1.jpg");
-			@include transition(0.6s);
+			/*@include transition(0.6s);
 			
 			&:hover {
 				background-image: url("../img/wie-2.jpg");
-			}
+			}*/
     }
     .overlay {
       &:before {
@@ -872,7 +872,7 @@ main {
 
   #services {
     .content-image {
-      background-image: url("https://media.giphy.com/media/eeG3v5EaLewZLdRxah/giphy.gif");
+      background-image: url("../img/services-1.jpg");
     }
     .overlay {
       &:before {

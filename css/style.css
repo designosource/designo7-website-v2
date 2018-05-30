@@ -1353,6 +1353,7 @@ main {
       grid-column-start: 17;
       grid-column-end: 23;
       overflow-y: auto;
+      margin-top: 0;
       font-size: 1.833rem;
       font-family: "Source Sans Pro Light", sans-serif;
       font-weight: 300;
@@ -1509,19 +1510,11 @@ main {
     display: none; }
   main #wat .content-image {
     background-image: url("../img/wie-1.jpg");
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s; }
-    main #wat .content-image:hover {
-      -webkit-transition: 0.6s;
-      -moz-transition: 0.6s;
-      -ms-transition: 0.6s;
-      -o-transition: 0.6s;
-      transition: 0.6s; }
-    main #wat .content-image:hover {
-      background-image: url("../img/wie-2.jpg"); }
+    /*@include transition(0.6s);
+			
+			&:hover {
+				background-image: url("../img/wie-2.jpg");
+			}*/ }
   main #wat .overlay:before {
     background-color: rgba(193, 12, 67, 0.9); }
   main #werkwijze .content-image {
@@ -1529,7 +1522,7 @@ main {
   main #werkwijze .overlay:before {
     background-color: rgba(33, 32, 58, 0.9); }
   main #services .content-image {
-    background-image: url("https://media.giphy.com/media/eeG3v5EaLewZLdRxah/giphy.gif"); }
+    background-image: url("../img/services-1.jpg"); }
   main #services .overlay:before {
     background-color: rgba(248, 174, 13, 0.9); }
   main #member .content-image {

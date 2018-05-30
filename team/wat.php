@@ -44,7 +44,7 @@
 
 			</div>
 
-			<h1>We are Designosource.</h1>
+			<h1>Designosource</h1>
 
 			<article class="content-rightblock scrollbar">
 					<p>Wij zijn een creative agency bestaande uit 12 studenten Interactive Multimedia Design. Gaande van development nerds tot interface queens en van design hipsters tot sushi lovers, vormen wij een uniek en vooral enthousiast team.</p>
