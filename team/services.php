@@ -52,7 +52,7 @@
 
 			</div>
 
-			<h1>Services</h1>
+			<h1>Wat doen wij</h1>
 
 			<article class="content-rightblock scrollbar">
 					<p>Wij ademen digitaal, en daarom is geen enkele creatieve uitdaging ons teveel. Met een “out-of-the-box” aanpak leveren wij (digitale) oplossingen die perfect beantwoorden aan de vraag van onze klant.</p>

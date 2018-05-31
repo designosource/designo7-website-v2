@@ -800,6 +800,22 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-start; }
+        main .container .content-rightblock .content-group a img {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          main .container .content-rightblock .content-group a img:hover {
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+        main .container .content-rightblock .content-group a:hover img {
+          -moz-transform: translate(10pt, 0);
+          -webkit-transform: translate(10pt, 0);
+          transform: translate(10pt, 0); }
       main .container .content-rightblock .page-number {
         color: #c10c43;
         font-size: 3rem;
@@ -1051,7 +1067,8 @@ main {
       grid-column-start: 12;
       grid-column-end: 23;
       z-index: 3;
-      /*padding-top: 22px;*/ }
+      display: flex;
+      align-items: center; }
     main .big-grid .content-rightblock {
       grid-row-start: 4;
       grid-row-end: 5;
@@ -1158,29 +1175,19 @@ main {
           font-family: "CooperHewittBold", sans-serif;
           color: #21203a;
           font-size: 1.333rem;
-          position: relative; }
-          main .big-grid-2 .member-information .member-socialmedia a:before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 0;
-            height: 1px;
-            background-color: #ffffff;
-            left: -2px;
-            top: 50%;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          main .big-grid-2 .member-information .member-socialmedia a:hover {
             -webkit-transition: 0.3s;
             -moz-transition: 0.3s;
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-            main .big-grid-2 .member-information .member-socialmedia a:before:hover {
-              -webkit-transition: 0.3s;
-              -moz-transition: 0.3s;
-              -ms-transition: 0.3s;
-              -o-transition: 0.3s;
-              transition: 0.3s; }
-          main .big-grid-2 .member-information .member-socialmedia a:hover:before {
-            width: calc(100% + 4px); }
+          main .big-grid-2 .member-information .member-socialmedia a:hover {
+            color: #ffffff; }
     main .big-grid-2 .previous-next-page {
       grid-row-start: 3;
       grid-row-end: 4;

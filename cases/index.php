@@ -48,7 +48,7 @@
 
             </div>
 
-            <h1>All our cases</h1>
+            <h1>Onze cases</h1>
             <article class="overview" id="cases-grid">
                 <?php foreach ($cases as $case): ?>
                     <div class="grid-item">

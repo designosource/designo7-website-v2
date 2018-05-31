@@ -318,6 +318,19 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+				
+				a {
+					img  {
+						@include transition(0.3s);
+					}
+					
+					&:hover {
+						img {
+							@include translate(10pt, 0);
+						}
+					}
+				}
+				
       }
 
       .page-number {
@@ -614,7 +627,8 @@ main {
       grid-column-start: 12;
       grid-column-end: 23;
       z-index: 3;
-      /*padding-top: 22px;*/
+      display: flex;
+			align-items: center;
     }
 
     .content-rightblock {
@@ -730,22 +744,11 @@ main {
           font-family: $font--cooper--bold;
           color: $color--darkpurple;
           font-size: $font--16;
-          position: relative;
+					@include transition(0.3s);
 
-          &:before {
-            @include pseudo;
-            width: 0;
-            height: 1px;
-            background-color: $color--white;
-            left: -2px;
-            top: 50%;
-            @include transition(0.3s);
-          }
 
           &:hover {
-            &:before {
-              width: calc(100% + 4px);
-            }
+            color: $color--white;
           }
         }
       }

@@ -62,7 +62,7 @@
 						<li>Uitwerking</li>
 						<li>Opvolging</li>
 					</ol>
-					<a title="Ontdek onze cases" href="#" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
+					<a title="Ontdek onze cases" href="../cases/" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
 			
 			<div class="fixed-bottom-mobile-navigation"></div>

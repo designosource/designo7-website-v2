@@ -19,7 +19,7 @@
 
 				<a title="Project | <?php echo ucfirst($caseinfo["previousproject"]); ?>" href="<?php echo $caseinfo["previousproject"] ?>.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span><?php echo ucfirst($caseinfo["previousproject"]); ?></span></a>
 
-				<a title="Overview" href="../cases/"><img src="../img/overview.svg" alt="icon overview"></a>
+				<a title="Overview" href="../cases/"><img src="../img/overview-dark.svg" alt="icon overview" onmouseover="$(this).attr('src','../img/overview-red.svg').css('transition', '0.3s');" onmouseleave="$(this).attr('src','../img/overview-dark.svg').css('transition', '0.3s');"></a>
 
 				<a title="Project | <?php echo ucfirst($caseinfo["nextproject"]); ?>" href="<?php echo $caseinfo["nextproject"] ?>.php"><span><?php echo ucfirst($caseinfo["nextproject"]); ?></span><img src="../img/arrow-right-red.svg" alt="icon next page"></a>
 
