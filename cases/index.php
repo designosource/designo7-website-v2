@@ -58,7 +58,7 @@
                         <div class="grid-details">
                             <p class="first-detail"><?php echo $case['technology']; ?></p>
                             <p class="second-detail"><?php echo $case['name']; ?></p>
-                            <a title="Title" href="#" class="third-detail">Meer info +</a>
+                            <a title="<?php echo $case["title"]; ?>" href="<?php echo $case["shortname"]; ?>.php" class="third-detail">Meer info +</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
