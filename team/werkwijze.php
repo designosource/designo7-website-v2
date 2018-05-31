@@ -32,14 +32,18 @@
 
 <main>
 
-	<section id="werkwijze">
+	<section class="memberpage" id="werkwijze">
   	<div class="container big-grid maxwidth">
 			<figure class="content-image overlay"></figure>
 			<figure class="content-image pop-up-image"></figure>
 
-			<div class="previous-page">
+			<div class="previous-next-page">
 
-				<a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
+				<a title="Wat pagina" href="wat.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>Wat</span></a>
+				
+				<a title="Overzicht" href="../team/"><img src="../img/team-icon-dark.svg" alt="icon team page" onmouseover="$(this).attr('src','../img/team-icon-red.svg').css('transition', '0.4s');" onmouseleave="$(this).attr('src','../img/team-icon-dark.svg').css('transition', '0.4s');" ></a>
+				
+				<a title="Services pagina" href="services.php"><span>Services</span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
 
 			</div>
 

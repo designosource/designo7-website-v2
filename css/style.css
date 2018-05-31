@@ -949,7 +949,7 @@ main {
           -ms-animation: scrollfadeout 1.75s infinite ease-in-out;
           -o-animation: scrollfadeout 1.75s infinite ease-in-out;
           animation: scrollfadeout 1.75s infinite ease-in-out; }
-  main .previous-page a {
+  main .previous-next-page a {
     font-family: "CooperHewittBold", sans-serif;
     font-size: 1.666rem;
     color: #21203a;
@@ -960,37 +960,28 @@ main {
     transition: 0.3s;
     display: flex;
     align-items: center; }
-    main .previous-page a:hover {
+    main .previous-next-page a:hover {
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
-    main .previous-page a img {
-      margin-right: 1.083rem;
+    main .previous-next-page a img {
       width: 21pt;
       height: 21pt;
-      -moz-transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
       -webkit-transition: "0.3s";
       -moz-transition: "0.3s";
       -ms-transition: "0.3s";
       -o-transition: "0.3s";
       transition: "0.3s"; }
-      main .previous-page a img:hover {
+      main .previous-next-page a img:hover {
         -webkit-transition: "0.3s";
         -moz-transition: "0.3s";
         -ms-transition: "0.3s";
         -o-transition: "0.3s";
         transition: "0.3s"; }
-    main .previous-page a:hover {
+    main .previous-next-page a:hover {
       color: #e10a42; }
-      main .previous-page a:hover img {
-        -moz-transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-        /*@include translate(10pt, 0);*/ }
   main h1 {
     font-size: 6.916rem;
     font-family: "CooperHewittBold", sans-serif; }
@@ -1054,25 +1045,6 @@ main {
       main .big-grid .pop-up-image .slick-next {
         right: auto;
         left: calc(50% + 15pt); }
-    main .big-grid .previous-page, main .big-grid .previous-next-page {
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 12;
-      grid-column-end: 17;
-      display: flex;
-      align-items: center; }
-    main .big-grid .previous-next-page a img {
-      width: 25pt;
-      height: 40px; }
-    main .big-grid .previous-next-page a:nth-child(2) img {
-      width: 23pt;
-      height: 37px; }
-    main .big-grid .previous-next-page a:not(:last-child) {
-      margin-right: 2.333rem; }
-    main .big-grid .previous-next-page a:first-child img {
-      -moz-transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg); }
     main .big-grid h1 {
       grid-row-start: 3;
       grid-row-end: 4;
@@ -1094,8 +1066,6 @@ main {
       padding-right: 1em; }
       main .big-grid .content-rightblock p, main .big-grid .content-rightblock ol {
         margin-bottom: 1.833rem; }
-  main .fixed-bottom-mobile-navigation {
-    display: none; }
   main .big-grid-2 {
     grid-template-columns: repeat(24, 1fr) !important;
     grid-template-rows: 60px 60px 100px 2fr 33% 1fr;
@@ -1211,7 +1181,7 @@ main {
               transition: 0.3s; }
           main .big-grid-2 .member-information .member-socialmedia a:hover:before {
             width: calc(100% + 4px); }
-    main .big-grid-2 .previous-page {
+    main .big-grid-2 .previous-next-page {
       grid-row-start: 3;
       grid-row-end: 4;
       grid-column-start: 12;
@@ -1239,6 +1209,69 @@ main {
         text-transform: uppercase; }
       main .big-grid-2 .content-rightblock .member-information {
         display: none; }
+  main .fixed-bottom-mobile-navigation {
+    display: none; }
+  main .previous-next-page {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 12;
+    grid-column-end: 17;
+    display: flex;
+    align-items: center; }
+    main .previous-next-page a img {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      main .previous-next-page a img:hover {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+    main .previous-next-page a:nth-child(1) span {
+      margin-left: 2.333rem; }
+    main .previous-next-page a:nth-child(1) img {
+      width: 23pt;
+      height: 37px; }
+    main .previous-next-page a:nth-child(2) {
+      margin: 0 2.333rem; }
+      main .previous-next-page a:nth-child(2) img {
+        width: 23pt;
+        height: 37px; }
+    main .previous-next-page a:nth-child(3) span {
+      margin-right: 2.333rem; }
+    main .previous-next-page a:nth-child(3) img {
+      width: 23pt;
+      height: 37px; }
+    main .previous-next-page a:first-child img {
+      -moz-transform: rotate(180deg) translate(0, 0);
+      -webkit-transform: rotate(180deg) translate(0, 0);
+      transform: rotate(180deg) translate(0, 0); }
+    main .previous-next-page a:first-child:hover img {
+      -moz-transform: rotate(180deg) translate(10pt, 0);
+      -webkit-transform: rotate(180deg) translate(10pt, 0);
+      transform: rotate(180deg) translate(10pt, 0); }
+    main .previous-next-page a:nth-child(3):hover img {
+      -moz-transform: translate(10pt, 0);
+      -webkit-transform: translate(10pt, 0);
+      transform: translate(10pt, 0); }
+    main .previous-next-page a:nth-child(1):hover img {
+      -moz-transform: rotate(180deg) translate(10pt, 0);
+      -webkit-transform: rotate(180deg) translate(10pt, 0);
+      transform: rotate(180deg) translate(10pt, 0);
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      main .previous-next-page a:nth-child(1):hover img:hover {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
   main .carousel-pop-up {
     display: none; }
   main #wat .content-image {
@@ -1263,7 +1296,7 @@ main {
   main .page-container {
     padding: 55px 70px;
     margin-bottom: 60px; }
-    main .page-container .previous-page {
+    main .page-container .previous-next-page {
       margin-bottom: calc(3 * 1.666rem);
       display: inline-block; }
     main .page-container h1 {
@@ -1457,7 +1490,7 @@ footer {
       grid-column-start: 3;
       grid-column-end: 23;
       background-position: center 35%; }
-    main section .big-grid .previous-page, main section .big-grid .previous-next-page {
+    main section .big-grid .previous-next-page {
       display: none; }
     main section .big-grid h1 {
       grid-row-start: 4;

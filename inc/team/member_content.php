@@ -25,9 +25,13 @@
 				
 			</article>
 
-			<div class="previous-page">
+			<div class="previous-next-page">
 
-				<a title="Vorige pagina" href="../team/"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
+				<a title="<?php echo ucfirst($memberinfo["previous"]); ?>" href="<?php echo $memberinfo["previous"]; ?>.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span><?php echo ucfirst($memberinfo["previous"]); ?></span></a>
+				
+				<a title="Overzicht" href="../team/"><img src="../img/team-icon-dark.svg" alt="icon team page" onmouseover="$(this).attr('src','../img/team-icon-red.svg').css('transition', '0.4s');" onmouseleave="$(this).attr('src','../img/team-icon-dark.svg').css('transition', '0.4s');" ></a>
+				
+				<a title="<?php echo ucfirst($memberinfo["next"]); ?>" href="<?php echo $memberinfo["next"]; ?>.php"><span><?php echo ucfirst($memberinfo["next"]); ?></span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
 
 			</div>
 			
