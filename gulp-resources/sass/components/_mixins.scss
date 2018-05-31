@@ -176,6 +176,12 @@
     transform: rotate($deg);
 }
 
+@mixin rotate-translate($deg: 0deg, $x: 0, $y: 0) {
+    -moz-transform: rotate($deg) translate($x, $y);
+    -webkit-transform: rotate($deg) translate($x, $y);
+    transform: rotate($deg) translate($x, $y);
+}
+
 @mixin boxshadow($args...) {
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
