@@ -42,10 +42,11 @@ if (window.matchMedia('(max-width: 720px)').matches) {
     sr.reveal('#contact .content-rightblock', { duration: 1000, origin: 'top', distance: '20vh', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
 	
 	sr.reveal('.memberpage .content-image.overlay', { duration: 1000, origin: 'left', distance: '20vw', scale: 1, opacity: 0, viewFactor: 0.5 });
+	sr.reveal('.memberpage .content-image.pop-up-image', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, viewFactor: 0.5 });
 	sr.reveal('.memberpage h1', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
 	sr.reveal('.memberpage article.member-information', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
 	sr.reveal('.memberpage article.content-rightblock', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
-	sr.reveal('.memberpage .previous-page', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
+	sr.reveal('.memberpage .previous-next-page', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
 	
 	sr.reveal('.casepage .slick-container.overlay', { duration: 1000, origin: 'left', distance: '20vw', scale: 1, opacity: 0, viewFactor: 0.5 });
 	sr.reveal('.casepage .slick-container.pop-up-image', { duration: 1000, origin: 'right', distance: '20vw', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
