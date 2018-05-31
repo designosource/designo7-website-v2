@@ -1,6 +1,5 @@
 /node_modules
 .idea
-/img
 package-lock.json
 css/animate.css
 img/tm_logo.png
