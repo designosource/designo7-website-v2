@@ -28,6 +28,9 @@
 
     <!-- Animate.css -->
     <link href="../css/animate.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <?php include '../inc/head/check_browser.php'; ?>
 
 </head>
 

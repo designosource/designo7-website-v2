@@ -43,4 +43,4 @@
 <link href="../css/animate.css" rel="stylesheet">
 
 <!-- Custom styles -->
-<link href="../css/style.css" rel="stylesheet">
+<?php include '../inc/head/check_browser.php'; ?>
