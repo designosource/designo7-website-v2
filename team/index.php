@@ -36,7 +36,7 @@
     <section class="page-container">
         <div class="maxwidth">
 
-            <div class="previous-page">
+            <div class="previous-next-page">
                 <a title="Vorige pagina" href="../index.php#team"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
             </div>
 
