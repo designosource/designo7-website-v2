@@ -1,4 +1,10 @@
-<?php include '../inc/arrays/members.php';?>
+<?php 
+
+	include '../inc/arrays/members.php';
+	include '../inc/head/prefix.php';
+	include '../inc/head/function_browser.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">

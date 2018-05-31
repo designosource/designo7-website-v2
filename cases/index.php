@@ -1,5 +1,10 @@
-<?php include '../inc/arrays/cases.php'; ?>
+<?php 
 
+	include '../inc/arrays/cases.php';
+	include '../inc/head/prefix.php';
+	include '../inc/head/function_browser.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +29,6 @@
     <!-- Animate.css -->
     <link href="../css/animate.css" rel="stylesheet">
 
-    <!-- Custom styles -->
-    <link href="../css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -37,9 +39,9 @@
 <main>
     <section class="page-container">
         <div class="maxwidth">
-            <div class="previous-page">
+            <div class="previous-next-page">
 
-                <a href="../index.php#cases"><img src="../img/arrow-right-dark.svg" alt="icon previous page"><span>vorige pagina</span></a>
+                <a href="../index.php#cases"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
             </div>
 
@@ -58,7 +60,7 @@
                     </div>
                 <?php endforeach; ?>
 
-                <div class="grid-item">
+                <div class="grid-item last-item">
                     <p>Meer projecten volgen nog door de volgende generatie…</p>
                 </div>
             </article>

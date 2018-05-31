@@ -91,7 +91,7 @@ $cases = array(
     ),
 	
 		"vr" => array(
-        "name" => "360° VR | Stad Antwerpen &amp; Lier",
+        "name" => "360° | VR",
         "shortname" => "vr",
         "technology" => "UX/UI | Drupal",
         "image" => "https://media.giphy.com/media/jzaZ23z45UxK8/giphy.gif",

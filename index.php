@@ -4,6 +4,9 @@
 	
 	//unset( $_SESSION['intro'] );
 
+	include 'inc/head/prefix.php';
+	include 'inc/head/function_browser.php';
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +27,7 @@
     <link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
+    <?php include 'inc/head/check_browser.php'; ?>
 
 </head>
 
