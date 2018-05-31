@@ -48,7 +48,12 @@ function getBrowser()
     { 
         $bname = 'Netscape'; 
         $ub = "Netscape"; 
-    } 
+    }
+		elseif(preg_match('/Edge/i',$u_agent)) 
+    { 
+        $bname = 'Edge'; 
+        $ub = "Edge"; 
+    }
 
     // finally get the correct version number
     $known = array('Version', $ub, 'other');
