@@ -40,13 +40,13 @@
 
     <?php include 'inc/index/intro.php'; ?>
 
-    <?php include 'inc/index/home.php'; ?>
+    <?php include 'inc/index/home'. $version . '.php'; ?>
 
-    <?php include 'inc/index/team.php'; ?>
+    <?php include 'inc/index/team'. $version . '.php'; ?>
 
-    <?php include 'inc/index/cases.php'; ?>
+    <?php include 'inc/index/cases'. $version . '.php'; ?>
 
-    <?php include 'inc/index/contact.php'; ?>
+    <?php include 'inc/index/contact'. $version . '.php'; ?>
 
 </main>
 
@@ -54,8 +54,8 @@
 
 <!-- SCRIPTS -->
 <?php include 'inc/footer/scripts.php'; ?>
-<script type="text/javascript" src="js/homepage.js"></script>
-<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/homepage-min.js"></script>
+<script type="text/javascript" src="js/fullpage-min.js"></script>
 <!-- END SCRIPTS -->
 
 </body>
