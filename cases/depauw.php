@@ -34,7 +34,7 @@
 
 <main>
 
-	<?php include '../inc/cases/detail.php'; ?>
+	<?php include '../inc/cases/detail'. $version . '.php'; ?>
 
 </main>
 
