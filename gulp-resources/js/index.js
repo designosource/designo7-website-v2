@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	/*----- Intro animation -----*/
 	
+	setTimeout(function(){
+		$('#intro').fadeOut();
+	},9500);
+	
 	$('#close').click(function (e) {
 		e.preventDefault();
 		$('#intro').fadeToggle('1s', 'linear');
