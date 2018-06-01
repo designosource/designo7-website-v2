@@ -2011,6 +2011,20 @@ footer {
       grid-column-end: 4;
       align-self: center; } }
 
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .content-rightblock a span:not(.label):not(.arrow-right):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: -10px;
+    right: calc(100% + 10px);
+    height: 2px; }
+  .content-rightblock a img {
+    height: 0.6em; }
+  .content-rightblock a:hover:not(.btn) span:before {
+    right: -10px; } }
+
 /* hiddengame */
 #hiddengame {
   position: fixed;
