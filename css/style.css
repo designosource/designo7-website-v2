@@ -877,10 +877,8 @@ main {
               transition: 0.3s; }
         main .container .content-rightblock a img {
           height: 0.6em; }
-        main .container .content-rightblock a:hover:not(.btn) {
-          font-family: "CooperHewittBold", sans-serif; }
-          main .container .content-rightblock a:hover:not(.btn) span:before {
-            right: -10px; }
+        main .container .content-rightblock a:hover:not(.btn) span:before {
+          right: -10px; }
       main .container .content-rightblock p {
         font-family: "Source Sans Pro Light", sans-serif;
         font-weight: lighter;
