@@ -48,7 +48,7 @@
 .btn-white {
   display: flex;
   align-items: center;
-  font-size: $font--22 !important;
+  font-size: $font--20 !important;
   font-family: $font--cooper--book;
   font-weight: bolder;
   padding: 13pt 14pt 9pt 14pt;
@@ -60,7 +60,7 @@
 
   .arrow-right-white {
     display: inline-block;
-    width: 23pt;
+    width: 18pt;
     height: 15pt;
     margin-left: 12pt;
     background-image: url('../img/arrow-right-white.svg');

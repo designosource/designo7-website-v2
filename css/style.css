@@ -106,7 +106,7 @@
 .btn-white {
   display: flex;
   align-items: center;
-  font-size: 1.833rem !important;
+  font-size: 1.666rem !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
   padding: 13pt 14pt 9pt 14pt;
@@ -127,7 +127,7 @@
     transition: 0.15s; }
   .btn-white .arrow-right-white {
     display: inline-block;
-    width: 23pt;
+    width: 18pt;
     height: 15pt;
     margin-left: 12pt;
     background-image: url("../img/arrow-right-white.svg");
