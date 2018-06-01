@@ -2,7 +2,7 @@
 
 	session_start();
 	
-	//unset( $_SESSION['intro'] );
+	unset( $_SESSION['intro'] );
 
 	include 'inc/head/prefix.php';
 	include 'inc/head/function_browser.php';
