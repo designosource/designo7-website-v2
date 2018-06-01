@@ -117,7 +117,7 @@ header {
     font-size: $font--130;
     color: rgba(229, 229, 229, 1);
     font-family: $font--cooper--bold;
-		padding-top: 0.5em;
+    padding-top: 0.5em;
   }
 
   nav {
@@ -318,19 +318,23 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-				
-				a {
-					img  {
-						@include transition(0.3s);
-					}
-					
-					&:hover {
-						img {
-							@include translate(10pt, 0);
-						}
-					}
-				}
-				
+
+        a {
+          img {
+            @include transition(0.3s);
+          }
+
+          &:hover {
+            img {
+              @include translate(10pt, 0);
+            }
+          }
+        }
+
+        p:nth-child(2) {
+          margin-bottom: 5%;
+        }
+
       }
 
       .page-number {
@@ -338,7 +342,7 @@ main {
         font-size: $font--36;
         font-family: $font--cooper--bold;
         position: relative;
-				padding-top: 0.5em;
+        padding-top: 0.5em;
       }
 
       h2 {
@@ -489,25 +493,25 @@ main {
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 25;
-			
-			div {
-				width: 16px;
-				height: 36px;
-				border-radius: 10px;
-				border: 1px solid white;
-				margin: 0 auto;
 
-				.scroll-line {
-					width: 2px;
-					height: 6px;
-					border-radius: 1px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 6px;
-					background-color: white;
-					@include animation(scrollfadeout 1.75s infinite ease-in-out);
-				}
-			}
+      div {
+        width: 16px;
+        height: 36px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 0 auto;
+
+        .scroll-line {
+          width: 2px;
+          height: 6px;
+          border-radius: 1px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 6px;
+          background-color: white;
+          @include animation(scrollfadeout 1.75s infinite ease-in-out);
+        }
+      }
     }
   }
 
@@ -628,7 +632,7 @@ main {
       grid-column-end: 23;
       z-index: 3;
       display: flex;
-			align-items: center;
+      align-items: center;
     }
 
     .content-rightblock {
@@ -637,7 +641,7 @@ main {
       grid-column-start: 17;
       grid-column-end: 23;
       overflow-y: auto;
-			margin-top: 0;
+      margin-top: 0;
       font-size: $font--22;
       font-family: $font--sans;
       font-weight: 300;
@@ -744,8 +748,7 @@ main {
           font-family: $font--cooper--bold;
           color: $color--darkpurple;
           font-size: $font--16;
-					@include transition(0.3s);
-
+          @include transition(0.3s);
 
           &:hover {
             color: $color--white;
@@ -795,81 +798,81 @@ main {
     }
 
   }
-	
-	.fixed-bottom-mobile-navigation {
-		display: none;
-	}
-	
-	.previous-next-page {
-		grid-row-start: 2;
-		grid-row-end: 3;
-		grid-column-start: 12;
-		grid-column-end: 17;
-		@include center-flex(vertical);
 
-		a {
-			img {
-				@include transition(0.3s);
-			}
+  .fixed-bottom-mobile-navigation {
+    display: none;
+  }
 
-			&:nth-child(1) {
-				span {
-					margin-left: $font--28;
-				}
+  .previous-next-page {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 12;
+    grid-column-end: 17;
+    @include center-flex(vertical);
 
-				img {
-					width: 23pt;
-					height: 37px;
-				}
-			}
+    a {
+      img {
+        @include transition(0.3s);
+      }
 
-			&:nth-child(2) {
+      &:nth-child(1) {
+        span {
+          margin-left: $font--28;
+        }
 
-				margin: 0 $font--28;
+        img {
+          width: 23pt;
+          height: 37px;
+        }
+      }
 
-				img {
-					width: 23pt;
-					height: 37px;
-				}
-			}
+      &:nth-child(2) {
 
-			&:nth-child(3) {
-				span {
-					margin-right: $font--28;
-				}
+        margin: 0 $font--28;
 
-				img {
-					width: 23pt;
-					height: 37px;
-				}
-			}
+        img {
+          width: 23pt;
+          height: 37px;
+        }
+      }
 
-			&:first-child {
-				img {
-					@include rotate-translate(180deg, 0, 0);
-				}
-				&:hover {
-					img {
-						@include rotate-translate(180deg, 10pt, 0);
-					}
-				}
-			}
+      &:nth-child(3) {
+        span {
+          margin-right: $font--28;
+        }
 
-			&:nth-child(3):hover {
-				img {
-					@include translate(10pt, 0);
-				}
-			}
+        img {
+          width: 23pt;
+          height: 37px;
+        }
+      }
 
-			&:nth-child(1):hover {
-				img {
-					@include rotate-translate(180deg, 10pt, 0);
-					@include transition(0.3s);
-				}
-			}
+      &:first-child {
+        img {
+          @include rotate-translate(180deg, 0, 0);
+        }
+        &:hover {
+          img {
+            @include rotate-translate(180deg, 10pt, 0);
+          }
+        }
+      }
 
-		}
-	}
+      &:nth-child(3):hover {
+        img {
+          @include translate(10pt, 0);
+        }
+      }
+
+      &:nth-child(1):hover {
+        img {
+          @include rotate-translate(180deg, 10pt, 0);
+          @include transition(0.3s);
+        }
+      }
+
+    }
+  }
 
   .carousel-pop-up {
     display: none;
@@ -878,11 +881,11 @@ main {
   #wat {
     .content-image {
       background-image: url("../img/wie-1.jpg");
-			/*@include transition(0.6s);
-			
-			&:hover {
-				background-image: url("../img/wie-2.jpg");
-			}*/
+      /*@include transition(0.6s);
+
+      &:hover {
+          background-image: url("../img/wie-2.jpg");
+      }*/
     }
     .overlay {
       &:before {
@@ -1071,7 +1074,7 @@ footer {
       span {
         height: 2pt;
         background-color: $color--darkpurple;
-				box-shadow: 0px 1px 0px rgba($color--white, 0.5);
+        box-shadow: 0px 1px 0px rgba($color--white, 0.5);
         position: absolute;
         right: 0;
         @include transition(0.3s);
@@ -1102,7 +1105,7 @@ footer {
       &.open {
         span {
           width: 32pt;
-					box-shadow: 0px 1px 0px transparent;
+          box-shadow: 0px 1px 0px transparent;
 
           &:nth-child(1) {
             /*@include translate(-50%, 50%);
@@ -1126,7 +1129,7 @@ footer {
       &.white-nav {
         span {
           background-color: $color--white;
-					box-shadow: 0px 1px 0px rgba($color--darkpurple, 0.5);
+          box-shadow: 0px 1px 0px rgba($color--darkpurple, 0.5);
         }
       }
 
@@ -1307,7 +1310,7 @@ footer {
 
           p {
             margin-bottom: 2em;
-						width: 100%;
+            width: 100%;
           }
 
           .member-nickname {
@@ -1321,8 +1324,8 @@ footer {
             width: 100%;
             display: block;
             margin-bottom: 2em;
-						max-width: 400px;
-						@include push-auto;
+            max-width: 400px;
+            @include push-auto;
 
             .member-quote {
               text-align: left;
@@ -1414,8 +1417,8 @@ footer {
                   height: 50vh;
                   @include bg-cover-center;
                   @include center-flex(both);
-									padding-left: 40pt;
-									padding-right: 40pt;
+                  padding-left: 40pt;
+                  padding-right: 40pt;
 
                   h3 {
                     color: $color--white;
@@ -1462,7 +1465,7 @@ footer {
 
       .fixed-bottom-mobile-navigation {
         position: fixed;
-				display: block;
+        display: block;
         left: 0;
         bottom: 0;
         @include translate(0, 100%);
@@ -1476,55 +1479,54 @@ footer {
         &.show {
           @include translate(0, 0%);
         }
-				
-				.inner-bottom-mobile-navigation {
-					width: 100%;
-					height: 100%;
-					@include center-flex(vertical);
-					justify-content: space-between;
-					padding-left: 2.5%;
-					padding-right: 2.5%;
-					
-					a {
-						@include center-flex(both);
-						flex-basis: 45%;
-						color: $color--white;
-						font-family: $font--cooper--bold;
-						font-size: $font--16;
-						
-						span {
-							color: $color--white;
-							font-family: $font--cooper--bold;
-							font-size: $font--16;
-							margin-left: 10pt;
-							margin-right: 10pt;
-							@include transition(0.3s);
-						}
-						
-						img {
-							width: 15pt;
-							height: 24pt;
-						}
-						
-						&.previous {
-							
-							img {
-								@include rotate(180deg);
-							}
-						}
-						
-						&:hover {
-							span {
-								margin-left: 20pt;
-								margin-right: 20pt;
-							}
-						}
-						
-					}
-					
-				}
-				
-				
+
+        .inner-bottom-mobile-navigation {
+          width: 100%;
+          height: 100%;
+          @include center-flex(vertical);
+          justify-content: space-between;
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+
+          a {
+            @include center-flex(both);
+            flex-basis: 45%;
+            color: $color--white;
+            font-family: $font--cooper--bold;
+            font-size: $font--16;
+
+            span {
+              color: $color--white;
+              font-family: $font--cooper--bold;
+              font-size: $font--16;
+              margin-left: 10pt;
+              margin-right: 10pt;
+              @include transition(0.3s);
+            }
+
+            img {
+              width: 15pt;
+              height: 24pt;
+            }
+
+            &.previous {
+
+              img {
+                @include rotate(180deg);
+              }
+            }
+
+            &:hover {
+              span {
+                margin-left: 20pt;
+                margin-right: 20pt;
+              }
+            }
+
+          }
+
+        }
+
       }
     }
 

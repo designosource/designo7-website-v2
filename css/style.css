@@ -824,6 +824,8 @@ main {
           -moz-transform: translate(10pt, 0);
           -webkit-transform: translate(10pt, 0);
           transform: translate(10pt, 0); }
+        main .container .content-rightblock .content-group p:nth-child(2) {
+          margin-bottom: 5%; }
       main .container .content-rightblock .page-number {
         color: #c10c43;
         font-size: 3rem;
@@ -1292,10 +1294,10 @@ main {
   main #wat .content-image {
     background-image: url("../img/wie-1.jpg");
     /*@include transition(0.6s);
-			
-			&:hover {
-				background-image: url("../img/wie-2.jpg");
-			}*/ }
+
+      &:hover {
+          background-image: url("../img/wie-2.jpg");
+      }*/ }
   main #wat .overlay:before {
     background-color: rgba(193, 12, 67, 0.9); }
   main #werkwijze .content-image {
