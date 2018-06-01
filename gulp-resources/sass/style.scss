@@ -414,6 +414,11 @@ main {
       #email {
         font-size: $font--22;
         margin-bottom: 50px;
+				@include transition(0.3s);
+				
+				&:hover {
+					color: $color--purplered;
+				}
       }
 
       #partner {
@@ -1000,11 +1005,6 @@ main {
 
         &:hover {
           .grid-details {
-            //-webkit-transform: scale(1);
-            //-moz-transform: scale(1);
-            //-ms-transform: scale(1);
-            //-o-transform: scale(1);
-            //transform: scale(1);
             right: 0;
           }
         }
@@ -1047,6 +1047,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
+					cursor: default
 
           p {
             width: 60%;
@@ -1073,13 +1074,6 @@ main {
     img {
       width: 100%;
     }
-  }
-
-  #single-case {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 11;
   }
 
   .casepage {

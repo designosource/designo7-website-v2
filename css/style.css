@@ -79,9 +79,9 @@
     color: #c10c43;
     border: 1px solid #c10c43; }
     .btn:hover .arrow-right {
-      -moz-transform: translate(0.5em, 0px);
-      -webkit-transform: translate(0.5em, 0px);
-      transform: translate(0.5em, 0px);
+      -moz-transform: translate(0.5rem, 0px);
+      -webkit-transform: translate(0.5rem, 0px);
+      transform: translate(0.5rem, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
   .btn .arrow-right-white {
     display: inline-block;
@@ -148,9 +148,9 @@
     color: #c10c43;
     border: 1px solid #c10c43; }
     .btn-white:hover .arrow-right-white {
-      -moz-transform: translate(10px, 0px);
-      -webkit-transform: translate(10px, 0px);
-      transform: translate(10px, 0px);
+      -moz-transform: translate(0.5rem, 0px);
+      -webkit-transform: translate(0.5rem, 0px);
+      transform: translate(0.5rem, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
 
 @media screen and (max-width: 480px) {
@@ -896,7 +896,20 @@ main {
         height: auto; }
       main .container .content-rightblock #email {
         font-size: 1.833rem;
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        main .container .content-rightblock #email:hover {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        main .container .content-rightblock #email:hover {
+          color: #c10c43; }
       main .container .content-rightblock #partner {
         margin-bottom: 20px; }
       main .container .content-rightblock .label {
@@ -1393,26 +1406,21 @@ main {
           background: #c10c43;
           display: flex;
           justify-content: center;
-          align-items: center; }
-          main .page-container .overview .grid-item.last-item p {
-            width: 60%;
-            font-family: "CooperHewittBold", sans-serif;
-            color: #ffffff;
-            font-size: 2rem;
-            line-height: 32pt;
-            text-align: center;
-            margin: 0 auto; }
+          align-items: center;
+          cursor: default p;
+            cursor-width: 60%;
+            cursor-font-family: "CooperHewittBold", sans-serif;
+            cursor-color: #ffffff;
+            cursor-font-size: 2rem;
+            cursor-line-height: 32pt;
+            cursor-text-align: center;
+            cursor-margin: 0 auto; }
     main .page-container #members-grid {
       grid-template-columns: repeat(4, 1fr); }
     main .page-container #cases-grid {
       grid-template-columns: repeat(3, 1fr); }
     main .page-container img {
       width: 100%; }
-  main #single-case {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 11; }
   main .casepage .overlay:before {
     background-color: rgba(33, 32, 58, 0.9);
     z-index: 2; }
