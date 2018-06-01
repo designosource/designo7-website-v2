@@ -940,7 +940,7 @@ main {
         font-size: 1.833rem;
         width: 40rem;
         margin-bottom: 5%;
-        line-height: 27pt;
+        line-height: 21pt;
         font-weight: 300; }
     main #home-grid #home-line {
       grid-row-start: 2;
