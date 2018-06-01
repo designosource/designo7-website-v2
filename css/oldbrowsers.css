@@ -1359,12 +1359,11 @@ main {
       justify-content: space-between;
       grid-gap: calc(2.5 * 1.666rem); }
       main .page-container .overview .grid-item {
-        width: 100%;
         height: 250px;
         position: relative;
         overflow: hidden; }
         main .page-container .overview .grid-item img {
-          height: 250px;
+          height: 100%;
           object-fit: cover; }
         main .page-container .overview .grid-item:hover .grid-details {
           right: 0; }
@@ -1416,9 +1415,21 @@ main {
             cursor-text-align: center;
             cursor-margin: 0 auto; }
     main .page-container #members-grid {
-      /*grid-template-columns: repeat(4, 1fr);*/ }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      main .page-container #members-grid .grid-item {
+        flex-basis: calc(33% - 13.33px); }
+        main .page-container #members-grid .grid-item:not(:nth-last-child(-n+4)) {
+          margin-bottom: 20px; }
     main .page-container #cases-grid {
-      /*grid-template-columns: repeat(3, 1fr);*/ }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      main .page-container #cases-grid .grid-item {
+        flex-basis: calc(25% - 15px); }
+        main .page-container #cases-grid .grid-item:not(:nth-last-child(-n+4)) {
+          margin-bottom: 20px; }
     main .page-container img {
       width: 100%; }
   main .casepage .overlay:before {
@@ -1919,9 +1930,7 @@ footer {
       main .page-container .overview .grid-item {
         height: 200px; }
         main .page-container .overview .grid-item img {
-          height: 100%; }
-    main .page-container #members-grid, main .page-container #cases-grid {
-      /*grid-template-columns: repeat(2, 1fr);*/ } }
+          height: 100%; } }
 
 @media screen and (max-width: 720px) {
   header {
@@ -1933,8 +1942,6 @@ footer {
       font-size: 4rem; }
     main .page-container .overview {
       grid-gap: 25px; }
-    main .page-container #members-grid, main .page-container #cases-grid {
-      /*grid-template-columns: 1fr;*/ }
   main #team .container, main #cases .container, main #contact .container {
     /*display: grid;
         grid-template-columns: 7% 1fr 7%;
