@@ -597,6 +597,20 @@ main {
       @include bg-cover-center;
     }
 
+    .btn {
+      display: block;
+
+      .arrow-right {
+        transform: translateY(2pt);
+      }
+
+      &:hover {
+        .arrow-right {
+          @include translate(0.5em, 2pt);
+        }
+      }
+    }
+
     .overlay {
       position: relative;
       grid-row-start: 2;
@@ -812,6 +826,20 @@ main {
 
       .member-information {
         display: none;
+      }
+
+      .btn {
+        display: block;
+
+        .arrow-right {
+          transform: translateY(2pt);
+        }
+
+        &:hover {
+          .arrow-right {
+            @include translate(0.5em, 2pt);
+          }
+        }
       }
 
     }

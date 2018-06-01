@@ -26,7 +26,7 @@
 .btn {
   display: flex;
   align-items: center;
-  font-size: 1.833rem !important;
+  font-size: 1.666rem !important;
   font-family: "CooperHewittBook", sans-serif;
   font-weight: bolder;
   padding: 13pt 14pt 9pt 14pt;
@@ -47,7 +47,7 @@
     transition: 0.15s; }
   .btn .arrow-right {
     display: inline-block;
-    width: 23pt;
+    width: 18pt;
     height: 15pt;
     margin-left: 12pt;
     background-image: url("../img/arrow-right-dark.svg");
@@ -85,7 +85,7 @@
       background-image: url("../img/arrow-right-red.svg"); }
   .btn .arrow-right-white {
     display: inline-block;
-    width: 23pt;
+    width: 18pt;
     height: 15pt;
     margin-left: 12pt;
     background-image: url("../img/arrow-right-white.svg");
@@ -1046,6 +1046,14 @@ main {
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center; }
+    main .big-grid .btn {
+      display: block; }
+      main .big-grid .btn .arrow-right {
+        transform: translateY(2pt); }
+      main .big-grid .btn:hover .arrow-right {
+        -moz-transform: translate(0.5em, 2pt);
+        -webkit-transform: translate(0.5em, 2pt);
+        transform: translate(0.5em, 2pt); }
     main .big-grid .overlay {
       position: relative;
       grid-row-start: 2;
@@ -1233,6 +1241,14 @@ main {
         text-transform: uppercase; }
       main .big-grid-2 .content-rightblock .member-information {
         display: none; }
+      main .big-grid-2 .content-rightblock .btn {
+        display: block; }
+        main .big-grid-2 .content-rightblock .btn .arrow-right {
+          transform: translateY(2pt); }
+        main .big-grid-2 .content-rightblock .btn:hover .arrow-right {
+          -moz-transform: translate(0.5em, 2pt);
+          -webkit-transform: translate(0.5em, 2pt);
+          transform: translate(0.5em, 2pt); }
   main .fixed-bottom-mobile-navigation {
     display: none; }
   main .previous-next-page {

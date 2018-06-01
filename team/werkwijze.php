@@ -56,11 +56,11 @@
 
 			<article class="content-rightblock scrollbar">
 					<p>Een uniek agency als dat van Designosource vraagt ook om een unieke aanpak. Elk project wordt door een kleiner maar gespecialiseerder team met evenveel Dino-care behandeld.</p>
-					<ol>
-						<li>Opstart meeting</li>
-						<li>Projectmanagement</li>
-						<li>Uitwerking</li>
-						<li>Opvolging</li>
+					<ol id="list">
+						<li>1. Opstart meeting</li>
+						<li>2. Projectmanagement</li>
+						<li>3. Uitwerking</li>
+						<li>4. Opvolging</li>
 					</ol>
 					<a title="Ontdek onze cases" href="../cases/" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
