@@ -558,6 +558,19 @@ main {
       background-image: url("../img/cases-1.jpg");
       @include bg-cover-center;
     }
+
+    .content-rightblock {
+      p {
+        line-height: $font--32;
+      }
+      a {
+        margin-bottom: 10%;
+      }
+    }
+    // uncomment if space is still too small
+    //.btn {
+    //  margin-top: 5%;
+    //}
   }
 
   #contact {

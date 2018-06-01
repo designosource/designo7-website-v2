@@ -1023,6 +1023,10 @@ main {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center; }
+  main #cases .content-rightblock p {
+    line-height: 2.666rem; }
+  main #cases .content-rightblock a {
+    margin-bottom: 10%; }
   main #contact {
     margin-bottom: 60px; }
     main #contact .content-image {
