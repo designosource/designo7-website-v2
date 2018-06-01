@@ -1030,6 +1030,8 @@ main {
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center; }
+    main #contact .content-rightblock h2 {
+      margin-bottom: 10%; }
   main .big-grid {
     grid-template-columns: repeat(24, 1fr) !important;
     grid-template-rows: 60px 1fr 100px calc(50% - 100px) 1fr;

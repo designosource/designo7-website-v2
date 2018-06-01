@@ -566,6 +566,10 @@ main {
       background-image: url("https://media.giphy.com/media/pSpmpxFxFwDpC/giphy.gif");
       @include bg-cover-center;
     }
+
+    .content-rightblock h2 {
+      margin-bottom: 10%;
+    }
   }
 
   .big-grid {
