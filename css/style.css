@@ -15,6 +15,14 @@
   font-family: "Source Sans Pro Light";
   src: url("../fonts/SourceSansPro-Light.ttf"); }
 
+@font-face {
+  font-family: "Source Sans Pro Semibold";
+  src: url("../fonts/SourceSansPro-Sembibold.ttf"); }
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: url("../fonts/SourceSansPro-Bold.ttf"); }
+
 .btn {
   display: flex;
   align-items: center;
@@ -890,7 +898,7 @@ main {
         margin-bottom: 20px; }
       main .container .content-rightblock .label {
         color: #c10c43;
-        font-family: "CooperHewittBold", sans-serif;
+        font-family: "Source Sans Pro Semibold", sans-serif;
         text-transform: uppercase; }
     main .container .bold {
       font-weight: bold; }
