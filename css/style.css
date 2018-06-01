@@ -888,8 +888,8 @@ main {
         line-height: 2.333rem;
         margin-bottom: 10%; }
       main .container .content-rightblock #contact-intro {
-        margin-bottom: 3%;
-        font-weight: bold; }
+        font-family: "CooperHewittBold", sans-serif;
+        margin-bottom: 3%; }
       main .container .content-rightblock #tm-logo {
         width: 110px;
         height: auto; }
