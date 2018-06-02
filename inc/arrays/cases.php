@@ -69,7 +69,7 @@ $cases = array(
     ),
 	
 		"klimkaffee" => array(
-        "name" => "Klimkaffee | Boulderhal Mechelen",
+        "name" => "Klimkaffee",
         "shortname" => "klimkaffee",
         "technology" => "UX/UI | Drupal",
         "image" => "https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif",
@@ -87,7 +87,7 @@ $cases = array(
         ),
         "website" => "http://www.klimkaffee.be/",
         "previousproject" => "tedx",
-        "nextproject" => "vr",
+        "nextproject" => "VR",
     ),
 	
 		"vr" => array(
@@ -157,7 +157,7 @@ $cases = array(
     ),
 	
 		"depauw" => array(
-        "name" => "De Pauw kerstfilmpje",
+        "name" => "De Pauw",
         "shortname" => "depauw",
         "technology" => "UX/UI | Drupal",
         "image" => "https://media.giphy.com/media/Pjs1kqtH1KTaU/giphy.gif",

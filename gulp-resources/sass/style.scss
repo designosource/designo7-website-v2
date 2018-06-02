@@ -670,7 +670,8 @@ main {
       grid-column-end: 23;
       z-index: 3;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      padding-top: 4pt;
     }
 
     .content-rightblock {
