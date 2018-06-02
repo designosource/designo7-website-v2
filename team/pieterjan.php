@@ -34,7 +34,7 @@
 
 <main>
 
-	<?php include '../inc/team/member_content.php'; ?>
+	<?php include '../inc/team/member_content' . $version . '.php'; ?>
 
 </main>
 
