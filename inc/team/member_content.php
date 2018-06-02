@@ -4,9 +4,11 @@
 			<figure class="content-image overlay" style="background-image: url('<?php echo $prefix . $memberinfo["image"]; ?>');" onmouseover="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["imagehover"]; ?>)').css('transition', '0.4s');" onmouseleave="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["image"]; ?>)').css('transition', '0.4s');"></figure>
 			
 			<article class="member-information">
-				
-				<p class="member-quote"><?php echo $memberinfo["quote"]; ?></p>
-				
+
+                <div class="quote-container">
+                    <p class="member-quote"><?php echo $memberinfo["quote"]; ?></p>
+                </div>
+
 				<div class="member-socialmedia">
 					
 					<?php if( !empty($memberinfo["linkedin"]) ): ?>

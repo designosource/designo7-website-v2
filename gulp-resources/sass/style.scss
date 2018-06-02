@@ -730,7 +730,7 @@ main {
       grid-column-end: 15;
       z-index: 2;
       padding: calc(2 * #{$font--20});
-      padding-top: calc(4 * #{$font--20});
+      padding-top: calc(3 * #{$font--20});
       padding-bottom: $font--20;
       /*@include center-flex(vertical);*/
       display: flex;
@@ -743,34 +743,40 @@ main {
           justify-content: space-between;
       }*/
 
-      .member-quote {
-        position: relative;
-        color: $color--white;
-        font-size: $font--28;
-        line-height: $font--32;
-        z-index: 2;
-        font-family: $font--cooper--bold;
+      .quote-container {
+        display: flex;
+        height: 100%;
+        align-items: center;
 
-        &:before {
-          @include pseudo;
-          /*content: '"';
-          font-family: $font--sans;
-          font-weight: 500;*/
-          background-image: url('../img/quote.svg');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center center;
-          z-index: 1;
-          color: rgba($color--white, 0.7);
-          font-size: $font--144;
-          width: 40px;
-          height: 40px;
-          top: 0pt;
-          left: 0pt;
-          @include translate(-25%, -75%);
-          @include transition(0.3s);
+        .member-quote {
+          position: relative;
+          color: $color--white;
+          font-size: $font--28;
+          line-height: $font--36;
+          z-index: 2;
+          font-family: $font--cooper--semibold;
+
+          &:before {
+            @include pseudo;
+            /*content: '"';
+            font-family: $font--sans;
+            font-weight: 500;*/
+            background-image: url('../img/quote.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 1;
+            color: rgba($color--white, 0.7);
+            font-size: $font--144;
+            width: 40px;
+            height: 40px;
+            top: 5pt;
+            left: 0pt;
+            @include translate(-25%, -75%);
+            @include transition(0.3s);
+          }
+
         }
-
       }
 
       .member-socialmedia {
@@ -823,7 +829,7 @@ main {
       .member-nickname {
         color: $color--purplered;
         margin-bottom: $font--16;
-        font-family: $font--sans;
+        font-family: $font--sans-bold;
         font-size: $font--22;
         font-weight: 500;
         text-transform: uppercase;

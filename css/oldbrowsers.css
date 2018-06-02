@@ -12,6 +12,10 @@
   src: url("../fonts/CooperHewitt-Light.otf"); }
 
 @font-face {
+  font-family: "CooperHewittSemibold";
+  src: url("../fonts/CooperHewitt-Semibold.otf"); }
+
+@font-face {
   font-family: "Source Sans Pro Light";
   src: url("../fonts/SourceSansPro-Light.ttf"); }
 

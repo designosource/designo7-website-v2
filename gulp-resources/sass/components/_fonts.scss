@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: "CooperHewittSemibold";
+  src:url("../fonts/CooperHewitt-Semibold.otf");
+}
+
+@font-face {
   font-family: "Source Sans Pro Light";
   src:url("../fonts/SourceSansPro-Light.ttf");
 }
@@ -31,6 +36,7 @@
 $font--cooper--book: 'CooperHewittBook', sans-serif;
 $font--cooper--bold: 'CooperHewittBold', sans-serif;
 $font--cooper--light: 'CooperHewittLight', sans-serif;
+$font--cooper--semibold: 'CooperHewittSemibold', sans-serif;
 $font--sans: 'Source Sans Pro Light', sans-serif;
 $font--sans-semibold: 'Source Sans Pro Semibold', sans-serif;
 $font--sans-bold: 'Source Sans Pro Bold', sans-serif;

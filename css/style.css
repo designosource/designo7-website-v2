@@ -12,6 +12,10 @@
   src: url("../fonts/CooperHewitt-Light.otf"); }
 
 @font-face {
+  font-family: "CooperHewittSemibold";
+  src: url("../fonts/CooperHewitt-Semibold.otf"); }
+
+@font-face {
   font-family: "Source Sans Pro Light";
   src: url("../fonts/SourceSansPro-Light.ttf"); }
 
@@ -1153,7 +1157,7 @@ main {
       grid-column-end: 15;
       z-index: 2;
       padding: calc(2 * 1.666rem);
-      padding-top: calc(4 * 1.666rem);
+      padding-top: calc(3 * 1.666rem);
       padding-bottom: 1.666rem;
       /*@include center-flex(vertical);*/
       display: flex;
@@ -1164,45 +1168,49 @@ main {
           flex-basis: 100%;
           justify-content: space-between;
       }*/ }
-      main .big-grid-2 .member-information .member-quote {
-        position: relative;
-        color: #ffffff;
-        font-size: 2.333rem;
-        line-height: 2.666rem;
-        z-index: 2;
-        font-family: "CooperHewittBold", sans-serif; }
-        main .big-grid-2 .member-information .member-quote:before {
-          content: "";
-          display: block;
-          position: absolute;
-          /*content: '"';
-          font-family: $font--sans;
-          font-weight: 500;*/
-          background-image: url("../img/quote.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center center;
-          z-index: 1;
-          color: rgba(255, 255, 255, 0.7);
-          font-size: 12rem;
-          width: 40px;
-          height: 40px;
-          top: 0pt;
-          left: 0pt;
-          -moz-transform: translate(-25%, -75%);
-          -webkit-transform: translate(-25%, -75%);
-          transform: translate(-25%, -75%);
-          -webkit-transition: 0.3s;
-          -moz-transition: 0.3s;
-          -ms-transition: 0.3s;
-          -o-transition: 0.3s;
-          transition: 0.3s; }
-          main .big-grid-2 .member-information .member-quote:before:hover {
+      main .big-grid-2 .member-information .quote-container {
+        display: flex;
+        height: 100%;
+        align-items: center; }
+        main .big-grid-2 .member-information .quote-container .member-quote {
+          position: relative;
+          color: #ffffff;
+          font-size: 2.333rem;
+          line-height: 3rem;
+          z-index: 2;
+          font-family: "CooperHewittSemibold", sans-serif; }
+          main .big-grid-2 .member-information .quote-container .member-quote:before {
+            content: "";
+            display: block;
+            position: absolute;
+            /*content: '"';
+            font-family: $font--sans;
+            font-weight: 500;*/
+            background-image: url("../img/quote.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12rem;
+            width: 40px;
+            height: 40px;
+            top: 5pt;
+            left: 0pt;
+            -moz-transform: translate(-25%, -75%);
+            -webkit-transform: translate(-25%, -75%);
+            transform: translate(-25%, -75%);
             -webkit-transition: 0.3s;
             -moz-transition: 0.3s;
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
+            main .big-grid-2 .member-information .quote-container .member-quote:before:hover {
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              -ms-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
       main .big-grid-2 .member-information .member-socialmedia {
         display: flex;
         flex-direction: row;
@@ -1248,7 +1256,7 @@ main {
       main .big-grid-2 .content-rightblock .member-nickname {
         color: #c10c43;
         margin-bottom: 1.333rem;
-        font-family: "Source Sans Pro Light", sans-serif;
+        font-family: "Source Sans Pro Bold", sans-serif;
         font-size: 1.833rem;
         font-weight: 500;
         text-transform: uppercase; }
