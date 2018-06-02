@@ -1372,11 +1372,10 @@ main {
           position: absolute;
           z-index: 1;
           bottom: 0;
-          width: 60%;
-          height: 35%;
+          width: 65%;
           background: #ffffff;
-          padding: 10px 20px;
-          right: -60%;
+          padding: 20px 20px;
+          right: -65%;
           transform-origin: right bottom;
           -webkit-transition: 0.5s;
           -moz-transition: 0.5s;
@@ -1390,16 +1389,16 @@ main {
             -o-transition: 0.5s;
             transition: 0.5s; }
           main .page-container .overview .grid-item .grid-details .first-detail {
-            font-size: 1.083rem;
-            margin-bottom: 8px; }
+            font-size: 1.333rem;
+            margin-bottom: 10pt; }
           main .page-container .overview .grid-item .grid-details .second-detail {
             font-family: "CooperHewittBold", sans-serif;
-            font-size: 1.333rem;
-            margin-bottom: 6px; }
+            font-size: 1.666rem;
+            margin-bottom: 10pt; }
           main .page-container .overview .grid-item .grid-details .third-detail {
             color: #c10c43;
             font-family: "CooperHewittBold", sans-serif;
-            font-size: 0.833rem; }
+            font-size: 1.333rem; }
             main .page-container .overview .grid-item .grid-details .third-detail:hover {
               color: #f8ae0d; }
         main .page-container .overview .grid-item.last-item {
@@ -1407,14 +1406,15 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
-          cursor: default p;
-            cursor-width: 60%;
-            cursor-font-family: "CooperHewittBold", sans-serif;
-            cursor-color: #ffffff;
-            cursor-font-size: 2rem;
-            cursor-line-height: 32pt;
-            cursor-text-align: center;
-            cursor-margin: 0 auto; }
+          cursor: default; }
+          main .page-container .overview .grid-item.last-item p {
+            width: 60%;
+            font-family: "CooperHewittBold", sans-serif;
+            color: #ffffff;
+            font-size: 2rem;
+            line-height: 32pt;
+            text-align: center;
+            margin: 0 auto; }
     main .page-container #members-grid {
       grid-template-columns: repeat(4, 1fr); }
     main .page-container #cases-grid {

@@ -414,11 +414,11 @@ main {
       #email {
         font-size: $font--22;
         margin-bottom: 50px;
-				@include transition(0.3s);
-				
-				&:hover {
-					color: $color--purplered;
-				}
+        @include transition(0.3s);
+
+        &:hover {
+          color: $color--purplered;
+        }
       }
 
       #partner {
@@ -1013,28 +1013,26 @@ main {
           position: absolute;
           z-index: 1;
           bottom: 0;
-          // TODO: check if every name fits in container
-          width: 60%;
-          height: 35%;
+          width: 65%;
           background: $color--white;
-          padding: 10px 20px;
-          right: -60%;
+          padding: 20px 20px;
+          right: -65%;
           transform-origin: right bottom;
           @include transition(0.5s);
 
           .first-detail {
-            font-size: $font--13;
-            margin-bottom: 8px;
+            font-size: $font--16;
+            margin-bottom: 10pt;
           }
           .second-detail {
             font-family: $font--cooper--bold;
-            font-size: $font--16;
-            margin-bottom: 6px;
+            font-size: $font--20;
+            margin-bottom: 10pt;
           }
           .third-detail {
             color: $color--purplered;
             font-family: $font--cooper--bold;
-            font-size: $font--10;
+            font-size: $font--16;
 
             &:hover {
               color: $color--goldenrod;
@@ -1047,7 +1045,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
-					cursor: default
+          cursor: default;
 
           p {
             width: 60%;
