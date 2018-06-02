@@ -1,9 +1,9 @@
-<section class="memberpage" id="<?php echo $pagename; ?>">
+<section id="<?php echo $pagename; ?>">
   	<div class="container big-grid-2 maxwidth">
   		<div class="coloured-background"></div>
-			<figure class="content-image overlay" style="background-image: url('<?php echo $prefix . $memberinfo["image"]; ?>');" onmouseover="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["imagehover"]; ?>)').css('transition', '0.4s');" onmouseleave="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["image"]; ?>)').css('transition', '0.4s');"></figure>
+			<figure class="memberpage-flex-left content-image overlay" style="background-image: url('<?php echo $prefix . $memberinfo["image"]; ?>');" onmouseover="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["imagehover"]; ?>)').css('transition', '0.4s');" onmouseleave="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["image"]; ?>)').css('transition', '0.4s');"></figure>
 			
-			<div class="memberpage-right">
+			<div class="memberpage-flex-right">
 			
 				<div class="previous-next-page">
 
@@ -17,7 +17,7 @@
 				
 				<h1><?php echo $memberinfo["name"]; ?></h1>
 			
-				<div class="memberpage-right-information">
+				<div class="memberpage-flex-right-information">
 			
 					<article class="member-information">
 
