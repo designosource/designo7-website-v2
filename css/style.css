@@ -1590,7 +1590,7 @@ footer {
       grid-column-start: 3;
       grid-column-end: 23;
       background-position: center 35%; }
-    main section .big-grid-2 .previous-page {
+    main section .big-grid-2 .previous-next-page {
       display: none; }
     main section .big-grid-2 h1 {
       grid-row-start: 3;
