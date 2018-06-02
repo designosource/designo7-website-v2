@@ -4,8 +4,8 @@
 
 ?>
 <link href="<?php echo $prefix; ?>css/oldbrowsers.css" rel="stylesheet">
-<?php $version = ""; ?>
+<?php $version = "-2"; ?>
 <?php else: ?>
 <link href="<?php echo $prefix; ?>css/style.css" rel="stylesheet">
-<?php $version = "-2"; ?>
+<?php $version = ""; ?>
 <?php endif; ?>
