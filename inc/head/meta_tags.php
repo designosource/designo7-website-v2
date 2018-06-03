@@ -17,8 +17,8 @@
 <meta property="og:image" content="OG Image pad png">
 <meta property="og:image:secure_url" content="OG Image pad png HTTPS">
 <meta property="og:image:alt" content="OG Image alt tag">
-<meta property="og:image:width" content="627">
-<meta property="og:image:height" content="1200">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:description" content="Description">
 <meta property="og:locale" content="nl_BE">
 <meta property="og:site_name" content="Naam website">

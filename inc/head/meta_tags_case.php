@@ -15,8 +15,8 @@
 <meta property="og:image" content="http://www.designosource.be/img/cases/og-<?php echo $caseinfo["shortname"]; ?>.png">
 <meta property="og:image:secure_url" content="https://www.designosource.be/img/cases/og-<?php echo $caseinfo["shortname"]; ?>.png">
 <meta property="og:image:alt" content="Photo of <?php echo $caseinfo["name"]; ?>">
-<meta property="og:image:width" content="627">
-<meta property="og:image:height" content="1200">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:description" content="<?php echo $caseinfo["description"]; ?>">
 <meta property="og:locale" content="nl_BE">
 <meta property="og:site_name" content="Designosource | <?php echo $caseinfo["name"]; ?>">

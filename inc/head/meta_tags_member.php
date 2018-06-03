@@ -15,8 +15,8 @@
 <meta property="og:image" content="http://www.designosource.be/img/members/og-<?php echo $memberinfo["shortname"]; ?>.png">
 <meta property="og:image:secure_url" content="https://www.designosource.be/img/members/og-<?php echo $memberinfo["shortname"]; ?>.png">
 <meta property="og:image:alt" content="Photo of <?php echo $memberinfo["name"]; ?>">
-<meta property="og:image:width" content="627">
-<meta property="og:image:height" content="1200">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:description" content="<?php echo $memberinfo["descriptionmeta"]; ?>">
 <meta property="og:locale" content="nl_BE">
 <meta property="og:site_name" content="Designosource | <?php echo $memberinfo["name"]; ?>">
