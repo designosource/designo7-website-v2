@@ -21,7 +21,9 @@
 			
 					<article class="member-information">
 
-						<p class="member-quote"><?php echo $memberinfo["quote"]; ?></p>
+						<div class="quote-container">
+								<p class="member-quote"><?php echo $memberinfo["quote"]; ?></p>
+						</div>
 
 						<div class="member-socialmedia">
 
