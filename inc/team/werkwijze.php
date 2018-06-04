@@ -26,7 +26,12 @@
 					<a title="Ontdek onze cases" href="../cases/" class="btn">Ontdek onze cases<span class="arrow-right"></span></a>
 			</article>
 			
-			<div class="fixed-bottom-mobile-navigation"></div>
+			<div class="fixed-bottom-mobile-navigation">
+				<div class="inner-bottom-mobile-navigation">
+					<a class="previous" href="wat.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span>Wie zijn wij?</span></a>
+					<a class="next" href="services.php"><span>Wat doen wij?</span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+				</div>
+			</div>
 			
 		</div> <!-- /maxwidth -->
 	</section>
