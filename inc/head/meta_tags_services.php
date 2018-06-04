@@ -9,7 +9,7 @@
 <meta name="url" content="https://www.designosource.be/team/services.php">
 <meta name="identifier-URL" content="http://www.designosource.be/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta property="og:title" content="Title">
+<meta property="og:title" content="Designosource | Wat doen wij?">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.designosource.be/team/services.php">
 <meta property="og:image" content="http://www.designosource.be/img/team/og-services.jpg">
