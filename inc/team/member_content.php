@@ -12,15 +12,15 @@
 				<div class="member-socialmedia">
 					
 					<?php if( !empty($memberinfo["linkedin"]) ): ?>
-					<a target="_blank" href="<?php echo $memberinfo["linkedin"]; ?>">Linkedin</a>
+					<a title="Linkedin" target="_blank" href="<?php echo $memberinfo["linkedin"]; ?>">Linkedin</a>
 					<?php endif; ?>
 					
 					<?php if( !empty($memberinfo["email"]) ): ?>
-					<a href="mailto:<?php echo $memberinfo["email"]; ?>">Email</a>
+					<a title="Mail" href="mailto:<?php echo $memberinfo["email"]; ?>">Email</a>
 					<?php endif; ?>
 					
 					<?php if( !empty($memberinfo["twitter"]) ): ?>
-					<a href="<?php echo $memberinfo["twitter"]; ?>">Twitter</a>
+					<a title="Twitter" href="<?php echo $memberinfo["twitter"]; ?>">Twitter</a>
 					<?php endif; ?>
 					
 				</div>
@@ -57,8 +57,8 @@
 			
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
-					<a class="previous" href="<?php echo $memberinfo["previous"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($memberinfo["previous"]); ?></span></a>
-					<a class="next" href="<?php echo $memberinfo["next"]; ?>.php"><span><?php echo ucfirst($memberinfo["next"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+					<a title="<?php echo ucfirst($memberinfo["previous"]); ?>" class="previous" href="<?php echo $memberinfo["previous"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($memberinfo["previous"]); ?></span></a>
+					<a title="<?php echo ucfirst($memberinfo["next"]); ?>" class="next" href="<?php echo $memberinfo["next"]; ?>.php"><span><?php echo ucfirst($memberinfo["next"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>
 			
@@ -72,7 +72,7 @@
 
 						<?php foreach($members as $member): ?>
 						
-						<a  title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
+						<a title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
 							<div style="background-image: url('<?php echo $prefix . $member["image"]; ?>');">
 								<h3><?php echo $member["name"]; ?></h3>
 							</div>

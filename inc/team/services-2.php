@@ -33,8 +33,8 @@
 			
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
-					<a class="previous" href="werkwijze.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span>Werkwijze</span></a>
-					<a class="next" href="wat.php"><span>Wie zijn wij?</span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+					<a title="Werkwijze" class="previous" href="werkwijze.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span>Werkwijze</span></a>
+					<a title="Wij zijn wij?" class="next" href="wat.php"><span>Wie zijn wij?</span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>
 			
