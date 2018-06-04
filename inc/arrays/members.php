@@ -129,7 +129,7 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
 				"descriptionmeta" => "Chiara is een ware Audiovisual Adventurer. Met haar cameramateriaal in haar rugzak trekt ze steevast op avontuur. Heb je vragen over videobewerking of videomontage? Ook dat is voor onze avonturier geen probleem.Chiara heeft heel wat inspiratiebronnen in haar leven. Disney films speelt ze feilloos na, haar kat Berlioz is haar oogappel en haar familie zet ze op de eerste plaats. Ze zou geen avonturier zijn moest ze niet dromen van een toekomst in het buitenland.",
         "website" => "http://www.lisawouters.be",
 				"previous" => "caroline",
-				"next" => "laura"
+				"next" => "larissa"
     ),
 	
 		"larissa" => array(
@@ -144,8 +144,8 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
         "description" => "<p>Larissa dartelt vrolijk door het land van illustraties, cactussen en veel taartjes. Met haar oog voor detail laat ze geen enkel design passeren zonder dat het feilloos kan worden opgeleverd. Met haar illustrator skills tovert ze werkelijk regenbogen en glitters.</p><p>Haar designs blazen je allemaal omver en als ze in het West-Vlaams begint praat ze je zo onder tafel. Later droomt ze van een huis vol cactussen en dieren, goede combinatie toch?</p>",
 				"descriptionmeta" => "Larissa dartelt vrolijk door het land van illustraties, cactussen en veel taartjes. Met haar oog voor detail laat ze geen enkel design passeren zonder dat het feilloos kan worden opgeleverd. Met haar illustrator skills tovert ze werkelijk regenbogen en glitters. Haar designs blazen je allemaal omver en als ze in het West-Vlaams begint praat ze je zo onder tafel. Later droomt ze van een huis vol cactussen en dieren, goede combinatie toch?",
         "website" => "http://www.larissagoethals.be",
-				"previous" => "larissa",
-				"next" => "pieterjan"
+				"previous" => "chiara",
+				"next" => "laura"
     ),
 	
 		"laura" => array(
