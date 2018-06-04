@@ -167,8 +167,8 @@
       height: 8pt;
       margin-left: 8pt; }
   .btn {
-    font-size: 1.333rem !important;
-    padding: 5pt 5pt 5pt 5pt; }
+    font-size: 1.666rem !important;
+    padding: 1.4rem 1rem 1.4rem 1rem; }
     .btn .arrow-right {
       display: inline-block;
       width: 15pt;
@@ -1991,6 +1991,7 @@ footer {
       main #team .container .content-rightblock .arrow, main #cases .container .content-rightblock .arrow, main #contact .container .content-rightblock .arrow {
         display: none; }
       main #team .container .content-rightblock #contact-intro, main #cases .container .content-rightblock #contact-intro, main #contact .container .content-rightblock #contact-intro {
+        margin-top: 5%;
         margin-bottom: 3%;
         font-weight: bold; }
       main #team .container .content-rightblock #tm-logo, main #cases .container .content-rightblock #tm-logo, main #contact .container .content-rightblock #tm-logo {
@@ -1998,9 +1999,9 @@ footer {
         height: auto; }
       main #team .container .content-rightblock #email, main #cases .container .content-rightblock #email, main #contact .container .content-rightblock #email {
         font-size: 1.833rem;
-        margin-bottom: 50px; }
+        margin-bottom: 7%; }
       main #team .container .content-rightblock #partner, main #cases .container .content-rightblock #partner, main #contact .container .content-rightblock #partner {
-        margin-bottom: 20px; }
+        margin-bottom: 3%; }
       main #team .container .content-rightblock .label, main #cases .container .content-rightblock .label, main #contact .container .content-rightblock .label {
         color: #c10c43;
         font-family: "CooperHewittBold", sans-serif;
@@ -2009,6 +2010,8 @@ footer {
     margin-bottom: 25%; }
   main #team .content-group {
     margin-top: 3rem; }
+  main #cases .container .content-rightblock a img {
+    display: none; }
   main #home-grid {
     grid-template-columns: 10% 1fr 5%;
     grid-template-rows: 1fr 100% 1fr;

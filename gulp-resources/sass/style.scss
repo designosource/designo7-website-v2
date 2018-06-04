@@ -1790,6 +1790,7 @@ footer {
           }
 
           #contact-intro {
+            margin-top: 5%;
             margin-bottom: 3%;
             font-weight: bold;
           }
@@ -1801,11 +1802,11 @@ footer {
 
           #email {
             font-size: $font--22;
-            margin-bottom: 50px;
+            margin-bottom: 7%;
           }
 
           #partner {
-            margin-bottom: 20px;
+            margin-bottom: 3%;
           }
 
           .label {
@@ -1830,6 +1831,18 @@ footer {
         margin-top: 3rem;
       }
 
+    }
+
+    #cases {
+      .container {
+        .content-rightblock {
+          a {
+            img {
+              display: none;
+            }
+          }
+        }
+      }
     }
 
     #home-grid {
