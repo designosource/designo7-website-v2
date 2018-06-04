@@ -1064,6 +1064,24 @@ main {
             margin: 0 auto;
           }
         }
+
+        .more-button {
+          position: absolute;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          bottom: 0;
+          right: 0;
+          width: 2em;
+          height: 2em;
+          background: $color--white;
+
+          span {
+            color: $color--purplered;
+            font-size: $font--36;
+            font-family: $font--sans-bold;
+          }
+        }
       }
 
     }
@@ -1719,6 +1737,23 @@ footer {
 
       .overview {
         grid-gap: 25px;
+
+        .grid-item {
+          &.last-item {
+            p {
+              width: 80%;
+              line-height: 2em;
+            }
+          }
+
+          .more-button {
+            display: flex;
+          }
+
+          .grid-details {
+            display: none;
+          }
+        }
       }
 
       #members-grid, #cases-grid {

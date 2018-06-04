@@ -1424,6 +1424,20 @@ main {
             line-height: 32pt;
             text-align: center;
             margin: 0 auto; }
+        main .page-container .overview .grid-item .more-button {
+          position: absolute;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          bottom: 0;
+          right: 0;
+          width: 2em;
+          height: 2em;
+          background: #ffffff; }
+          main .page-container .overview .grid-item .more-button span {
+            color: #c10c43;
+            font-size: 3rem;
+            font-family: "Source Sans Pro Bold", sans-serif; }
     main .page-container #members-grid {
       grid-template-columns: repeat(4, 1fr); }
     main .page-container #cases-grid {
@@ -1946,6 +1960,13 @@ footer {
       font-size: 4rem; }
     main .page-container .overview {
       grid-gap: 25px; }
+      main .page-container .overview .grid-item.last-item p {
+        width: 80%;
+        line-height: 2em; }
+      main .page-container .overview .grid-item .more-button {
+        display: flex; }
+      main .page-container .overview .grid-item .grid-details {
+        display: none; }
     main .page-container #members-grid, main .page-container #cases-grid {
       grid-template-columns: 1fr; }
   main #team .container, main #cases .container, main #contact .container {

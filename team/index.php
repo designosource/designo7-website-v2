@@ -58,6 +58,11 @@
                             <p class="second-detail"><?php echo $member['name'] ; ?></p>
                             <a title="Meer info | <?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php" class="third-detail">Meer info +</a>
                         </div>
+                        <a title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
+                            <div class="more-button">
+                                <span>+</span>
+                            </div>
+                        </a>
                     </div>
                 <?php endforeach; ?>
             </article>
