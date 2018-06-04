@@ -1,6 +1,6 @@
 <section class="casepage" id="<?php echo $caseinfo["shortname"]; ?>">
   	<div class="container big-grid maxwidth">
-			<div class="casepage-flex-left">
+			<div class="big-grid-flex-left">
 				<div class="slick-container overlay">
 					<figure class="content-image" style="background-image: url('<?php echo /* $prefix . */ $caseinfo["image"]; ?>');"></figure>
 					<?php foreach( $caseinfo["extra_images"] as $image ): ?>
@@ -15,7 +15,7 @@
 				</div>
 			</div>
 			
-			<div class="casepage-flex-right">
+			<div class="big-grid-flex-right">
 				<div class="previous-next-page">
 
 					<a title="Project | <?php echo ucfirst($caseinfo["previousproject"]); ?>" href="<?php echo $caseinfo["previousproject"] ?>.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span><?php echo ucfirst($caseinfo["previousproject"]); ?></span></a>
