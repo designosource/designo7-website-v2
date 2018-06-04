@@ -81,7 +81,9 @@
 						<?php foreach($members as $member): ?>
 						
 						<a  title="<?php echo $member["name"]; ?>" href="<?php echo $member["shortname"]; ?>.php">
-							<div style="background-image: url('<?php echo $prefix . $member["image"]; ?>');"></div>
+							<div style="background-image: url('<?php echo $prefix . $member["image"]; ?>');">
+								<h3><?php echo $member["name"]; ?></h3>
+							</div>
 						</a>
 						
 						<?php endforeach; ?>

@@ -56,7 +56,7 @@
 						<?php foreach($cases as $case): ?>
 						
 						<a  title="<?php echo $case["name"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
-							<div style="background-image: url('<?php echo /* $prefix . */ $case["image"]; ?>');">
+							<div style="background-image: url('<?php echo $prefix . $case["image"]; ?>');">
 								<h3><?php echo $case["name"]; ?></h3>
 							</div>
 							
