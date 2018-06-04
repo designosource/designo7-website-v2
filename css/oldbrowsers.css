@@ -2248,7 +2248,7 @@ footer {
 
 @media (max-width: 1024px) {
   html {
-    font-size: 8px; } }
+    font-size: 10px; } }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.8);
