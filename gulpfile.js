@@ -60,7 +60,7 @@ gulp.task('css-prefix', function () {
 });
 
 /* IMAGE COMPRESS */
-gulp.task('images', ['imagesDefault', 'imagesMembers', 'imagesCases'], function(){
+gulp.task('images', ['imagesDefault', 'imagesMembers', 'imagesTeam', 'imagesCases'], function(){
     gutil.log(gutil.colors.red('Compressing images'));
 });
 
@@ -78,6 +78,14 @@ gulp.task('imagesMembers', () =>
         .pipe(imagemin())
         .pipe(plumber.stop())
         .pipe(gulp.dest('img/members/'))
+);
+
+gulp.task('imagesTeam', () =>
+    gulp.src('gulp-resources/img/team/*')
+        .pipe(plumber())
+        .pipe(imagemin())
+        .pipe(plumber.stop())
+        .pipe(gulp.dest('img/team/'))
 );
 
 gulp.task('imagesCases', () =>
