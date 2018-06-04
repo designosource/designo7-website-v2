@@ -1702,6 +1702,13 @@ footer {
   }
 
   main {
+    #intro {
+      .btn-white {
+        position: absolute;
+        z-index: 5;
+        bottom: 25%;
+      }
+    }
     .page-container {
       padding: 40px 25px;
 
@@ -1838,20 +1845,20 @@ footer {
         color: $color--white;
 
         h3 {
-          font-size: $font--20;
-          margin-bottom: 1%;
+          font-size: $font--24;
+          margin-bottom: 3%;
         }
 
         h1 {
-          font-size: $font--32;
+          font-size: $font--40;
           margin-bottom: 5%;
         }
 
         p {
-          font-size: $font--16;
+          font-size: $font--20;
           width: 100%;
           margin-bottom: 8%;
-          line-height: 15pt;
+          line-height: 18pt;
         }
       }
 
@@ -1958,7 +1965,6 @@ footer {
 /* end hiddengame */
 
 @import 'components/_animations.scss';
-@import 'components/_members.scss';
 @include media;
 
 // END IMPLEMENTING SASS

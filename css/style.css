@@ -157,10 +157,10 @@
       transform: translate(0.5rem, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .btn-white {
-    font-size: 1.333rem !important;
-    padding: 5pt 5pt 5pt 5pt; }
+    font-size: 1.666rem !important;
+    padding: 1.4rem 1rem 1.4rem 1rem; }
     .btn-white .arrow-right-white {
       display: inline-block;
       width: 15pt;
@@ -1935,6 +1935,10 @@ footer {
 @media screen and (max-width: 720px) {
   header {
     display: none; }
+  main #intro .btn-white {
+    position: absolute;
+    z-index: 5;
+    bottom: 25%; }
   main .page-container {
     padding: 40px 25px; }
     main .page-container h1 {
@@ -2021,16 +2025,16 @@ footer {
       grid-column-end: 3;
       color: #ffffff; }
       main #home-grid #home-content h3 {
-        font-size: 1.666rem;
-        margin-bottom: 1%; }
+        font-size: 2rem;
+        margin-bottom: 3%; }
       main #home-grid #home-content h1 {
-        font-size: 2.666rem;
+        font-size: 3.5rem;
         margin-bottom: 5%; }
       main #home-grid #home-content p {
-        font-size: 1.333rem;
+        font-size: 1.666rem;
         width: 100%;
         margin-bottom: 8%;
-        line-height: 15pt; }
+        line-height: 18pt; }
     main #home-grid #home-line {
       grid-row-start: 2;
       grid-row-end: 3;
@@ -2191,42 +2195,6 @@ footer {
   100% {
     margin-top: 6px;
     opacity: 0; } }
-
-.caroline {
-  background-image: url("../img/members/caroline.jpg"); }
-
-.chiara {
-  background-image: url("../img/members/chiara.jpg"); }
-
-.chris {
-  background-image: url("../img/members/chris.jpg"); }
-
-.hanna {
-  background-image: url("../img/members/hanna.jpg"); }
-
-.joris {
-  background-image: url("../img/members/joris.jpg"); }
-
-.larissa {
-  background-image: url("../img/members/larissa.jpg"); }
-
-.laura {
-  background-image: url("../img/members/laura.jpg"); }
-
-.lino {
-  background-image: url("../img/members/lino.jpg"); }
-
-.lisa {
-  background-image: url("../img/members/lisa.jpg"); }
-
-.pieterjan {
-  background-image: url("../img/members/pieterjan.jpg"); }
-
-.risa {
-  background-image: url("../img/members/risa.jpg"); }
-
-.sander {
-  background-image: url("../img/members/sander.jpg"); }
 
 @media (min-width: 1920px) {
   html {
