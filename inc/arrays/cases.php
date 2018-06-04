@@ -6,10 +6,10 @@ $cases = array(
         "name" => "Climate without borders",
         "shortname" => "cwb",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/eSQKNSmg07dHq/giphy.gif",
+        "image" => "img/cases/cwb-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/cwb-2.jpg",
+					"img/cases/cwb-3.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -29,10 +29,10 @@ $cases = array(
         "name" => "TEDx Mechelen",
         "shortname" => "tedx",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/8j3CTd8YJtAv6/giphy.gif",
+        "image" => "img/cases/tedx-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/tedx-2.jpg",
+					"img/cases/tedx-3.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -52,10 +52,10 @@ $cases = array(
         "name" => "Gram",
         "shortname" => "gram",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
+        "image" => "img/cases/gram-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/gram-2.jpg",
+					"img/cases/gram-3.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -75,10 +75,11 @@ $cases = array(
         "name" => "Klimkaffee",
         "shortname" => "klimkaffee",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif",
+        "image" => "img/cases/klimkaffee-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/klimkaffee-2.jpg",
+					"img/cases/klimkaffee-3.jpg",
+					"img/cases/klimkaffee-4.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -98,10 +99,10 @@ $cases = array(
         "name" => "360° | VR",
         "shortname" => "vr",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/jzaZ23z45UxK8/giphy.gif",
+        "image" => "img/cases/vr-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/vr-2.jpg",
+					"img/cases/vr-3.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -121,10 +122,10 @@ $cases = array(
         "name" => "Ballet",
         "shortname" => "ballet",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/8MObiTsZrFlTi/giphy.gif",
+        "image" => "img/cases/ballet-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/ballet-2.jpg",
+					"img/cases/ballet-3.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -144,10 +145,12 @@ $cases = array(
         "name" => "Brosella",
         "shortname" => "brosella",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/YhyAJUCpno53y/giphy.gif",
+        "image" => "img/cases/brosella-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/brosella-2.jpg",
+					"img/cases/brosella-3.jpg",
+					"img/cases/brosella-4.jpg",
+					"img/cases/brosella-5.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
@@ -167,10 +170,10 @@ $cases = array(
         "name" => "De Pauw",
         "shortname" => "depauw",
         "technology" => "UX/UI | Drupal",
-        "image" => "https://media.giphy.com/media/Pjs1kqtH1KTaU/giphy.gif",
+        "image" => "img/cases/depauw-1.jpg",
 				"extra_images" => array(
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif",
-					"https://media.giphy.com/media/Zw133sEVc0WXK/giphy.gif"
+					"img/cases/depauw-2.jpg",
+					"img/cases/depauw-3.jpg"
 				),
         "intro" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
         "highlight" => "Aenean massa. Cum sociis natoque",
