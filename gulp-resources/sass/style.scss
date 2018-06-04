@@ -1755,7 +1755,7 @@ footer {
 
           .title-group {
             position: absolute;
-            top: 38pt;
+            top: 4.5rem;
             right: 20pt;
           }
 
@@ -1774,6 +1774,10 @@ footer {
 
             span:not(.label):not(.arrow-right) {
               margin-right: 0;
+            }
+
+            &:before {
+              display: none;
             }
           }
 
@@ -1814,13 +1818,18 @@ footer {
     }
 
     #team {
-      .content-group {
-        margin-top: 0;
+      .container {
+        .content-rightblock {
+          a {
+            margin-bottom: 25%;
+          }
+        }
       }
 
-      .links {
-        margin-bottom: 15%;
+      .content-group {
+        margin-top: 3rem;
       }
+
     }
 
     #home-grid {

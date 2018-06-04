@@ -1972,7 +1972,7 @@ footer {
       padding-top: 2%; }
       main #team .container .content-rightblock .title-group, main #cases .container .content-rightblock .title-group, main #contact .container .content-rightblock .title-group {
         position: absolute;
-        top: 38pt;
+        top: 4.5rem;
         right: 20pt; }
       main #team .container .content-rightblock .content-group, main #cases .container .content-rightblock .content-group, main #contact .container .content-rightblock .content-group {
         align-items: center;
@@ -1984,6 +1984,8 @@ footer {
         text-align: center; }
         main #team .container .content-rightblock a span:not(.label):not(.arrow-right), main #cases .container .content-rightblock a span:not(.label):not(.arrow-right), main #contact .container .content-rightblock a span:not(.label):not(.arrow-right) {
           margin-right: 0; }
+        main #team .container .content-rightblock a:before, main #cases .container .content-rightblock a:before, main #contact .container .content-rightblock a:before {
+          display: none; }
       main #team .container .content-rightblock p, main #cases .container .content-rightblock p, main #contact .container .content-rightblock p {
         text-align: center; }
       main #team .container .content-rightblock .arrow, main #cases .container .content-rightblock .arrow, main #contact .container .content-rightblock .arrow {
@@ -2003,10 +2005,10 @@ footer {
         color: #c10c43;
         font-family: "CooperHewittBold", sans-serif;
         text-transform: uppercase; }
+  main #team .container .content-rightblock a {
+    margin-bottom: 25%; }
   main #team .content-group {
-    margin-top: 0; }
-  main #team .links {
-    margin-bottom: 15%; }
+    margin-top: 3rem; }
   main #home-grid {
     grid-template-columns: 10% 1fr 5%;
     grid-template-rows: 1fr 100% 1fr;
