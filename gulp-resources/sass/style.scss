@@ -1064,6 +1064,24 @@ main {
             margin: 0 auto;
           }
         }
+
+        .more-button {
+          position: absolute;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          bottom: 0;
+          right: 0;
+          width: 2em;
+          height: 2em;
+          background: $color--white;
+
+          span {
+            color: $color--purplered;
+            font-size: $font--36;
+            font-family: $font--sans-bold;
+          }
+        }
       }
 
     }
@@ -1152,6 +1170,7 @@ footer {
         span {
           width: 32pt;
           box-shadow: 0px 1px 0px transparent;
+          background: $color--white;
 
           &:nth-child(1) {
             /*@include translate(-50%, 50%);
@@ -1633,7 +1652,7 @@ footer {
           }
 
           &:not(:last-child) {
-            margin-bottom: $font--36;
+            margin-bottom: $font--60;
             margin-right: 0;
           }
 
@@ -1654,7 +1673,7 @@ footer {
         a {
           color: $color--white;
           text-decoration: underline;
-          font-size: $font--20;
+          font-size: $font--22;
           @include transition(0.3s);
 
           &:hover {
@@ -1719,6 +1738,23 @@ footer {
 
       .overview {
         grid-gap: 25px;
+
+        .grid-item {
+          &.last-item {
+            p {
+              width: 80%;
+              line-height: 2em;
+            }
+          }
+
+          .more-button {
+            display: flex;
+          }
+
+          .grid-details {
+            display: none;
+          }
+        }
       }
 
       #members-grid, #cases-grid {

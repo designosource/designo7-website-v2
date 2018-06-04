@@ -55,6 +55,11 @@
                             <p class="second-detail"><?php echo $case['name']; ?></p>
                             <a title="<?php echo $case["title"]; ?>" href="<?php echo $case["shortname"]; ?>.php" class="third-detail">Meer info +</a>
                         </div>
+                        <a title="<?php echo $case["title"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
+                            <div class="more-button">
+                                <span>+</span>
+                            </div>
+                        </a>
                     </div>
                 <?php endforeach; ?>
 
