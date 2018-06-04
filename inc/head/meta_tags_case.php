@@ -1,4 +1,4 @@
-<meta name="description" content="<?php echo $caseinfo["description"]; ?>">
+<meta name="description" content="<?php echo $caseinfo["descriptionmeta"]; ?>">
 <meta name="author" content="Designosource">
 <meta name="subject" content="Designosource | <?php echo $caseinfo["name"]; ?>">
 <meta name="copyright" content="Designosource">
@@ -7,26 +7,25 @@
 <meta name="owner" content="Designosource">
 <meta name="url" content="http://www.designosource.be/team/<?php echo $caseinfo["shortname"]; ?>.php">
 <meta name="url" content="https://www.designosource.be/team/<?php echo $caseinfo["shortname"]; ?>.php">
-<meta name="identifier-URL" content="URL">
+<meta name="identifier-URL" content="http://www.designosource.be/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta property="og:title" content="Designosource | <?php echo $caseinfo["name"]; ?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.designosource.be/cases/<?php echo $caseinfo["shortname"]; ?>.php">
 <meta property="og:image" content="http://www.designosource.be/img/cases/og-<?php echo $caseinfo["shortname"]; ?>.png">
 <meta property="og:image:secure_url" content="https://www.designosource.be/img/cases/og-<?php echo $caseinfo["shortname"]; ?>.png">
-<meta property="og:image:alt" content="Photo of <?php echo $caseinfo["name"]; ?>">
+<meta property="og:image:alt" content="Designosource | OG image <?php echo ucfirst($caseinfo["shortname"]); ?>">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
-<meta property="og:description" content="<?php echo $caseinfo["description"]; ?>">
+<meta property="og:description" content="<?php echo $caseinfo["descriptionmeta"]; ?>">
 <meta property="og:locale" content="nl_BE">
 <meta property="og:site_name" content="Designosource | <?php echo $caseinfo["name"]; ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@designosource">
 <meta name="twitter:creator" content="@designosource">
 <meta name="twitter:title" content="Designosource | <?php echo $caseinfo["name"]; ?>">
-<meta name="twitter:description" content="<?php echo $caseinfo["description"]; ?>">
+<meta name="twitter:description" content="<?php echo $caseinfo["descriptionmeta"]; ?>">
 <meta name="twitter:image" content="Url Image png">
-<link rel="icon" type="image/png" href="OG Image png">
 <link rel="apple-touch-icon" href="Url link image 500x500 png">
 <link rel="apple-touch-icon" sizes="152x152" href="Url link image 152x152 png">
 <link rel="apple-touch-icon" sizes="180x180" href="Url link image 180x180 png">

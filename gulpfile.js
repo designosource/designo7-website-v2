@@ -60,7 +60,7 @@ gulp.task('css-prefix', function () {
 });
 
 /* IMAGE COMPRESS */
-gulp.task('images', ['imagesDefault', 'imagesMembers'], function(){
+gulp.task('images', ['imagesDefault', 'imagesMembers', 'imagesCases'], function(){
     gutil.log(gutil.colors.red('Compressing images'));
 });
 
@@ -78,6 +78,14 @@ gulp.task('imagesMembers', () =>
         .pipe(imagemin())
         .pipe(plumber.stop())
         .pipe(gulp.dest('img/members/'))
+);
+
+gulp.task('imagesCases', () =>
+    gulp.src('gulp-resources/img/cases/*')
+        .pipe(plumber())
+        .pipe(imagemin())
+        .pipe(plumber.stop())
+        .pipe(gulp.dest('img/cases/'))
 );
 /* Als er afbeeldingen in mappen komen, moeten we ervoor zorgen dat deze ook worden verkleind! */
 
