@@ -92,7 +92,7 @@ $cases = array(
         ),
         "website" => "http://www.klimkaffee.be/",
         "previousproject" => "tedx",
-        "nextproject" => "VR",
+        "nextproject" => "vr",
     ),
 	
 		"vr" => array(
