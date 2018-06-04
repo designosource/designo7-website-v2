@@ -1170,6 +1170,7 @@ footer {
         span {
           width: 32pt;
           box-shadow: 0px 1px 0px transparent;
+          background: $color--white;
 
           &:nth-child(1) {
             /*@include translate(-50%, 50%);
@@ -1651,7 +1652,7 @@ footer {
           }
 
           &:not(:last-child) {
-            margin-bottom: $font--36;
+            margin-bottom: $font--60;
             margin-right: 0;
           }
 
@@ -1672,7 +1673,7 @@ footer {
         a {
           color: $color--white;
           text-decoration: underline;
-          font-size: $font--20;
+          font-size: $font--22;
           @include transition(0.3s);
 
           &:hover {

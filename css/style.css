@@ -1502,7 +1502,8 @@ footer {
         width: 32pt; }
       footer .hamburger-menu .inner-hamburger-menu.open span {
         width: 32pt;
-        box-shadow: 0px 1px 0px transparent; }
+        box-shadow: 0px 1px 0px transparent;
+        background: #ffffff; }
         footer .hamburger-menu .inner-hamburger-menu.open span:nth-child(1) {
           /*@include translate(-50%, 50%);
             @include rotate(-45deg);*/
@@ -1907,7 +1908,7 @@ footer {
               -o-transition: 0.3s;
               transition: 0.3s; }
           footer .footer #footer-left a:not(:last-child) {
-            margin-bottom: 3rem;
+            margin-bottom: 5.5rem;
             margin-right: 0; }
           footer .footer #footer-left a:hover:after {
             width: calc(100% + 4pt); }
@@ -1919,7 +1920,7 @@ footer {
         footer .footer #footer-right a {
           color: #ffffff;
           text-decoration: underline;
-          font-size: 1.666rem;
+          font-size: 1.833rem;
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
