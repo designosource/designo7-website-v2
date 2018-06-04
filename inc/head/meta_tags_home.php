@@ -11,19 +11,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta property="og:title" content="Title">
 <meta property="og:type" content="website">
-<meta property="og:url" content="Url HTTP">
-<meta property="og:image" content="OG Image pad png">
-<meta property="og:image:secure_url" content="OG Image pad png HTTPS">
-<meta property="og:image:alt" content="Designosource | OG image ... page">
+<meta property="og:url" content="http://www.designosource.be/">
+<meta property="og:image" content="http://www.designosource.be/img/og-home.jpg">
+<meta property="og:image:secure_url" content="https://www.designosource.be/img/og-home.jpg">
+<meta property="og:image:alt" content="Designosource | OG image homepage">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta property="og:description" content="Description">
 <meta property="og:locale" content="nl_BE">
-<meta property="og:site_name" content="Naam website">
+<meta property="og:site_name" content="Designosource | Homepage">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@designosource">
 <meta name="twitter:creator" content="@designosource">
-<meta name="twitter:title" content="Titel Twitter card">
+<meta name="twitter:title" content="Designosource | Homepage">
 <meta name="twitter:description" content="Description">
 <meta name="twitter:image" content="Url Image png">
 <link rel="apple-touch-icon" href="Url link image 500x500 png">
@@ -31,7 +31,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="Url link image 180x180 png">
 <link rel="apple-touch-icon" sizes="167x167" href="Url link image 167x167 png">
 <link rel="apple-touch-startup-image" href="Url Image">
-<meta name="apple-mobile-web-app-title" content="Titel">
+<meta name="apple-mobile-web-app-title" content="Designosource | Homepage">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default-translucent">
 <meta name="apple-touch-fullscreen" content="yes">

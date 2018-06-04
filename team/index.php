@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include '../inc/head/meta_tags.php'; ?>
+    <?php include '../inc/head/meta_tags_overviewteam.php'; ?>
 
     <title>Team | Overview</title>
 
