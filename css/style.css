@@ -827,7 +827,7 @@ main {
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-        main .container .content-rightblock .content-group a:hover img {
+        main .container .content-rightblock .content-group a:hover img:not(#tm-logo) {
           -moz-transform: translate(10pt, 0);
           -webkit-transform: translate(10pt, 0);
           transform: translate(10pt, 0); }
@@ -1442,7 +1442,7 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #ffffff;
-  z-index: 2; }
+  z-index: 5; }
   footer .hamburger-menu {
     position: fixed;
     display: none;
@@ -2246,7 +2246,7 @@ footer {
 
 @media (max-width: 1024px) {
   html {
-    font-size: 8px; } }
+    font-size: 10px; } }
 
 ::-webkit-selection {
   background: rgba(33, 32, 58, 0.8);
