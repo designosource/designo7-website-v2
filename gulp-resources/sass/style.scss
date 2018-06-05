@@ -700,6 +700,9 @@ main {
       p, ol {
         margin-bottom: $font--22;
 				width: 100%;
+        b {
+          font-family: $font--sans-bold;
+        }
       }
 
     }
