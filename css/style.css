@@ -1608,7 +1608,8 @@ footer {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         width: 100%;
-        margin: 2em 0; }
+        margin: 2em 0;
+        font-size: 2.333rem; }
       main section .big-grid-2 .content-rightblock .member-information {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
