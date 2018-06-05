@@ -12,8 +12,8 @@
 <meta property="og:title" content="Designosource | <?php echo $caseinfo["name"]; ?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.designosource.be/cases/<?php echo $caseinfo["shortname"]; ?>.php">
-<meta property="og:image" content="http://www.designosource.be/img/cases/og-<?php echo $caseinfo["shortname"]; ?>.png">
-<meta property="og:image:secure_url" content="https://www.designosource.be/img/cases/og-<?php echo $caseinfo["shortname"]; ?>.png">
+<meta property="og:image" content="http://www.designosource.be/img/meta/og-home.jpg">
+<meta property="og:image:secure_url" content="https://www.designosource.be/img/meta/og-home.jpg">
 <meta property="og:image:alt" content="Designosource | OG image <?php echo ucfirst($caseinfo["shortname"]); ?>">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -25,9 +25,9 @@
 <meta name="twitter:creator" content="@designosource">
 <meta name="twitter:title" content="Designosource | <?php echo $caseinfo["name"]; ?>">
 <meta name="twitter:description" content="<?php echo $caseinfo["descriptionmeta"]; ?>">
-<meta name="twitter:image" content="http://www.designosource.be/img/cases/twitter-<?php echo $caseinfo["shortname"]; ?>.png">
-<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/apple-icon-180x180.png">
+<meta name="twitter:image" content="http://www.designosource.be/img/meta/og-team.jpg">
+<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/meta/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/meta/apple-icon-180x180.png">
 <meta name="apple-mobile-web-app-title" content="Designosource | <?php echo $caseinfo["name"]; ?>">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default-translucent">

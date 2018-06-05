@@ -12,8 +12,8 @@
 <meta property="og:title" content="Designosource | Wie zijn wij?">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.designosource.be/team/werkwijze.php">
-<meta property="og:image" content="http://www.designosource.be/img/team/og-werkwijze.jpg">
-<meta property="og:image:secure_url" content="https://www.designosource.be/img/team/og-werkwijze.jpg">
+<meta property="og:image" content="http://www.designosource.be/img/meta/og-team.jpg">
+<meta property="og:image:secure_url" content="https://www.designosource.be/img/meta/og-team.jpg">
 <meta property="og:image:alt" content="Designosource | OG image werkwijze page">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -26,8 +26,8 @@
 <meta name="twitter:title" content="Designosource | Werkwijze">
 <meta name="twitter:description" content="Een uniek agency als dat van Designosource vraagt ook om een unieke aanpak.">
 <meta name="twitter:image" content="http://www.designosource.be/img/team/twitter-werkwijze.png">
-<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/apple-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/meta/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/meta/apple-icon-180x180.png">
 <meta name="apple-mobile-web-app-title" content="Designosource | Werkwijze">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default-translucent">

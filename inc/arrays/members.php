@@ -154,11 +154,12 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
         "title" => "Concept Cowboy",
         "image" => "img/members/laura-1.jpg",
 				"imagehover" => "img/members/laura-2.jpg",
-        "quote" => '""<br>- Laura',
+        "quote" => '"Das leben ist kein Ponyhof"<br>- Laura',
         "linkedin" => "",
         "email" => "",
-        "description" => "<p>Description Of The Member</p>",
-				"descriptionmeta" => "Description Of The Member",
+        "description" => "<p>Howdy partner! Concept cowboy Laura is gezadeld en klaar om met jou de gekste concepten te bedenken. Of het nu gaat om een website, een nieuwe branding of een voorstelling, Laura bedenkt samen met jou een concept dat bekendheid krijgt van hier tot in het Wilde Westen.</p><p>Je herkent haar niet enkel aan haar cowboy hoed maar je zal haar ook steevast horen meezingen met haar favoriete platen. Met haar kudde trekt ze graag naar Azië en ze trekt vlot haar plan met een woordje Chinees.</p>",
+				"descriptionmeta" => "Concept cowboy Laura is gezadeld en klaar om met jou de gekste concepten te bedenken. Of het nu gaat om een website, een nieuwe branding of een voorstelling, Laura bedenkt samen met jou een concept dat bekendheid krijgt van hier tot in het Wilde Westen.Je herkent haar niet enkel aan haar cowboy hoed maar je zal haar ook steevast horen meezingen met haar favoriete platen. Met haar kudde trekt ze graag naar Azië en ze trekt vlot haar plan met een woordje Chinees.
+",
         "website" => "http://www.laurapeeters.be",
 				"previous" => "larissa",
 				"next" => "pieterjan"
