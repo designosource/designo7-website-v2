@@ -1400,9 +1400,10 @@ footer {
           /*padding: 0 12.5%;*/
           position: relative;
 
-          p {
+          p:not(.member-quote) {
             margin-bottom: 2em;
             width: 100%;
+            padding: 0 6pt;
           }
 
           .member-nickname {

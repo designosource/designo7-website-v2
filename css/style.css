@@ -1651,9 +1651,10 @@ footer {
         padding-right: 0;
         /*padding: 0 12.5%;*/
         position: relative; }
-        main section .big-grid-2 .content-rightblock p {
+        main section .big-grid-2 .content-rightblock p:not(.member-quote) {
           margin-bottom: 2em;
-          width: 100%; }
+          width: 100%;
+          padding: 0 6pt; }
         main section .big-grid-2 .content-rightblock .member-nickname {
           flex-basis: 100%;
           width: 100%;
