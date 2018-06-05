@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Source Sans Pro Semibold";
-  src: url("../fonts/SourceSansPro-Sembibold.ttf"); }
+  src: url("../fonts/SourceSansPro-SemiBold.ttf"); }
 
 @font-face {
   font-family: "Source Sans Pro Bold";
@@ -1553,7 +1553,7 @@ footer {
   #logo {
     display: none; }
   main section .big-grid {
-    grid-template-rows: 75px 85px 200px 80pt auto;
+    grid-template-rows: 90px 45px 160px 80pt auto;
     grid-column-gap: 10pt;
     min-height: 100vh;
     height: auto;
@@ -1586,7 +1586,8 @@ footer {
       align-items: center;
       justify-content: center;
       padding-top: 0.25em;
-      text-align: center; }
+      text-align: center;
+      font-size: 4.5rem; }
     main section .big-grid .content-rightblock {
       position: relative;
       grid-row-start: 5;

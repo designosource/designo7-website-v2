@@ -1274,7 +1274,7 @@ footer {
     section {
 
       .big-grid {
-        grid-template-rows: 75px 85px 200px 80pt auto;
+        grid-template-rows: 90px 45px 160px 80pt auto;
         grid-column-gap: 10pt;
         min-height: 100vh;
         height: auto;
@@ -1317,6 +1317,7 @@ footer {
           @include center-flex(both);
           padding-top: 0.25em;
           text-align: center;
+          font-size: $font--50;
         }
 
         .content-rightblock {
