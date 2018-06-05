@@ -622,6 +622,7 @@ main {
       grid-row-end: 6;
       grid-column-start: 1;
       grid-column-end: 11;
+      overflow: hidden;
       &:before {
         @include pseudo;
         width: 100%;
@@ -645,6 +646,7 @@ main {
       grid-column-end: 16;
       z-index: 2;
       position: relative;
+      overflow: hidden;
 
       .slick-arrow {
         top: calc(100% - 20pt);
