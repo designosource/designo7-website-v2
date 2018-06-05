@@ -39,7 +39,7 @@
         <div class="maxwidth">
             <div class="previous-next-page">
 
-                <a href="../index.php#cases"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
+                <a title="Vorige pagina" href="../index.php#cases"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>vorige pagina</span></a>
 
             </div>
 

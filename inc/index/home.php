@@ -10,7 +10,7 @@
         <div id="home-line"></div>
         <!--<img src="img/scroll-icon.svg" alt="Scroll" id="scroll">-->
         
-        <a id="scroll" href="#team">
+        <a title="Scroll to team" id="scroll" href="#team">
         	<div>
         		<div class="scroll-line"></div>
         	</div>

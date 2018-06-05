@@ -818,7 +818,7 @@ main {
       grid-row-start: 3;
       grid-row-end: 4;
       grid-column-start: 12;
-      grid-column-end: 17;
+      grid-column-end: 21;
 
       @include center-flex(vertical);
     }
@@ -877,7 +877,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 12;
-    grid-column-end: 17;
+    grid-column-end: 21;
     @include center-flex(vertical);
 
     a {

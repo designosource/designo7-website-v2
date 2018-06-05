@@ -35,15 +35,15 @@
 						<?php echo $caseinfo["description"]; ?>
 
 						<?php if( !empty( $caseinfo["website"] ) ): ?>
-						<a title="Website" href="<?php echo $caseinfo["website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
+						<a target="_blank" title="Website" href="<?php echo $caseinfo["website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
 						<?php endif; ?>
 				</article>
 			</div>
 			
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
-					<a class="previous" href="<?php echo $caseinfo["previousproject"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($caseinfo["previousproject"]); ?></span></a>
-					<a class="next" href="<?php echo $caseinfo["nextproject"]; ?>.php"><span><?php echo ucfirst($caseinfo["nextproject"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+					<a title="<?php echo ucfirst($caseinfo["previousproject"]); ?>" class="previous" href="<?php echo $caseinfo["previousproject"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($caseinfo["previousproject"]); ?></span></a>
+					<a title="<?php echo ucfirst($caseinfo["nextproject"]); ?>" class="next" href="<?php echo $caseinfo["nextproject"]; ?>.php"><span><?php echo ucfirst($caseinfo["nextproject"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>
 			
@@ -57,7 +57,7 @@
 
 						<?php foreach($cases as $case): ?>
 						
-						<a  title="<?php echo $case["name"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
+						<a title="<?php echo $case["name"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
 							<div style="background-image: url('<?php echo /* $prefix . */ $case["image"]; ?>');">
 								<h3><?php echo $case["name"]; ?></h3>
 							</div>
