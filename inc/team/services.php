@@ -6,9 +6,9 @@
 			<div class="previous-next-page">
 
 				<a title="Vorige pagina" href="werkwijze.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>Werkwijze</span></a>
-				
+
 				<a title="Overzicht" href="../team/"><img src="../img/team-icon-dark.svg" alt="icon team page" onmouseover="$(this).attr('src','../img/team-icon-red.svg').css('transition', '0.4s');" onmouseleave="$(this).attr('src','../img/team-icon-dark.svg').css('transition', '0.4s');" ></a>
-				
+
 				<a title="Wat pagina" href="wat.php"><span>Wie zijn wij?</span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
 
 			</div>
@@ -21,13 +21,14 @@
 </p>
 					<a title="Contact" href="../index.php#contact" class="btn">Contacteer ons<span class="arrow-right"></span></a>
 			</article>
-			
+
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
 					<a title="Werkwijze" class="previous" href="werkwijze.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span>Onze werkwijze</span></a>
+                    <a title="Team" href="../team/"><img src="../img/team-icon-white.svg" alt="icon team page"></a>
 					<a title="Wie zijn wij?" class="next" href="wat.php"><span>Wie zijn wij?</span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>
-			
+
 		</div> <!-- /maxwidth -->
 	</section>

@@ -1573,12 +1573,12 @@ footer {
           height: 100%;
           @include center-flex(vertical);
           justify-content: space-between;
-          padding-left: 2.5%;
-          padding-right: 2.5%;
+          padding-left: 5%;
+          padding-right: 5%;
 
           a {
             @include center-flex(both);
-            flex-basis: 45%;
+            flex-basis: 40%;
             color: $color--white;
             font-family: $font--cooper--bold;
             font-size: $font--16;
@@ -1590,6 +1590,7 @@ footer {
               margin-left: 10pt;
               margin-right: 10pt;
               @include transition(0.3s);
+              text-align: center;
             }
 
             img {
