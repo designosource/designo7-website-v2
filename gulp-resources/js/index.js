@@ -32,6 +32,7 @@ $(document).ready(function(){
 	
 	$(".hamburger-menu").on("click", function(){
 		$(".inner-hamburger-menu").toggleClass("open");
+        $(".footer").fadeToggle('fast', 'linear');
 		
 		if( $(".inner-hamburger-menu").hasClass("open") ) {
 			console.log("Hamburger menu is opened");
