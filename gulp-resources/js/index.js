@@ -39,7 +39,7 @@ $(document).ready(function(){
 			$(".footer").css('display', 'flex');
 		} else {
 			console.log("Hamburger menu is closed");
-			$(".footer").css('display', 'none');
+			// $(".footer").css('display', 'none');
 		}
 		
 	});
