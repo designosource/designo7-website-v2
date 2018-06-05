@@ -25,7 +25,8 @@
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
 					<a title="Wat doen wij?" class="previous" href="services.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span>Wat doen wij?</span></a>
-					<a title="Werkwijze" class="next" href="werkwijze.php"><span>Onze werkwijze</span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
+                    <a title="Team" href="../team/"><img src="../img/team-icon-white.svg" alt="icon team page"></a>
+                    <a title="Werkwijze" class="next" href="werkwijze.php"><span>Onze werkwijze</span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>
 			
