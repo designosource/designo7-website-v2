@@ -25,7 +25,7 @@
 <meta name="twitter:creator" content="@designosource">
 <meta name="twitter:title" content="Designosource | <?php echo $memberinfo["name"]; ?>">
 <meta name="twitter:description" content="<?php echo $memberinfo["descriptionmeta"]; ?>">
-<meta name="twitter:image" content="http://www.designosource.be/img/team/twitter-<?php echo $caseinfo["shortname"]; ?>.png">
+<meta name="twitter:image" content="http://www.designosource.be/img/meta/twitter-team.jpg">
 <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/meta/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/meta/apple-icon-180x180.png">
 <meta name="apple-mobile-web-app-title" content="Designosource | <?php echo $memberinfo["name"]; ?>">
