@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Source Sans Pro Semibold";
-  src: url("../fonts/SourceSansPro-Sembibold.ttf"); }
+  src: url("../fonts/SourceSansPro-SemiBold.ttf"); }
 
 @font-face {
   font-family: "Source Sans Pro Bold";
@@ -2193,42 +2193,6 @@ footer {
   100% {
     margin-top: 6px;
     opacity: 0; } }
-
-.caroline {
-  background-image: url("../img/members/caroline.jpg"); }
-
-.chiara {
-  background-image: url("../img/members/chiara.jpg"); }
-
-.chris {
-  background-image: url("../img/members/chris.jpg"); }
-
-.hanna {
-  background-image: url("../img/members/hanna.jpg"); }
-
-.joris {
-  background-image: url("../img/members/joris.jpg"); }
-
-.larissa {
-  background-image: url("../img/members/larissa.jpg"); }
-
-.laura {
-  background-image: url("../img/members/laura.jpg"); }
-
-.lino {
-  background-image: url("../img/members/lino.jpg"); }
-
-.lisa {
-  background-image: url("../img/members/lisa.jpg"); }
-
-.pieterjan {
-  background-image: url("../img/members/pieterjan.jpg"); }
-
-.risa {
-  background-image: url("../img/members/risa.jpg"); }
-
-.sander {
-  background-image: url("../img/members/sander.jpg"); }
 
 @media (min-width: 1920px) {
   html {
