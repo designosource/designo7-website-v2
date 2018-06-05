@@ -44,7 +44,7 @@ $members = array(
         "linkedin" => "https://www.linkedin.com/in/hanna-walgrave/",
         "email" => "Walgrave.hanna@hotmail.com",
         "description" => "<p>Ready for lift-off? Want Hanna neemt je mee naar outer space. Als animation astronaut ligt haar passie bij het animeren van zowat alles wat animeerbaar is. Ze is een gedreven front-ender die zowel development als design skills in zich heeft. Verder kan je bij haar terecht voor levenswijsheden tot en met 29 jaar.</p><p>Wanneer ze niet op ruimtevaart is houdt ze zich bezig met haar creatieve hobby’s, muziek en fotografie en dit graag in goed gezelschap. Haar ambitie in het leven? Gewoon gelukkig zijn, meer moet dat niet zijn!</p>",
-				"descriptionmeta" => "Ready for lift-off? Want Hanna neemt je mee naar outer space. Als animation astronaut ligt haar passie bij het animeren van zowat alles wat animeerbaar is. Ze is een gedreven front-ender die zowel development als design skills in zich heeft. Verder kan je bij haar terecht voor levenswijsheden tot en met 29 jaar.</p><p>Wanneer ze niet op ruimtevaart is houdt ze zich bezig met haar creatieve hobby’s, muziek en fotografie en dit graag in goed gezelschap. Haar ambitie in het leven? Gewoon gelukkig zijn, meer moet dat niet zijn!",
+				"descriptionmeta" => "Ready for lift-off? Want Hanna neemt je mee naar outer space. Als animation astronaut ligt haar passie bij het animeren van zowat alles wat animeerbaar is. Ze is een gedreven front-ender die zowel development als design skills in zich heeft. Verder kan je bij haar terecht voor levenswijsheden tot en met 29 jaar. Wanneer ze niet op ruimtevaart is houdt ze zich bezig met haar creatieve hobby’s, muziek en fotografie en dit graag in goed gezelschap. Haar ambitie in het leven? Gewoon gelukkig zijn, meer moet dat niet zijn!",
         "website" => "http://www.hannawalgrave.be",
 				"previous" => "chris",
 				"next" => "joris"
@@ -110,7 +110,7 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
         "linkedin" => "https://www.linkedin.com/in/caroline-boeykens-1771a7121/",
         "email" => "carolineboeykens@gmail.com",
         "description" => "<p>Ready for departure? PHP Pilot Caroline neemt je mee naar destination code. In haar cockpit bouwt ze de éne website na de andere en dat liefst in Craft CMS. Wil je tijdens de vlucht een goede serie zien of een nieuwe band ontdekken? Pilot Caroline somt er zo 20 voor je op.</p><p>Wanneer ze niet in de lucht hangt zoekt ze de snelheid anders op door met haar brommer door de straten te cruisen. En hoe verder hoe beter want ze hoopt later nog heel veel van de wereld te kunnen zien.</p>",
-				"descriptionmeta" => "Ready for departure? PHP Pilot Caroline neemt je mee naar destination code. In haar cockpit bouwt ze de éne website na de andere en dat liefst in Craft CMS. Wil je tijdens de vlucht een goede serie zien of een nieuwe band ontdekken? Pilot Caroline somt er zo 20 voor je op.</p><p>Wanneer ze niet in de lucht hangt zoekt ze de snelheid anders op door met haar brommer door de straten te cruisen. En hoe verder hoe beter want ze hoopt later nog heel veel van de wereld te kunnen zien.",
+				"descriptionmeta" => "Ready for departure? PHP Pilot Caroline neemt je mee naar destination code. In haar cockpit bouwt ze de éne website na de andere en dat liefst in Craft CMS. Wil je tijdens de vlucht een goede serie zien of een nieuwe band ontdekken? Pilot Caroline somt er zo 20 voor je op. Wanneer ze niet in de lucht hangt zoekt ze de snelheid anders op door met haar brommer door de straten te cruisen. En hoe verder hoe beter want ze hoopt later nog heel veel van de wereld te kunnen zien.",
         "website" => "http://www.carolineboeykens.be/",
 				"previous" => "lisa",
 				"next" => "chiara"
@@ -158,8 +158,7 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
         "linkedin" => "",
         "email" => "",
         "description" => "<p>Howdy partner! Concept cowboy Laura is gezadeld en klaar om met jou de gekste concepten te bedenken. Of het nu gaat om een website, een nieuwe branding of een voorstelling, Laura bedenkt samen met jou een concept dat bekendheid krijgt van hier tot in het Wilde Westen.</p><p>Je herkent haar niet enkel aan haar cowboy hoed maar je zal haar ook steevast horen meezingen met haar favoriete platen. Met haar kudde trekt ze graag naar Azië en ze trekt vlot haar plan met een woordje Chinees.</p>",
-				"descriptionmeta" => "Concept cowboy Laura is gezadeld en klaar om met jou de gekste concepten te bedenken. Of het nu gaat om een website, een nieuwe branding of een voorstelling, Laura bedenkt samen met jou een concept dat bekendheid krijgt van hier tot in het Wilde Westen.Je herkent haar niet enkel aan haar cowboy hoed maar je zal haar ook steevast horen meezingen met haar favoriete platen. Met haar kudde trekt ze graag naar Azië en ze trekt vlot haar plan met een woordje Chinees.
-",
+				"descriptionmeta" => "Concept cowboy Laura is gezadeld en klaar om met jou de gekste concepten te bedenken. Of het nu gaat om een website, een nieuwe branding of een voorstelling, Laura bedenkt samen met jou een concept dat bekendheid krijgt van hier tot in het Wilde Westen.Je herkent haar niet enkel aan haar cowboy hoed maar je zal haar ook steevast horen meezingen met haar favoriete platen. Met haar kudde trekt ze graag naar Azië en ze trekt vlot haar plan met een woordje Chinees.",
         "website" => "http://www.laurapeeters.be",
 				"previous" => "larissa",
 				"next" => "pieterjan"
