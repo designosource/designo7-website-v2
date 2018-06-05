@@ -1,4 +1,4 @@
-<meta name="description" content="Designosource ademt digitaal, en daarom is geen enkele creatieve uitdaging hen teveel. Met een “out-of-the-box” aanpak leveren zij (digitale) oplossingen die perfect beantwoorden aan de vraag van onze klant.">
+<meta name="description" content="Designosource is een creative agency bestaande uit 12 studenten Interactive Multimedia Design. Gaande van development nerds tot interface queens en van design hipsters tot sushi lovers, vormen zij een uniek en vooral enthousiast team.">
 <meta name="author" content="Designosource">
 <meta name="subject" content="Designosource">
 <meta name="copyright" content="Designosource">
@@ -17,15 +17,15 @@
 <meta property="og:image:alt" content="Designosource | OG image services page">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
-<meta property="og:description" content="Designosource ademt digitaal, en daarom is geen enkele creatieve uitdaging hen teveel. Met een “out-of-the-box” aanpak leveren zij (digitale) oplossingen die perfect beantwoorden aan de vraag van onze klant.">
+<meta property="og:description" content="Designosource is een creative agency bestaande uit 12 studenten Interactive Multimedia Design. Gaande van development nerds tot interface queens en van design hipsters tot sushi lovers, vormen zij een uniek en vooral enthousiast team.">
 <meta property="og:locale" content="nl_BE">
 <meta property="og:site_name" content="Designosource | Wat doen we?">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@designosource">
 <meta name="twitter:creator" content="@designosource">
 <meta name="twitter:title" content="Designosource | Wat doen we?">
-<meta name="twitter:description" content="Designosource ademt digitaal, en daarom is geen enkele creatieve uitdaging hen teveel. Met een “out-of-the-box” aanpak leveren zij (digitale) oplossingen die perfect beantwoorden aan de vraag van onze klant.">
-<meta name="twitter:image" content="http://www.designosource.be/img/team/twitter-services.png">
+<meta name="twitter:description" content="Designosource is een creative agency bestaande uit 12 studenten Interactive Multimedia Design. Gaande van development nerds tot interface queens en van design hipsters tot sushi lovers, vormen zij een uniek en vooral enthousiast team.">
+<meta name="twitter:image" content="http://www.designosource.be/img/meta/twitter-team.jpg">
 <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/meta/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/meta/apple-icon-180x180.png">
 <meta name="apple-mobile-web-app-title" content="Designosource | Wat doen we?">
