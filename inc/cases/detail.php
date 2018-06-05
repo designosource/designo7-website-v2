@@ -1,4 +1,4 @@
-<section class="casepage" id="<?php echo $caseinfo["shortname"]; ?>">
+<section class="casepage">
   	<div class="container big-grid maxwidth">
 			<!--<figure class="content-image overlay"></figure>-->
 			<div class="slick-container overlay">
