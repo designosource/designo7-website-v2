@@ -1317,6 +1317,7 @@ footer {
           @include center-flex(both);
           padding-top: 0.25em;
           text-align: center;
+          font-size: $font--50;
         }
 
         .content-rightblock {

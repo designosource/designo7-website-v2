@@ -1586,7 +1586,8 @@ footer {
       align-items: center;
       justify-content: center;
       padding-top: 0.25em;
-      text-align: center; }
+      text-align: center;
+      font-size: 4.5rem; }
     main section .big-grid .content-rightblock {
       position: relative;
       grid-row-start: 5;
