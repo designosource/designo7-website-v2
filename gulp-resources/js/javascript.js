@@ -19,7 +19,7 @@ if (window.matchMedia('(max-width: 720px)').matches) {
     sr.reveal('#cases .content-image', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
     sr.reveal('#cases .content-group', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 750, viewFactor: 0.5 });
 
-    sr.reveal('#contact .title-group', { duration: 1000, origin: 'top', distance: '20vh', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
+    sr.reveal('#contact .title-group', { duration: 1000, origin: 'top', distance: '10vh', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
     sr.reveal('#contact .content-image', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
     sr.reveal('#contact .content-group', { duration: 1000, origin: 'bottom', distance: '20vh', scale: 1, opacity: 0, delay: 750, viewFactor: 0.5 });
 	
