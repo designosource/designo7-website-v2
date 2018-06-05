@@ -1732,6 +1732,10 @@ footer {
         .grid-item {
           height: 200px;
 
+          .more-button {
+            display: flex;
+          }
+
           img {
             height: 100%;
           }

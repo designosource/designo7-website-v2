@@ -1964,6 +1964,8 @@ footer {
       grid-gap: 40px; }
       main .page-container .overview .grid-item {
         height: 200px; }
+        main .page-container .overview .grid-item .more-button {
+          display: flex; }
         main .page-container .overview .grid-item img {
           height: 100%; }
     main .page-container #members-grid, main .page-container #cases-grid {
