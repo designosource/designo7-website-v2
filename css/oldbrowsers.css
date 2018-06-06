@@ -798,7 +798,7 @@ main {
       flex-basis: 62.5%;
       position: relative;
       height: 100%; }
-    main .container-flex .content-rightblock {
+    main .container-flex .section-flex-right {
       flex-basis: 37.5%;
       position: relative;
       height: 100%;
@@ -806,40 +806,40 @@ main {
       margin-top: 3%;
       padding-left: 5%;
       margin-right: 5%; }
-      main .container-flex .content-rightblock .content-group {
+      main .container-flex .section-flex-right .content-group {
         display: flex;
         flex-direction: column;
         align-items: flex-start; }
-        main .container-flex .content-rightblock .content-group a img {
+        main .container-flex .section-flex-right .content-group a img {
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-          main .container-flex .content-rightblock .content-group a img:hover {
+          main .container-flex .section-flex-right .content-group a img:hover {
             -webkit-transition: 0.3s;
             -moz-transition: 0.3s;
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-        main .container-flex .content-rightblock .content-group a:hover img:not(#tm-logo) {
+        main .container-flex .section-flex-right .content-group a:hover img:not(#tm-logo) {
           -moz-transform: translate(10pt, 0);
           -webkit-transform: translate(10pt, 0);
           transform: translate(10pt, 0); }
-        main .container-flex .content-rightblock .content-group p:nth-child(2) {
+        main .container-flex .section-flex-right .content-group p:nth-child(2) {
           margin-bottom: 5%; }
-      main .container-flex .content-rightblock .page-number {
+      main .container-flex .section-flex-right .page-number {
         color: #c10c43;
         font-size: 3rem;
         font-family: "CooperHewittBold", sans-serif;
         position: relative;
         padding-top: 0.5em; }
-      main .container-flex .content-rightblock h2 {
+      main .container-flex .section-flex-right h2 {
         font-size: 8.75rem;
         font-family: "CooperHewittBold", sans-serif;
         margin-top: 3%;
         margin-bottom: 5%; }
-      main .container-flex .content-rightblock a {
+      main .container-flex .section-flex-right a {
         font-size: 2.666rem;
         margin-bottom: 5%;
         font-family: "CooperHewittBook", sans-serif;
@@ -848,16 +848,16 @@ main {
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-        main .container-flex .content-rightblock a:hover {
+        main .container-flex .section-flex-right a:hover {
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        main .container-flex .content-rightblock a span:not(.label):not(.arrow-right) {
+        main .container-flex .section-flex-right a span:not(.label):not(.arrow-right) {
           position: relative;
           margin-right: 15pt; }
-          main .container-flex .content-rightblock a span:not(.label):not(.arrow-right):before {
+          main .container-flex .section-flex-right a span:not(.label):not(.arrow-right):before {
             content: "";
             display: block;
             position: absolute;
@@ -871,29 +871,29 @@ main {
             -ms-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s; }
-            main .container-flex .content-rightblock a span:not(.label):not(.arrow-right):before:hover {
+            main .container-flex .section-flex-right a span:not(.label):not(.arrow-right):before:hover {
               -webkit-transition: 0.3s;
               -moz-transition: 0.3s;
               -ms-transition: 0.3s;
               -o-transition: 0.3s;
               transition: 0.3s; }
-        main .container-flex .content-rightblock a img {
+        main .container-flex .section-flex-right a img {
           height: 0.6em; }
-        main .container-flex .content-rightblock a:hover:not(.btn) span:before {
+        main .container-flex .section-flex-right a:hover:not(.btn) span:before {
           right: -10px; }
-      main .container-flex .content-rightblock p {
+      main .container-flex .section-flex-right p {
         font-family: "Source Sans Pro Light", sans-serif;
         font-weight: lighter;
         font-size: 1.833rem;
         line-height: 2.333rem;
         margin-bottom: 10%; }
-      main .container-flex .content-rightblock #contact-intro {
+      main .container-flex .section-flex-right #contact-intro {
         font-family: "CooperHewittBold", sans-serif;
         margin-bottom: 3%; }
-      main .container-flex .content-rightblock #tm-logo {
+      main .container-flex .section-flex-right #tm-logo {
         width: 110px;
         height: auto; }
-      main .container-flex .content-rightblock #email {
+      main .container-flex .section-flex-right #email {
         font-size: 1.833rem;
         margin-bottom: 50px;
         -webkit-transition: 0.3s;
@@ -901,17 +901,17 @@ main {
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-        main .container-flex .content-rightblock #email:hover {
+        main .container-flex .section-flex-right #email:hover {
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-        main .container-flex .content-rightblock #email:hover {
+        main .container-flex .section-flex-right #email:hover {
           color: #c10c43; }
-      main .container-flex .content-rightblock #partner {
+      main .container-flex .section-flex-right #partner {
         margin-bottom: 20px; }
-      main .container-flex .content-rightblock .label {
+      main .container-flex .section-flex-right .label {
         color: #c10c43;
         font-family: "Source Sans Pro Semibold", sans-serif;
         text-transform: uppercase; }

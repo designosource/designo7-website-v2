@@ -5,7 +5,7 @@
     <div class="container maxwidth">
         <div class="container-flex">
             <figure class="content-image" id="team-image"></figure>
-            <article class="content-rightblock">
+            <article class="section-flex-right">
                 <div class="title-group">
                     <span class="page-number">02/</span>
                     <h2>Team</h2>

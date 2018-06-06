@@ -2,7 +2,7 @@
     <div class="container maxwidth">
         <div class="container-flex">
             <figure class="content-image"></figure>
-            <article class="content-rightblock">
+            <article class="section-flex-right">
                 <div class="title-group">
                     <span class="page-number">03/</span>
                     <h2>Cases</h2>

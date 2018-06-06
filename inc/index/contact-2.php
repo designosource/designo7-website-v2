@@ -2,7 +2,7 @@
     <div class="container maxwidth">
         <div class="container-flex">
             <figure class="content-image"></figure>
-            <article class="content-rightblock">
+            <article class="section-flex-right">
                 <div class="title-group">
                     <span class="page-number text-red">04/</span>
                     <h2>Contact</h2>
