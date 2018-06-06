@@ -1,4 +1,4 @@
-<section id="intro"
+<section id="intro" style="display: none;"
   	<?php 
 		if(isset( $_SESSION['intro'] ) ){ /*echo 'style="display: none;"';*/}else{ $_SESSION['intro'] = ""; }
 		?>

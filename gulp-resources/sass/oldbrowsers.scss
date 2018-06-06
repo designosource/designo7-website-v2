@@ -285,26 +285,32 @@ main {
     }
 
     .links {
-      margin-bottom: 20%;
+      margin-bottom: 10%;
     }
   }
 
-  .container {
-    min-height: calc(100vh - #{$footer--height});
-    position: relative;
+  .container-flex {
+    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
 
     .content-image {
-      width: 100%;
+      flex-basis: 62.5%;
+      position: relative;
       height: 100%;
     }
 
     .content-rightblock {
-      width: 100%;
-      margin-top: 15%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      flex-basis: 37.5%;
+      position: relative;
+      height: 100%;
       z-index: 5;
+      margin-top: 3%;
+      padding-left: 5%;
+      margin-right: 5%;
 
       .content-group {
         display: flex;
