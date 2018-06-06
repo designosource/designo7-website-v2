@@ -29,14 +29,19 @@
 				<h1><?php echo $caseinfo["name"]; ?></h1>
 
 				<article class="content-rightblock scrollbar">
+						
+						<div class="inner-content-rightblock">
 
-						<div class="carousel-pop-up-button"></div>
+							<div class="carousel-pop-up-button"></div>
 
-						<?php echo $caseinfo["description"]; ?>
+							<?php echo $caseinfo["description"]; ?>
 
-						<?php if( !empty( $caseinfo["website"] ) ): ?>
-						<a target="_blank" title="Website" href="<?php echo $caseinfo["website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
-						<?php endif; ?>
+							<?php if( !empty( $caseinfo["website"] ) ): ?>
+							<a target="_blank" title="Website" href="<?php echo $caseinfo["website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
+							<?php endif; ?>
+						
+						</div>
+						
 				</article>
 			</div>
 			

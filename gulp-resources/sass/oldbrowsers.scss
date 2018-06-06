@@ -601,6 +601,34 @@ main {
       margin-bottom: 10%;
     }
   }
+	
+	.content-rightblock {
+		overflow-y: auto;
+		margin-top: 0;
+		font-size: $font--22;
+		font-family: $font--sans;
+		font-weight: 300;
+		line-height: $font--32;
+		padding-right: 1em;
+		display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+		
+		.inner-content-rightblock {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		p, ol {
+			margin-bottom: $font--22;
+			width: 100%;
+			b {
+				font-family: $font--sans-semibold;
+			}
+		}
+
+	}
 
   .big-grid {
     height: calc(100vh - 60px - 60px);
@@ -740,25 +768,6 @@ main {
       display: flex;
       align-items: flex-start;
       padding-top: 4pt;
-    }
-
-    .content-rightblock {
-      overflow-y: auto;
-      margin-top: 0;
-      font-size: $font--22;
-      font-family: $font--sans;
-      font-weight: 300;
-      line-height: $font--32;
-      padding-right: 1em;
-
-      p, ol {
-        margin-bottom: $font--22;
-        width: 100%;
-        b {
-          font-family: $font--sans-semibold;
-        }
-      }
-
     }
 
   }
@@ -1354,10 +1363,36 @@ footer {
         min-height: 100vh;
         height: auto;
         margin-bottom: calc(42pt + 2em);
+        margin-top: 0;
+        margin-bottom: 2em;
+        position: relative;
+				display: block;
+				
+				.big-grid-flex-left, .big-grid-flex-right {
+					width: 100%;
+				}
+				
+				.big-grid-flex-left {
+					height: 135px;
+				}
 
         .overlay {
-          /*grid*/
+          position: absolute;
+					display: block;
+					left: 0;
+					right: 0;
+					height: 135px;
         }
+				
+				.pop-up-image {
+					position: absolute;
+					display: block;
+					left: 30px;
+					right: 30px;
+					top: 80px;
+					height: 205px;
+					@include translate(none);
+				}
 
         .pop-up-image {
           background-position: center 35%;
@@ -1378,6 +1413,9 @@ footer {
         }
 
         h1 {
+					position: absolute;
+					top: 285px;
+					height: 120px;
           @include center-flex(both);
           padding-top: 0.25em;
           text-align: center;
@@ -1385,10 +1423,17 @@ footer {
         }
 
         .content-rightblock {
-          position: relative;
+          position: absolute;
+					top: 405px;
+					left: 30px;
+					right: 30px;
           margin-top: 0;
           padding: 0;
           text-align: center;
+					
+					.inner-content-rightblock {
+						position: relative;
+					}
 
           a {
             @include push-auto;

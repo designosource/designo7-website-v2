@@ -44,18 +44,22 @@
 					</article>
 
 					<article class="content-rightblock scrollbar">
+							
+							<div class="inner-content-rightblock">
 
-							<div class="carousel-pop-up-button"></div>
+								<div class="carousel-pop-up-button"></div>
 
-							<h2 class="member-nickname"><?php echo $memberinfo["title"]; ?></h2>
+								<h2 class="member-nickname"><?php echo $memberinfo["title"]; ?></h2>
 
-							<?php echo $memberinfo["description"]; ?>
+								<?php echo $memberinfo["description"]; ?>
 
-							<?php if( !empty($memberinfo["website"]) ): ?>
+								<?php if( !empty($memberinfo["website"]) ): ?>
 
-							<a title="Website <?php echo ucfirst($pagename); ?>" target="_blank" href="<?php echo $memberinfo["website"]; ?>" class="btn">Bekijk website<span class="arrow-right"></span></a>
+								<a title="Website <?php echo ucfirst($pagename); ?>" target="_blank" href="<?php echo $memberinfo["website"]; ?>" class="btn">Bekijk website<span class="arrow-right"></span></a>
 
-							<?php endif; ?>
+								<?php endif; ?>
+							
+							</div>
 
 					</article>
 			

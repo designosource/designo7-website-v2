@@ -1055,6 +1055,26 @@ main {
       background-position: center; }
     main #contact .content-rightblock h2 {
       margin-bottom: 10%; }
+  main .content-rightblock {
+    overflow-y: auto;
+    margin-top: 0;
+    font-size: 1.833rem;
+    font-family: "Source Sans Pro Light", sans-serif;
+    font-weight: 300;
+    line-height: 2.666rem;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    main .content-rightblock .inner-content-rightblock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+    main .content-rightblock p, main .content-rightblock ol {
+      margin-bottom: 1.833rem;
+      width: 100%; }
+      main .content-rightblock p b, main .content-rightblock ol b {
+        font-family: "Source Sans Pro Semibold", sans-serif; }
   main .big-grid {
     height: calc(100vh - 60px - 60px);
     min-height: calc(100vh - 60px - 60px);
@@ -1153,19 +1173,6 @@ main {
       display: flex;
       align-items: flex-start;
       padding-top: 4pt; }
-    main .big-grid .content-rightblock {
-      overflow-y: auto;
-      margin-top: 0;
-      font-size: 1.833rem;
-      font-family: "Source Sans Pro Light", sans-serif;
-      font-weight: 300;
-      line-height: 2.666rem;
-      padding-right: 1em; }
-      main .big-grid .content-rightblock p, main .big-grid .content-rightblock ol {
-        margin-bottom: 1.833rem;
-        width: 100%; }
-        main .big-grid .content-rightblock p b, main .big-grid .content-rightblock ol b {
-          font-family: "Source Sans Pro Semibold", sans-serif; }
   main .big-grid-2 {
     height: calc(100vh - 60px - 60px);
     min-height: calc(100vh - 60px - 60px);
@@ -1584,9 +1591,31 @@ footer {
     main section .big-grid {
       min-height: 100vh;
       height: auto;
-      margin-bottom: calc(42pt + 2em); }
+      margin-bottom: calc(42pt + 2em);
+      margin-top: 0;
+      margin-bottom: 2em;
+      position: relative;
+      display: block; }
+      main section .big-grid .big-grid-flex-left, main section .big-grid .big-grid-flex-right {
+        width: 100%; }
+      main section .big-grid .big-grid-flex-left {
+        height: 135px; }
       main section .big-grid .overlay {
-        /*grid*/ }
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        height: 135px; }
+      main section .big-grid .pop-up-image {
+        position: absolute;
+        display: block;
+        left: 30px;
+        right: 30px;
+        top: 80px;
+        height: 205px;
+        -moz-transform: translate(none, 0px);
+        -webkit-transform: translate(none, 0px);
+        transform: translate(none, 0px); }
       main section .big-grid .pop-up-image {
         background-position: center 35%; }
         main section .big-grid .pop-up-image button {
@@ -1598,6 +1627,9 @@ footer {
       main section .big-grid .previous-next-page {
         display: none; }
       main section .big-grid h1 {
+        position: absolute;
+        top: 285px;
+        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1605,10 +1637,15 @@ footer {
         text-align: center;
         font-size: 4.5rem; }
       main section .big-grid .content-rightblock {
-        position: relative;
+        position: absolute;
+        top: 405px;
+        left: 30px;
+        right: 30px;
         margin-top: 0;
         padding: 0;
         text-align: center; }
+        main section .big-grid .content-rightblock .inner-content-rightblock {
+          position: relative; }
         main section .big-grid .content-rightblock a {
           margin-left: auto;
           margin-right: auto; }
