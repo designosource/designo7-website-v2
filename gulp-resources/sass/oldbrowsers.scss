@@ -601,34 +601,35 @@ main {
       margin-bottom: 10%;
     }
   }
-	
-	.content-rightblock {
-		overflow-y: auto;
-		margin-top: 0;
-		font-size: $font--22;
-		font-family: $font--sans;
-		font-weight: 300;
-		line-height: $font--32;
-		padding-right: 1em;
-		display: flex;
+
+  .content-rightblock {
+    overflow-y: auto;
+    margin-top: 0;
+    font-size: $font--22;
+    font-family: $font--sans;
+    font-weight: 300;
+    line-height: $font--32;
+    padding-right: 1em;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-		
-		.inner-content-rightblock {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
+    background-color: rgba(255, 255, 255, 0.4);
 
-		p, ol {
-			margin-bottom: $font--22;
-			width: 100%;
-			b {
-				font-family: $font--sans-semibold;
-			}
-		}
+    .inner-content-rightblock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-	}
+    p, ol {
+      margin-bottom: $font--22;
+      width: 100%;
+      b {
+        font-family: $font--sans-semibold;
+      }
+    }
+
+  }
 
   .big-grid {
     height: calc(100vh - 60px - 60px);
@@ -795,10 +796,11 @@ main {
       flex-direction: row;
       justify-content: space-between;
       position: absolute;
-      top: 240px;
+      top: 260px;
       bottom: 60px;
       left: -100px;
       right: 30px;
+      max-height: 400px;
 
       article {
         flex-basis: 45%;
@@ -895,11 +897,13 @@ main {
       left: 30px;
       right: 30px;
       height: 140px;
+      z-index: 5;
     }
 
     .content-rightblock {
       margin-top: 0;
       padding-right: 1em;
+      z-index: 6;
 
       .member-nickname {
         color: $color--purplered;
@@ -1156,11 +1160,11 @@ main {
 
       .grid-item {
         flex-basis: calc(25% - 15px);
-				margin-right: 20px;
-				
-				&:nth-child(4n) {
-					margin-right: 0;
-				}
+        margin-right: 20px;
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
 
         &:not(:nth-last-child(-n+4)) {
           margin-bottom: 20px;
@@ -1176,11 +1180,11 @@ main {
 
       .grid-item {
         flex-basis: calc(33% - 13.33px);
-				margin-right: 20px;
-				
-				&:nth-child(3n) {
-					margin-right: 0;
-				}
+        margin-right: 20px;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
 
         &:not(:nth-last-child(-n+3)) {
           margin-bottom: 20px;
@@ -1352,10 +1356,10 @@ footer {
   main {
 
     overflow: hidden;
-		
-		.page-container {
-			margin-bottom: 0px;
-		}
+
+    .page-container {
+      margin-bottom: 0px;
+    }
 
     section {
 
@@ -1366,33 +1370,33 @@ footer {
         margin-top: 0;
         margin-bottom: 2em;
         position: relative;
-				display: block;
-				
-				.big-grid-flex-left, .big-grid-flex-right {
-					width: 100%;
-				}
-				
-				.big-grid-flex-left {
-					height: 135px;
-				}
+        display: block;
+
+        .big-grid-flex-left, .big-grid-flex-right {
+          width: 100%;
+        }
+
+        .big-grid-flex-left {
+          height: 135px;
+        }
 
         .overlay {
           position: absolute;
-					display: block;
-					left: 0;
-					right: 0;
-					height: 135px;
+          display: block;
+          left: 0;
+          right: 0;
+          height: 135px;
         }
-				
-				.pop-up-image {
-					position: absolute;
-					display: block;
-					left: 30px;
-					right: 30px;
-					top: 80px;
-					height: 205px;
-					@include translate(none);
-				}
+
+        .pop-up-image {
+          position: absolute;
+          display: block;
+          left: 30px;
+          right: 30px;
+          top: 80px;
+          height: 205px;
+          @include translate(none);
+        }
 
         .pop-up-image {
           background-position: center 35%;
@@ -1413,9 +1417,9 @@ footer {
         }
 
         h1 {
-					position: absolute;
-					top: 285px;
-					height: 120px;
+          position: absolute;
+          top: 285px;
+          height: 120px;
           @include center-flex(both);
           padding-top: 0.25em;
           text-align: center;
@@ -1424,16 +1428,16 @@ footer {
 
         .content-rightblock {
           position: absolute;
-					top: 405px;
-					left: 30px;
-					right: 30px;
+          top: 405px;
+          left: 30px;
+          right: 30px;
           margin-top: 0;
           padding: 0;
           text-align: center;
-					
-					.inner-content-rightblock {
-						position: relative;
-					}
+
+          .inner-content-rightblock {
+            position: relative;
+          }
 
           a {
             @include push-auto;
@@ -1863,12 +1867,12 @@ footer {
       #members-grid, #cases-grid {
         .grid-item {
           flex-basis: calc(50% - 10px);
-					margin-right: 20px;
+          margin-right: 20px;
           margin-bottom: 0;
-					
-					&:nth-child(2n) {
-						margin-right: 0;
-					}
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
 
           &:not(:nth-last-child(-n+2)) {
             margin-bottom: 20px;
@@ -1927,7 +1931,7 @@ footer {
 
         .grid-item {
           flex-basis: 100%;
-					margin-right: 0;
+          margin-right: 0;
           margin-bottom: 0;
 
           &:not(:last-child) {

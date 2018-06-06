@@ -230,13 +230,13 @@ if (window.matchMedia('(max-width: 750px)').matches) {
         delay: 250,
         viewFactor: 0.5
     });
-    sr.reveal('#team .content-rightblock', {
+    sr.reveal('#team .content-group', {
         duration: 1000,
-        origin: 'top',
+        origin: 'bottom',
         distance: '20vh',
         scale: 1,
         opacity: 0,
-        delay: 500,
+        delay: 250,
         viewFactor: 0.5
     });
 
@@ -258,13 +258,13 @@ if (window.matchMedia('(max-width: 750px)').matches) {
         delay: 250,
         viewFactor: 0.5
     });
-    sr.reveal('#cases .content-rightblock', {
+    sr.reveal('#cases .content-group', {
         duration: 1000,
-        origin: 'top',
+        origin: 'bottom',
         distance: '20vh',
         scale: 1,
         opacity: 0,
-        delay: 500,
+        delay: 250,
         viewFactor: 0.5
     });
 
@@ -286,13 +286,13 @@ if (window.matchMedia('(max-width: 750px)').matches) {
         delay: 250,
         viewFactor: 0.5
     });
-    sr.reveal('#contact .content-rightblock', {
+    sr.reveal('#contact .content-group', {
         duration: 1000,
-        origin: 'top',
+        origin: 'bottom',
         distance: '20vh',
         scale: 1,
         opacity: 0,
-        delay: 500,
+        delay: 250,
         viewFactor: 0.5
     });
 

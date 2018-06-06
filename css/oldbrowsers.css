@@ -1065,7 +1065,8 @@ main {
     padding-right: 1em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.4); }
     main .content-rightblock .inner-content-rightblock {
       display: flex;
       flex-direction: column;
@@ -1191,10 +1192,11 @@ main {
       flex-direction: row;
       justify-content: space-between;
       position: absolute;
-      top: 240px;
+      top: 260px;
       bottom: 60px;
       left: -100px;
-      right: 30px; }
+      right: 30px;
+      max-height: 400px; }
       main .big-grid-2 .big-grid-2-flex-right-information article {
         flex-basis: 45%; }
     main .big-grid-2 .coloured-background {
@@ -1288,10 +1290,12 @@ main {
       top: 100px;
       left: 30px;
       right: 30px;
-      height: 140px; }
+      height: 140px;
+      z-index: 5; }
     main .big-grid-2 .content-rightblock {
       margin-top: 0;
-      padding-right: 1em; }
+      padding-right: 1em;
+      z-index: 6; }
       main .big-grid-2 .content-rightblock .member-nickname {
         color: #c10c43;
         margin-bottom: 1.333rem;
