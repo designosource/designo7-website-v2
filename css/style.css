@@ -1288,7 +1288,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 12;
-    grid-column-end: 21;
+    grid-column-end: 23;
     display: flex;
     align-items: center; }
     main .previous-next-page a img {
