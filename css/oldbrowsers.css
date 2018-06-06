@@ -786,7 +786,7 @@ main {
   main #team .content-group {
     margin-top: 13%; }
   main #team .links {
-    margin-bottom: 10%; }
+    margin-bottom: 15%; }
   main .container-flex {
     height: calc(100vh - 60px);
     min-height: calc(100vh - 60px);
@@ -2064,17 +2064,13 @@ footer {
     min-height: 100%;
     font-size: 6pt; }
     main #team .container .content-image, main #cases .container .content-image, main #contact .container .content-image {
-      width: 100%;
+      width: 90%;
       height: 100%; }
     main #team .container .content-rightblock, main #cases .container .content-rightblock, main #contact .container .content-rightblock {
       margin-top: 0;
       align-items: center;
       justify-content: center;
       padding-top: 2%; }
-      main #team .container .content-rightblock .title-group, main #cases .container .content-rightblock .title-group, main #contact .container .content-rightblock .title-group {
-        position: absolute;
-        top: 4.5rem;
-        right: 20pt; }
       main #team .container .content-rightblock .content-group, main #cases .container .content-rightblock .content-group, main #contact .container .content-rightblock .content-group {
         align-items: center;
         justify-content: center; }
@@ -2148,7 +2144,46 @@ footer {
     main .container-home-flex #flex-row-2 #home-line {
       flex-basis: 35%; }
   main .container-home-flex #flex-row-3 {
-    height: 25%; } }
+    height: 25%; }
+  main .container-flex {
+    flex-direction: column;
+    padding-top: 25%;
+    min-height: 100vh; }
+    main .container-flex .content-image {
+      flex-basis: 30%;
+      margin-right: 10%; }
+    main .container-flex .section-flex-right {
+      flex-basis: 37.5%;
+      margin-top: 5%;
+      padding-left: 0;
+      margin-right: 0; }
+      main .container-flex .section-flex-right .arrow {
+        display: none; }
+      main .container-flex .section-flex-right .title-group {
+        position: absolute;
+        top: -25.5rem;
+        right: 20pt; }
+      main .container-flex .section-flex-right .content-group {
+        align-items: center;
+        padding: 0 10%; }
+        main .container-flex .section-flex-right .content-group p:nth-child(2) {
+          margin-bottom: 5%; }
+      main .container-flex .section-flex-right h2 {
+        font-size: 6.916rem; }
+      main .container-flex .section-flex-right a {
+        margin-bottom: 10%; }
+        main .container-flex .section-flex-right a:hover:not(.btn) span:before {
+          display: none; }
+        main .container-flex .section-flex-right a img:not(#tm-logo) {
+          display: none; }
+        main .container-flex .section-flex-right a span:not(.label):not(.arrow-right) {
+          margin-right: 0; }
+      main .container-flex .section-flex-right p {
+        text-align: center; }
+      main .container-flex .section-flex-right #email {
+        margin-bottom: 10%; }
+  main #contact {
+    margin-bottom: 0; } }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .content-rightblock a span:not(.label):not(.arrow-right):before {

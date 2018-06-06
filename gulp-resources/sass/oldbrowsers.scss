@@ -285,7 +285,7 @@ main {
     }
 
     .links {
-      margin-bottom: 10%;
+      margin-bottom: 15%;
     }
   }
 
@@ -1948,7 +1948,7 @@ footer {
         font-size: 6pt;
 
         .content-image {
-          width: 100%;
+          width: 90%;
           height: 100%;
         }
 
@@ -1957,12 +1957,6 @@ footer {
           align-items: center;
           justify-content: center;
           padding-top: 2%;
-
-          .title-group {
-            position: absolute;
-            top: 4.5rem;
-            right: 20pt;
-          }
 
           .content-group {
             align-items: center;
@@ -2113,6 +2107,78 @@ footer {
       }
     }
 
+    .container-flex {
+      flex-direction: column;
+      padding-top: 25%;
+      min-height: 100vh;
+
+      .content-image {
+        flex-basis: 30%;
+        margin-right: 10%;
+      }
+
+      .section-flex-right {
+        flex-basis: 37.5%;
+        margin-top: 5%;
+        padding-left: 0;
+        margin-right: 0;
+
+        .arrow {
+          display: none;
+        }
+
+        .title-group {
+          position: absolute;
+          top: -25.5rem;
+          right: 20pt;
+        }
+
+        .content-group {
+          align-items: center;
+          padding: 0 10%;
+
+          p:nth-child(2) {
+            margin-bottom: 5%;
+          }
+
+        }
+
+        h2 {
+          font-size: $font--83;
+        }
+
+        a {
+          margin-bottom: 10%;
+          &:hover:not(.btn) {
+            span {
+              &:before {
+                display: none;
+              }
+            }
+          }
+
+          img:not(#tm-logo) {
+            display: none;
+          }
+
+          span:not(.label):not(.arrow-right) {
+            margin-right: 0;
+          }
+        }
+
+        p {
+          text-align: center;
+        }
+
+        #email {
+          margin-bottom: 10%;
+        }
+      }
+    }
+
+    #contact {
+      margin-bottom: 0;
+    }
   }
 }
 
