@@ -917,60 +917,83 @@ main {
         text-transform: uppercase; }
     main .container-flex .bold {
       font-weight: bold; }
-  main #home-grid {
-    justify-content: center;
-    align-items: center; }
-    main #home-grid #home-logo {
-      height: 100px;
+  main #home-grid #home-logo {
+    height: 100px;
+    margin: 0 auto; }
+  main #home-grid #home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffffff;
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    margin-left: 3%; }
+    main #home-grid #home-content h3 {
+      font-family: "CooperHewittBold", sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1%; }
+    main #home-grid #home-content h1 {
+      font-size: 6.916rem;
+      margin-bottom: 2%; }
+    main #home-grid #home-content p {
+      font-family: "Source Sans Pro Light", sans-serif;
+      font-size: 1.833rem;
+      width: 40rem;
+      margin-bottom: 5%;
+      line-height: 21pt;
+      font-weight: 300; }
+  main #home-grid #home-line {
+    background: #f8ae0d;
+    height: 5px;
+    align-self: flex-start;
+    margin-top: 7rem; }
+  main #home-grid #scroll {
+    /*grid*/ }
+    main #home-grid #scroll div {
+      width: 16px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid white;
       margin: 0 auto; }
-    main #home-grid #home-content {
+      main #home-grid #scroll div .scroll-line {
+        width: 2px;
+        height: 6px;
+        border-radius: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6px;
+        background-color: white;
+        -webkit-animation: scrollfadeout 1.75s infinite ease-in-out;
+        -moz-animation: scrollfadeout 1.75s infinite ease-in-out;
+        -ms-animation: scrollfadeout 1.75s infinite ease-in-out;
+        -o-animation: scrollfadeout 1.75s infinite ease-in-out;
+        animation: scrollfadeout 1.75s infinite ease-in-out; }
+  main .container-home-flex {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    justify-content: space-between; }
+    main .container-home-flex #flex-row-1 {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      color: #ffffff;
-      -moz-transform: translate(0, 0);
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0); }
-      main #home-grid #home-content h3 {
-        font-family: "CooperHewittBold", sans-serif;
-        font-size: 3rem;
-        margin-bottom: 1%; }
-      main #home-grid #home-content h1 {
-        font-size: 6.916rem;
-        margin-bottom: 2%; }
-      main #home-grid #home-content p {
-        font-family: "Source Sans Pro Light", sans-serif;
-        font-size: 1.833rem;
-        width: 40rem;
-        margin-bottom: 5%;
-        line-height: 21pt;
-        font-weight: 300; }
-    main #home-grid #home-line {
-      background: #f8ae0d;
-      height: 5px;
-      align-self: flex-start;
-      margin-top: 7rem; }
-    main #home-grid #scroll {
-      /*grid*/ }
-      main #home-grid #scroll div {
-        width: 16px;
-        height: 36px;
-        border-radius: 10px;
-        border: 1px solid white;
-        margin: 0 auto; }
-        main #home-grid #scroll div .scroll-line {
-          width: 2px;
-          height: 6px;
-          border-radius: 1px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 6px;
-          background-color: white;
-          -webkit-animation: scrollfadeout 1.75s infinite ease-in-out;
-          -moz-animation: scrollfadeout 1.75s infinite ease-in-out;
-          -ms-animation: scrollfadeout 1.75s infinite ease-in-out;
-          -o-animation: scrollfadeout 1.75s infinite ease-in-out;
-          animation: scrollfadeout 1.75s infinite ease-in-out; }
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      width: 100%; }
+      main .container-home-flex #flex-row-1 img {
+        margin: 0; }
+    main .container-home-flex #flex-row-2 {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      main .container-home-flex #flex-row-2 #home-line {
+        flex-basis: 15%; }
+    main .container-home-flex #flex-row-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      width: 100%; }
   main .previous-next-page a {
     font-family: "CooperHewittBold", sans-serif;
     font-size: 1.666rem;
