@@ -295,7 +295,6 @@ main {
     grid-template-rows: 60px auto;
     grid-column-gap: 10pt;
     min-height: calc(100vh - #{$footer--height});
-    /*background-color: $color--palegrey;*/
     position: relative;
 
     .content-image {
@@ -443,7 +442,6 @@ main {
     align-items: center;
 
     #home-logo {
-      /*display: block;*/
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
@@ -574,10 +572,6 @@ main {
         margin-bottom: 10%;
       }
     }
-    // uncomment if space is still too small
-    //.btn {
-    //  margin-top: 5%;
-    //}
   }
 
   #contact {
@@ -724,21 +718,7 @@ main {
 
     .content-image {
       @include bg-cover-center;
-      grid-row-start: 2;
-      grid-row-end: 7;
-      grid-column-start: 1;
-      grid-column-end: 11;
-
-      /*&.overlay {
-        position: relative;
-
-        &:before {
-          @include pseudo;
-          width: 100%;
-          height: 100%;
-          background-color: rgba($color--darkpurple, 0.7);
-        }
-      }*/
+      
     }
 
     .member-information {
@@ -750,16 +730,10 @@ main {
       padding: calc(2 * #{$font--20});
       padding-top: calc(3 * #{$font--20});
       padding-bottom: $font--20;
-      /*@include center-flex(vertical);*/
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background-color: $color--purplered;
-
-      /* * {
-          flex-basis: 100%;
-          justify-content: space-between;
-      }*/
 
       .quote-container {
         display: flex;
@@ -776,9 +750,6 @@ main {
 
           &:before {
             @include pseudo;
-            /*content: '"';
-            font-family: $font--sans;
-            font-weight: 500;*/
             background-image: url('../img/quote.svg');
             background-size: contain;
             background-repeat: no-repeat;
@@ -957,11 +928,6 @@ main {
   #wat {
     .content-image {
       background-image: url("../img/wie-1.jpg");
-      /*@include transition(0.6s);
-
-      &:hover {
-          background-image: url("../img/wie-2.jpg");
-      }*/
     }
     .overlay {
       &:before {
@@ -1142,8 +1108,8 @@ footer {
     display: none;
     width: 32pt;
     height: 32pt;
-    right: 20pt; /* moet 25pt zijn, dit is om te testen */
-    top: 20pt; /* moet 25pt zijn, dit is om te testen */
+    right: 20pt;
+    top: 20pt;
     cursor: pointer;
     z-index: 10;
 
@@ -1190,8 +1156,6 @@ footer {
           background: $color--white;
 
           &:nth-child(1) {
-            /*@include translate(-50%, 50%);
-            @include rotate(-45deg);*/
             transform: translate(0, 10pt) rotate(-45deg);
           }
 
@@ -1201,8 +1165,6 @@ footer {
           }
 
           &:nth-child(3) {
-            /*@include translate(-50%, -50%);
-            @include rotate(45deg);*/
             transform: translate(0, -10pt) rotate(45deg);
           }
         }
@@ -1400,7 +1362,6 @@ footer {
           flex-direction: column;
           text-align: center;
           padding-right: 0;
-          /*padding: 0 12.5%;*/
           position: relative;
 
           p:not(.member-quote) {

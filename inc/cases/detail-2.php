@@ -2,15 +2,15 @@
   	<div class="container big-grid maxwidth">
 			<div class="big-grid-flex-left">
 				<div class="slick-container overlay">
-					<figure class="content-image" style="background-image: url('<?php echo /* $prefix . */ $caseinfo["image"]; ?>');"></figure>
+					<figure class="content-image" style="background-image: url('<?php echo $prefix . $caseinfo["image"]; ?>');"></figure>
 					<?php foreach( $caseinfo["extra_images"] as $image ): ?>
-					<figure class="content-image" style="background-image: url('<?php echo /* $prefix . */ $image; ?>');"></figure>
+					<figure class="content-image" style="background-image: url('<?php echo $prefix . $image; ?>');"></figure>
 					<?php endforeach; ?>
 				</div>
 				<div class="slick-container pop-up-image">
-					<figure class="content-image" style="background-image: url('<?php echo /* $prefix . */ $caseinfo["image"]; ?>');"></figure>
+					<figure class="content-image" style="background-image: url('<?php echo $prefix . $caseinfo["image"]; ?>');"></figure>
 					<?php foreach( $caseinfo["extra_images"] as $image ): ?>
-					<figure class="content-image" style="background-image: url('<?php echo /* $prefix . */ $image; ?>');"></figure>
+					<figure class="content-image" style="background-image: url('<?php echo $prefix . $image; ?>');"></figure>
 					<?php endforeach; ?>
 				</div>
 			</div>

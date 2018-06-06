@@ -793,7 +793,6 @@ main {
     grid-template-rows: 60px auto;
     grid-column-gap: 10pt;
     min-height: calc(100vh - 60px);
-    /*background-color: $color--palegrey;*/
     position: relative; }
     main .container .content-image {
       width: 100%;
@@ -927,7 +926,6 @@ main {
     justify-content: center;
     align-items: center; }
     main #home-grid #home-logo {
-      /*display: block;*/
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
@@ -1148,21 +1146,7 @@ main {
     main .big-grid-2 .content-image {
       -webkit-background-size: cover;
       background-size: cover;
-      background-position: center;
-      grid-row-start: 2;
-      grid-row-end: 7;
-      grid-column-start: 1;
-      grid-column-end: 11;
-      /*&.overlay {
-        position: relative;
-
-        &:before {
-          @include pseudo;
-          width: 100%;
-          height: 100%;
-          background-color: rgba($color--darkpurple, 0.7);
-        }
-      }*/ }
+      background-position: center; }
     main .big-grid-2 .member-information {
       grid-row-start: 5;
       grid-row-end: 6;
@@ -1172,15 +1156,10 @@ main {
       padding: calc(2 * 1.666rem);
       padding-top: calc(3 * 1.666rem);
       padding-bottom: 1.666rem;
-      /*@include center-flex(vertical);*/
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background-color: #c10c43;
-      /* * {
-          flex-basis: 100%;
-          justify-content: space-between;
-      }*/ }
+      background-color: #c10c43; }
       main .big-grid-2 .member-information .quote-container {
         display: flex;
         height: 100%;
@@ -1196,9 +1175,6 @@ main {
             content: "";
             display: block;
             position: absolute;
-            /*content: '"';
-            font-family: $font--sans;
-            font-weight: 500;*/
             background-image: url("../img/quote.svg");
             background-size: contain;
             background-repeat: no-repeat;
@@ -1349,12 +1325,7 @@ main {
   main .carousel-pop-up {
     display: none; }
   main #wat .content-image {
-    background-image: url("../img/wie-1.jpg");
-    /*@include transition(0.6s);
-
-      &:hover {
-          background-image: url("../img/wie-2.jpg");
-      }*/ }
+    background-image: url("../img/wie-1.jpg"); }
   main #wat .overlay:before {
     background-color: rgba(193, 12, 67, 0.9); }
   main #werkwijze .content-image {
@@ -1475,9 +1446,7 @@ footer {
     width: 32pt;
     height: 32pt;
     right: 20pt;
-    /* moet 25pt zijn, dit is om te testen */
     top: 20pt;
-    /* moet 25pt zijn, dit is om te testen */
     cursor: pointer;
     z-index: 10; }
     footer .hamburger-menu .inner-hamburger-menu {
@@ -1517,8 +1486,6 @@ footer {
         box-shadow: 0px 1px 0px transparent !important;
         background: #ffffff; }
         footer .hamburger-menu .inner-hamburger-menu.open span:nth-child(1) {
-          /*@include translate(-50%, 50%);
-            @include rotate(-45deg);*/
           transform: translate(0, 10pt) rotate(-45deg); }
         footer .hamburger-menu .inner-hamburger-menu.open span:nth-child(2) {
           -moz-transform: translate(10%, 0%);
@@ -1526,8 +1493,6 @@ footer {
           transform: translate(10%, 0%);
           opacity: 0; }
         footer .hamburger-menu .inner-hamburger-menu.open span:nth-child(3) {
-          /*@include translate(-50%, -50%);
-            @include rotate(45deg);*/
           transform: translate(0, -10pt) rotate(45deg); }
       footer .hamburger-menu .inner-hamburger-menu.white-nav span {
         background-color: #ffffff;
@@ -1652,7 +1617,6 @@ footer {
         flex-direction: column;
         text-align: center;
         padding-right: 0;
-        /*padding: 0 12.5%;*/
         position: relative; }
         main section .big-grid-2 .content-rightblock p:not(.member-quote) {
           margin-bottom: 2em;
