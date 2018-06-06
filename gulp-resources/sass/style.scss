@@ -1186,7 +1186,7 @@ footer {
       &.open {
         span {
           width: 32pt;
-          box-shadow: 0px 1px 0px transparent;
+          box-shadow: 0px 1px 0px transparent !important;
           background: $color--white;
 
           &:nth-child(1) {
