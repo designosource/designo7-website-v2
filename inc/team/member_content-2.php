@@ -1,5 +1,5 @@
-<section id="<?php echo $pagename; ?>">
-  	<div class="container big-grid-2 maxwidth">
+<section class="memberpage" id="<?php echo $pagename; ?>">
+  	<div class="container big-grid-2 member maxwidth">
   		<div class="coloured-background"></div>
 			<figure class="big-grid-2-flex-left content-image overlay" style="background-image: url('<?php echo $prefix . $memberinfo["image"]; ?>');" onmouseover="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["imagehover"]; ?>)').css('transition', '0.4s');" onmouseleave="$(this).css('background-image','url(<?php echo $prefix . $memberinfo["image"]; ?>)').css('transition', '0.4s');"></figure>
 			
