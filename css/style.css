@@ -798,9 +798,8 @@ main {
       width: 100%;
       height: 100%;
       grid-column-start: 1;
-      grid-column-end: 11;
-      grid-row-start: 2;
-      grid-row-end: 7; }
+      grid-column-end: 15;
+      grid-row-start: 2; }
     main .container .content-rightblock {
       width: 100%;
       grid-column-start: 16;
@@ -1147,7 +1146,11 @@ main {
     main .big-grid-2 .content-image {
       -webkit-background-size: cover;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      grid-row-start: 2;
+      grid-row-end: 7;
+      grid-column-start: 1;
+      grid-column-end: 11; }
     main .big-grid-2 .member-information {
       grid-row-start: 5;
       grid-row-end: 6;

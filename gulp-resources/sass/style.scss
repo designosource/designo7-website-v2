@@ -301,9 +301,8 @@ main {
       width: 100%;
       height: 100%;
       grid-column-start: 1;
-      grid-column-end: 11;
+      grid-column-end: 15;
       grid-row-start: 2;
-			grid-row-end: 7;
     }
 
     .content-rightblock {
@@ -719,7 +718,10 @@ main {
 
     .content-image {
       @include bg-cover-center;
-      
+      grid-row-start: 2;
+      grid-row-end: 7;
+      grid-column-start: 1;
+      grid-column-end: 11;
     }
 
     .member-information {
