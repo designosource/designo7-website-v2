@@ -1090,7 +1090,7 @@ main {
         height: 25%; }
       main .big-grid .big-grid-flex-right h1 {
         position: absolute;
-        top: 100px;
+        top: 130px;
         left: 30px;
         right: 30px;
         height: 100px; }
@@ -1099,7 +1099,10 @@ main {
         top: calc(25% + 50px);
         right: 60px;
         width: calc(70% - 150px);
-        bottom: 25%; }
+        bottom: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
     main .big-grid .content-image {
       -webkit-background-size: cover;
       background-size: cover;

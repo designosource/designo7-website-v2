@@ -604,63 +604,66 @@ main {
 
   .big-grid {
     height: calc(100vh - 60px - 60px);
-		min-height: calc(100vh - 60px - 60px);
-		margin-top: 60px;
-		display: flex;
-		flex-direction: row;
-		
-		.big-grid-flex-left {
-			flex-basis: 41.666%;
-			width: 41.666%;
-			position: relative;
-			height: 100%;
-			
-			.overlay {
-				height: 100%;
-			}
-			
-			.pop-up-image {
-				position: absolute;
-				width: 75%;
-				height: 50%;
-				top: 50%;
-				-webkit-transform: translateY(-50%) !important;
-       				-ms-transform: translateY(-50%) !important;
-        				transform: translateY(-50%) !important;
-				left: 75%;
-			}
-		}
-		
-		.big-grid-flex-right {
-			flex-basis: 58.333%;
-			width: 58.333%;
-			position: relative;
-			height: 100%;
-			
-			.previous-next-page {
-				position: absolute;
-				top: 0;
-				left: 30px;
-				right: 30px;
-				height: 25%;
-			}
-			
-			h1 {
-				position: absolute;
-				top: 100px;
-				left: 30px;
-				right: 30px;
-				height: 100px;
-			}
-			
-			.content-rightblock {
-				position: absolute;
-				top: calc(25% + 50px);
-				right: 60px;
-				width: calc(70% - 150px);
-				bottom: 25%;
-			}
-		}
+    min-height: calc(100vh - 60px - 60px);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+
+    .big-grid-flex-left {
+      flex-basis: 41.666%;
+      width: 41.666%;
+      position: relative;
+      height: 100%;
+
+      .overlay {
+        height: 100%;
+      }
+
+      .pop-up-image {
+        position: absolute;
+        width: 75%;
+        height: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%) !important;
+        -ms-transform: translateY(-50%) !important;
+        transform: translateY(-50%) !important;
+        left: 75%;
+      }
+    }
+
+    .big-grid-flex-right {
+      flex-basis: 58.333%;
+      width: 58.333%;
+      position: relative;
+      height: 100%;
+
+      .previous-next-page {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        right: 30px;
+        height: 25%;
+      }
+
+      h1 {
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        right: 30px;
+        height: 100px;
+      }
+
+      .content-rightblock {
+        position: absolute;
+        top: calc(25% + 50px);
+        right: 60px;
+        width: calc(70% - 150px);
+        bottom: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
 
     .content-image {
       @include bg-cover-center;
@@ -718,17 +721,17 @@ main {
         right: auto;
         left: calc(50% + 15pt);
       }
-			
-			button {
-				width: 30px;
-				height: 25px;
 
-				&:before {
-					font-size: 30px;
-					text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
-					color: $color--purplered;
-				}
-			}
+      button {
+        width: 30px;
+        height: 25px;
+
+        &:before {
+          font-size: 30px;
+          text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+          color: $color--purplered;
+        }
+      }
 
     }
 
@@ -750,7 +753,7 @@ main {
 
       p, ol {
         margin-bottom: $font--22;
-				width: 100%;
+        width: 100%;
         b {
           font-family: $font--sans-semibold;
         }
@@ -762,37 +765,37 @@ main {
 
   .big-grid-2 {
     height: calc(100vh - 60px - 60px);
-		min-height: calc(100vh - 60px - 60px);
-		margin-top: 60px;
-		display: flex;
-		flex-direction: row;
-		
-		.big-grid-2-flex-left {
-			flex-basis: 41.166%;
-		}
+    min-height: calc(100vh - 60px - 60px);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
 
-		.big-grid-2-flex-right {
-			flex-basis: 58.833%;
-			position: relative;
-			height: calc(100% - 60px);
-			margin-top: 60px;
-		}
+    .big-grid-2-flex-left {
+      flex-basis: 41.166%;
+    }
 
-		.big-grid-2-flex-right-information {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			position: absolute;
-			top: 240px;
-			bottom: 60px;
-			left: -100px;
-			right: 30px;
-			
-			article {
-				flex-basis: 45%;
-			}
-			
-		}
+    .big-grid-2-flex-right {
+      flex-basis: 58.833%;
+      position: relative;
+      height: calc(100% - 60px);
+      margin-top: 60px;
+    }
+
+    .big-grid-2-flex-right-information {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: absolute;
+      top: 240px;
+      bottom: 60px;
+      left: -100px;
+      right: 30px;
+
+      article {
+        flex-basis: 45%;
+      }
+
+    }
 
     .coloured-background {
       display: none;
@@ -870,19 +873,19 @@ main {
 
     .previous-next-page {
       @include center-flex(vertical);
-			position: absolute;
-			top: 0;
-			left: 30px;
-			right: 30px;
-			height: 100px;
+      position: absolute;
+      top: 0;
+      left: 30px;
+      right: 30px;
+      height: 100px;
     }
 
     h1 {
       position: absolute;
-			top: 100px;
-			left: 30px;
-			right: 30px;
-			height: 140px;
+      top: 100px;
+      left: 30px;
+      right: 30px;
+      height: 140px;
     }
 
     .content-rightblock {
@@ -1139,32 +1142,32 @@ main {
 
     #members-grid {
       display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			
-			.grid-item {
-				flex-basis: calc(25% - 15px);
-				
-				&:not(:nth-last-child(-n+4)) {
-					margin-bottom: 20px;
-				}
-				
-			}
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .grid-item {
+        flex-basis: calc(25% - 15px);
+
+        &:not(:nth-last-child(-n+4)) {
+          margin-bottom: 20px;
+        }
+
+      }
     }
 
     #cases-grid {
       display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			
-			.grid-item {
-				flex-basis: calc(33% - 13.33px);
-				
-				&:not(:nth-last-child(-n+3)) {
-					margin-bottom: 20px;
-				}
-				
-			}
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .grid-item {
+        flex-basis: calc(33% - 13.33px);
+
+        &:not(:nth-last-child(-n+3)) {
+          margin-bottom: 20px;
+        }
+
+      }
     }
 
     img {
@@ -1344,16 +1347,16 @@ footer {
 
         .pop-up-image {
           background-position: center 35%;
-					
-					button {
-						width: 30px;
-						height: 25px;
-						
-						&:before {
-							font-size: 30px;
-							text-shadow: 0px 0px 5px black;
-						}
-					}
+
+          button {
+            width: 30px;
+            height: 25px;
+
+            &:before {
+              font-size: 30px;
+              text-shadow: 0px 0px 5px black;
+            }
+          }
         }
 
         .previous-next-page {
@@ -1385,34 +1388,34 @@ footer {
         min-height: 100vh;
         height: auto;
         margin-bottom: calc(42pt + 2em);
-				margin-top: 0;
-				margin-bottom: 2em;
-				position: relative;
-				
-				.big-grid-2-flex-right {
-					margin-top: 0;
-					
-					.big-grid-2-flex-right-information {
-						position: absolute;
-						top: calc(360px + 2em);
-						left: 10%;
-						width: calc(100% - 20%);
-						height: calc(100vh - 360px - 42pt - 4em);
-						margin-bottom: calc(42pt + 2em);
+        margin-top: 0;
+        margin-bottom: 2em;
+        position: relative;
 
-						.content-rightblock {
-							flex-basis: 100%;
+        .big-grid-2-flex-right {
+          margin-top: 0;
 
-							.member-nickname {
-								flex-basis: unset;
-							}
-						}
+          .big-grid-2-flex-right-information {
+            position: absolute;
+            top: calc(360px + 2em);
+            left: 10%;
+            width: calc(100% - 20%);
+            height: calc(100vh - 360px - 42pt - 4em);
+            margin-bottom: calc(42pt + 2em);
 
-						.scrollbar {
-							padding-right: 1em;
-						}
-					}
-				}
+            .content-rightblock {
+              flex-basis: 100%;
+
+              .member-nickname {
+                flex-basis: unset;
+              }
+            }
+
+            .scrollbar {
+              padding-right: 1em;
+            }
+          }
+        }
 
         .coloured-background {
           display: block;
@@ -1421,11 +1424,11 @@ footer {
 
         .content-image {
           background-position: center 35%;
-					position: absolute;
-					left: 30px;
-					top: 75px;
-					width: calc(100% - 60px);
-					height: 285px;
+          position: absolute;
+          left: 30px;
+          top: 75px;
+          width: calc(100% - 60px);
+          height: 285px;
         }
 
         .previous-next-page {
@@ -1434,16 +1437,16 @@ footer {
 
         h1 {
           position: absolute;
-					top: 160px;
-					height: 200px;
-					left: 10%;
-					width: calc(100% - 20%);
-					@include center-flex(both);
-					font-size: $font--32;
-					text-align: center;
-					line-height: $font--36;
-					z-index: 2;
-					color: $color--white;
+          top: 160px;
+          height: 200px;
+          left: 10%;
+          width: calc(100% - 20%);
+          @include center-flex(both);
+          font-size: $font--32;
+          text-align: center;
+          line-height: $font--36;
+          z-index: 2;
+          color: $color--white;
         }
 
         .member-information {
@@ -1576,7 +1579,7 @@ footer {
                     font-family: $font--cooper--bold;
                     font-size: $font--32;
                     text-align: center;
-										text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
                   }
                 }
               }
@@ -1799,16 +1802,16 @@ footer {
       }
 
       #members-grid, #cases-grid {
-				.grid-item {
-					flex-basis: calc(50% - 10px);
-					margin-bottom: 0;
+        .grid-item {
+          flex-basis: calc(50% - 10px);
+          margin-bottom: 0;
 
-					&:not(:nth-last-child(-n+2)) {
-						margin-bottom: 20px;
-					}
+          &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 20px;
+          }
 
-				}
-			}
+        }
+      }
     }
   }
 }
@@ -1856,21 +1859,21 @@ footer {
         }
       }
 
-      #members-grid, #cases-grid {			
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
+      #members-grid, #cases-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-				.grid-item {
-					flex-basis: 100%;
-					margin-bottom: 0;
+        .grid-item {
+          flex-basis: 100%;
+          margin-bottom: 0;
 
-					&:not(:last-child) {
-						margin-bottom: 20px;
-					}
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
 
-				}
-			}
+        }
+      }
     }
 
     #team, #cases, #contact {
