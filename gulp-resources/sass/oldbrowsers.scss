@@ -2057,11 +2057,12 @@ footer {
       #home-logo {
         height: 100px;
         align-self: flex-end;
-        margin-bottom: 10%;
+        margin-bottom: 0%;
       }
 
       #home-content {
         color: $color--white;
+        margin-left: 5%;
 
         h3 {
           font-size: $font--24;
@@ -2075,7 +2076,7 @@ footer {
 
         p {
           font-size: $font--20;
-          width: 100%;
+          width: 80%;
           margin-bottom: 8%;
           line-height: 18pt;
         }
@@ -2092,6 +2093,26 @@ footer {
         align-self: center;
       }
     }
+
+    .container-home-flex {
+
+      #flex-row-1 {
+        height: 25%;
+      }
+
+      #flex-row-2 {
+        width: 100%;
+
+        #home-line {
+          flex-basis: 35%;
+        }
+      }
+
+      #flex-row-3 {
+        height: 25%;
+      }
+    }
+
   }
 }
 
