@@ -1235,7 +1235,7 @@ footer {
 }
 
 // Detail pages
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $breakpoint-medium) {
   #logo {
     display: none;
   }

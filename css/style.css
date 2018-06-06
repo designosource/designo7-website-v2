@@ -157,7 +157,7 @@
       transform: translate(0.5rem, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
   .btn-white {
     font-size: 1.666rem !important;
     padding: 1.4rem 1rem 1.4rem 1rem; }
@@ -1523,7 +1523,7 @@ footer {
     footer #footer-right a:not(:first-child) {
       margin-left: calc(2.5 * 1.833rem); }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
   #logo {
     display: none; }
   main {
@@ -1942,7 +1942,7 @@ footer {
     main .page-container #members-grid, main .page-container #cases-grid {
       grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
   header {
     display: none; }
   main #intro .btn-white {
