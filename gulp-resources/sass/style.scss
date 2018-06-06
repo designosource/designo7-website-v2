@@ -443,12 +443,12 @@ main {
     align-items: center;
 
     #home-logo {
-      display: block;
+      /*display: block;*/
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 25;
-      height: 60%;
+			height: 100px;
       margin: 0 auto;
     }
 
@@ -669,7 +669,8 @@ main {
 
 				&:before {
 					font-size: 30px;
-					text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+					text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+					color: $color--purplered;
 				}
 			}
 
@@ -703,7 +704,7 @@ main {
         margin-bottom: $font--22;
 				width: 100%;
         b {
-          font-family: $font--sans-bold;
+          font-family: $font--sans-semibold;
         }
       }
 
@@ -1927,7 +1928,7 @@ footer {
       #home-logo {
         grid-column-start: 1;
         grid-column-end: 4;
-        height: 40%;
+        height: 100px;
         align-self: flex-end;
         margin-bottom: 10%;
       }

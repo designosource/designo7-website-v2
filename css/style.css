@@ -927,12 +927,12 @@ main {
     justify-content: center;
     align-items: center; }
     main #home-grid #home-logo {
-      display: block;
+      /*display: block;*/
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 25;
-      height: 60%;
+      height: 100px;
       margin: 0 auto; }
     main #home-grid #home-content {
       display: flex;
@@ -1110,7 +1110,8 @@ main {
         height: 25px; }
         main .big-grid .pop-up-image button:before {
           font-size: 30px;
-          text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
+          text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+          color: #c10c43; }
     main .big-grid h1 {
       grid-row-start: 3;
       grid-row-end: 4;
@@ -1136,7 +1137,7 @@ main {
         margin-bottom: 1.833rem;
         width: 100%; }
         main .big-grid .content-rightblock p b, main .big-grid .content-rightblock ol b {
-          font-family: "Source Sans Pro Bold", sans-serif; }
+          font-family: "Source Sans Pro Semibold", sans-serif; }
   main .big-grid-2 {
     grid-template-columns: repeat(24, 1fr) !important;
     grid-template-rows: 60px 60px 100px 2fr 33% 1fr;
@@ -2068,7 +2069,7 @@ footer {
     main #home-grid #home-logo {
       grid-column-start: 1;
       grid-column-end: 4;
-      height: 40%;
+      height: 100px;
       align-self: flex-end;
       margin-bottom: 10%; }
     main #home-grid #home-content {

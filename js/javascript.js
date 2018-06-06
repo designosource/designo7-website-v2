@@ -32,7 +32,7 @@ if (window.matchMedia('(max-width: 720px)').matches) {
 	
 	sr.reveal('.casepage .slick-container.pop-up-image', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, viewFactor: 0.5 });
 	sr.reveal('.casepage h1', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 250, viewFactor: 0.5 });
-	sr.reveal('.casepage article.content-rightblock', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 500, viewFactor: 0.5 });
+	sr.reveal('.casepage article.content-rightblock', { duration: 1000, origin: 'bottom', distance: '100px', scale: 1, opacity: 0, delay: 500, viewFactor: 0.1 });
 
 } else {
 	
