@@ -1235,7 +1235,7 @@ footer {
 }
 
 // Detail pages
-@media screen and (max-width: $breakpoint-medium) {
+@media screen and (max-width: $breakpoint-small) {
   #logo {
     display: none;
   }
@@ -1688,7 +1688,7 @@ footer {
 }
 
 // TABLET
-@media (min-width: $breakpoint-x-small) and (max-width: $breakpoint-medium) {
+@media (min-width: $breakpoint-x-small) and (max-width: $breakpoint-small) {
   main {
     .page-container {
       padding: 40px 40px;

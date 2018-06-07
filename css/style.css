@@ -1523,7 +1523,7 @@ footer {
     footer #footer-right a:not(:first-child) {
       margin-left: calc(2.5 * 1.833rem); }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 750px) {
   #logo {
     display: none; }
   main {
@@ -1928,7 +1928,7 @@ footer {
           footer .footer #footer-right a:hover {
             color: #21203a; } }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 750px) {
   main .page-container {
     padding: 40px 40px; }
     main .page-container .overview {
