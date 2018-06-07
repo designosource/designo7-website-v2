@@ -1667,42 +1667,29 @@ footer {
         display: none; }
     main section .big-grid-2 {
       min-height: 100vh;
-      height: auto;
-      margin-bottom: calc(42pt + 2em);
+      height: unset;
       margin-top: 0;
       margin-bottom: 2em;
-      position: relative; }
-      main section .big-grid-2 .big-grid-2-flex-right {
-        margin-top: 0; }
-        main section .big-grid-2 .big-grid-2-flex-right .big-grid-2-flex-right-information {
-          position: absolute;
-          top: calc(360px + 2em);
-          left: 10%;
-          width: calc(100% - 20%);
-          height: calc(100vh - 360px - 42pt - 4em);
-          margin-bottom: calc(42pt + 2em); }
-          main section .big-grid-2 .big-grid-2-flex-right .big-grid-2-flex-right-information .content-rightblock {
-            flex-basis: 100%; }
-            main section .big-grid-2 .big-grid-2-flex-right .big-grid-2-flex-right-information .content-rightblock .member-nickname {
-              flex-basis: unset; }
-          main section .big-grid-2 .big-grid-2-flex-right .big-grid-2-flex-right-information .scrollbar {
-            padding-right: 1em; }
+      position: unset;
+      flex-direction: column; }
       main section .big-grid-2 .coloured-background {
         display: block;
-        background-color: rgba(193, 12, 67, 0.85); }
+        background-color: rgba(193, 12, 67, 0.85);
+        height: 190px; }
       main section .big-grid-2 .content-image {
         background-position: center 35%;
-        position: absolute;
-        left: 30px;
-        top: 75px;
-        width: calc(100% - 60px);
-        height: 285px; }
-      main section .big-grid-2 .previous-next-page {
-        display: none; }
+        position: unset;
+        width: 85%;
+        height: 285px;
+        margin: 0 auto;
+        margin-top: -100px; }
+      main section .big-grid-2 .big-grid-2-flex-right {
+        margin-top: 0;
+        padding: 0 7.5%; }
       main section .big-grid-2 h1 {
         position: absolute;
-        top: 160px;
-        height: 200px;
+        top: -110px;
+        height: unset;
         left: 10%;
         width: calc(100% - 20%);
         display: flex;
@@ -1713,45 +1700,54 @@ footer {
         line-height: 3rem;
         z-index: 2;
         color: #ffffff; }
-      main section .big-grid-2 .member-information {
-        display: none; }
-      main section .big-grid-2 .content-rightblock {
+      main section .big-grid-2 .big-grid-2-flex-right-information {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-right: 0;
-        position: relative; }
-        main section .big-grid-2 .content-rightblock p:not(.member-quote) {
-          margin-bottom: 2em;
-          width: 100%;
-          padding: 0 6pt; }
-        main section .big-grid-2 .content-rightblock .member-nickname {
-          flex-basis: 100%;
-          width: 100%;
-          margin: 2em 0;
-          font-size: 2.333rem; }
-        main section .big-grid-2 .content-rightblock .member-information {
-          flex-basis: 100%;
-          width: 100%;
-          display: block;
-          margin-bottom: 2em;
-          max-width: 400px;
-          margin-left: auto;
-          margin-right: auto; }
-          main section .big-grid-2 .content-rightblock .member-information .member-quote {
-            text-align: left; }
-            main section .big-grid-2 .content-rightblock .member-information .member-quote:before {
-              left: -10pt; }
-          main section .big-grid-2 .content-rightblock .member-information .member-socialmedia {
-            justify-content: space-around;
-            padding-left: 1.5em;
-            padding-right: 1.5em; }
-            main section .big-grid-2 .content-rightblock .member-information .member-socialmedia a {
-              margin: 0; }
-        main section .big-grid-2 .content-rightblock a {
-          order: 2;
-          margin-left: auto;
-          margin-right: auto; }
+        flex-direction: column-reverse;
+        height: 100%;
+        all: unset; }
+        main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding-right: 0;
+          position: unset; }
+          main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock p:not(.member-quote) {
+            margin-bottom: 2em;
+            width: 100%;
+            padding: 0 6pt; }
+          main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-nickname {
+            flex-basis: 100%;
+            width: 100%;
+            margin: 2em 0;
+            font-size: 2.333rem; }
+          main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-information {
+            flex-basis: 100%;
+            width: 100%;
+            display: block;
+            margin-bottom: 4em;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            order: 0; }
+            main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-information .member-quote {
+              text-align: left; }
+              main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-information .member-quote:before {
+                left: -10pt; }
+            main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-information .member-socialmedia {
+              justify-content: space-around;
+              padding-left: 1.5em;
+              padding-right: 1.5em; }
+              main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-information .member-socialmedia a {
+                margin: 0; }
+          main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock a {
+            order: 2;
+            margin-left: auto;
+            margin-right: auto; }
+        main section .big-grid-2 .big-grid-2-flex-right-information .member-information {
+          display: none; }
+      main section .big-grid-2 .previous-next-page {
+        display: none; }
     main section .carousel-pop-up-button {
       position: absolute;
       top: 50%;
