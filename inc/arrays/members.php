@@ -90,7 +90,7 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
         "title" => "PHP Pirate",
         "image" => "img/members/lisa-1.jpg",
 				"imagehover" => "img/members/lisa-2.jpg",
-        "quote" => '"Dood geen vliegen want ocharme maar eet wel graag vlees."<br>-Lisa',
+        "quote" => '"Het is tijd voor nog een powerboosterke."<br>-Lisa',
         "linkedin" => "https://www.linkedin.com/in/lisa-wouters-webdeveloper/",
         "email" => "lisa@m-release.com",
         "description" => "<p>Ahoy mates, meet Lisa onze PHP Pirate. Zit je vast met je PHP code of geraak je met je schip niet door de Laravel zee? Dan staat Lisa paraat om je de kneepjes van het vak te leren. In Lisa haar kajuit hoeft het echter niet altijd serieus te zijn, Bereid je voor op fun, gekheid en dolle pret wanneer je met haar in zee gaat.</p><p>Lisa vertrekt nooit op veroveringstocht zonder haar vrienden en een voorraad Golden Power. Op haar schouder geen papegaai maar wel een kudde koetjes aan haar zij.</p>",
@@ -127,7 +127,7 @@ Lino goochelt niet enkel met javascript code of WordPress websites maar ook met 
         "email" => "chiarafaes@outlook.be",
         "description" => "<p>Chiara is een ware Audiovisual Adventurer. Met haar cameramateriaal in haar rugzak trekt ze steevast op avontuur. Heb je vragen over videobewerking of videomontage? Ook dat is voor onze avonturier geen probleem.</p><p>Chiara heeft heel wat inspiratiebronnen in haar leven. Disney films speelt ze feilloos na, haar kat Berlioz is haar oogappel en haar familie zet ze op de eerste plaats. Ze zou geen avonturier zijn moest ze niet dromen van een toekomst in het buitenland.</p>",
 				"descriptionmeta" => "Chiara is een ware Audiovisual Adventurer. Met haar cameramateriaal in haar rugzak trekt ze steevast op avontuur. Heb je vragen over videobewerking of videomontage? Ook dat is voor onze avonturier geen probleem.Chiara heeft heel wat inspiratiebronnen in haar leven. Disney films speelt ze feilloos na, haar kat Berlioz is haar oogappel en haar familie zet ze op de eerste plaats. Ze zou geen avonturier zijn moest ze niet dromen van een toekomst in het buitenland.",
-        "website" => "http://www.lisawouters.be",
+        "website" => "",
 				"previous" => "caroline",
 				"next" => "larissa"
     ),
