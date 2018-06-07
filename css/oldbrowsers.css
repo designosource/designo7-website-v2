@@ -1594,32 +1594,67 @@ footer {
       margin-bottom: 0px; }
     main section .big-grid {
       min-height: 100vh;
-      height: auto;
+      height: unset;
       margin-bottom: calc(42pt + 2em);
       margin-top: 0;
-      margin-bottom: 2em;
-      position: relative;
-      display: block; }
+      position: inherit;
+      display: flex;
+      flex-direction: column; }
       main section .big-grid .big-grid-flex-left, main section .big-grid .big-grid-flex-right {
-        width: 100%; }
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: unset;
+        all: unset; }
       main section .big-grid .big-grid-flex-left {
-        height: 135px; }
-      main section .big-grid .overlay {
+        height: 100%; }
+        main section .big-grid .big-grid-flex-left .overlay {
+          position: inherit;
+          display: block;
+          height: 135px; }
+        main section .big-grid .big-grid-flex-left .pop-up-image {
+          position: inherit;
+          display: block;
+          height: 205px;
+          width: 80%;
+          opacity: 1 !important;
+          -moz-transform: translate(none, 0px);
+          -webkit-transform: translate(none, 0px);
+          transform: translate(none, 0px);
+          left: unset;
+          top: unset;
+          margin: 0 auto;
+          margin-top: 15%;
+          -webkit-transform: unset;
+          -moz-transform: unset;
+          -ms-transform: unset;
+          -o-transform: unset;
+          transform: unset; }
+      main section .big-grid .big-grid-flex-right h1 {
         position: absolute;
-        display: block;
+        top: 285px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: unset;
+        text-align: center;
+        font-size: 4.5rem;
+        width: 100%;
         left: 0;
-        right: 0;
-        height: 135px; }
-      main section .big-grid .pop-up-image {
-        position: absolute;
-        display: block;
-        left: 30px;
-        right: 30px;
-        top: 80px;
-        height: 205px;
-        -moz-transform: translate(none, 0px);
-        -webkit-transform: translate(none, 0px);
-        transform: translate(none, 0px); }
+        right: 0; }
+      main section .big-grid .big-grid-flex-right .content-rightblock {
+        position: unset;
+        padding: 0;
+        text-align: center;
+        overflow-y: unset;
+        width: 80%;
+        margin: 0 auto; }
+        main section .big-grid .big-grid-flex-right .content-rightblock .inner-content-rightblock {
+          position: relative; }
+        main section .big-grid .big-grid-flex-right .content-rightblock a {
+          margin-left: auto;
+          margin-right: auto; }
       main section .big-grid .pop-up-image {
         background-position: center 35%; }
         main section .big-grid .pop-up-image button {
@@ -1630,29 +1665,6 @@ footer {
             text-shadow: 0px 0px 5px black; }
       main section .big-grid .previous-next-page {
         display: none; }
-      main section .big-grid h1 {
-        position: absolute;
-        top: 285px;
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 0.25em;
-        text-align: center;
-        font-size: 4.5rem; }
-      main section .big-grid .content-rightblock {
-        position: absolute;
-        top: 405px;
-        left: 30px;
-        right: 30px;
-        margin-top: 0;
-        padding: 0;
-        text-align: center; }
-        main section .big-grid .content-rightblock .inner-content-rightblock {
-          position: relative; }
-        main section .big-grid .content-rightblock a {
-          margin-left: auto;
-          margin-right: auto; }
     main section .big-grid-2 {
       min-height: 100vh;
       height: auto;
