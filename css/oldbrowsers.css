@@ -157,7 +157,7 @@
       transform: translate(0.5rem, 0px);
       background-image: url("../img/arrow-right-red.svg"); }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .btn-white {
     font-size: 1.666rem !important;
     padding: 1.4rem 1rem 1.4rem 1rem; }
@@ -1585,7 +1585,7 @@ footer {
     footer #footer-right a:not(:first-child) {
       margin-left: calc(2.5 * 1.833rem); }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   #logo {
     display: none; }
   main {
@@ -1624,7 +1624,7 @@ footer {
           left: unset;
           top: unset;
           margin: 0 auto;
-          margin-top: 15%;
+          margin-top: 65px;
           -webkit-transform: unset;
           -moz-transform: unset;
           -ms-transform: unset;
@@ -2045,7 +2045,7 @@ footer {
       main .page-container #members-grid .grid-item:not(:nth-last-child(-n+2)), main .page-container #cases-grid .grid-item:not(:nth-last-child(-n+2)) {
         margin-bottom: 20px; } }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   header {
     display: none; }
   main #intro .btn-white {

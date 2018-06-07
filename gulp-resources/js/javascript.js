@@ -29,7 +29,7 @@ sr.reveal('.overview .grid-item', {
     viewFactor: 0.3
 }, 100);
 
-if (window.matchMedia('(max-width: 750px)').matches) {
+if (window.matchMedia('(max-width: 850px)').matches) {
 
     sr.reveal('#home-logo', {duration: 0, opacity: 1, delay: 250, viewFactor: 0.3});
 

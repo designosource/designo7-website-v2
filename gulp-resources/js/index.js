@@ -45,7 +45,7 @@ $(document).ready(function(){
 	});
 	
 	$(".footer nav a").on("click", function(){
-		if( $(window).width() < 750 + 1 ) {
+		if( $(window).width() < 850 + 1 ) {
 			$(".inner-hamburger-menu").removeClass("open");
 			$(".footer").fadeOut();
 		}
@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$(".inner-hamburger-menu").removeClass("open");
 		
 		/* check window width */
-		if( $windowwidth >= 750 + 1 ) {
+		if( $windowwidth >= 850 + 1 ) {
 			$(".footer").css("display", "flex");
 			$( "#member .content-rightblock" ).addClass("scrollbar");
 		} else {
