@@ -1,6 +1,6 @@
-<section id="intro" style="display: none;"
+<section id="intro"
   	<?php 
-		if(isset( $_SESSION['intro'] ) ){ /*echo 'style="display: none;"';*/}else{ $_SESSION['intro'] = ""; }
+		if(isset( $_SESSION['intro'] ) ){ echo 'style="display: none;"'; }else{ $_SESSION['intro'] = ""; }
 		?>
 >
     <img src="img/animated-logo.gif" alt="Animated logo Designosource">
