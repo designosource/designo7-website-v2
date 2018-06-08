@@ -1669,7 +1669,7 @@ footer {
       min-height: 100vh;
       height: unset;
       margin-top: 0;
-      margin-bottom: 2em;
+      margin-bottom: calc(42pt + 2em);
       position: unset;
       flex-direction: column; }
       main section .big-grid-2 .coloured-background {
@@ -1724,11 +1724,10 @@ footer {
             flex-basis: 100%;
             width: 100%;
             display: block;
-            margin-bottom: 4em;
+            margin-bottom: 2em;
             max-width: 400px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 50px;
             order: 0; }
             main section .big-grid-2 .big-grid-2-flex-right-information .content-rightblock .member-information .member-quote {
               text-align: left; }

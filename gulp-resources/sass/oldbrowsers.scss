@@ -1467,7 +1467,7 @@ footer {
         min-height: 100vh;
         height: unset;
         margin-top: 0;
-        margin-bottom: 2em;
+        margin-bottom: calc(42pt + 2em);
         position: unset;
         flex-direction: column;
 
@@ -1535,10 +1535,9 @@ footer {
               flex-basis: 100%;
               width: 100%;
               display: block;
-              margin-bottom: 4em;
+              margin-bottom: 2em;
               max-width: 400px;
               @include push-auto;
-              margin-top: 50px;
               order: 0;
 
               .member-quote {

@@ -19,7 +19,7 @@
 			
 				<div class="big-grid-2-flex-right-information">
 			
-					<article class="member-information">
+					<article class="member-information" id="member-information-flex">
 
 						<div class="quote-container">
 								<p class="member-quote"><?php echo $memberinfo["quote"]; ?></p>

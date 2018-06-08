@@ -104,7 +104,8 @@ $(document).ready(function(){
 	
 	/*----- Clone quote section of member page -----*/
 	
-	$( ".member-information" ).clone().appendTo( ".memberpage .content-rightblock" );
+	$( "#member-information" ).clone().appendTo( ".memberpage .content-rightblock" );
+    $( "#member-information-flex" ).clone().appendTo( ".memberpage .inner-content-rightblock" );
 	
 	/*----- Carousel pop-up -----*/
 	
