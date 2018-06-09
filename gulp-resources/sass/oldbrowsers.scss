@@ -243,7 +243,7 @@ main {
 
   section {
     position: relative;
-		min-height: 100vh;
+		min-height: calc(100vh - 60px);
   }
 
   section.container {
@@ -2080,6 +2080,15 @@ footer {
           }
         }
       }
+			
+			.container-flex {
+				.content-group {
+					a {
+						text-align: center;
+					}
+				}
+			}
+			
     }
 
     #home-grid {

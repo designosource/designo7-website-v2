@@ -1653,12 +1653,6 @@ footer {
             margin-bottom: $font--60;
             margin-right: 0;
           }
-
-          &:hover {
-            &:after {
-              width: calc(100% + 4pt);
-            }
-          }
         }
       }
 

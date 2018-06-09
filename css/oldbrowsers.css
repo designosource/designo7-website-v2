@@ -759,7 +759,7 @@ main {
   counter-reset: section; }
   main section {
     position: relative;
-    min-height: 100vh; }
+    min-height: calc(100vh - 60px); }
   main section.container {
     counter-increment: section; }
   main #intro {
@@ -2121,6 +2121,8 @@ footer {
     margin-top: 3rem; }
   main #cases .container .content-rightblock a img {
     display: none; }
+  main #cases .container-flex .content-group a {
+    text-align: center; }
   main #home-grid {
     align-items: flex-start;
     min-height: 100%; }

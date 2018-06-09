@@ -1903,8 +1903,6 @@ footer {
           footer .footer #footer-left a:not(:last-child) {
             margin-bottom: 5.5rem;
             margin-right: 0; }
-          footer .footer #footer-left a:hover:after {
-            width: calc(100% + 4pt); }
       footer .footer #footer-right {
         display: flex;
         flex-direction: row;

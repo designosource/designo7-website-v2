@@ -16,7 +16,7 @@
 <head>
 
     <!-- GOOGLE ANALYTICS SCRIPT -->
-
+		<?php include $prefix . 'inc/analytics/googleanalytics.php'; ?>
     <!-- END GOOGLE ANALYTICS SCRIPT -->
 
     <link rel="shortcut icon" type="image/x-icon" href="../img/meta/favicon.ico">
