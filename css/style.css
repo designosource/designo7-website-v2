@@ -1131,10 +1131,10 @@ main {
       font-weight: 300;
       line-height: 2.666rem;
       padding-right: 1em; }
-      main .big-grid .content-rightblock p, main .big-grid .content-rightblock ol, main .big-grid .content-rightblock a {
-        margin-bottom: 1.833rem !important;
+      main .big-grid .content-rightblock p, main .big-grid .content-rightblock ol {
+        margin-bottom: 1.833rem;
         width: 100%; }
-        main .big-grid .content-rightblock p b, main .big-grid .content-rightblock ol b, main .big-grid .content-rightblock a b {
+        main .big-grid .content-rightblock p b, main .big-grid .content-rightblock ol b {
           font-family: "Source Sans Pro Semibold", sans-serif; }
   main .big-grid-2 {
     grid-template-columns: repeat(24, 1fr) !important;
