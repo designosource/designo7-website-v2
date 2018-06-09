@@ -464,7 +464,7 @@ main {
         font-size: $font--22;
         width: 40rem;
         margin-bottom: 5%;
-        line-height: 21pt;
+        line-height: 2em;
         font-weight: 300;
       }
     }
@@ -593,7 +593,7 @@ main {
   }
 
   #contact {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
     .content-image {
       background-image: url("https://media.giphy.com/media/pSpmpxFxFwDpC/giphy.gif");
       @include bg-cover-center;
