@@ -758,7 +758,8 @@ header {
 main {
   counter-reset: section; }
   main section {
-    position: relative; }
+    position: relative;
+    min-height: 100vh; }
   main section.container {
     counter-increment: section; }
   main #intro {
@@ -1045,7 +1046,8 @@ main {
   main #cases .content-rightblock p {
     line-height: 2.666rem; }
   main #cases .content-rightblock a {
-    margin-bottom: 10%; }
+    margin-bottom: 10%;
+    text-align: center; }
   main #contact {
     margin-bottom: 60px; }
     main #contact .content-image {
@@ -2087,7 +2089,10 @@ footer {
         margin-bottom: 10%;
         text-align: center; }
         main #team .container .content-rightblock a span:not(.label):not(.arrow-right), main #cases .container .content-rightblock a span:not(.label):not(.arrow-right), main #contact .container .content-rightblock a span:not(.label):not(.arrow-right) {
-          margin-right: 0; }
+          margin-right: auto;
+          margin-left: auto;
+          display: block;
+          text-align: center; }
         main #team .container .content-rightblock a:before, main #cases .container .content-rightblock a:before, main #contact .container .content-rightblock a:before {
           display: none; }
       main #team .container .content-rightblock p, main #cases .container .content-rightblock p, main #contact .container .content-rightblock p {
@@ -2153,22 +2158,25 @@ footer {
   main .container-home-flex #flex-row-3 {
     height: 25%; }
   main .container-flex {
+    position: relative;
     flex-direction: column;
-    padding-top: 25%;
-    min-height: 100vh; }
+    padding-top: 100px;
+    min-height: 100vh;
+    height: inherit; }
     main .container-flex .content-image {
-      flex-basis: 30%;
+      flex-basis: 150px;
       margin-right: 10%; }
     main .container-flex .section-flex-right {
-      flex-basis: 37.5%;
-      margin-top: 5%;
+      position: inherit;
+      flex-basis: calc(100% - 150px);
+      margin-top: 15px;
       padding-left: 0;
       margin-right: 0; }
       main .container-flex .section-flex-right .arrow {
         display: none; }
       main .container-flex .section-flex-right .title-group {
         position: absolute;
-        top: -25.5rem;
+        top: -225px;
         right: 20pt; }
       main .container-flex .section-flex-right .content-group {
         align-items: center;
@@ -2191,6 +2199,15 @@ footer {
         margin-bottom: 10%; }
   main #contact {
     margin-bottom: 0; } }
+
+@media screen and (max-width: 480px) {
+  footer .footer #footer-right {
+    flex-direction: column;
+    margin-top: calc(2 * 2rem); }
+    footer .footer #footer-right a {
+      margin-left: 0; }
+      footer .footer #footer-right a:not(:first-child) {
+        margin-top: 1.833rem; } }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .content-rightblock a span:not(.label):not(.arrow-right):before {

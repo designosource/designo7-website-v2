@@ -1944,6 +1944,25 @@ footer {
   }
 }
 
+@media screen and (max-width: $breakpoint-x-small) {
+	footer {
+		.footer {
+			#footer-right {
+				flex-direction: column;
+				margin-top: calc(2 * 2rem);
+				
+				a {
+					margin-left: 0;
+					
+					&:not(:first-child) {
+						margin-top: 1.833rem;
+					}
+				}
+			}
+		}
+	}
+}
+
 // RETINA MEDIA
 @media(-webkit-min-device-pixel-ratio: 2) {
   .content-rightblock {

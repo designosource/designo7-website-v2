@@ -70,6 +70,7 @@
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
 					<a title="<?php echo ucfirst($memberinfo["previous"]); ?>" class="previous" href="<?php echo $memberinfo["previous"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($memberinfo["previous"]); ?></span></a>
+					<a title="Team" href="../team/"><img src="../img/team-icon-white.svg" alt="icon team page"></a>
 					<a title="<?php echo ucfirst($memberinfo["next"]); ?>" class="next" href="<?php echo $memberinfo["next"]; ?>.php"><span><?php echo ucfirst($memberinfo["next"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>

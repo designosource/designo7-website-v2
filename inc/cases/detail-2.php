@@ -48,6 +48,7 @@
 			<div class="fixed-bottom-mobile-navigation">
 				<div class="inner-bottom-mobile-navigation">
 					<a title="<?php echo ucfirst($caseinfo["previousproject"]); ?>" class="previous" href="<?php echo $caseinfo["previousproject"]; ?>.php"><img src="../img/arrow-right-white.svg" alt="Previous icon"><span><?php echo ucfirst($caseinfo["previousproject"]); ?></span></a>
+					<a title="Team" href="../team/"><img src="../img/overview-white.svg" alt="icon team page"></a>
 					<a title="<?php echo ucfirst($caseinfo["nextproject"]); ?>" class="next" href="<?php echo $caseinfo["nextproject"]; ?>.php"><span><?php echo ucfirst($caseinfo["nextproject"]); ?></span><img src="../img/arrow-right-white.svg" alt="Previous icon"></a>
 				</div>
 			</div>

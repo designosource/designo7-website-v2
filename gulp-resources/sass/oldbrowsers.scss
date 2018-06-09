@@ -243,6 +243,7 @@ main {
 
   section {
     position: relative;
+		min-height: 100vh;
   }
 
   section.container {
@@ -586,6 +587,7 @@ main {
       }
       a {
         margin-bottom: 10%;
+				text-align: center;
       }
     }
   }
@@ -2005,7 +2007,10 @@ footer {
             text-align: center;
 
             span:not(.label):not(.arrow-right) {
-              margin-right: 0;
+              margin-right: auto;
+							margin-left: auto;
+							display: block;
+							text-align: center;
             }
 
             &:before {
@@ -2141,18 +2146,21 @@ footer {
     }
 
     .container-flex {
+			position: relative;
       flex-direction: column;
-      padding-top: 25%;
+      padding-top: 100px;
       min-height: 100vh;
+			height: inherit;
 
       .content-image {
-        flex-basis: 30%;
+        flex-basis: 150px;
         margin-right: 10%;
       }
 
       .section-flex-right {
-        flex-basis: 37.5%;
-        margin-top: 5%;
+				position: inherit;
+        flex-basis: calc(100% - 150px);
+        margin-top: 15px;
         padding-left: 0;
         margin-right: 0;
 
@@ -2162,7 +2170,7 @@ footer {
 
         .title-group {
           position: absolute;
-          top: -25.5rem;
+          top: -225px;;
           right: 20pt;
         }
 
@@ -2213,6 +2221,25 @@ footer {
       margin-bottom: 0;
     }
   }
+}
+
+@media screen and (max-width: $breakpoint-x-small) {
+	footer {
+		.footer {
+			#footer-right {
+				flex-direction: column;
+				margin-top: calc(2 * 2rem);
+				
+				a {
+					margin-left: 0;
+					
+					&:not(:first-child) {
+						margin-top: 1.833rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 // RETINA MEDIA

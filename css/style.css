@@ -2073,6 +2073,15 @@ footer {
       grid-column-end: 4;
       align-self: center; } }
 
+@media screen and (max-width: 480px) {
+  footer .footer #footer-right {
+    flex-direction: column;
+    margin-top: calc(2 * 2rem); }
+    footer .footer #footer-right a {
+      margin-left: 0; }
+      footer .footer #footer-right a:not(:first-child) {
+        margin-top: 1.833rem; } }
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .content-rightblock a span:not(.label):not(.arrow-right):before {
     content: "";
