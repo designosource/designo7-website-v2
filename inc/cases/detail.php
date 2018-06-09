@@ -36,6 +36,23 @@
 					<?php if( !empty( $caseinfo["website"] ) ): ?>
 					<a target="_blank" title="Website" href="<?php echo $caseinfo["website"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
 					<?php endif; ?>
+										
+					<?php if( !empty( $caseinfo["description2"] ) ): ?>
+						<?php echo $caseinfo["description2"]; ?>
+					<?php endif; ?>
+					
+					<?php if( !empty( $caseinfo["website2"] ) ): ?>
+					<a target="_blank" title="Website" href="<?php echo $caseinfo["website2"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
+					<?php endif; ?>
+					
+					<?php if( !empty( $caseinfo["description3"] ) ): ?>
+						<?php echo $caseinfo["description3"]; ?>
+					<?php endif; ?>
+					
+					<?php if( !empty( $caseinfo["website3"] ) ): ?>
+					<a target="_blank" title="Website" href="<?php echo $caseinfo["website3"] ?>" class="btn">Bekijk het project<span class="arrow-right"></span></a>
+					<?php endif; ?>
+					
 			</article>
 			
 			<div class="fixed-bottom-mobile-navigation">

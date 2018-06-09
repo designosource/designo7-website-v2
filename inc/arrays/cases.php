@@ -46,7 +46,7 @@ $cases = array(
         "description" => "<p><b>GRAM is een organisatie die begaan is met het respect voor arbeid en de herwaardering van de opleiding voor jongeren naar een moderne vakbekwaamheid. GRAM VZW wil de beroepsopleiding van het middelbaar in een beter daglicht brengen. Hierbij waren ze opzoek naar een nieuwe branding en website om hun doelpubliek optimaal te kunnen informeren.</b></p><p><b>Uitwerking</b><br>Voor de rebranding van het logo kozen we samen met de klant voor een opfrissing van het huidige logo. Op deze manier zouden ze hun merkbekendheid kunnen bewaren. We kozen voor een meer open en fris design. Deze lijn werd doorgetrokken op de website, we gebruikten veel lichte kleuren waardoor de website nu meer open en toegankelijk is. Hiermee willen we de grens tussen Gram en zijn doelpubliek verlagen. Doordat we gebruik maakten van een WordPress website kan de klant de site in de toekomst makkelijk beheren.</p><p>De opfrissing van de website en de huisstijl staat toch nog dicht bij de kernwaarden van Gram maar zorgt nu meer voor een jongere en meer open uitstraling.
 </p>",
 				"descriptionmeta" => "GRAM is een organisatie die begaan is met het respect voor arbeid en de herwaardering van de opleiding voor jongeren naar een moderne vakbekwaamheid. GRAM VZW wil de beroepsopleiding van het middelbaar in een beter daglicht brengen. Hierbij waren ze opzoek naar een nieuwe branding en website om hun doelpubliek optimaal te kunnen informeren.",
-        "website" => "http://www.gram.be/",
+        "website" => "http://www.gramvzw.be/",
         "previousproject" => "tedx",
         "nextproject" => "klimkaffee",
     ),
@@ -80,15 +80,19 @@ $cases = array(
         "description" => "<p><b>VR Toerisme is een project in samenwerking met de stad Lier en Antwerpen, de studierichting Toerisme en Memori. Voor beide projecten kregen we van de klant de vraag om de toeristische beleving te optimaliseren met behulp van Virtual reality. Aangezien beide steden met een verschillende problematiek kampten bedachten we twee verschillende oplossingen.</b></p><p><b>Uitwerking Lier</b><br>
 In Lier werd al snel duidelijk dat twee van de voornaamste kerken in de stad heel ontoegankelijk zijn voor rolstoelgebruikers en ook weinig open staan voor het grote publiek. Met behulp van een informatieve tour geven we toeristen nu de mogelijkheid om in beide kerken rond te wandelen door middel van VR. Door afbeeldingen te nemen in 360° en ze daarna te verwerken in webVR maakten we een toepassing waarmee de bezoeker met behulp van QR codes virtueel door de kerk wandelen.
 </p><p><b>Uitwerking Antwerpen</b><br>
-In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad alvorens ze bezocht te hebben. We ontwikkelden een virtuele tour met de focus op de shopping experience en het unieke karakter van Antwerpen als havenstad. Om ervoor te zorgen dat toeristen nu niet meer moeten aanschuiven aan toeristische centra om informatie te bekomen, kunnen ze nu zelf de stad verkennen. Dit verspreid over verschillende thema’s. Om deze tour te kunnen realiseren maakten we 360° video’s die we bewerkten in première pro en achteraf verwerkten in de VR toepassing, Wonda.</p>",
+In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad alvorens ze bezocht te hebben. We ontwikkelden een virtuele tour met de focus op de shopping experience en het unieke karakter van Antwerpen als havenstad. Om ervoor te zorgen dat toeristen nu niet meer moeten aanschuiven aan toeristische centra om informatie te bekomen, kunnen ze nu zelf de stad verkennen. Dit verspreid over verschillende thema’s. Om deze tour te kunnen realiseren maakten we 360° video’s die we bewerkten in première pro en achteraf verwerkten in de VR toepassing, Wonda.</p><p><b>Begijnhof in Lier:</b></p>",
 				"descriptionmeta" => "VR Toerisme is een project in samenwerking met de stad Lier en Antwerpen, de studierichting Toerisme en Memori. Voor beide projecten kregen we van de klant de vraag om de toeristische beleving te optimaliseren met behulp van Virtual reality. Aangezien beide steden met een verschillende problematiek kampten bedachten we twee verschillende oplossingen.",
-        "website" => "http://www.climatewithoutborders.org/",
+        "website" => "https://360.visitlier.be/begijnhof/",
+				"description2" => "<p><b>Sint Gummarus in Lier:</b></p>",
+				"website2" => "https://360.visitlier.be/sint-gummarus",
+				"description3" => "<p><b>360° Toerisme in Antwerpen:</b></p>",
+				"website3" => "https://hamudesign.be/toerismeVR/",
         "previousproject" => "klimkaffee",
         "nextproject" => "ballet",
     ),
 	
 		"ballet" => array(
-        "name" => "Ballet",
+        "name" => "Petit Pelléas",
         "shortname" => "ballet",
         "technology" => "UX - UI - Development",
         "image" => "img/cases/ballet-1.jpg",
@@ -99,7 +103,7 @@ In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad a
         "description" => "<p><b>Opera Ballet Vlaanderen had de nood aan een educatief webplatform omtrent de kindervoorstelling “Petit Pelléas”. Dit webplatform zou een testcase vormen. De bedoeling ervan is om kinderen op een interactieve en educatieve manier te laten werken rond de voorstelling en hen zo kennis te laten maken met opera en ballet.</b></p><p><b>Uitwerking</b><br>Voor de uitwerking van dit project was het essentieel dat de structuur en de user flow helemaal juist zat. Hiervoor hebben we een duidelijk overzicht opgesteld van hoe het platform zou moeten werken. Op basis van deze structuur werd er een design opgemaakt specifiek voor de voorstelling van Petit Pélleas. Hier werd rekening gehouden met het jonge doelpubliek en de essentie van de voorstelling.</p><p>Het bouwen van de website gebeurde op basis van een CMS Wordpress. Deze keuze zorgt ervoor dat de klant zelf content kan plaatsen, dit was vooral erg belangrijk wanneer het webplatform verder gebruikt zou worden voor andere voorstellingen.
 </p>",
 				"descriptionmeta" => "Opera Ballet Vlaanderen had de nood aan een educatief webplatform omtrent de kindervoorstelling “Petit Pelléas”. Dit webplatform zou een testcase vormen. De bedoeling ervan is om kinderen op een interactieve en educatieve manier te laten werken rond de voorstelling en hen zo kennis te laten maken met opera en ballet.",
-        "website" => "http://www.climatewithoutborders.org/",
+        "website" => "http://www.petitpelleas.be/",
         "previousproject" => "vr",
         "nextproject" => "brosella",
     ),
