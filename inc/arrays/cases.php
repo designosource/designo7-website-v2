@@ -14,7 +14,7 @@ $cases = array(
         "description" => "<p><b>Climate without Borders is een organisatie van weermannen en -vrouwen, die zich samen engageren om de communicatie rond het veranderende klimaat onder handen te nemen. Om deze communicatie mogelijk te maken waren ze opzoek naar een website die hen dat zou kunnen bieden.</b></p><p><b>Kadering</b><br>De klant had eigenlijk nood aan twee gescheiden platformen die toch met elkaar in verbinding zouden staan. Enerzijds de publieke website met de focus op het verschaffen van informatie aan de gebruiker, wat Climate without Borders is en wat ze doen. Anderzijds een afgescheiden platform voor de leden en partners om onderling informatie uit te wisselen.</p><p><b>Uitwerking</b><br>De structuur voor de beide platformen loopt parallel maar er werd een duidelijk onderscheid gemaakt tussen beiden door hen design gewijs een eigen karakter te geven. De algemene huisstijl werd behouden maar elk platform kreeg een eigen primaire kleur. Doormiddel van de vele aanwezige features en op vraag van de klant werden beiden platformen gebouwd in Drupal.</p>",
 				"descriptionmeta" => "Climate without Borders is een organisatie van weermannen en -vrouwen, die zich samen engageren om de communicatie rond het veranderende klimaat onder handen te nemen. Om deze communicatie mogelijk te maken waren ze opzoek naar een website die hen dat zou kunnen bieden.",
         "website" => "http://www.climatewithoutborders.org/",
-        "previousproject" => "depauw",
+        "previousproject" => "website",
         "nextproject" => "tedx",
     ),
 
@@ -137,7 +137,7 @@ In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad a
 				),
         "description" => "<p><b>Tuinplantencentrum De Pauw vroeg ons een aantrekkelijke en ludieke video te maken die hun kerstbomenverkoop tijdens de feestperiode een boost zou geven. Dit project bewijst dat wij als digital agency van alle markten thuis zijn en ook video projecten met plezier tot een goed einde willen brengen.</b></p><p><b>Uitwerking</b><br>Met een deadline van 2 weken was een strakke planning essentieel. Na het opbouwen van de storyboards werd er na goedkeuring van de klant zelf een filmdag georganiseerd. Hierbij werd er zowel gefilmd als geacteerd door de leden van Designosource. De video werd gefilmd met een Canon 5D mark 3 en gemonteerd in Adobe Première Pro 2018. De Pauw haalde het met de kerstvideo zelfs tot op de radio.</p>",
 				"descriptionmeta" => "Tuinplantencentrum De Pauw vroeg ons een aantrekkelijke en ludieke video te maken die hun kerstbomenverkoop tijdens de feestperiode een boost zou geven. Dit project bewijst dat wij als digital agency van alle markten thuis zijn en ook video projecten met plezier tot een goed einde willen brengen.",
-        "website" => "http://www.climatewithoutborders.org/",
+        "website" => "https://www.facebook.com/TuinplantencentrumDePauw/videos/1729890883717213/",
         "previousproject" => "brosella",
         "nextproject" => "designologo",
     ),
