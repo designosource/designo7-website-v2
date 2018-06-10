@@ -10,10 +10,8 @@
         <div id="home-line"></div>
         <!--<img src="img/scroll-icon.svg" alt="Scroll" id="scroll">-->
         
-        <a title="Scroll to team" id="scroll" href="#team">
-        	<div>
-        		<div class="scroll-line"></div>
-        	</div>
-        </a>
+				<div id="scroll">
+					<div class="scroll-line"></div>
+				</div>
     </div> <!-- /maxwidth -->
 </section>

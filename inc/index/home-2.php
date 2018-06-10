@@ -13,11 +13,9 @@
             </article>
         </div>
         <div id="flex-row-3">
-            <a title="Scroll to team" id="scroll" href="#team">
-                <div>
-                    <div class="scroll-line"></div>
-                </div>
-            </a>
+					<div id="scroll">
+							<div class="scroll-line"></div>
+					</div>
         </div>
     </div> <!-- /maxwidth -->
 </section>

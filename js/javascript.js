@@ -21,6 +21,26 @@ sr.reveal('#home-content', {
     viewFactor: 0.3
 });
 
+sr.reveal('#scroll', {
+    duration: 500,
+    origin: 'bottom',
+    distance: '100px',
+    delay: 750,
+    opacity: 0,
+    scale: '1',
+    viewFactor: 0
+});
+
+sr.reveal('.page-container .previous-next-page', {
+		duration: 500,
+		origin: 'left',
+		distance: '100%',
+		scale: 1,
+		opacity: 0,
+		delay: 0,
+		viewFactor: 0.5
+});
+
 sr.reveal('.overview .grid-item', {
     duration: 500,
     origin: 'bottom',
@@ -114,6 +134,16 @@ if (window.matchMedia('(max-width: 850px)').matches) {
         scale: 1,
         opacity: 0,
         delay: 750,
+        viewFactor: 0.5
+    });
+	
+		sr.reveal('.page-container h1', {
+        duration: 500,
+        origin: 'top',
+        distance: '100px',
+        scale: 1,
+        opacity: 0,
+        delay: 250,
         viewFactor: 0.5
     });
 
@@ -346,6 +376,16 @@ if (window.matchMedia('(max-width: 850px)').matches) {
         scale: 1,
         opacity: 0,
         delay: 500,
+        viewFactor: 0.5
+    });
+	
+		sr.reveal('.page-container h1', {
+        duration: 500,
+        origin: 'left',
+        distance: '100px',
+        scale: 1,
+        opacity: 0,
+        delay: 250,
         viewFactor: 0.5
     });
 

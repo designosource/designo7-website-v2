@@ -498,25 +498,22 @@ main {
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 25;
+			width: 16px;
+			height: 36px;
+			border-radius: 10px;
+			border: 1px solid white;
+			margin: 0 auto;
 
-      div {
-        width: 16px;
-        height: 36px;
-        border-radius: 10px;
-        border: 1px solid white;
-        margin: 0 auto;
-
-        .scroll-line {
-          width: 2px;
-          height: 6px;
-          border-radius: 1px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 6px;
-          background-color: white;
-          @include animation(scrollfadeout 1.75s infinite ease-in-out);
-        }
-      }
+			.scroll-line {
+				width: 2px;
+				height: 6px;
+				border-radius: 1px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 6px;
+				background-color: white;
+				@include animation(scrollfadeout 1.75s infinite ease-in-out);
+			}
     }
   }
 
@@ -983,7 +980,7 @@ main {
     .overview {
       display: grid;
       justify-content: space-between;
-      grid-gap: calc(2.5 * #{$font--20});
+      grid-gap: 20px;
 
       .grid-item {
         width: 100%;
@@ -1682,13 +1679,13 @@ footer {
 }
 
 // TABLET
-@media (min-width: $breakpoint-x-small) and (max-width: $breakpoint-small) {
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
   main {
     .page-container {
       padding: 40px 40px;
 
       .overview {
-        grid-gap: 40px;
+        grid-gap: 20px;
 
         .grid-item {
           height: 200px;
@@ -1733,7 +1730,7 @@ footer {
       }
 
       .overview {
-        grid-gap: 25px;
+        grid-gap: 20px;
 
         .grid-item {
           &.last-item {
