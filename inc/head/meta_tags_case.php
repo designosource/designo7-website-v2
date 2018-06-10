@@ -5,8 +5,8 @@
 <meta name="designer" content="Designosource">
 <meta name="reply-to" content="hello@designosource.be">
 <meta name="owner" content="Designosource">
-<meta name="url" content="http://www.sandervanhullebusch.be/designo7v2/team/<?php echo $caseinfo["shortname"]; ?>.php">
-<meta name="url" content="https://www.sandervanhullebusch.be/designo7v2/team/<?php echo $caseinfo["shortname"]; ?>.php">
+<meta name="url" content="http://www.sandervanhullebusch.be/designo7v2/cases/<?php echo $caseinfo["shortname"]; ?>.php">
+<meta name="url" content="https://www.sandervanhullebusch.be/designo7v2/cases/<?php echo $caseinfo["shortname"]; ?>.php">
 <meta name="identifier-URL" content="http://www.sandervanhullebusch.be/designo7v2/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta property="og:title" content="Designosource | <?php echo $caseinfo["name"]; ?>">
