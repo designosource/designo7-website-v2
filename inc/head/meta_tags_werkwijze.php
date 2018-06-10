@@ -9,7 +9,7 @@
 <meta name="url" content="https://www.sandervanhullebusch.be/designo7v2/team/werkwijze.php">
 <meta name="identifier-URL" content="http://www.sandervanhullebusch.be/designo7v2/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta property="og:title" content="Designosource | Wie zijn wij?">
+<meta property="og:title" content="Designosource | Werkwijze">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.sandervanhullebusch.be/designo7v2/team/werkwijze.php">
 <meta property="og:image" content="http://www.sandervanhullebusch.be/designo7v2/img/meta/og-team.jpg">
