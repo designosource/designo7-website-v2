@@ -5,8 +5,8 @@
 <meta name="designer" content="Designosource">
 <meta name="reply-to" content="hello@designosource.be">
 <meta name="owner" content="Designosource">
-<meta name="url" content="<?php echo $url; ?>">
-<meta name="url" content="<?php echo $url_s; ?>">
+<meta name="url" content="http://www.sandervanhullebusch.be/designo7v2/">
+<meta name="url" content="https://www.sandervanhullebusch.be/designo7v2/">
 <meta name="identifier-URL" content="http://www.sandervanhullebusch.be/designo7v2/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta property="og:title" content="Designosource | Home">
@@ -26,8 +26,8 @@
 <meta name="twitter:title" content="Designosource | Home">
 <meta name="twitter:description" content="Designosource is een creative agency bestaande uit 12 studenten Interactive Multimedia Design. Gaande van development nerds tot interface queens en van design hipsters tot sushi lovers, vormen zij een uniek en vooral enthousiast team.">
 <meta name="twitter:image" content="http://www.sandervanhullebusch.be/designo7v2/img/meta/twitter-team.jpg">
-<link rel="apple-touch-icon" sizes="152x152" href="<?php echo $prefix; ?>img/meta/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $prefix; ?>img/meta/apple-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.sandervanhullebusch.be/designo7v2/img/meta/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.sandervanhullebusch.be/designo7v2/img/meta/apple-icon-180x180.png">
 <meta name="apple-mobile-web-app-title" content="Designosource | Home">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default-translucent">

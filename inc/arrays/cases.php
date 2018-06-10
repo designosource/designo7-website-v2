@@ -151,7 +151,7 @@ In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad a
 					"img/cases/logo-2.jpg",
 					"img/cases/logo-3.jpg"
 				),
-        "description" => "<p>Het ei is al 7 generaties lang de basis tot het logo voor Designosource. Dit jaar is dit niet anders. De basisvorm is dan ook de contouren van een ei.</p><p>Vanuit onze brand values: 'eager', 'explorers’' en 'ensemble' kwamen we tot een finaal logo. Ensemble presenteert de twee helften van ons ei, die passen bij elkaar. We zijn een sterk team en willen dat hiermee benadrukken.  De fellere kleuren betekenen dan weer 'eager', wat vrolijk, opgewekt en levendig wilt zeggen. En tot slot, ons laatste brandvalue is 'explore'. De ruimte tussen de twee helften representeertde ruimte die we nodig hebben om te ontdekken.</p>",
+        "description" => "<p><b>Het ei is al 7 generaties lang de basis tot het logo voor Designosource. Dit jaar is dit niet anders. De basisvorm is dan ook de contouren van een ei.</b></p><p>Vanuit onze brand values: 'eager', 'explorers’' en 'ensemble' kwamen we tot een finaal logo. Ensemble presenteert de twee helften van ons ei, die passen bij elkaar. We zijn een sterk team en willen dat hiermee benadrukken.  De fellere kleuren betekenen dan weer 'eager', wat vrolijk, opgewekt en levendig wilt zeggen. En tot slot, ons laatste brandvalue is 'explore'. De ruimte tussen de twee helften representeertde ruimte die we nodig hebben om te ontdekken.</p>",
 				"descriptionmeta" => "Het ei is al 7 generaties lang de basis tot het logo voor Designosource. Dit jaar is dit niet anders.",
         "previousproject" => "depauw",
         "nextproject" => "website",
