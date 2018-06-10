@@ -10,10 +10,10 @@
    
     <div class="footer maxwidth">
         <nav id="footer-left">
-            <a title="Link to home section" href="<?php echo $prefix; ?>index.php#home">Home</a>
-            <a title="Link to team section" href="<?php echo $prefix; ?>index.php#team">Team</a>
-            <a title="Link to cases section" href="<?php echo $prefix; ?>index.php#cases">Cases</a>
-            <a title="Link to contact section" href="<?php echo $prefix; ?>index.php#contact">Contact</a>
+            <a title="Home" href="<?php echo $prefix; ?>index.php#home">Home</a>
+            <a title="Team" href="<?php echo $prefix; ?>index.php#team">Team</a>
+            <a title="Cases" href="<?php echo $prefix; ?>index.php#cases">Cases</a>
+            <a title="Contact" href="<?php echo $prefix; ?>index.php#contact">Contact</a>
         </nav>
         <nav id="footer-right">
             <a title="Facebook" target="_blank" href="https://www.facebook.com/Designosource/">Facebook</a>
