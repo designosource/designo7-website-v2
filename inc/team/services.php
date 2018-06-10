@@ -5,11 +5,11 @@
 
 			<div class="previous-next-page">
 
-				<a title="Vorige pagina" href="werkwijze.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>Werkwijze</span></a>
+				<a title="Onze werkwijze" href="werkwijze.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>Onze werkwijze</span></a>
 
 				<a title="Overzicht" href="../team/"><img src="../img/team-icon-dark.svg" alt="icon team page" onmouseover="$(this).attr('src','../img/team-icon-red.svg').css('transition', '0.4s');" onmouseleave="$(this).attr('src','../img/team-icon-dark.svg').css('transition', '0.4s');" ></a>
 
-				<a title="Wat pagina" href="wat.php"><span>Wie zijn wij?</span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
+				<a title="Wie zijn wij?" href="wat.php"><span>Wie zijn wij?</span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
 
 			</div>
 

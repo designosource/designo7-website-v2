@@ -13,11 +13,11 @@
 		
 				<div class="previous-next-page">
 
-					<a title="Services pagina" href="services.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>Wat doen wij?</span></a>
+					<a title="Wat doen wij?" href="services.php"><img src="../img/arrow-right-red.svg" alt="icon previous page"><span>Wat doen wij?</span></a>
 
 					<a title="Overzicht" href="../team/"><img src="../img/team-icon-dark.svg" alt="icon team page" onmouseover="$(this).attr('src','../img/team-icon-red.svg').css('transition', '0.4s');" onmouseleave="$(this).attr('src','../img/team-icon-dark.svg').css('transition', '0.4s');" ></a>
 
-					<a title="Werkwijze pagina" href="werkwijze.php"><span>Onze werkwijze</span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
+					<a title="Onze werkwijze" href="werkwijze.php"><span>Onze werkwijze</span><img src="../img/arrow-right-red.svg" alt="icon previous page"></a>
 
 				</div>
 
