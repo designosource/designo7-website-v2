@@ -47,7 +47,7 @@
             <article class="overview" id="cases-grid">
                 <?php foreach ($cases as $case): ?>
                     <div class="grid-item">
-                        <a title="<?php echo $case["title"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
+                        <a title="<?php echo $case["name"]; ?>" href="<?php echo $case["shortname"]; ?>.php">
                             <img src="<?php echo $prefix . $case['image']; ?>" alt="<?php echo $case['name']; ?>">
                         </a>
                         <div class="grid-details">

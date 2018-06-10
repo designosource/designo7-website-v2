@@ -139,12 +139,12 @@ In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad a
 				"descriptionmeta" => "Tuinplantencentrum De Pauw vroeg ons een aantrekkelijke en ludieke video te maken die hun kerstbomenverkoop tijdens de feestperiode een boost zou geven. Dit project bewijst dat wij als digital agency van alle markten thuis zijn en ook video projecten met plezier tot een goed einde willen brengen.",
         "website" => "http://www.climatewithoutborders.org/",
         "previousproject" => "brosella",
-        "nextproject" => "logo",
+        "nextproject" => "designologo",
     ),
 	
-		"logo" => array(
-        "name" => "Logo",
-        "shortname" => "logo",
+		"designologo" => array(
+        "name" => "Designologo",
+        "shortname" => "designologo",
         "technology" => "Branding",
         "image" => "img/cases/logo-1.jpg",
 				"extra_images" => array(
@@ -168,7 +168,7 @@ In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad a
 				),
         "description" => "<p><b>Op het einde van jaar besloten we om een nieuwe site te lanceren. We wilden iets compleet anders, maar onze huidige huisstijl werd wel in het achterhoofd gehouden.</b></p><p>Ons idee was om een persoonlijke en professionele site te brengen, waarbij de nadruk op typografie en fotografie ligt. Een dynamische website waarbij de nodige micro-animaties het geheel afwerken. Voor de opbouw van de site gebruikten we een broken grid en verdeelden we de site verticaal in plaats van horizontaal.</p>",
 				"descriptionmeta" => "Op het einde van jaar besloten we om een nieuwe site te lanceren. We wilden iets compleet anders, maar onze huidige huisstijl werd wel in het achterhoofd gehouden. Ons idee was om een persoonlijke en professionele site te brengen, waarbij de nadruk op typografie en fotografie ligt. Een dynamische website waarbij de nodige micro-animaties het geheel afwerken. Voor de opbouw van de site gebruikten we een broken grid en verdeelden we de site verticaal in plaats van horizontaal.",
-        "previousproject" => "logo",
+        "previousproject" => "designologo",
         "nextproject" => "cwb",
     )
 );

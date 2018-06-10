@@ -1,6 +1,6 @@
 <section id="team" class="page">
 
-    <?php include 'inc/logo/logo.php'; ?>
+    <?php include 'inc/logo/designologo.php'; ?>
 
     <div class="container maxwidth">
         <div class="container-flex">
