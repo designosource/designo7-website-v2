@@ -1049,7 +1049,7 @@ main {
   main #contact {
     /*margin-bottom: 60px;*/ }
     main #contact .content-image {
-      background-image: url("https://media.giphy.com/media/pSpmpxFxFwDpC/giphy.gif");
+      background-image: url("../img/contact.jpg");
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center; }
