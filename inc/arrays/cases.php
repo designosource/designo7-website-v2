@@ -85,8 +85,6 @@ In het Antwerpse trachtten we toeristen al honger te doen krijgen naar de stad a
         "website" => "https://360.visitlier.be/begijnhof/",
 				"description2" => "<p><b>Sint Gummarus in Lier:</b></p>",
 				"website2" => "https://360.visitlier.be/sint-gummarus",
-				"description3" => "<p><b>360° Toerisme in Antwerpen:</b></p>",
-				"website3" => "https://hamudesign.be/toerismeVR/",
         "previousproject" => "klimkaffee",
         "nextproject" => "ballet",
     ),
